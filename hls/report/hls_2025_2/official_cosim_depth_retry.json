@@ -1,0 +1,50 @@
+{
+  "fc": {
+    "status": {
+      "status": "failed",
+      "kernel": "fc",
+      "depth_overrides": [
+        "set_directive_interface -mode m_axi -depth 6 -offset slave -bundle O fc out",
+        "set_directive_interface -mode m_axi -depth 6 -offset slave -bundle W -max_read_burst_length 256 fc bias",
+        "set_directive_interface -mode m_axi -depth 7680 -offset slave -bundle W -max_read_burst_length 256 fc weight"
+      ],
+      "started_at": "2026-10-30T20:49:02.961930+08:00",
+      "exit_code": 1,
+      "elapsed_seconds": 200.468,
+      "finished_at": "2026-10-30T20:52:23.430892+08:00"
+    },
+    "full_log_sha256": "79f699a02f0061d59a676c780e2b6ec36fb8ee5c5d41a28db02b99fd8422fd14",
+    "error_excerpt": [
+      "UVM_WARNING ./file_agent/mem_model.sv(78) @ 238000: reporter [mem_blk page 0] part of reading is out of boundary: addr:'d12800, length:'d12,offset:'d0,depth:'d12810",
+      "UVM_WARNING ./file_agent/mem_model.sv(78) @ 25043000: reporter [mem_blk page 0] part of reading is out of boundary: addr:'d12800, length:'d64,offset:'d0,depth:'d12810",
+      "FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.",
+      "ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***"
+    ]
+  },
+  "pwdwconv": {
+    "status": {
+      "status": "failed",
+      "kernel": "pwdwconv",
+      "depth_overrides": [
+        "set_directive_interface -mode m_axi -depth 3136 -offset slave -bundle PBUS1 -num_read_outstanding 8 -max_read_burst_length 256 -max_write_burst_length 256 pwdwconv PBUS1",
+        "set_directive_interface -mode m_axi -depth 128 -offset slave -bundle PBUS2 -num_read_outstanding 8 -max_read_burst_length 256 -max_write_burst_length 256 pwdwconv PBUS2",
+        "set_directive_interface -mode m_axi -depth 128 -offset slave -bundle PBUS3 -num_read_outstanding 8 -max_read_burst_length 256 -max_write_burst_length 256 pwdwconv PBUS3",
+        "set_directive_interface -mode m_axi -depth 17248 -offset slave -bundle PBUS4 -num_read_outstanding 8 -max_read_burst_length 256 -max_write_burst_length 256 pwdwconv PBUS4",
+        "set_directive_interface -mode m_axi -depth 32 -offset slave -bundle SBUS1 -num_read_outstanding 8 -max_read_burst_length 256 pwdwconv SBUS1",
+        "set_directive_interface -mode m_axi -depth 32 -offset slave -bundle SBUS2 -num_read_outstanding 8 -max_read_burst_length 256 pwdwconv SBUS2"
+      ],
+      "started_at": "2026-10-30T20:49:02.962929+08:00",
+      "exit_code": 1,
+      "elapsed_seconds": 111.468,
+      "finished_at": "2026-10-30T20:50:54.439017+08:00"
+    },
+    "full_log_sha256": "b5771fbd14c89801adc701673b3482db63525b5e08a3fa666512e9bad778fb42",
+    "error_excerpt": [
+      "ERROR: System received a signal named SIGSEGV and the program has to stop immediately!",
+      "ERROR: [COSIM 212-360] Aborting co-simulation: C TB simulation failed.",
+      "ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.",
+      "ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***",
+      "ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***"
+    ]
+  }
+}

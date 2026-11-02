@@ -1,0 +1,21 @@
+{
+  "files": {
+    "original_camera_bgr.bin": {
+      "source": "original/python_trash/Out.bin",
+      "bytes": 150528,
+      "sha256": "b808d6cfe3684aefc922af303b2980eb24e9969385c8f4234947ad034804bc28"
+    },
+    "original_infer_q10.bin": {
+      "source": "original/python_trash/Infer.bin",
+      "bytes": 301056,
+      "sha256": "c4d215f60e913f7350e9b7f1f1f18328ba07655ffeb05d10ce64822d01e80b03"
+    }
+  },
+  "pair_status": "not_a_verified_same_frame_pair",
+  "preprocessing_comparison": {
+    "green_200_max_abs_difference": 1092,
+    "green_256_max_abs_difference": 1092
+  },
+  "golden_logits": "not_supplied",
+  "warning": "Historical inputs only. No board output or same-frame equivalence is claimed."
+}

@@ -1,0 +1,61 @@
+{
+  "source": "original/vitis_trash/Trash_LCD_OV5640/Lib",
+  "files": {
+    "ov5640_registers.json": {
+      "source_file": "OV5640/OV5640.h",
+      "symbol": "Reg_Init",
+      "source_sha256": "688340c9764b109ad91a44eac256de90796ec0393d1a829231fd9381f06a0636",
+      "bytes": 6853,
+      "sha256": "f39f5594e954e30f7e50c35eac73cf2f7fa574e2de2b04c9891f06f2d8dc0c82",
+      "initializer_elements": 510
+    },
+    "ov5640_af.bin": {
+      "source_file": "OV5640/OV5640.c",
+      "symbol": "OV5640_AF_Firmware",
+      "source_sha256": "568d7d584d50cee7bb4c0407093b7950c87ab644555fe40dd7671a3f8f6c6ca2",
+      "bytes": 4077,
+      "sha256": "439245623bc99f3b0d8c44d47baed3cc17cad01b9191509c89bb8d92a98949c9",
+      "initializer_elements": 4077
+    },
+    "gt911_config.bin": {
+      "source_file": "LCD/lcd.c",
+      "symbol": "GT911_CFG_TBL",
+      "source_sha256": "f6f66e09e9b326b52ed69c00e3c9690531c617096edc5d0731c25829e952a342",
+      "bytes": 184,
+      "sha256": "33932fd45e4f2185e4ff4b347c7415dfa0806299458e76ba92bd5e07be3af57f",
+      "initializer_elements": 184
+    },
+    "font12.bin": {
+      "source_file": "LCD/font.h",
+      "symbol": "asc2_1206",
+      "source_sha256": "419cfaa8a28b139612fb94b9293c535345e8ee3b28e5acf4b70fcabe4e7cbfaa",
+      "bytes": 1140,
+      "sha256": "f0540ce9a9f3f6452eec4ba4a2a253dfb36f69aeefa3ccc25ccd3c9bc5e3b9dc",
+      "initializer_elements": 1140
+    },
+    "font16.bin": {
+      "source_file": "LCD/font.h",
+      "symbol": "asc2_1608",
+      "source_sha256": "419cfaa8a28b139612fb94b9293c535345e8ee3b28e5acf4b70fcabe4e7cbfaa",
+      "bytes": 1520,
+      "sha256": "ce78d3d42ca1f7c16aa5bdab1f83dcc687782c098c5a152ddff782f7ecdfb0ca",
+      "initializer_elements": 1520
+    },
+    "font24.bin": {
+      "source_file": "LCD/font.h",
+      "symbol": "asc2_2412",
+      "source_sha256": "419cfaa8a28b139612fb94b9293c535345e8ee3b28e5acf4b70fcabe4e7cbfaa",
+      "bytes": 3420,
+      "sha256": "d67fba42f7e5d29c841ad479e5c1f6d8216ae37f63cf2d20edc103af2ec8fc3b",
+      "initializer_elements": 3420
+    },
+    "font32.bin": {
+      "source_file": "LCD/font.h",
+      "symbol": "asc2_3216",
+      "source_sha256": "419cfaa8a28b139612fb94b9293c535345e8ee3b28e5acf4b70fcabe4e7cbfaa",
+      "bytes": 6080,
+      "sha256": "89bba4db891faa2bc47d07933f00639476cb352b97ec4e41986cc39118b91f79",
+      "initializer_elements": 6080
+    }
+  }
+}

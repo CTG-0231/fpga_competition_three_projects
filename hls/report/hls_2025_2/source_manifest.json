@@ -1,0 +1,91 @@
+{
+  "algorithm_count": 12,
+  "testbench_count": 5,
+  "files": {
+    "shortcut/shortcut.cpp": {
+      "kind": "algorithm",
+      "sha256": "c29de393154049d09fc9d7388d982539d27da105ffbff0d5ada4c6c202b70f92",
+      "bytes": 1098
+    },
+    "shortcut/shortcut.h": {
+      "kind": "algorithm",
+      "sha256": "011e6546eb9fc09272ef19d40d0a90903442276d08b238460ea0a2f1aa91b996",
+      "bytes": 201
+    },
+    "pwdwconv/pwdwconv.cpp": {
+      "kind": "algorithm",
+      "sha256": "aace3704fdbbdc6f020ae939a0da940d5c71c9c993c1ce7227ce32421cef934d",
+      "bytes": 1975
+    },
+    "pwdwconv/pwdwconv.h": {
+      "kind": "algorithm",
+      "sha256": "f4008a5424b4e709f373ae783edb92bf40ea38fe54e1b55f33c92c6b844a6202",
+      "bytes": 227
+    },
+    "pwdwconv/pwconv.cpp": {
+      "kind": "algorithm",
+      "sha256": "fef26f3f656aca908a14f3fce055b86e18ab6f578637742d7419e3e3bc429b8e",
+      "bytes": 8249
+    },
+    "pwdwconv/pwconv.h": {
+      "kind": "algorithm",
+      "sha256": "4ca69d5ace43d6a29ad30486801e7b37e7b909bfdeb29528b072a12b3502b522",
+      "bytes": 408
+    },
+    "pwdwconv/dwconv.cpp": {
+      "kind": "algorithm",
+      "sha256": "babe916030f747799bdfd1ed9453fe57f2847e4213e33e44dcfac8d6c80a96cf",
+      "bytes": 7973
+    },
+    "pwdwconv/dwconv.h": {
+      "kind": "algorithm",
+      "sha256": "7ea240b93937ddfae0c920347ec315c921de21b57d13366ead14620f0b59fc53",
+      "bytes": 543
+    },
+    "conv/conv.cpp": {
+      "kind": "algorithm",
+      "sha256": "6395e26b33fb95731e1e854859ec1440e558d08468548742d30fc252d3bd8a3d",
+      "bytes": 5989
+    },
+    "conv/conv.h": {
+      "kind": "algorithm",
+      "sha256": "9353ad09627d0ae5265b8eacc644bc0f9ccc2c60ba5e1d652dfceb13d89780f0",
+      "bytes": 340
+    },
+    "avgpool_fc/fc.cpp": {
+      "kind": "algorithm",
+      "sha256": "05d6be6a49572cbc8e5ba8b104348a93bfe8544730692b80d446cd4dbb8e50bc",
+      "bytes": 2738
+    },
+    "avgpool_fc/fc.h": {
+      "kind": "algorithm",
+      "sha256": "101ac1e0e72c452c3ca2e3b1a959a771474a19b594c74c46458361931a06f114",
+      "bytes": 252
+    },
+    "shortcut/test_tb.cpp": {
+      "kind": "testbench",
+      "sha256": "01df8f3974663513094b0bd797c5242d2329c2cbc1dda76c63f5e6f2ea4314f4",
+      "bytes": 346
+    },
+    "pwdwconv/test.cpp": {
+      "kind": "testbench",
+      "sha256": "cb407214462f0b1bb1218347abbb5c599bf1a5377707006a711f80a8e291611d",
+      "bytes": 2174
+    },
+    "pwdwconv/test_tb.cpp": {
+      "kind": "testbench",
+      "sha256": "2fcfab85693701ad49d2aefc4631f104127bf37b59a0340ff4bca7956f048269",
+      "bytes": 3459
+    },
+    "conv/test_tb.cpp": {
+      "kind": "testbench",
+      "sha256": "ac518d82c3ee2165e357a2122ad44e710a1221d810223e30d27cb76f41cf2705",
+      "bytes": 1463
+    },
+    "avgpool_fc/test_tb.cpp": {
+      "kind": "testbench",
+      "sha256": "e29714c982af95948b11fae733b84032ba1b1601b7b8f27ee89c98f3a1106536",
+      "bytes": 1719
+    }
+  }
+}

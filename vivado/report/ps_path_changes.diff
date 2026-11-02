@@ -1,0 +1,203 @@
+--- rar/vitis/app_src/src/camera_detection.c
++++ vivado/src/vitis/app_src/src/camera_detection.c
+@@ -1,6 +1,6 @@
+ #include "camera_detection.h"
+-#include "OV5640.h"
+-#include "UART.h"
++#include "ov5640.h"
++#include "uart.h"
+ #include "sd_io.h"
+ #include "pl_conv.h"
+ 
+--- rar/vitis/app_src/src/camera_detection.h
++++ vivado/src/vitis/app_src/src/camera_detection.h
+@@ -1,7 +1,7 @@
+ #ifndef CAMERA_DETECTION_H
+ #define CAMERA_DETECTION_H
+ 
+-#include "COMMON.h"
++#include "common.h"
+ #include "mess.h"
+ 
+ typedef struct {
+--- rar/vitis/app_src/src/main.c
++++ vivado/src/vitis/app_src/src/main.c
+@@ -1,8 +1,8 @@
+-#include "COMMON.h"
++#include "common.h"
+ #include "lcd.h"
+-#include "UART.h"
+-#include "IIC.h"
+-#include "OV5640.h"
++#include "uart.h"
++#include "iic.h"
++#include "ov5640.h"
+ #include "xil_printf.h"
+ #include "mess.h"
+ #include "camera_detection.h"
+--- rar/vitis/app_src/src/mess.h
++++ vivado/src/vitis/app_src/src/mess.h
+@@ -2,7 +2,7 @@
+ #define __MESS_H
+ 
+ #include "lcd.h"
+-#include "COMMON.h"
++#include "common.h"
+ #include "inference.h"
+ #include "pl_conv.h"
+ #include "xiltimer.h"
+--- rar/vitis/app_src/Lib/IIC/IIC.c
++++ vivado/src/vitis/app_src/lib/iic/iic.c
+@@ -1,4 +1,4 @@
+-#include "IIC.h"
++#include "iic.h"
+ #include "hw_config.h"
+ 
+ /* IIC驱动封装，使用Xilinx XIicPs主机模式接口。 */
+--- rar/vitis/app_src/Lib/IIC/IIC.h
++++ vivado/src/vitis/app_src/lib/iic/iic.h
+@@ -2,9 +2,9 @@
+ #define __IIC_H
+ 
+ /* PS IIC轮询传输、寄存器读写与中断接口。 */
+-#include "COMMON.h"
++#include "common.h"
+ #include "xiicps.h"
+-#include "SCU.h"
++#include "scu.h"
+ 
+ extern XIicPs IicPs1;
+ extern XIicPs IicPs0;
+--- rar/vitis/app_src/Lib/LCD/lcd.c
++++ vivado/src/vitis/app_src/lib/lcd/lcd.c
+@@ -1,8 +1,8 @@
+ #include "lcd.h"
+ #include "font.h"
+ #include "xil_printf.h"
+-#include "SCU.h"
+-#include "UART.h"
++#include "scu.h"
++#include "uart.h"
+ XAxiVdma LCD_Ptr;
+ XVtc LCD_Vtc;
+ XGpioPs Gpio;
+--- rar/vitis/app_src/Lib/LCD/lcd.h
++++ vivado/src/vitis/app_src/lib/lcd/lcd.h
+@@ -1,7 +1,7 @@
+ #ifndef __LCD_H
+ #define __LCD_H
+-#include "COMMON.h"
+-#include "IIC.h"
++#include "common.h"
++#include "iic.h"
+ 
+ 
+ typedef struct { uint16_t x; uint16_t y; } TouchData;
+--- rar/vitis/app_src/Lib/Net/layer.c
++++ vivado/src/vitis/app_src/lib/net/layer.c
+@@ -159,7 +159,7 @@
+         {96,576,160}, {160,960,160}, {160,960,160}, {160,960,320}
+     };
+     static const char *const suffix[6] = {
+-        "Wc1.bin", "bc1.bin", "Wc2.bin", "bc2.bin", "Wc3.bin", "bc3.bin"
++        "wc1.bin", "bc1.bin", "wc2.bin", "bc2.bin", "wc3.bin", "bc3.bin"
+     };
+     char filename[160];
+     int path_length;
+@@ -183,11 +183,11 @@
+     };
+     const int tail_lengths[4] = {1280*320, 1280, 1280*num_class, num_class};
+     const char *const tail_suffix[4] = {
+-        "Wc1.bin", "bc1.bin", "Wf1.bin", "bf1.bin"
++        "wc1.bin", "bc1.bin", "wf1.bin", "bf1.bin"
+     };
+ 
+     for (int j = 0; j < 6; ++j) {
+-        path_length = snprintf(filename, sizeof(filename), "%sHead.%s",
++        path_length = snprintf(filename, sizeof(filename), "%shead.%s",
+                 paramDir, suffix[j]);
+         if (path_length < 0 || (size_t)path_length >= sizeof(filename)) {
+             return XST_FAILURE;
+@@ -210,7 +210,7 @@
+         };
+         for (int j = 0; j < 6; ++j) {
+             path_length = snprintf(filename, sizeof(filename),
+-                    "%sFoldedInvertedResidual.%d.%s", paramDir, i, suffix[j]);
++                    "%sfoldedinvertedresidual.%d.%s", paramDir, i, suffix[j]);
+             if (path_length < 0 || (size_t)path_length >= sizeof(filename)) {
+                 return XST_FAILURE;
+             }
+@@ -222,7 +222,7 @@
+     }
+ 
+     for (int j = 0; j < 4; ++j) {
+-        path_length = snprintf(filename, sizeof(filename), "%sTail.%s",
++        path_length = snprintf(filename, sizeof(filename), "%stail.%s",
+                 paramDir, tail_suffix[j]);
+         if (path_length < 0 || (size_t)path_length >= sizeof(filename)) {
+             return XST_FAILURE;
+--- rar/vitis/app_src/Lib/OV5640/OV5640.c
++++ vivado/src/vitis/app_src/lib/ov5640/ov5640.c
+@@ -1,7 +1,7 @@
+-#include "OV5640.h"
++#include "ov5640.h"
+ #include "lcd.h"
+ #include "xil_printf.h"
+-#include "UART.h"
++#include "uart.h"
+ #define OV5640_FRAME_WIDTH       224U
+ #define OV5640_FRAME_HEIGHT      224U
+ #define OV5640_BYTES_PER_PIXEL   3U       /* 每像素三字节；PL总线高到低为RGB，DDR地址低到高为BGR。 */
+--- rar/vitis/app_src/Lib/OV5640/OV5640.h
++++ vivado/src/vitis/app_src/lib/ov5640/ov5640.h
+@@ -1,9 +1,9 @@
+ #ifndef __OV5640_H
+ #define __OV5640_H
+ 
+-#include "COMMON.h"
+-#include "IIC.h"
+-#include "SCU.h"
++#include "common.h"
++#include "iic.h"
++#include "scu.h"
+ #define OV5640_ADDR 0x3C
+ 
+ /* 自动对焦固件和启动对焦功能开关。 */
+--- rar/vitis/app_src/Lib/SCU/SCU.h
++++ vivado/src/vitis/app_src/lib/scu/scu.h
+@@ -1,7 +1,7 @@
+ #ifndef __SCU_H
+ #define __SCU_H
+ 
+-#include "COMMON.h"
++#include "common.h"
+ 
+ extern XScuGic Intc;
+ int SCU_Init(void);
+--- rar/vitis/app_src/Lib/SCU/SUC.c
++++ vivado/src/vitis/app_src/lib/scu/suc.c
+@@ -1,4 +1,4 @@
+-#include "SCU.h"
++#include "scu.h"
+ #include "hw_config.h"
+ XScuGic Intc; 
+ int SCU_Init(void)
+--- rar/vitis/app_src/Lib/UART/UART.c
++++ vivado/src/vitis/app_src/lib/uart/uart.c
+@@ -1,4 +1,4 @@
+-#include "UART.h"
++#include "uart.h"
+ #include <stdarg.h>
+ 
+ 
+--- rar/vitis/app_src/Lib/UART/UART.h
++++ vivado/src/vitis/app_src/lib/uart/uart.h
+@@ -2,7 +2,7 @@
+ #define __UART_H
+ 
+ /* UART 驱动接口：普通轮询发送、格式化打印和中断初始化。 */
+-#include "COMMON.h"
++#include "common.h"
+ #include "stdio.h"
+ extern XUartPs UartPs1;
+ extern XScuGic UartIntc;

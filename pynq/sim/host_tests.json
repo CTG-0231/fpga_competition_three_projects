@@ -1,0 +1,19 @@
+{
+  "tests": 53,
+  "failures": 0,
+  "errors": 0,
+  "skipped": [
+    {
+      "test": "test_configs_and_labels_match_original_sources (test_model.ModelTests.test_configs_and_labels_match_original_sources)",
+      "reason": "original source not included in deployed package"
+    },
+    {
+      "test": "test_original_data_extracts_byte_for_byte (test_peripherals.PeripheralTests.test_original_data_extracts_byte_for_byte)",
+      "reason": "Original source is not present in deployed package"
+    }
+  ],
+  "passed": true,
+  "seconds": 4.015,
+  "board_accessed": false,
+  "hls_arithmetic_emulated": false
+}

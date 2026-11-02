@@ -1,0 +1,85 @@
+{
+  "status": "CONSTRAINED_PATHS_MET_COVERAGE_INCOMPLETE",
+  "wns_ns": 0.53,
+  "tns_ns": 0.0,
+  "whs_ns": 0.022,
+  "ths_ns": 0.0,
+  "wpws_ns": 3.87,
+  "tpws_ns": 0.0,
+  "setup_failing_endpoints": 0,
+  "hold_failing_endpoints": 0,
+  "no_clock_pins": 228,
+  "unconstrained_internal_endpoints": 364,
+  "no_input_delay_ports": 10,
+  "no_output_delay_ports": 20,
+  "drc": {
+    "total": 39,
+    "warning": 35,
+    "advisory": 4,
+    "critical_warning": 0,
+    "error": 0
+  },
+  "methodology": {
+    "total": 261,
+    "critical_warning": 228,
+    "warning": 33,
+    "critical_rule": "TIMING-17 non-clocked sequential cell"
+  },
+  "cdc": {
+    "analyzed_endpoints": 79,
+    "safe": 79,
+    "unsafe": 0,
+    "unknown": 0,
+    "scope": "clk_fpga_1->clk_fpga_0:36; reverse:43. Camera clock is undefined, so this does not prove its CDC."
+  },
+  "bus_skew": {
+    "groups": 8,
+    "lcd_slack_ns": [
+      9.101,
+      9.132,
+      9.349,
+      9.168
+    ],
+    "camera_groups_not_analyzed": 4,
+    "scope": "Only LCD four groups have numerical slack. Camera four groups NA; not all-skew closure."
+  },
+  "resources": {
+    "slice": [
+      13018,
+      13300
+    ],
+    "lut": [
+      38428,
+      53200
+    ],
+    "ff": [
+      48559,
+      106400
+    ],
+    "bram_tiles": [
+      111.5,
+      140
+    ],
+    "dsp": [
+      134,
+      220
+    ]
+  },
+  "coverage_limit": "OV5640_PCLK has no timing clock; original XDC has no external input/output delay constraints and retains CLOCK_DEDICATED_ROUTE FALSE. Camera and LCD electrical timing need reviewed datasheet/board measurements. No new timing values were invented.",
+  "board_tested": false,
+  "report_sha256": {
+    "bus_skew.rpt": "79cccf188df309211f3af5a631e8aa1df1ee624f9d9c40759ca23abb33b99448",
+    "cdc.rpt": "1e30083808262102958b6182ebf62c9146b1f223755a87de3e31ea4bb1ca1e1d",
+    "check_timing.rpt": "a6f65f3f2656c56235ac0769869780db4705c4e3ee72fb6a9feb8a78bdb789e0",
+    "clocks.rpt": "1d74d842509f95b2203335466c1a403064d850f37e8cd7ed57d641ffdfca5b25",
+    "clock_interaction.rpt": "6d5614a711ed04c7caacfd1e9ba355dc63aca3da9bec25db59c14507062ae95c",
+    "drc.rpt": "4eee75f87dca8fb6ef92212cffa29e4fecdb1cf8c3710eed0d5945175e26ef13",
+    "io.rpt": "5e013c6a712ec87e277c7dafd0b5bbf2ac111ff9de4b2c1a37a0231df3d39796",
+    "ip_status.rpt": "94d6120fd9052856e90dda4e6d7afb248c645f803d32c4d16f6926d3ed042ab8",
+    "ip_status_after.rpt": "9349adf828b1b02b425e670c0fed51db4b498735cd6dc831c022aa32f2884a5f",
+    "ip_status_before.rpt": "f9927ba544bde8b265e0fae8bf264fcd1eeca340a2c9e8d5b3e592563db9085a",
+    "methodology.rpt": "cf4aa8be9a4c89a34d721a6ea896ac736869d23caa2e1cb29a5a4fd326b126c5",
+    "timing_summary.rpt": "bb84016fb684b4a27c6a61e92d3c23252f0cf29c040de6cb91062ae4cfa109a6",
+    "utilization.rpt": "30e5d582250e06d285d082d1c4fee67ccaf2f5bf72c71b5d84ef0cc42417988c"
+  }
+}

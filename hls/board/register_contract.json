@@ -1,0 +1,2648 @@
+{
+  "scope": "register_offsets_widths_known_names_and_complete_physical_port_directions_widths",
+  "pass": true,
+  "kernels": {
+    "shortcut": {
+      "pass": true,
+      "errors": [],
+      "vlnv": "xilinx.com:hls:shortcut:0.0",
+      "control_interfaces": [
+        "s_axi_CTRL"
+      ],
+      "component_xml": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\abi_2025_2_v1\\projects\\shortcut\\solution1\\impl\\ip\\component.xml",
+      "component_sha256": "ef11406a13ef613581d4ccdcd76b61588960ea86ea039619725cbd4f51135409",
+      "register_mapping": [
+        {
+          "offset": "0x0",
+          "old": "CTRL",
+          "new": "CTRL",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x4",
+          "old": "GIER",
+          "new": "GIER",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x8",
+          "old": "IP_IER",
+          "new": "IP_IER",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0xc",
+          "old": "IP_ISR",
+          "new": "IP_ISR",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x10",
+          "old": "src1_V",
+          "new": "src1",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x18",
+          "old": "src2_V",
+          "new": "src2",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x20",
+          "old": "dest_V",
+          "new": "dest",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x28",
+          "old": "length_r",
+          "new": "length_r",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        }
+      ],
+      "old_registers": [
+        {
+          "name": "CTRL",
+          "addressOffset": "0",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "AP_START",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "AP_DONE",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_IDLE",
+              "bitOffset": "2",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_READY",
+              "bitOffset": "3",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "RESERVED_1",
+              "bitOffset": "4",
+              "bitWidth": "3",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AUTO_RESTART",
+              "bitOffset": "7",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED_2",
+              "bitOffset": "8",
+              "bitWidth": "24",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "GIER",
+          "addressOffset": "4",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "Enable",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "1",
+              "bitWidth": "31",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_IER",
+          "addressOffset": "8",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_EN",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "CHAN1_INT_EN",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_ISR",
+          "addressOffset": "12",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_ST",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "CHAN1_INT_ST",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "src1_V",
+          "addressOffset": "16",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "src1_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "src2_V",
+          "addressOffset": "24",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "src2_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "dest_V",
+          "addressOffset": "32",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "dest_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "length_r",
+          "addressOffset": "40",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "length_r",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        }
+      ],
+      "new_registers": [
+        {
+          "name": "CTRL",
+          "addressOffset": "0",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "AP_START",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "AP_DONE",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_IDLE",
+              "bitOffset": "2",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_READY",
+              "bitOffset": "3",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "RESERVED_1",
+              "bitOffset": "4",
+              "bitWidth": "3",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AUTO_RESTART",
+              "bitOffset": "7",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED_2",
+              "bitOffset": "8",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "INTERRUPT",
+              "bitOffset": "9",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "RESERVED_3",
+              "bitOffset": "10",
+              "bitWidth": "22",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "GIER",
+          "addressOffset": "4",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "Enable",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "1",
+              "bitWidth": "31",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_IER",
+          "addressOffset": "8",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_EN",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "CHAN1_INT_EN",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED_0",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_ISR",
+          "addressOffset": "12",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_ST",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "CHAN1_INT_ST",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "RESERVED_0",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "src1",
+          "addressOffset": "16",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "src1",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "src2",
+          "addressOffset": "24",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "src2",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "dest",
+          "addressOffset": "32",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "dest",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "length_r",
+          "addressOffset": "40",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "length_r",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        }
+      ],
+      "old_physical_port_count": 155,
+      "new_physical_port_count": 155,
+      "physical_port_differences": {},
+      "ip_parameter_differences": {
+        "II": [
+          "x",
+          "20 ~ 536870933"
+        ],
+        "C_M_AXI_IN1_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "C_M_AXI_IN2_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "C_M_AXI_OUT_R_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "latency": [
+          "undef",
+          "19"
+        ]
+      },
+      "accepted_name_aliases": {
+        "src1_V": "src1",
+        "src2_V": "src2",
+        "dest_V": "dest"
+      },
+      "semantic_limit": "CTRL AP_READY capture/read-clear and bit9 interrupt differ; only software-used bits and all parameter numeric offsets/widths preserved. Not whole control bitmap equivalence."
+    },
+    "pwdwconv": {
+      "pass": true,
+      "errors": [],
+      "vlnv": "xilinx.com:hls:pwdwconv:0.0",
+      "control_interfaces": [
+        "s_axi_CTRL"
+      ],
+      "component_xml": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\abi_2025_2_v1\\projects\\pwdw_scalarcopy3\\solution1\\impl\\ip\\component.xml",
+      "component_sha256": "c26a6b7b501aad6653b86dc8763b16a69d8619cf6b22b2d5231f0a5bce3f3e01",
+      "register_mapping": [
+        {
+          "offset": "0x0",
+          "old": "CTRL",
+          "new": "CTRL",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x4",
+          "old": "GIER",
+          "new": "GIER",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x8",
+          "old": "IP_IER",
+          "new": "IP_IER",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0xc",
+          "old": "IP_ISR",
+          "new": "IP_ISR",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x10",
+          "old": "PBUS1_V",
+          "new": "PBUS1_V",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x18",
+          "old": "PBUS2_V",
+          "new": "PBUS2_V",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x20",
+          "old": "PBUS3_V",
+          "new": "PBUS3_V",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x28",
+          "old": "PBUS4_V",
+          "new": "PBUS4_V",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x30",
+          "old": "SBUS1_V",
+          "new": "SBUS1_r",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x38",
+          "old": "SBUS2_V",
+          "new": "SBUS2_V",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x40",
+          "old": "ch_in",
+          "new": "ch_in",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x48",
+          "old": "ch_out",
+          "new": "ch_out",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x50",
+          "old": "stride",
+          "new": "stride",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x58",
+          "old": "fsize",
+          "new": "fsize",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x60",
+          "old": "act",
+          "new": "act",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x68",
+          "old": "mode",
+          "new": "mode",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        }
+      ],
+      "old_registers": [
+        {
+          "name": "CTRL",
+          "addressOffset": "0",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "AP_START",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "AP_DONE",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_IDLE",
+              "bitOffset": "2",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_READY",
+              "bitOffset": "3",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "RESERVED_1",
+              "bitOffset": "4",
+              "bitWidth": "3",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AUTO_RESTART",
+              "bitOffset": "7",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED_2",
+              "bitOffset": "8",
+              "bitWidth": "24",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "GIER",
+          "addressOffset": "4",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "Enable",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "1",
+              "bitWidth": "31",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_IER",
+          "addressOffset": "8",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_EN",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "CHAN1_INT_EN",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_ISR",
+          "addressOffset": "12",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_ST",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "CHAN1_INT_ST",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "PBUS1_V",
+          "addressOffset": "16",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "PBUS1_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "PBUS2_V",
+          "addressOffset": "24",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "PBUS2_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "PBUS3_V",
+          "addressOffset": "32",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "PBUS3_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "PBUS4_V",
+          "addressOffset": "40",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "PBUS4_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "SBUS1_V",
+          "addressOffset": "48",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "SBUS1_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "SBUS2_V",
+          "addressOffset": "56",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "SBUS2_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "ch_in",
+          "addressOffset": "64",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "ch_in",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "ch_out",
+          "addressOffset": "72",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "ch_out",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "stride",
+          "addressOffset": "80",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "stride",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "fsize",
+          "addressOffset": "88",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "fsize",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "act",
+          "addressOffset": "96",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "act",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "mode",
+          "addressOffset": "104",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "mode",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        }
+      ],
+      "new_registers": [
+        {
+          "name": "CTRL",
+          "addressOffset": "0",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "AP_START",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "AP_DONE",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_IDLE",
+              "bitOffset": "2",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_READY",
+              "bitOffset": "3",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "RESERVED_1",
+              "bitOffset": "4",
+              "bitWidth": "3",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AUTO_RESTART",
+              "bitOffset": "7",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED_2",
+              "bitOffset": "8",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "INTERRUPT",
+              "bitOffset": "9",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "RESERVED_3",
+              "bitOffset": "10",
+              "bitWidth": "22",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "GIER",
+          "addressOffset": "4",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "Enable",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "1",
+              "bitWidth": "31",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_IER",
+          "addressOffset": "8",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_EN",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "CHAN1_INT_EN",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED_0",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_ISR",
+          "addressOffset": "12",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_ST",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "CHAN1_INT_ST",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "RESERVED_0",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "PBUS1_V",
+          "addressOffset": "16",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "PBUS1_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "PBUS2_V",
+          "addressOffset": "24",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "PBUS2_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "PBUS3_V",
+          "addressOffset": "32",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "PBUS3_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "PBUS4_V",
+          "addressOffset": "40",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "PBUS4_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "SBUS1_r",
+          "addressOffset": "48",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "SBUS1_r",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "SBUS2_V",
+          "addressOffset": "56",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "SBUS2_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "ch_in",
+          "addressOffset": "64",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "ch_in",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "ch_out",
+          "addressOffset": "72",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "ch_out",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "stride",
+          "addressOffset": "80",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "stride",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "fsize",
+          "addressOffset": "88",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "fsize",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "act",
+          "addressOffset": "96",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "act",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "mode",
+          "addressOffset": "104",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "mode",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        }
+      ],
+      "old_physical_port_count": 290,
+      "new_physical_port_count": 290,
+      "physical_port_differences": {},
+      "ip_parameter_differences": {
+        "C_M_AXI_PBUS3_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "C_M_AXI_PBUS2_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "II": [
+          "x",
+          "undef"
+        ],
+        "C_M_AXI_PBUS4_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "C_M_AXI_SBUS1_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "C_M_AXI_SBUS2_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "C_M_AXI_PBUS1_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ]
+      },
+      "accepted_name_aliases": {
+        "SBUS1_V": "SBUS1_r"
+      },
+      "semantic_limit": "CTRL AP_READY capture/read-clear and bit9 interrupt differ; only software-used bits and all parameter numeric offsets/widths preserved. Not whole control bitmap equivalence."
+    },
+    "fc": {
+      "pass": true,
+      "errors": [],
+      "vlnv": "xilinx.com:hls:fc:0.0",
+      "control_interfaces": [
+        "s_axi_CTRL"
+      ],
+      "component_xml": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\abi_2025_2_v1\\projects\\fc\\solution1\\impl\\ip\\component.xml",
+      "component_sha256": "76ba73091940aa10c45251897054b6f4dd72521a98edb4bf74f92169172b51eb",
+      "register_mapping": [
+        {
+          "offset": "0x0",
+          "old": "CTRL",
+          "new": "CTRL",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x4",
+          "old": "GIER",
+          "new": "GIER",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x8",
+          "old": "IP_IER",
+          "new": "IP_IER",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0xc",
+          "old": "IP_ISR",
+          "new": "IP_ISR",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x10",
+          "old": "in_V",
+          "new": "in_V",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x18",
+          "old": "weight_V",
+          "new": "weight_V",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x20",
+          "old": "bias_V",
+          "new": "bias",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x28",
+          "old": "out_V",
+          "new": "out_V",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        }
+      ],
+      "old_registers": [
+        {
+          "name": "CTRL",
+          "addressOffset": "0",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "AP_START",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "AP_DONE",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_IDLE",
+              "bitOffset": "2",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_READY",
+              "bitOffset": "3",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "RESERVED_1",
+              "bitOffset": "4",
+              "bitWidth": "3",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AUTO_RESTART",
+              "bitOffset": "7",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED_2",
+              "bitOffset": "8",
+              "bitWidth": "24",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "GIER",
+          "addressOffset": "4",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "Enable",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "1",
+              "bitWidth": "31",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_IER",
+          "addressOffset": "8",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_EN",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "CHAN1_INT_EN",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_ISR",
+          "addressOffset": "12",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_ST",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "CHAN1_INT_ST",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "in_V",
+          "addressOffset": "16",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "in_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "weight_V",
+          "addressOffset": "24",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "weight_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "bias_V",
+          "addressOffset": "32",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "bias_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "out_V",
+          "addressOffset": "40",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "out_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        }
+      ],
+      "new_registers": [
+        {
+          "name": "CTRL",
+          "addressOffset": "0",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "AP_START",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "AP_DONE",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_IDLE",
+              "bitOffset": "2",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_READY",
+              "bitOffset": "3",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "RESERVED_1",
+              "bitOffset": "4",
+              "bitWidth": "3",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AUTO_RESTART",
+              "bitOffset": "7",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED_2",
+              "bitOffset": "8",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "INTERRUPT",
+              "bitOffset": "9",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "RESERVED_3",
+              "bitOffset": "10",
+              "bitWidth": "22",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "GIER",
+          "addressOffset": "4",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "Enable",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "1",
+              "bitWidth": "31",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_IER",
+          "addressOffset": "8",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_EN",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "CHAN1_INT_EN",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED_0",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_ISR",
+          "addressOffset": "12",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_ST",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "CHAN1_INT_ST",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "RESERVED_0",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "in_V",
+          "addressOffset": "16",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "in_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "weight_V",
+          "addressOffset": "24",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "weight_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "bias",
+          "addressOffset": "32",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "bias",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "out_V",
+          "addressOffset": "40",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "out_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        }
+      ],
+      "old_physical_port_count": 155,
+      "new_physical_port_count": 155,
+      "physical_port_differences": {},
+      "ip_parameter_differences": {
+        "II": [
+          "x",
+          "191147"
+        ],
+        "C_M_AXI_O_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "latency": [
+          "65650",
+          "191146"
+        ],
+        "C_M_AXI_W_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "C_M_AXI_IN_R_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ]
+      },
+      "accepted_name_aliases": {
+        "bias_V": "bias"
+      },
+      "semantic_limit": "CTRL AP_READY capture/read-clear and bit9 interrupt differ; only software-used bits and all parameter numeric offsets/widths preserved. Not whole control bitmap equivalence."
+    },
+    "conv": {
+      "pass": true,
+      "errors": [],
+      "vlnv": "xilinx.com:hls:conv:0.0",
+      "control_interfaces": [
+        "s_axi_CTRL"
+      ],
+      "component_xml": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\abi_2025_2_v1\\projects\\conv_cache_compat\\solution1\\impl\\ip\\component.xml",
+      "component_sha256": "a2b6c44dbbe0a89892eb209cb818a31fd3673d900ccd37a3479720845ade1359",
+      "register_mapping": [
+        {
+          "offset": "0x0",
+          "old": "CTRL",
+          "new": "CTRL",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x4",
+          "old": "GIER",
+          "new": "GIER",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x8",
+          "old": "IP_IER",
+          "new": "IP_IER",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0xc",
+          "old": "IP_ISR",
+          "new": "IP_ISR",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x10",
+          "old": "in1_V",
+          "new": "in1_V",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x18",
+          "old": "in2_V",
+          "new": "in2_V",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x20",
+          "old": "in3_V",
+          "new": "in3_V",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x28",
+          "old": "weight_V",
+          "new": "weight_V",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x30",
+          "old": "bias_V",
+          "new": "bias",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        },
+        {
+          "offset": "0x38",
+          "old": "out_V",
+          "new": "out_V",
+          "old_size": "32",
+          "new_size": "32",
+          "pass": true
+        }
+      ],
+      "old_registers": [
+        {
+          "name": "CTRL",
+          "addressOffset": "0",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "AP_START",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "AP_DONE",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_IDLE",
+              "bitOffset": "2",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_READY",
+              "bitOffset": "3",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "RESERVED_1",
+              "bitOffset": "4",
+              "bitWidth": "3",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AUTO_RESTART",
+              "bitOffset": "7",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED_2",
+              "bitOffset": "8",
+              "bitWidth": "24",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "GIER",
+          "addressOffset": "4",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "Enable",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "1",
+              "bitWidth": "31",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_IER",
+          "addressOffset": "8",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_EN",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "CHAN1_INT_EN",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_ISR",
+          "addressOffset": "12",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_ST",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "CHAN1_INT_ST",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "in1_V",
+          "addressOffset": "16",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "in1_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "in2_V",
+          "addressOffset": "24",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "in2_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "in3_V",
+          "addressOffset": "32",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "in3_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "weight_V",
+          "addressOffset": "40",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "weight_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "bias_V",
+          "addressOffset": "48",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "bias_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "out_V",
+          "addressOffset": "56",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "out_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        }
+      ],
+      "new_registers": [
+        {
+          "name": "CTRL",
+          "addressOffset": "0",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "AP_START",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "AP_DONE",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_IDLE",
+              "bitOffset": "2",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AP_READY",
+              "bitOffset": "3",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "RESERVED_1",
+              "bitOffset": "4",
+              "bitWidth": "3",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "AUTO_RESTART",
+              "bitOffset": "7",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED_2",
+              "bitOffset": "8",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "INTERRUPT",
+              "bitOffset": "9",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            },
+            {
+              "name": "RESERVED_3",
+              "bitOffset": "10",
+              "bitWidth": "22",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "GIER",
+          "addressOffset": "4",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "Enable",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "bitOffset": "1",
+              "bitWidth": "31",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_IER",
+          "addressOffset": "8",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_EN",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "CHAN1_INT_EN",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-write",
+              "readAction": null,
+              "modifiedWriteValue": "modify"
+            },
+            {
+              "name": "RESERVED_0",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "IP_ISR",
+          "addressOffset": "12",
+          "size": "32",
+          "access": "read-write",
+          "fields": [
+            {
+              "name": "CHAN0_INT_ST",
+              "bitOffset": "0",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "CHAN1_INT_ST",
+              "bitOffset": "1",
+              "bitWidth": "1",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": "oneToToggle"
+            },
+            {
+              "name": "RESERVED_0",
+              "bitOffset": "2",
+              "bitWidth": "30",
+              "access": "read-only",
+              "readAction": "modify",
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "in1_V",
+          "addressOffset": "16",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "in1_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "in2_V",
+          "addressOffset": "24",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "in2_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "in3_V",
+          "addressOffset": "32",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "in3_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "weight_V",
+          "addressOffset": "40",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "weight_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "bias",
+          "addressOffset": "48",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "bias",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        },
+        {
+          "name": "out_V",
+          "addressOffset": "56",
+          "size": "32",
+          "access": "write-only",
+          "fields": [
+            {
+              "name": "out_V",
+              "bitOffset": "0",
+              "bitWidth": "32",
+              "access": "write-only",
+              "readAction": null,
+              "modifiedWriteValue": null
+            }
+          ]
+        }
+      ],
+      "old_physical_port_count": 245,
+      "new_physical_port_count": 245,
+      "physical_port_differences": {},
+      "ip_parameter_differences": {
+        "C_M_AXI_IN1_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "II": [
+          "x",
+          "undef"
+        ],
+        "C_M_AXI_IN3_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "C_M_AXI_IN2_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "C_M_AXI_OUT_R_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ],
+        "C_M_AXI_W_ENABLE_ID_PORTS": [
+          "false",
+          "true"
+        ]
+      },
+      "accepted_name_aliases": {
+        "bias_V": "bias"
+      },
+      "semantic_limit": "CTRL AP_READY capture/read-clear and bit9 interrupt differ; only software-used bits and all parameter numeric offsets/widths preserved. Not whole control bitmap equivalence."
+    }
+  }
+}

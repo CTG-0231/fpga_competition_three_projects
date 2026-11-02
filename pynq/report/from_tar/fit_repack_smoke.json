@@ -1,0 +1,34 @@
+{
+  "status": "offline_repack_verified_not_board_tested",
+  "writes_physical_sd": false,
+  "source_files_modified": false,
+  "source_fit": {
+    "path": "E:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\board_image\\boot_files\\image.ub",
+    "bytes": 5890380,
+    "sha256": "b063e9f858a72875259832842d178b895ddfaae4100d0c2dec12bcf94a36b2d4"
+  },
+  "replacement_dtb": {
+    "path": "E:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\board_image\\system.dtb",
+    "bytes": 19123,
+    "sha256": "28d656e6da69a652484d29210fe99ef990a105125d9d834666ca69736a427f2f"
+  },
+  "output_fit": {
+    "name": "image.ub",
+    "bytes": 5889452,
+    "sha256": "d53773712c9f0c077ac54a9e431b9c67618d6503927a580e51b604b1efd0925d"
+  },
+  "kernel_bytes_identical": true,
+  "kernel_sha256": "cbd2d2ade6b3f187a1114f8eb60b7ae92fd0c1feca814856df184fa1c07573d9",
+  "all_payload_hashes_valid_before": true,
+  "all_payload_hashes_valid_after": true,
+  "property_changes": [],
+  "fit_node_set_and_other_properties_identical": true,
+  "test": "Actual dtc.exe; original DTB replacement; all FIT properties unchanged",
+  "rejection_checks": {
+    "signature": "passed",
+    "external_payload": "passed",
+    "unsupported_algorithm": "passed",
+    "corrupt_payload_hash": "passed"
+  },
+  "pending": "Merged peripheral DTB repack and board boot are not included in this smoke test"
+}

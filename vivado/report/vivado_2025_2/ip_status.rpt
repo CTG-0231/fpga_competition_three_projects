@@ -1,0 +1,113 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Fri Oct 30 21:46:17 2026
+| Host         : CTG-COM running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 19 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| Instance Name                      | Status                    | Recommendation      | Change    | IP Name            | IP      | New Version           | New        | Original Part        |
+|                                    |                           |                     | Log       |                    | Version |                       | License    |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_axi_cdma_0_0              | Up-to-date                | No changes required |  *(1)     | AXI Central Direct | 4.1     | 4.1 (Rev. 35)         | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           | Memory Access      | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 35)     |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_axi_mem_intercon_0        | Up-to-date (discontinued) | No changes required |  *(2)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 38)         | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           |                    | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 38)     |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_axi_mem_intercon_1_0      | Up-to-date (discontinued) | No changes required |  *(3)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 38)         | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           |                    | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 38)     |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_axi_mem_intercon_2_0      | Up-to-date (discontinued) | No changes required |  *(4)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 38)         | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           |                    | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 38)     |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_axi_mem_intercon_3_0      | Up-to-date (discontinued) | No changes required |  *(5)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 38)         | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           |                    | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 38)     |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_axi_vdma_0_0              | Up-to-date                | No changes required |  *(6)     | AXI Video Direct   | 6.3     | 6.3 (Rev. 24)         | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           | Memory Access      | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 24)     |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_axis_dwidth_converter_0_0 | Up-to-date                | No changes required |  *(7)     | AXI4-Stream Data   | 1.1     | 1.1 (Rev. 34)         | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           | Width Converter    | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 34)     |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_axis_subset_converter_0_0 | Up-to-date                | No changes required |  *(8)     | AXI4-Stream Subset | 1.1     | 1.1 (Rev. 36)         | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           | Converter          | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 36)     |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_conv_0_0                  | Up-to-date                | No changes required | Change    | Conv               | 0.0     | 0.0 (Rev. 2114852358) | Included   | xc7z020clg484-2      |
+|                                    |                           |                     | Log not   |                    | (Rev.   |                       |            |                      |
+|                                    |                           |                     | available |                    | 2114852 |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_fc_0_0                    | Up-to-date                | No changes required | Change    | Fc                 | 0.0     | 0.0 (Rev. 2114852293) | Included   | xc7z020clg484-2      |
+|                                    |                           |                     | Log not   |                    | (Rev.   |                       |            |                      |
+|                                    |                           |                     | available |                    | 2114852 |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_processing_system7_0_0    | Up-to-date                | No changes required |  *(9)     | ZYNQ7 Processing   | 5.5     | 5.5 (Rev. 8)          | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           | System             | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 8)      |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_ps7_0_axi_periph_0        | Up-to-date (discontinued) | No changes required |  *(10)    | AXI Interconnect   | 2.1     | 2.1 (Rev. 38)         | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           |                    | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 38)     |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_pwdwconv_0_0              | Up-to-date                | No changes required | Change    | Pwdwconv           | 0.0     | 0.0 (Rev. 2114852378) | Included   | xc7z020clg484-2      |
+|                                    |                           |                     | Log not   |                    | (Rev.   |                       |            |                      |
+|                                    |                           |                     | available |                    | 2114852 |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_rgb888torgb565_0_0        | Up-to-date                | No changes required | Change    | rgb888torgb565_v1_ | 1.0     | 1.0 (Rev. 1)          | Included   | xc7z020clg484-2      |
+|                                    |                           |                     | Log not   |                    | (Rev.   |                       |            |                      |
+|                                    |                           |                     | available |                    | 1)      |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_rst_ps7_0_100M_0          | Up-to-date                | No changes required |  *(11)    | Processor System   | 5.0     | 5.0 (Rev. 17)         | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           | Reset              | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 17)     |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_shortcut_0_0              | Up-to-date                | No changes required | Change    | Shortcut           | 0.0     | 0.0 (Rev. 2114852292) | Included   | xc7z020clg484-2      |
+|                                    |                           |                     | Log not   |                    | (Rev.   |                       |            |                      |
+|                                    |                           |                     | available |                    | 2114852 |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_v_axi4s_vid_out_0_0       | Up-to-date                | No changes required |  *(12)    | AXI4-Stream to     | 4.0     | 4.0 (Rev. 20)         | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           | Video Out          | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 20)     |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_v_tc_0_0                  | Up-to-date                | No changes required |  *(13)    | Video Timing       | 6.2     | 6.2 (Rev. 11)         | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           | Controller         | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 11)     |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| design_1_v_vid_in_axi4s_0_0        | Up-to-date                | No changes required |  *(14)    | Video In to        | 5.0     | 5.0 (Rev. 7)          | Included   | xc7z020clg484-2      |
+|                                    |                           |                     |           | AXI4-Stream        | (Rev.   |                       |            |                      |
+|                                    |                           |                     |           |                    | 7)      |                       |            |                      |
++------------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+*(1) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/axi_cdma_v4_1/doc/axi_cdma_v4_1_changelog.txt
+*(2) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(3) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(4) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(5) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(6) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/axi_vdma_v6_3/doc/axi_vdma_v6_3_changelog.txt
+*(7) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/axis_dwidth_converter_v1_1/doc/axis_dwidth_converter_v1_1_changelog.txt
+*(8) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/axis_subset_converter_v1_1/doc/axis_subset_converter_v1_1_changelog.txt
+*(9) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/processing_system7_v5_5/doc/processing_system7_v5_5_changelog.txt
+*(10) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(11) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(12) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/v_axi4s_vid_out_v4_0/doc/v_axi4s_vid_out_v4_0_changelog.txt
+*(13) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/v_tc_v6_2/doc/v_tc_v6_2_changelog.txt
+*(14) d:/software/vivado2025.2/2025.2/Vivado/data/ip/xilinx/v_vid_in_axi4s_v5_0/doc/v_vid_in_axi4s_v5_0_changelog.txt
+
+

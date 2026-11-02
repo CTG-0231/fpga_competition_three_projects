@@ -1,0 +1,20 @@
+{
+  "snapshot_time": "2026-10-30T22:31:13.543324+08:00",
+  "workspace": "E:/fpga25_f",
+  "first_build_started": "2026-10-30T21:44:48+08:00",
+  "files": {
+    "build/vivado_2025_2/build.py": "5a2fe17a9aa5ede87cdf9a878fcaaef92dd0b3eff974b5ce1568d6a6023083f3",
+    "build/vivado_2025_2/check_inputs.py": "59ef657d1a9a96be86dd59832dc5b0ac9488a52f36844bda2d572bda209fe96b",
+    "build/vivado_2025_2/configure_single_id.tcl": "7affeea374a62da3536d4e9446e785b76c7db506901ca298020722fe3e17ab66",
+    "build/vivado_2025_2/flow.tcl": "5e1184b057962fa7f9b44472018b34f807118ea61fd813702d078010687a567e",
+    "build/vivado_2025_2/inspect_hls_export.py": "fba122083138113b68cc1e9f5c34a86108d486b5989a401bb5741cebdcf6599c",
+    "build/vivado_2025_2/invoke_vivado.ps1": "f1853ade8e2b32287869cd2cf1499b3b2b3356a92466da324cad7af73fad2839",
+    "build/vivado_2025_2/migrate.tcl": "1d54687eaf61a76e6f0d26c24f76af1f6ff63248338db41747533e2068565b86",
+    "build/vivado_2025_2/patch_bd.py": "181a2e1f994766bc2442fcab3c3662522f258255504fda2728ecefac76f5392a",
+    "build/vivado_2025_2/prepare_inputs.py": "150a495723724e024ec9463eb3f5974903607c31b0bd9e93c388220ecfba6794",
+    "build/vivado_2025_2/readme.md": "53f139c5c6749ccefc0606d76b628e14973c319c47065da2de25a313d96f8726",
+    "build/vivado_2025_2/resume.tcl": "d7fb8b3fa04b6ada20271c77fe60561436258c96410236398f1c4965542992d8",
+    "build/vivado_2025_2/review_single_id.py": "c7051a9a1e1291b0b821ed85ac5bec5038e95ffe60f275751d192ab3c6716d2a"
+  },
+  "scope": "Source version for the active first normal build, before planned corrections to unused resume-only branches. Logs record the Tcl commands actually executed."
+}

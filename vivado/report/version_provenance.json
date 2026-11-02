@@ -1,0 +1,60 @@
+{
+  "source_base_archive_sha256": "e2d4c2f93e4dd66c767f34a576250bd213d99a96d4b5439ea8ea2d404b00d070",
+  "previous_verified_2025_2_catalog": {
+    "schema": 1,
+    "description": "Lowercase object entries; native filenames are manifest data restored outside submission",
+    "snapshots": {
+      "legacy_hls": {
+        "archive": "src/hls/source_snapshot.zip",
+        "files": 2089,
+        "objects": 1310,
+        "sha256": "58d877dc63a50d9b9c1b7a7394096cae730fae2a777675c3634cc18f8aa82451",
+        "bytes": 142485942
+      },
+      "legacy_vivado": {
+        "archive": "src/vivado/source_snapshot.zip",
+        "files": 407,
+        "objects": 283,
+        "sha256": "169f8df879f28fb9d376c495345e046662b26c0f622c44d2ec356cd526b19fe4",
+        "bytes": 15211999
+      },
+      "legacy_vitis": {
+        "archive": "src/vitis/source_snapshot.zip",
+        "files": 2998,
+        "objects": 1522,
+        "sha256": "789e164f0621496d2327be102f5b0b8a21b7b11403151693a28692fdeb193b35",
+        "bytes": 20109008
+      },
+      "legacy_prepared": {
+        "archive": "build/inputs/prepared_snapshot.zip",
+        "files": 253,
+        "objects": 244,
+        "sha256": "6d615e953f84897aa74bab9a982b0f1fa2f6c7932f1723f12bb89a364916975e",
+        "bytes": 1552796
+      },
+      "hls_2025_2": {
+        "archive": "src/hls/source_2025_2.zip",
+        "files": 355,
+        "objects": 319,
+        "sha256": "8e05e74e179a54f21786aec06ebbfd6fba526b8fc97ccf2321f6ee02963da7ef",
+        "bytes": 1668298
+      },
+      "vivado_2025_2": {
+        "archive": "src/vivado/source_2025_2.zip",
+        "files": 919,
+        "objects": 713,
+        "sha256": "a7107e8dcd210e0b423280351e3c78867247b1eadc37e964e75e3a41efb02761",
+        "bytes": 34419733
+      },
+      "vitis_2025_2": {
+        "archive": "src/vitis/source_2025_2.zip",
+        "files": 2369,
+        "objects": 927,
+        "sha256": "9d6e56be11e2a43e718e6f2939d92cac0ec42e2e00e9d721bb37f98f0e713f7c",
+        "bytes": 9154238
+      }
+    }
+  },
+  "new_synthesis_executed_in_this_reorganization": false,
+  "new_tar_pynq_overlay_replaced": false
+}

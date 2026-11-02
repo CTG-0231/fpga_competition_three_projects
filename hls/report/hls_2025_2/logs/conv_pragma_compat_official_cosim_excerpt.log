@@ -1,0 +1,38 @@
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+--- last lines ---
+Time: 14645042600 ps  Iteration: 0  Process: /axi_pkg/axi_slave_sequence(LEN_WIDTH=8)::body/xilinx_isim_temp_352_ln230disable_fork_::_Block99_383
+
+  File: E:/fpga_work/qian_20261030_1/hls_migration/abi_2025_2_v1/projects/conv_pragma_compat2/solution1/sim/verilog/axivip/axi_slave_seq_lib.sv
+
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:37 . Memory (MB): peak = 228.453 ; gain = 0.000
+
+## quit
+
+INFO: xsimkernel Simulation Memory Usage: 19309092 KB (Peak: 19309092 KB), Simulation CPU Usage: 36702 ms
+
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 20:45:59 2026...
+
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:02:41; Allocated memory: 15.543 MB.
+
+command 'ap_source' returned error code
+
+    while executing
+
+"source E:/fpga_work/qian_20261030_1/hls_migration/abi_2025_2_v1/cosim_original/conv_pragma_compat/cosim.tcl"
+
+    ("uplevel" body line 1)
+
+    invoked from within
+
+"uplevel \#0 [list source $tclfile] "
+
+
+
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 2 seconds. Total elapsed time: 162.651 seconds; peak allocated memory: 145.730 MB.
+
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

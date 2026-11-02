@@ -1,0 +1,73 @@
+{
+  "scope": "12 canonical HLS algorithm source/header files",
+  "copies": [
+    {
+      "file": "avgpool_fc/fc.cpp",
+      "line": 14,
+      "statement": "memcpy((void*)buff,(const void*)(in+n*7*7),sizeof(data_t)*Tn*7*7);",
+      "dynamic_runtime_length": false
+    },
+    {
+      "file": "avgpool_fc/fc.cpp",
+      "line": 100,
+      "statement": "memcpy((void*)out,(const void*)out_buff,sizeof(data_t)*N);",
+      "dynamic_runtime_length": false
+    },
+    {
+      "file": "conv/conv.cpp",
+      "line": 37,
+      "statement": "memcpy((data_t*)wt_buff,(const data_t*)(weight+m*27),sizeof(data_t)*Tm*27);",
+      "dynamic_runtime_length": false
+    },
+    {
+      "file": "conv/conv.cpp",
+      "line": 123,
+      "statement": "memcpy((data_t*)bias_buff,(const data_t*)bias,sizeof(data_t)*32);",
+      "dynamic_runtime_length": false
+    },
+    {
+      "file": "pwdwconv/dwconv.cpp",
+      "line": 67,
+      "statement": "memcpy((data_t*)wt_buff,(const data_t*)(weight+K*K*m),sizeof(data_t)*Tm*K*K);",
+      "dynamic_runtime_length": false
+    },
+    {
+      "file": "pwdwconv/dwconv.cpp",
+      "line": 179,
+      "statement": "memcpy((data_t*)bias_buff,(const data_t*)bias,sizeof(data_t)*channel);",
+      "dynamic_runtime_length": true
+    },
+    {
+      "file": "pwdwconv/pwconv.cpp",
+      "line": 202,
+      "statement": "memcpy((data_t*)bias_buff,(const data_t*)bias,sizeof(data_t)*M);",
+      "dynamic_runtime_length": true
+    }
+  ],
+  "dynamic_partitioned_bias_copies": [
+    "pwdwconv/pwconv.cpp",
+    "pwdwconv/dwconv.cpp"
+  ],
+  "legacy_pw_storage": [
+    {
+      "path": "hls/pwdwconv/pwdwconv/solution1/impl/ip/hdl/verilog/pwconv_bias_buff_tde.v",
+      "sha256": "b5d0c2e8d512f1442a23e45973b31b00b4ba25f28ebe5fd78a6fa05340cb3131",
+      "memory_size": [
+        "64",
+        "32'd64"
+      ]
+    },
+    {
+      "path": "pynq_port/build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwconv_bias_buff_tde.v",
+      "sha256": "b5d0c2e8d512f1442a23e45973b31b00b4ba25f28ebe5fd78a6fa05340cb3131",
+      "memory_size": [
+        "64",
+        "32'd64"
+      ]
+    }
+  ],
+  "storage_fix": "Canonical PW MAX_LEN1024 preserved; compiled MAX_LEN1280 gives80 rows and passes final row79. Original HLS export and prepared IP both have64 rows/1024 values.",
+  "copy_call_count": 7,
+  "dynamic_copy_count": 2,
+  "constant_copy_count": 5
+}

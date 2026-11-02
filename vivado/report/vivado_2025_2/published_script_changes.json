@@ -1,0 +1,13 @@
+{
+  "changes": {
+    "build/vivado_2025_2/build.py": {
+      "actual_first_build_sha256": "5a2fe17a9aa5ede87cdf9a878fcaaef92dd0b3eff974b5ce1568d6a6023083f3",
+      "published_sha256": "1332a9d623d0fb70f07088b90b247b438187290df4d6ad619d442e8179ddce5c"
+    },
+    "build/vivado_2025_2/resume.tcl": {
+      "actual_first_build_sha256": "d7fb8b3fa04b6ada20271c77fe60561436258c96410236398f1c4965542992d8",
+      "published_sha256": "a6cdae1f33dd6e0e0d306f3e192079f1631da257ce54d6eda6916879379795d7"
+    }
+  },
+  "reason": "Only unused resume branches changed after successful first normal build. See resume_guard_validation.json; no AMD resume claimed."
+}

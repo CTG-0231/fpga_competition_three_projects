@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+  [bootloader] fsbl.elf
+  pl.bit
+  trash_app.elf
+}

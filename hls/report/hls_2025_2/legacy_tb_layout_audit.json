@@ -1,0 +1,270 @@
+{
+  "scope": "independent read-only PW TB layout review plus original-2019 RTL A/B using same bounded fixtures; no board, whole-network or timing proof",
+  "hardware_execution": false,
+  "original_rtl_simulation": "passed all four cases, 3920 int16 checks",
+  "new_2025_rtl_v3": "pointwise_act0_q10 index784 got xxxx expected2c7d",
+  "same_axi_memory_host_and_case_body_after_port_declarations": false,
+  "fixture_comparison": [
+    {
+      "file": "memory_0.hex",
+      "sha256": "7df26b9e6c3bca05c0deace6a0d1a6bbed178fc94fd2c9c06de25a86f4852c02",
+      "identical": true
+    },
+    {
+      "file": "memory_1.hex",
+      "sha256": "7df26b9e6c3bca05c0deace6a0d1a6bbed178fc94fd2c9c06de25a86f4852c02",
+      "identical": true
+    },
+    {
+      "file": "memory_2.hex",
+      "sha256": "626f3f570de1ce61a456af95118d31b6f7e49f623855ba50994a3a94904c9848",
+      "identical": true
+    },
+    {
+      "file": "memory_3.hex",
+      "sha256": "7cd0ebe6beb6a9b93f5099a53b985517f6074b96017f588a90a60028e95d5099",
+      "identical": true
+    },
+    {
+      "file": "expected_0.hex",
+      "sha256": "c4c72104ec182e23e9a8c3ac5026f23285a452738965b77a9ceb54284c20b257",
+      "identical": true
+    },
+    {
+      "file": "expected_1.hex",
+      "sha256": "e920f9ae5b18ef9dc077f227b6572e4bff6cf0ddfc1e37af0c2f97a3277766e8",
+      "identical": true
+    },
+    {
+      "file": "expected_2.hex",
+      "sha256": "07154bc1122e1d34adc2d06e66f8f663682f6d0cee2a5eb9dc87074afe762584",
+      "identical": true
+    },
+    {
+      "file": "expected_3.hex",
+      "sha256": "5774c535b4e41515fd9995634b46a836ec2b6176a72f766c3bd38770294f878f",
+      "identical": true
+    }
+  ],
+  "legacy_result": {
+    "kernel": "pwdwconv",
+    "component_xml": "E:\\fpga_work\\qian_20261030_1\\restructured_native\\src\\hls\\pwdwconv\\pwdwconv\\solution1\\impl\\ip\\component.xml",
+    "cases": [
+      {
+        "name": "pointwise_act0_q10",
+        "expected_values": 1176,
+        "expected_sha256": "c4c72104ec182e23e9a8c3ac5026f23285a452738965b77a9ceb54284c20b257",
+        "register_writes": {
+          "16": 4096,
+          "24": 131072,
+          "32": 131072,
+          "40": 262144,
+          "48": 196608,
+          "56": 196608,
+          "64": 16,
+          "72": 24,
+          "80": 1,
+          "88": 7,
+          "96": 0,
+          "104": 1
+        },
+        "memory_input_sha256": "7df26b9e6c3bca05c0deace6a0d1a6bbed178fc94fd2c9c06de25a86f4852c02"
+      },
+      {
+        "name": "pointwise_act1_q10",
+        "expected_values": 1176,
+        "expected_sha256": "e920f9ae5b18ef9dc077f227b6572e4bff6cf0ddfc1e37af0c2f97a3277766e8",
+        "register_writes": {
+          "16": 4096,
+          "24": 131072,
+          "32": 131072,
+          "40": 262144,
+          "48": 196608,
+          "56": 196608,
+          "64": 16,
+          "72": 24,
+          "80": 1,
+          "88": 7,
+          "96": 1,
+          "104": 1
+        },
+        "memory_input_sha256": "7df26b9e6c3bca05c0deace6a0d1a6bbed178fc94fd2c9c06de25a86f4852c02"
+      },
+      {
+        "name": "depthwise_stride1_q10",
+        "expected_values": 784,
+        "expected_sha256": "07154bc1122e1d34adc2d06e66f8f663682f6d0cee2a5eb9dc87074afe762584",
+        "register_writes": {
+          "16": 4096,
+          "24": 4096,
+          "32": 262144,
+          "40": 262144,
+          "48": 131072,
+          "56": 196608,
+          "64": 16,
+          "72": 16,
+          "80": 1,
+          "88": 7,
+          "96": 1,
+          "104": 0
+        },
+        "memory_input_sha256": "626f3f570de1ce61a456af95118d31b6f7e49f623855ba50994a3a94904c9848"
+      },
+      {
+        "name": "depthwise_stride2_q10",
+        "expected_values": 784,
+        "expected_sha256": "5774c535b4e41515fd9995634b46a836ec2b6176a72f766c3bd38770294f878f",
+        "register_writes": {
+          "16": 4096,
+          "24": 4096,
+          "32": 262144,
+          "40": 262144,
+          "48": 131072,
+          "56": 196608,
+          "64": 16,
+          "72": 16,
+          "80": 2,
+          "88": 14,
+          "96": 1,
+          "104": 0
+        },
+        "memory_input_sha256": "7cd0ebe6beb6a9b93f5099a53b985517f6074b96017f588a90a60028e95d5099"
+      }
+    ],
+    "rtl_sources": {
+      "compute.v": "16aff7f3b0f0584f2c48f12f356576d18767311d3dc4d042e7d727601c945464",
+      "compute_1.v": "b62fc70edb375e0058f605754ee202d8053017cbc5d00a7afad919f7a6d86349",
+      "compute_output.v": "322cd07aed1e373c301e53a22ebbd7d99217945eb80bcb6ace5c38353cc497e6",
+      "compute_output_fmibs.v": "5f1b9888a691d80bee362bc2d539453ce2023cbe249ee90a62a4b6d775ada2a4",
+      "dwconv.v": "5faecdaedd9d75f4ebaa32f061f3f48ffd44f97859add7e9e16a2060ef14128b",
+      "dwconv_bias_buff_bom.v": "3709b0341db0c1a92c6bdba5ae1f54058d57a62378a768569d7f6fd173c1c050",
+      "dwconv_fm_in_buffShg.v": "5bb5b7e437418ff6bae02a361474a37d4ce187492ef1ba1e29cef97be15c60dc",
+      "dwconv_fm_out_buf8jQ.v": "a01e87ce864ca26dac1134576da5840127b0289c0b34222407e0e0c16129fbc6",
+      "dwconv_wt_buff1_0_V.v": "095eecac7cc8eb9cef9e42a10a8ce65e482a77cda916822de7460b84712cecf1",
+      "load_bias.v": "ef288ffd0c82c885a2f110c0649fb88459e0d1d13cc3e6cf79d0fa23022faa9e",
+      "load_input.v": "8c775019f355886fa042f650d2c643042bf61d4606034bf10251864042555a59",
+      "load_input_1.v": "d07b6ff7ee9c9877297a6c4646c049fae6ee86cbf2678a23dd46f3762c4a97cb",
+      "load_weight.v": "fdebbb3708a48006182c7776e583d36eb0316292f562e0ecb2f236ad02f9b6b2",
+      "load_weight_1.v": "c92ee1e5213ff8c757ea608bbc7be92a77dc05698a6e8afb966da6af28e844d9",
+      "load_wrapper.v": "12d5ce617f3e256a7c9f9192b736d2800e8b9e622c96eb818d4020cf49ceaad1",
+      "pwconv.v": "cd04171f64a934e93f1217fe6238672b8234a51b75caf96a680706997907e5ec",
+      "pwconv_bias_buff_tde.v": "b5d0c2e8d512f1442a23e45973b31b00b4ba25f28ebe5fd78a6fa05340cb3131",
+      "pwconv_fm_out1_0_V.v": "b0ca46b8633d6538a692ecebe9ce3bee03c61b8bb48e9cf5834106d8fb90f910",
+      "pwdwconv.v": "f03e332c8eafad6f106a38b64856f869a6796ea0bf19ee9905cd01985baa232f",
+      "pwdwconv_am_addmufYi.v": "d6749bca7b088313dff0b35f7acb752c0ff8b53e9534e718161839ef95166549",
+      "pwdwconv_am_addmug8j.v": "b6cb3d286b694bae26bede6c7e8456a663324667fc1eefa01e849b58b4867fbf",
+      "pwdwconv_CTRL_s_axi.v": "4ed9f1866b0822864c8edacb8d77bed03b34ed05258b5d2f2da1fa0b9c904db9",
+      "pwdwconv_mac_mulaOgC.v": "144d8b825673eaf46d02b69d82f8a0fc701ff0eea97769b5cf7508c5438f671f",
+      "pwdwconv_mac_mulaPgM.v": "309d860a4f2d99db45ba5e2dd2b572c9190f46d35afa9e63a78b7f973a388732",
+      "pwdwconv_mul_16nsMgi.v": "f373a502ac23834d3dd0a6836e43bc3121deeb33fb2f3cb94d31367f9f6ad1cc",
+      "pwdwconv_mul_16nsqcK.v": "545d1b33657546d8e26be68bbac053fa2067f75855763dffb07c7b133add458c",
+      "pwdwconv_mul_31s_sc4.v": "09ff86617f438d5eb7497a9604be27e732b0a3c34fa0d2d41dcc39120fa0613a",
+      "pwdwconv_mul_32s_bkb.v": "91b67344fee33713c9cefa42f382be5930a1a5d1749165d10d54ed2541e4319a",
+      "pwdwconv_mul_32s_JfO.v": "65a5166f691419f37728b05776834e9fe1277ae00eb978300766b846e00da070",
+      "pwdwconv_mul_32s_KfY.v": "9d38ff018ce9c3dccc5ac2b5eca5e57e528d52304264bc7980b489da9e59ad75",
+      "pwdwconv_mul_32s_Rg6.v": "48d3407091e0bfadb1817c5cfe22a3eba91be89977adaf1c1e36209fca9f658e",
+      "pwdwconv_mul_mul_cud.v": "d62da6c295f28b6332bd54b3d1d54d1420f1659f48077b6dd519bf5b3414d5f0",
+      "pwdwconv_mul_mul_hbi.v": "3f0ac1b9f104603225cd9511caf5fa8a5aa399616ebfb67c4b690b03e4f3ebeb",
+      "pwdwconv_mux_164_dEe.v": "fd40801f114f9e771eb15cfbece3eb4f3d7f972973a063ba3bb62479f49c0e60",
+      "pwdwconv_mux_164_eOg.v": "051b87b23b99e914a392015f56a206ce61eedd259d8ff09e488239ae86fc6673",
+      "pwdwconv_PBUS1_m_axi.v": "6a7387b434e501b96b7a956b17d2f4bfafd1db512f706615e34ce966b7a8139a",
+      "pwdwconv_PBUS2_m_axi.v": "47cf3e8c2db6eacabff133cc5710769f46734d8bdda2de7c99a0a6df6eabaf0f",
+      "pwdwconv_PBUS3_m_axi.v": "195c33dba00cab9266ebfd032b209ae81205dc4872339517cccf5c8816da5044",
+      "pwdwconv_PBUS4_m_axi.v": "cc80818541945bee16c2247533d74e55c15428810d51dcf7f2ff38732f5cc560",
+      "pwdwconv_SBUS1_m_axi.v": "3bf410d83d10d7f17f4a89ad1ccb59c43a02b21a3dd559b0b878c1e677bde581",
+      "pwdwconv_SBUS2_m_axi.v": "163a41911930b7655d98093bfe417d93087aa0a4ff335f73bad8f614160ab044",
+      "pwdwconv_urem_38nrcU.v": "6d9bacf49c6f295c1b9382d70e8b29b4c56256f4b95b72c3dbb811f7b2372718",
+      "pwdwconv_urem_6nsQgW.v": "b0daa94cfaf42bf85b34e8e2e9d47263994330952f0980307ccc4ff995742f43",
+      "pwdwconv_urem_7nsNgs.v": "078fb11f670181ef00395d28a898fcb087301da96d5fdc3e8b14b2a6e7cd05c7",
+      "pwdwconv_urem_8nsLf8.v": "f9c99606e1bba62de00d75f49c481ee0cc8dac2656d4a77a060e666f61946c58",
+      "store_output.v": "ed5a5145aaa0cba7727c645d670dbf6243ccaab61cbf8ac15092020fb631999f",
+      "store_output_1.v": "75c9984387e99736d73873adf319edbe70bb6a5dc242c06587e75255e78eba72",
+      "update_three_block.v": "236e10857eb0540895fe0543c17fe7651f63ab5eb655cd2c29c7c29182a946e7"
+    },
+    "scope": "top RTL AXI-Lite CTRL + all DMA buses with independent integer Q10 reference",
+    "limitations": [
+      "one outstanding burst per memory port",
+      "no randomized stalls",
+      "bounded deterministic vectors, not whole-model equivalence",
+      "no implementation timing or hardware board validation"
+    ],
+    "status": "pass",
+    "started_at": "2026-10-30T21:20:15+0800",
+    "exit_code": 0,
+    "markers": [
+      "CASE_PASS pointwise_act0_q10 values=1176 cycles=996",
+      "CASE_PASS pointwise_act1_q10 values=1176 cycles=1992",
+      "CASE_PASS depthwise_stride1_q10 values=784 cycles=3285",
+      "CASE_PASS depthwise_stride2_q10 values=784 cycles=4752",
+      "RTL_FUNCTIONAL_PASS kernel=pwdwconv checks=3920 read_beats=2448 write_beats=980 cycles=4752"
+    ],
+    "finished_at": "2026-10-30T21:21:18+0800"
+  },
+  "layout_findings": [],
+  "evidence_lines": {
+    "build/validate_hls_rtl.py": [
+      30,
+      85,
+      87,
+      88,
+      98,
+      99,
+      100,
+      101,
+      277
+    ],
+    "src/hls/pwdwconv/pwdwconv.cpp": [
+      28
+    ],
+    "src/hls/pwdwconv/pwconv.cpp": [
+      31,
+      48,
+      49,
+      94,
+      110,
+      119,
+      202,
+      225
+    ],
+    "src/hls/pwdwconv/pwconv.h": [
+      4,
+      5,
+      6
+    ],
+    "src/trash_pynq/kernels.py": [
+      90,
+      95,
+      97,
+      98
+    ]
+  },
+  "conclusions": [
+    "Input packing group4/pixel/lane matches load_input(n/4*size^2+pixel).",
+    "Row-major weight[m][n] matches both pointer readers, which share the weight base; external32x16 int16 weights cover both complete Tm16 tiles.",
+    "32 bias scalars externally available; memcpy(M24) logically initializes valid bias[0..23]. Internally unused lanes24..31 do not explain valid tail16..23 under C semantics.",
+    "Output valid24*49 scalars, first tail index784 atbyte0x40620; max_ch=min(Tm,M-m) stores only8 channels in second tile.",
+    "Both old/new PBUS64/SBUS32 and1-bitIDs match. Functional memory/host body is identical; current legacy bench additionally asserts zero/known AXI IDs."
+  ],
+  "memory_inclusive_bounds": {
+    "input": [
+      "0x1000",
+      "0x161f"
+    ],
+    "weight32x16": [
+      "0x20000",
+      "0x203ff"
+    ],
+    "bias32": [
+      "0x30000",
+      "0x3003f"
+    ],
+    "output24x49": [
+      "0x40000",
+      "0x4092f"
+    ]
+  },
+  "legacy_ip_authenticity": "component.xml plus48 exportedVerilog49 files were compared byte SHA256 with supplied legacy_hls snapshot records and all matched",
+  "not_concluded": "Root cause is not proven solely by A/B; HLS agent is independently tracing new RTL bias row1 initialization. No algorithm/TB/runtime source changed by this audit.",
+  "body_delta": "Current generator adds18 nonzero/unknown AXI-ID fatal assertions absent in new-v3 fixture; after removing only these assertions, all memory-model, AXI-Lite host and test-case body lines are exactly equal.",
+  "same_axi_memory_host_and_case_body_after_assertions_only_removed": true
+}

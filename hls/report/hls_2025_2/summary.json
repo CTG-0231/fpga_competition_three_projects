@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-10-30T21:45:00.814193+08:00",
+  "source_algorithm_count": 12,
+  "original_testbench_count": 5,
+  "original_all_17_sha256_pass": true,
+  "compile_modified_file_count": 4,
+  "all_four_csynth_export_2025_2_pass": true,
+  "register_offset_width_and_model_port_gate_pass": true,
+  "all_four_independent_top_rtl_q10_pass": true,
+  "rtl_checks_total": 521382,
+  "official_hls_cosim_all_pass": false,
+  "board_validated": false,
+  "final_ip_repo": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\final_ip_repo",
+  "minimal_native_root": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\minimal_native_2025_2",
+  "final_components": {
+    "conv": {
+      "vlnv": "xilinx.com:hls:conv:0.0",
+      "component_sha256": "a2b6c44dbbe0a89892eb209cb818a31fd3673d900ccd37a3479720845ade1359",
+      "ip_dir": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\final_ip_repo\\conv"
+    },
+    "pwdwconv": {
+      "vlnv": "xilinx.com:hls:pwdwconv:0.0",
+      "component_sha256": "c26a6b7b501aad6653b86dc8763b16a69d8619cf6b22b2d5231f0a5bce3f3e01",
+      "ip_dir": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\final_ip_repo\\pwdwconv"
+    },
+    "fc": {
+      "vlnv": "xilinx.com:hls:fc:0.0",
+      "component_sha256": "76ba73091940aa10c45251897054b6f4dd72521a98edb4bf74f92169172b51eb",
+      "ip_dir": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\final_ip_repo\\fc"
+    },
+    "shortcut": {
+      "vlnv": "xilinx.com:hls:shortcut:0.0",
+      "component_sha256": "ef11406a13ef613581d4ccdcd76b61588960ea86ea039619725cbd4f51135409",
+      "ip_dir": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\final_ip_repo\\shortcut"
+    }
+  },
+  "limitations": [
+    "Not full network or board validation",
+    "Independent AXI model permits one outstanding burst and no randomized stalls",
+    "BD-visible ID pins require separately audited Vivado instance configuration",
+    "Tool timing estimates are not placed-and-routed timing results"
+  ],
+  "portable_rebuild_all_four_verilog_byte_identical": true,
+  "portable_rebuild_verification": "portable_rebuild_verification.json",
+  "final_pwdw_csim_original_tb_pairs": 18816,
+  "final_pwdw_csim_original_tb_mismatches": 0,
+  "log_gate_positive_count": 4,
+  "log_gate_negative_exit_code": 1
+}

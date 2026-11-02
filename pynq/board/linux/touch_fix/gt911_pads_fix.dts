@@ -1,0 +1,23 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    fragment@0 {
+        target-path = "/amba/slcr@f8000000/pinctrl@700/leaf-i2c0-default";
+        __overlay__ {
+            conf {
+                pins = "MIO50", "MIO51";
+                bias-pull-up;
+            };
+        };
+    };
+    fragment@1 {
+        target-path = "/amba/slcr@f8000000/pinctrl@700/leaf-touch-gpio-default";
+        __overlay__ {
+            conf {
+                pins = "MIO0";
+                bias-disable;
+            };
+        };
+    };
+};

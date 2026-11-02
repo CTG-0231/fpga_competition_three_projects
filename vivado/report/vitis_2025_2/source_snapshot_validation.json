@@ -1,0 +1,11 @@
+{
+  "archive": "src/vitis/source_2025_2.zip",
+  "files": 2369,
+  "objects": 927,
+  "sha256": "9d6e56be11e2a43e718e6f2939d92cac0ec42e2e00e9d721bb37f98f0e713f7c",
+  "bytes": 9154238,
+  "group": "vitis_2025_2",
+  "restored_files": 2369,
+  "all_file_hashes_verified": true,
+  "board_execution": false
+}

@@ -1,0 +1,18 @@
+
+****** Xilinx Vitis Development Environment
+****** Vitis v2025.2 (64-bit)
+****** SW Build 6295257 on 2025-11-13-08:29:30
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Vitis Server started on port '55265'.
+Vitis Server for Embedded Edition. Only embedded component related functions are supported.
+Shutting down Vitis server running on port '55265'
+Traceback (most recent call last):
+  File "E:\fpga_work\qian_20261030_1\fpga_competition\src\vitis\scripts\build_app.py", line 14, in <module>
+    client.set_workspace(str(WORKSPACE))
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\software\vivado2025.2\2025.2\Vitis\cli\vitis\cli_client.py", line 149, in set_workspace
+    raise exc_type(f"{exc_value}") from None
+Exception: [31m[31mCannot set workspace, status = StatusCode.FAILED_PRECONDITION,
+                                details = 'The workspace 'E:\fpga_work\qian_20261030_1\vitis_migration_final_retry1\workspace' is already in use.'[0m'[0m

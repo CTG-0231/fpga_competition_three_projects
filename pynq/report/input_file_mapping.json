@@ -1,0 +1,3863 @@
+[
+  {
+    "original": "__pycache__/lanuch.cpython-38.pyc",
+    "original_sha256": "7abe02ebea25cea37e5a9335753ad0a487e315ba4a7b4182d5804aa01aa43d09",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "API_REFERENCE_CN.md",
+    "original_sha256": "a08644cc052835baa3e645aef9b506fa7f75c24dc1cec6bbc2efaba0154c07fb",
+    "preserved_in_snapshot": true,
+    "current_path": "report/original_docs/api_reference_cn.md",
+    "current_sha256": "a08644cc052835baa3e645aef9b506fa7f75c24dc1cec6bbc2efaba0154c07fb",
+    "content_changed": false
+  },
+  {
+    "original": "board/.ipynb_checkpoints/00_one_click_start-checkpoint.ipynb",
+    "original_sha256": "2483f8dcc5f6d00eb898dadcbfec21e095b02588e353788495d6b51bd70b631a",
+    "preserved_in_snapshot": true,
+    "current_path": "board/.ipynb_checkpoints/00_one_click_start-checkpoint.ipynb",
+    "current_sha256": "2483f8dcc5f6d00eb898dadcbfec21e095b02588e353788495d6b51bd70b631a",
+    "content_changed": false
+  },
+  {
+    "original": "board/.ipynb_checkpoints/01_bringup_and_demo_optimized-checkpoint.ipynb",
+    "original_sha256": "7e7b63051c59c4665ec266b9bff8273d5aeb9f65276a62eac434916dc54f3ce5",
+    "preserved_in_snapshot": true,
+    "current_path": "board/.ipynb_checkpoints/01_bringup_and_demo_optimized-checkpoint.ipynb",
+    "current_sha256": "7e7b63051c59c4665ec266b9bff8273d5aeb9f65276a62eac434916dc54f3ce5",
+    "content_changed": false
+  },
+  {
+    "original": "board/00_one_click_start.ipynb",
+    "original_sha256": "4f4ad92b026f70ae18c1ad8c2883d5f565696eecb4efa5d0fbb184f9fd2044af",
+    "preserved_in_snapshot": true,
+    "current_path": "board/00_one_click_start.ipynb",
+    "current_sha256": "5b67151e9abb92132f449cc60fe00b3ebb9ed90db7bc782279f43a705b25da7e",
+    "content_changed": true
+  },
+  {
+    "original": "board/01_bringup_and_demo.ipynb",
+    "original_sha256": "9878c3172ce8104f842e64ce1034e2d92accb22113930591862c0b9c763e4904",
+    "preserved_in_snapshot": true,
+    "current_path": "board/01_bringup_and_demo.ipynb",
+    "current_sha256": "9878c3172ce8104f842e64ce1034e2d92accb22113930591862c0b9c763e4904",
+    "content_changed": false
+  },
+  {
+    "original": "board/01_bringup_and_demo_optimized.ipynb",
+    "original_sha256": "c6e13a3e7e06ca6ac60bfe37e1868a7f7b2cb30031168358cdeddbaad3a54670",
+    "preserved_in_snapshot": true,
+    "current_path": "board/01_bringup_and_demo_optimized.ipynb",
+    "current_sha256": "c6e13a3e7e06ca6ac60bfe37e1868a7f7b2cb30031168358cdeddbaad3a54670",
+    "content_changed": false
+  },
+  {
+    "original": "board/__pycache__/infer_file.cpython-38.pyc",
+    "original_sha256": "46cf2620205e0c5de647af9aeee3545688963d71c645512ff6a4714b2d34ed9e",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "board/infer_file.py",
+    "original_sha256": "a75fb9fbab217b34be2787da29487f104f8d66c7ce757418b1c618ef8fa0fa6e",
+    "preserved_in_snapshot": true,
+    "current_path": "board/infer_file.py",
+    "current_sha256": "a75fb9fbab217b34be2787da29487f104f8d66c7ce757418b1c618ef8fa0fa6e",
+    "content_changed": false
+  },
+  {
+    "original": "board/linux/boot_patch/image.ub",
+    "original_sha256": "39b17b17ff7f37becc800319801df628ae779c8490f97d5fea7427d453f05d6c",
+    "preserved_in_snapshot": true,
+    "current_path": "board/linux/boot_patch/image.ub",
+    "current_sha256": "39b17b17ff7f37becc800319801df628ae779c8490f97d5fea7427d453f05d6c",
+    "content_changed": false
+  },
+  {
+    "original": "board/linux/boot_patch/manifest.json",
+    "original_sha256": "25c8e4c0f29748e0b7ec8be117662acf6b5fdaf776eb757c660797161afb33e1",
+    "preserved_in_snapshot": true,
+    "current_path": "board/linux/boot_patch/manifest.json",
+    "current_sha256": "25c8e4c0f29748e0b7ec8be117662acf6b5fdaf776eb757c660797161afb33e1",
+    "content_changed": false
+  },
+  {
+    "original": "board/linux/leaf_peripherals.dtbo",
+    "original_sha256": "8fc46115c592293735fbcd70c850d2d73c157a1cfd35784cb7dec217660a9b48",
+    "preserved_in_snapshot": true,
+    "current_path": "board/linux/leaf_peripherals.dtbo",
+    "current_sha256": "8fc46115c592293735fbcd70c850d2d73c157a1cfd35784cb7dec217660a9b48",
+    "content_changed": false
+  },
+  {
+    "original": "board/linux/leaf_peripherals.dts",
+    "original_sha256": "702310d4c5812b72046910938c03a455723370da74479d08d514c7ed72d7c3ef",
+    "preserved_in_snapshot": true,
+    "current_path": "board/linux/leaf_peripherals.dts",
+    "current_sha256": "702310d4c5812b72046910938c03a455723370da74479d08d514c7ed72d7c3ef",
+    "content_changed": false
+  },
+  {
+    "original": "board/linux/leaf_peripherals.dtsi",
+    "original_sha256": "4c74f60d7e71f328dc931504576ca004bf48e73cdd87baca87a0602989235660",
+    "preserved_in_snapshot": true,
+    "current_path": "board/linux/leaf_peripherals.dtsi",
+    "current_sha256": "4c74f60d7e71f328dc931504576ca004bf48e73cdd87baca87a0602989235660",
+    "content_changed": false
+  },
+  {
+    "original": "board/linux/README.md",
+    "original_sha256": "67c41b3494ce87e10738b35743cdd2a3975071c25fbbd68b8960fdd8ba4194d3",
+    "preserved_in_snapshot": true,
+    "current_path": "board/linux/README.md",
+    "current_sha256": "67c41b3494ce87e10738b35743cdd2a3975071c25fbbd68b8960fdd8ba4194d3",
+    "content_changed": false
+  },
+  {
+    "original": "board/linux/touch_fix/__pycache__/ac820-touch-pinctrl.cpython-38.pyc",
+    "original_sha256": "f95f2193a8bda4f02f711b514a1e994837dc071f01f90b44c974bd9f082a0e4a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "board/linux/touch_fix/ac820-touch-pinctrl.py",
+    "original_sha256": "572644400e783493c8faac5bd0adcc6e047c78e83c88632f3689363acfbebbd4",
+    "preserved_in_snapshot": true,
+    "current_path": "board/linux/touch_fix/ac820-touch-pinctrl.py",
+    "current_sha256": "572644400e783493c8faac5bd0adcc6e047c78e83c88632f3689363acfbebbd4",
+    "content_changed": false
+  },
+  {
+    "original": "board/linux/touch_fix/ac820-touch-pinctrl.service",
+    "original_sha256": "643bf216468fdb91362261d1db4358ee36d9dc82cc28e0a35fe5ba9ff63b4398",
+    "preserved_in_snapshot": true,
+    "current_path": "board/linux/touch_fix/ac820-touch-pinctrl.service",
+    "current_sha256": "643bf216468fdb91362261d1db4358ee36d9dc82cc28e0a35fe5ba9ff63b4398",
+    "content_changed": false
+  },
+  {
+    "original": "board/linux/touch_fix/gt911_pads_fix.dtbo",
+    "original_sha256": "32e2889a68310f618fe81ff092079325e78720a510d18a56c17807c1f53e6821",
+    "preserved_in_snapshot": true,
+    "current_path": "board/linux/touch_fix/gt911_pads_fix.dtbo",
+    "current_sha256": "32e2889a68310f618fe81ff092079325e78720a510d18a56c17807c1f53e6821",
+    "content_changed": false
+  },
+  {
+    "original": "board/linux/touch_fix/gt911_pads_fix.dts",
+    "original_sha256": "db9d50a9691f70a9cd031fef291637b32a7eba89f6e0996dc00973f532b505ab",
+    "preserved_in_snapshot": true,
+    "current_path": "board/linux/touch_fix/gt911_pads_fix.dts",
+    "current_sha256": "db9d50a9691f70a9cd031fef291637b32a7eba89f6e0996dc00973f532b505ab",
+    "content_changed": false
+  },
+  {
+    "original": "board/linux/touch_fix/README.md",
+    "original_sha256": "9439f520aa9e7b5c28b14aeeaae276aa3c91fa432473dae2cced5510cc7320f3",
+    "preserved_in_snapshot": true,
+    "current_path": "board/linux/touch_fix/README.md",
+    "current_sha256": "9439f520aa9e7b5c28b14aeeaae276aa3c91fa432473dae2cced5510cc7320f3",
+    "content_changed": false
+  },
+  {
+    "original": "board/overlays/1v8/design_1_reference.tcl",
+    "original_sha256": "ae9cd1ee8c76e06510f9c2be8e14f5e717d6dbc24958ba07e813c5d319a9b33f",
+    "preserved_in_snapshot": true,
+    "current_path": "board/overlays/1v8/design_1_reference.tcl",
+    "current_sha256": "ae9cd1ee8c76e06510f9c2be8e14f5e717d6dbc24958ba07e813c5d319a9b33f",
+    "content_changed": false
+  },
+  {
+    "original": "board/overlays/1v8/leaf.bit",
+    "original_sha256": "65a3258f77962381583c65474dce849b5cf5187f2067476d47d9f96087572659",
+    "preserved_in_snapshot": true,
+    "current_path": "board/overlays/1v8/leaf.bit",
+    "current_sha256": "65a3258f77962381583c65474dce849b5cf5187f2067476d47d9f96087572659",
+    "content_changed": false
+  },
+  {
+    "original": "board/overlays/1v8/leaf.hwh",
+    "original_sha256": "443d9dfca798825c6a2ad817e8a0d0dab8bb47f388213a1ae1e53bfbada09ec4",
+    "preserved_in_snapshot": true,
+    "current_path": "board/overlays/1v8/leaf.hwh",
+    "current_sha256": "443d9dfca798825c6a2ad817e8a0d0dab8bb47f388213a1ae1e53bfbada09ec4",
+    "content_changed": false
+  },
+  {
+    "original": "board/overlays/1v8/manifest.json",
+    "original_sha256": "498de3d60fff79f810aba8ac9ff879679b3830a5481a90a22d18381c82863184",
+    "preserved_in_snapshot": true,
+    "current_path": "board/overlays/1v8/manifest.json",
+    "current_sha256": "498de3d60fff79f810aba8ac9ff879679b3830a5481a90a22d18381c82863184",
+    "content_changed": false
+  },
+  {
+    "original": "board/overlays/3v3/design_1_reference.tcl",
+    "original_sha256": "ae9cd1ee8c76e06510f9c2be8e14f5e717d6dbc24958ba07e813c5d319a9b33f",
+    "preserved_in_snapshot": true,
+    "current_path": "board/overlays/3v3/design_1_reference.tcl",
+    "current_sha256": "ae9cd1ee8c76e06510f9c2be8e14f5e717d6dbc24958ba07e813c5d319a9b33f",
+    "content_changed": false
+  },
+  {
+    "original": "board/overlays/3v3/leaf.bit",
+    "original_sha256": "22c3d981440b32a197cef94d61f2de6cc62610ae0f7cb7fc633f62e90a744a1e",
+    "preserved_in_snapshot": true,
+    "current_path": "board/overlays/3v3/leaf.bit",
+    "current_sha256": "22c3d981440b32a197cef94d61f2de6cc62610ae0f7cb7fc633f62e90a744a1e",
+    "content_changed": false
+  },
+  {
+    "original": "board/overlays/3v3/leaf.hwh",
+    "original_sha256": "443d9dfca798825c6a2ad817e8a0d0dab8bb47f388213a1ae1e53bfbada09ec4",
+    "preserved_in_snapshot": true,
+    "current_path": "board/overlays/3v3/leaf.hwh",
+    "current_sha256": "443d9dfca798825c6a2ad817e8a0d0dab8bb47f388213a1ae1e53bfbada09ec4",
+    "content_changed": false
+  },
+  {
+    "original": "board/overlays/3v3/manifest.json",
+    "original_sha256": "66eaea005f0992d39bc66b21a749e3c63edc90616690f848a4ddd5a13bc73c3f",
+    "preserved_in_snapshot": true,
+    "current_path": "board/overlays/3v3/manifest.json",
+    "current_sha256": "66eaea005f0992d39bc66b21a749e3c63edc90616690f848a4ddd5a13bc73c3f",
+    "content_changed": false
+  },
+  {
+    "original": "build/__pycache__/inspect_fdt.cpython-38.pyc",
+    "original_sha256": "ddc7e964eb171166d3cc07b5bb636d7437063584e34591f218ead2aeea83ff35",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/__pycache__/repack_fit.cpython-38.pyc",
+    "original_sha256": "a3093f0a01df03a60eeae8968364ef52d60b5947d60df4b9084c1508790eee0f",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/doctor.py",
+    "original_sha256": "2e3f94ff22a0bf107c4dce5a067c9047f1a6c9bb43fb75324cd0f89aa0ffb5e3",
+    "preserved_in_snapshot": true,
+    "current_path": "build/doctor.py",
+    "current_sha256": "2e3f94ff22a0bf107c4dce5a067c9047f1a6c9bb43fb75324cd0f89aa0ffb5e3",
+    "content_changed": false
+  },
+  {
+    "original": "build/export_overlay.py",
+    "original_sha256": "6b2cba84ae74867578e7b1958e514bfb1758660dc256806f2d8a88821a4d4eac",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/inspect_boot_image.py",
+    "original_sha256": "cf04606ccce556834a685dce2625508f7cae75190a3111ed248e40a6d1ccfba1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/inspect_fdt.py",
+    "original_sha256": "0ba72e0219008c8537175a8f48a19f24f28fd953b3a2fd41dcfd1628fea9a491",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/install/check_ready.ps1",
+    "original_sha256": "2d43948c1151275c81bce9e779ab781987ddf573d9a8075a41dc76515f078650",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/install/CONFIG_REVIEW.md",
+    "original_sha256": "676e3b1f49c58bd991f458af4cd2eb131cd29e81ac93b9ebe75972f8989be4e9",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/make_notebook.py",
+    "original_sha256": "86280593bb3701a2e30db1aceee60f0c988c46ab5cb83f4d7f7fb1d83ebf8fcc",
+    "preserved_in_snapshot": true,
+    "current_path": "build/make_notebook.py",
+    "current_sha256": "86280593bb3701a2e30db1aceee60f0c988c46ab5cb83f4d7f7fb1d83ebf8fcc",
+    "content_changed": false
+  },
+  {
+    "original": "build/native_fdtoverlay.c",
+    "original_sha256": "41c3f7bafd047d45c0ece9b22c847304c30400dd33b08634081d97e05c5eddd1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/package_release.py",
+    "original_sha256": "f3c3873a75bf0f7367c93b7efdfd0ec49ce4729a2d098833e41049346b935e9d",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/prepare_vivado.py",
+    "original_sha256": "b843e6bcef3e5d466f732cc81a6b1901dffd56820881dcb812bf778956477900",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/rebuild_from_project.tcl",
+    "original_sha256": "1b9a6abbed2554d4daf7573e042b3636f7a23b872e86ccb52378c9d212e85557",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/rebuild_hls.tcl",
+    "original_sha256": "b30cb36c09dab268b53936217dccf9b2d34f3292880c10fe3d7c3ba18c9d798d",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/reference/check_components.py",
+    "original_sha256": "43268c3615e851257b011dd8c75f0ca4369d55f520c6fede83c742a452ad6710",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/reference/hls_components.cpp",
+    "original_sha256": "2ff7aa43ec9a15832f080cf0be690185cf9e71dd808385b4fe9c9ef6b4c99567",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/reference/probe.cpp",
+    "original_sha256": "92e558daa4b0035fdba73e5e85dc355554e005bbb687dde915671cb5cbf19b62",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/repack_fit.py",
+    "original_sha256": "5ff7928680dbb9ad62dbe16db928990da54286481384c71493284c77ad1185e8",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/test_host.py",
+    "original_sha256": "550266877ce99474a347682259430593135b54efb43f7fea6d6999cbe0eab345",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/validate_boot_dtb.py",
+    "original_sha256": "e8fa3b6cca657a5e7c2d9152464201718702e8b7b9aef91f0c60a740006ce0c0",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/inputs/bd/design_1.bd",
+    "original_sha256": "48047e6755af3bbc22231c24ac058c37ba7d2037e83dd178a5ce7eff38737443",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/inputs/constraints/trash.xdc",
+    "original_sha256": "c864139d61d61eddcf215ce16a2d79b5b2dfc49a8dce3e7ce346fc8d2c4cd1ff",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/inputs/rtl/rgb888_to_rgb565.v",
+    "original_sha256": "bb7203e4ad59c667eb3305c34abe5860f38f8aa9b103c5a2fe89458834324243",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/component.xml",
+    "original_sha256": "862f8c4c63d7212feeddfab3c3b0089d5e7bb96529ffba63adb309ad301629b1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/constraints/conv_ooc.xdc",
+    "original_sha256": "48172b48ebc1b8664bdc2d62b33c3bf52f6352c6b40099ef5344296416764a2c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/doc/ReleaseNotes.txt",
+    "original_sha256": "0057e1c08a4017993637d1a192e713598294273ccb26d13949bae7c53c431f6c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/drivers/conv_v0_0/data/conv.mdd",
+    "original_sha256": "b209e4e483722b7d4b753a8583e237db8f5d67279f7dad9557225dbda38e5be1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/drivers/conv_v0_0/data/conv.tcl",
+    "original_sha256": "e52b0706f5bbbf1c0cc3a0c3a2eb810aac1a3476683caf27785385e575086396",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/drivers/conv_v0_0/src/Makefile",
+    "original_sha256": "f53cd42ae99cc9aa5d07c685b266e1004422f32359e2436add49f39156618e9e",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/drivers/conv_v0_0/src/xconv.c",
+    "original_sha256": "697a0cc1f2e738eefe66725ab172d5480cf84577d6c125df7e6c024912832225",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/drivers/conv_v0_0/src/xconv.h",
+    "original_sha256": "03948a21cdbffd9cb432fb074e00912c22ab4704f087c60d31ab99be400cb43a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/drivers/conv_v0_0/src/xconv_hw.h",
+    "original_sha256": "9f0de7e94905f12e08c2395c3b9b4dad150b83f70fce09afaba5bbbc26667d83",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/drivers/conv_v0_0/src/xconv_linux.c",
+    "original_sha256": "56f072b81106bd8424e3b135892039cc00445981f32631ba5c9f2e2dad283db3",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/drivers/conv_v0_0/src/xconv_sinit.c",
+    "original_sha256": "682e15a646dbb3bb93bf0f06e5b9c1575a2cdf55164f54843191852834a635fa",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/compute5.v",
+    "original_sha256": "d57407b5c7e3fe19abe2374d3d488c94a27c926c491da5287fa5162e699f8f03",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/compute_output.v",
+    "original_sha256": "af522fc5e583d76102d99e7441bbaa2ba44eaa5a1a8e7bbe7396ff3d947e202e",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv.v",
+    "original_sha256": "2b5aa85aa98de467284780d464404add62e0db8646f1104a93d97ee1b2744d13",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_CTRL_s_axi.v",
+    "original_sha256": "cc796ecf5fbf6b14cd8dce3f0d577bb159ef65c0e887999dd0332b0dedd9c88c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_fm_in_buff1_OgC.v",
+    "original_sha256": "224cabae7920b2c2bcea079697418e810fe08955e7442c97daaf890e201bad6a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_IN1_m_axi.v",
+    "original_sha256": "ac3d917faa7d52b05d9a07eb491cb54c48d1d339bf09cda0ba3c511e0a9a3f7f",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_IN2_m_axi.v",
+    "original_sha256": "b05a3aa5a0afe2f03da44b979e1b9406dc0fd510fdb03a929c0935ea65e2da9e",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_IN3_m_axi.v",
+    "original_sha256": "24abb0e06ea9ef33e51ba13bbe25fbec51f8e0a26666987c71bcae651f3a3011",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_mac_muladd_1hbi.v",
+    "original_sha256": "ac8a477aca20a42135371867731a617b2377ce6aea2e018198bca217f58834b9",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_mac_muladd_6dEe.v",
+    "original_sha256": "ce31f24aa1178b32b205f9a0de6bd83f2d1ac228083e6d925b14b18d771f3e12",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_mac_muladd_7eOg.v",
+    "original_sha256": "1e626f70c9c1481e026ccfbf9ac7628fb5664f41fffbb317a15426eef4627d22",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_mul_mul_16s_fYi.v",
+    "original_sha256": "c70bdcf21262ade2c57a5b202ce7b096986d10afc57cc8b7b5dd76e33d5551e8",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_mux_325_16_1_1.v",
+    "original_sha256": "198c293e7a1d713d1e3d3218c072d982d2e3036f25a8639f7df4ad18c940efb4",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_OUT_r_m_axi.v",
+    "original_sha256": "539a9403188807d94c7e3314387e2ac02ba847a57dcef8022a3072daaf3d7233",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_urem_11ns_6ng8j.v",
+    "original_sha256": "56ae781e90ac96982f0286a498e9215f5df38e4a788e6076aef4be2660c741a5",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_urem_12ns_7nbkb.v",
+    "original_sha256": "c64607bb2d8807a387db88919f1ed8097b847fef72dbd0ad30c02b77bc72393a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_urem_5ns_5nscud.v",
+    "original_sha256": "ea0927b4a90de1f44689e2b6e45123394ac14f2afd9da4155a083ede5ecd23d6",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/conv_W_m_axi.v",
+    "original_sha256": "e45252e9a6c72ad1e6f1ac52baf60eec866e19e1e8eda8641b5b1a9025cd9398",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/dataflow_in_loop.v",
+    "original_sha256": "8e9bcd83c643490c39a202b7a613c3c9d5fec1df6a5864c098d0401e6e3c8669",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/dataflow_in_loop_Gfk.v",
+    "original_sha256": "069f8cc08c5002104cc4a63befe8897c42d2d0dd564f71ad7fb9a3c4e07766b1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/dataflow_in_loop_Gfk_memcore.v",
+    "original_sha256": "43f54143c41dfd0b5858aeea1f0e2b279e91c19cd80a46deb1fde0bd2eb3fd21",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/dataflow_in_loop_ibs.v",
+    "original_sha256": "b40d5c3ee04147ca73db85f6345674e177421598b5939e4b93bbeacf2a9e6faa",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/dataflow_in_loop_ibs_memcore.v",
+    "original_sha256": "dcfec414b53a841f157443ae8bf8a6a79fcda5631f4bb63c8ff5daec650bf265",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/fifo_w16_d2_A.v",
+    "original_sha256": "0ed17f9590a7dadfc8cc8607084d35d2bfea231eb9f3217d2da0f5cdc30e8e29",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/fifo_w29_d3_A.v",
+    "original_sha256": "80ffa8a1f71247c23925812e7bcf29a04d7fed2d09a97ba0ddb6f21cd2484d48",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/fifo_w32_d3_A.v",
+    "original_sha256": "c72d3882d603e4c4d56e15ba83e2b5e8485b8726458219ecb582165270fef830",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/fifo_w5_d2_A.v",
+    "original_sha256": "6c72a8b47d7cf56c8f854f96afeea1ce3947ccebb8c5b39e92c61df7bcf137b9",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/load_input.v",
+    "original_sha256": "2cb4ee2a0e62bdaffda8b72352e278b38b55b1b99b33289d2cbd1f21d8ea3855",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/load_weight5427.v",
+    "original_sha256": "4408ebf3d0b0c749613fec39aea4a761df9218dfc9e040d5849f7c5c48b44ec7",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/verilog/store_output.v",
+    "original_sha256": "9e359cf69faa248ce60d902721efe23e9596137a25e3dfa945ddf49fd68796c2",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/compute5.vhd",
+    "original_sha256": "5e7168e65fa90071afae17c6445ef09e91d6c3f63721f36d9f735ec2bbd85cab",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/compute_output.vhd",
+    "original_sha256": "abf6520d4b1a1e70ee282028de333d8615dd3120a2aa8f52ac3f6f65c4009e8e",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv.vhd",
+    "original_sha256": "1903435cbe216e3d8a259f6607d8d8e4ca6a43e38bc942933689de468cbe011f",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_CTRL_s_axi.vhd",
+    "original_sha256": "ec1773a301a87d17bd176662ed9f2604389671fa55318e492eb8c3caee16ba25",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_fm_in_buff1_OgC.vhd",
+    "original_sha256": "3c60b907c531614175fa636f3a805aa7951280061ffc807bd901734df3d49d1d",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_IN1_m_axi.vhd",
+    "original_sha256": "a8452a6edd010a3779927542798cd2fc6d09ec4da939ca5f03c1b16d97fa07c0",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_IN2_m_axi.vhd",
+    "original_sha256": "43571f5cf8720cbaf28eeaac8aa824f6cf392aa8a322559b16d4fd0415f613d1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_IN3_m_axi.vhd",
+    "original_sha256": "f6ece84b511933c04a237df73581f849d4da1b89605e577dd19d05cd7ea41f92",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_mac_muladd_1hbi.vhd",
+    "original_sha256": "e0952c6d6900d141e481e75e596da0715756e8610e01b620f39b2171895f0a13",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_mac_muladd_6dEe.vhd",
+    "original_sha256": "40d511f3ab3df26929aa1837fa71f018e1e55aad73c90b269f8fe2eaa7f9b580",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_mac_muladd_7eOg.vhd",
+    "original_sha256": "61cb7a7b9b7629eec05c733d7c5441a0a5c29c639fbd73df757c220c7a0875fb",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_mul_mul_16s_fYi.vhd",
+    "original_sha256": "679c0ef7e96dca8f187a8f95f554ab25924ab24e244c412a121e18944bbb8557",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_mux_325_16_1_1.vhd",
+    "original_sha256": "253b8d010da8ad6d8bad582a5c399ba3c00156977cd0e85587c9a8a07043ba60",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_OUT_r_m_axi.vhd",
+    "original_sha256": "7fd332bdf0e6ffc000c210b52c382c44936e1942456e1cc7e5cd16362ee08a55",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_urem_11ns_6ng8j.vhd",
+    "original_sha256": "346df888315be02c4c193cec47e503ded310f42dad4bf786281dbb8c90fbd640",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_urem_12ns_7nbkb.vhd",
+    "original_sha256": "04c96513eb909f270765ff0d93143f31dd97f54ca6725525254398b235de9367",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_urem_5ns_5nscud.vhd",
+    "original_sha256": "b122d1807b18cbff603150bc388b3c717dfb4d2bfb9e59cf57b2b0c0fcd86ddd",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/conv_W_m_axi.vhd",
+    "original_sha256": "f0843f25d39844c86a64b00c10564b85895e177ed97823a18d3daf073c69752f",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/dataflow_in_loop.vhd",
+    "original_sha256": "c877660dfe62043fc9dd511320c8e1086ea1466aa605c696cf164c2a7768160c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/dataflow_in_loop_Gfk.vhd",
+    "original_sha256": "ccab7d27d2a98e797fca70b2f947e717d354b1940dbe24fe280e53107379b7cf",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/dataflow_in_loop_Gfk_memcore.vhd",
+    "original_sha256": "bff356b94450a6da910138d79dedcc454699b5679df297938091d31ddd7c6f0d",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/dataflow_in_loop_ibs.vhd",
+    "original_sha256": "a2785d536b5815c1439ef613354409cc357c4b1d8512d036ae0ba82c12028f8e",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/dataflow_in_loop_ibs_memcore.vhd",
+    "original_sha256": "e6a29230640ae60bc5484b52249341dcb481ce23aa6c2406e8d1e43a1ab481d2",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/fifo_w16_d2_A.vhd",
+    "original_sha256": "ca0a48453a44701ee3c425117742563619ef4d731e0b95a0c1a6a1c73bba9c63",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/fifo_w29_d3_A.vhd",
+    "original_sha256": "c7743a7ebb952f701d7bf7ef02dd6216b87ea91afd8dd6c42ecb236df4d64e95",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/fifo_w32_d3_A.vhd",
+    "original_sha256": "e9022f12e5d9a5fefa24084a9ec650c767599efad63da11203ffffc99e1f395d",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/fifo_w5_d2_A.vhd",
+    "original_sha256": "105e3aa2df229edafe1d1924d612f70773aa70355819273787fbcd6a4000c664",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/load_input.vhd",
+    "original_sha256": "ce142c8b861370ebdf7d6b36a440ae2d83d474bf717dcba5c563da2c2ac2f765",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/load_weight5427.vhd",
+    "original_sha256": "e07729d458ebc8db61d6d28bc81e40f02c040bf696130a0172cd2f8906b2bea8",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/hdl/vhdl/store_output.vhd",
+    "original_sha256": "5c49bb695a6407b7822b336246b35b5294576bcd110dd8941964180fc2cf1ca3",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/misc/logo.png",
+    "original_sha256": "773f5b82ab513194e413eeadc7eea9ff0ec860b85dd11a92a9d0dbe391b2747a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/conv/xgui/conv_v0_0.tcl",
+    "original_sha256": "7bfcad19170ebf010c4057e82796c1194efb7e14679f55e9ad4a070b8b494833",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/component.xml",
+    "original_sha256": "866b876bbca4ab246b7c6245e35dd67561936e9ec6a77835445c6f8f1deb5aaa",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/constraints/fc_ooc.xdc",
+    "original_sha256": "48172b48ebc1b8664bdc2d62b33c3bf52f6352c6b40099ef5344296416764a2c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/doc/ReleaseNotes.txt",
+    "original_sha256": "0057e1c08a4017993637d1a192e713598294273ccb26d13949bae7c53c431f6c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/drivers/fc_v0_0/data/fc.mdd",
+    "original_sha256": "d3435c36fbefe9185fbf957aa7aa0a0380c2f32e998be5b61071f7e824c819b8",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/drivers/fc_v0_0/data/fc.tcl",
+    "original_sha256": "8d03551d20a83784cd87d267bbd1052deb8dd4445f772dd65557c3496a68ef1f",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/drivers/fc_v0_0/src/Makefile",
+    "original_sha256": "461057738ce461fc8a5b7b6291a1fed7fac74d88cfe0ffdfd4f3507fc490cd75",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/drivers/fc_v0_0/src/xfc.c",
+    "original_sha256": "abee992b27c6019d0db76ef25dec0a0116c0b61a81764e2433626704a4d188be",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/drivers/fc_v0_0/src/xfc.h",
+    "original_sha256": "d6b80aee20401e4b78b43b96d8a87e14ec005f4a690315551fa6879f1abecd6e",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/drivers/fc_v0_0/src/xfc_hw.h",
+    "original_sha256": "506f61a4b20cb82ca3b9243b19b5a383d33ac0a098373aed8bd91305071d0706",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/drivers/fc_v0_0/src/xfc_linux.c",
+    "original_sha256": "c879c9d2e8d5fe78f6adcfd3bcb286944d51794f13538a90465397387a4b9c9d",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/drivers/fc_v0_0/src/xfc_sinit.c",
+    "original_sha256": "f0fa3444622deac793ea2dff3542ce4aff5bd006f157c83b1970917be481b97b",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/compute.v",
+    "original_sha256": "b60d35d9ee11426c0525af09b2a10280c04bc11eddc81122613848cabd2f6746",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/fc.v",
+    "original_sha256": "d44c42a41bc6c11cf91ef3a89993506d36000c52a70f437206ba8fde34d5d1d1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/fc_am_addmul_16s_Zio.v",
+    "original_sha256": "b743041873a21e89da1a438b38a1e0b5f8e873cfa91f9c4f18e2a35cdf4984b1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/fc_CTRL_s_axi.v",
+    "original_sha256": "eaadcdfc2f9641c9549293067692e8a9688340e2c74a3e36383e0ae6c605a532",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/fc_IN_r_m_axi.v",
+    "original_sha256": "5017bf84c0026e9ac74420f93dde3c59c3ae0e9499e44f5e63648107eb64cce2",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/fc_mac_muladd_11nYie.v",
+    "original_sha256": "60eb45c8318084b07450acae0d28f8385bea28dee49760d9036d30d55523630d",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/fc_mul_mul_16s_160iy.v",
+    "original_sha256": "b5cf99114cd0082f5344e5ac4009e5251a9aef84fca28ea4c4fb0b193a793e05",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/fc_mux_63_16_1_1.v",
+    "original_sha256": "beac750a90fd00bf69dc0b1d61f24a4424b4ce17d23f86c52fbcd0d3d3188ae4",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/fc_mux_83_16_1_1.v",
+    "original_sha256": "45756cc0643b25a2360ea54050d0813edc5289b1adba479e1c22d63a9cdc1f75",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/fc_O_m_axi.v",
+    "original_sha256": "01aac02a88aa28115d5d70170f514122100883b5ba196129a30a10862441f1b2",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/fc_W_m_axi.v",
+    "original_sha256": "09316e2f0a1211f0ccc25f6aa5d76be886bc2a25494aaf7072a8de80edcc3fd8",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/fc_wt_buff1_V.v",
+    "original_sha256": "50d20674c4232edd5046fdbef7ed85d0bfc26a77124ecdaaba89122a049eb877",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/load_feature.v",
+    "original_sha256": "0cb36aec12d9acc9aea8437769aff4cb25c91806d0cd1db73c912f8b17dcdee1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/load_feature_buffbkb.v",
+    "original_sha256": "6806b1e8c23b3a1b55c9ffd8974c570c80ef94ac50f6e918be137a4139b0d560",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/verilog/load_weight.v",
+    "original_sha256": "ddf5c942947c9f0a22f100f7fd93e16c7e766b9a22221c3b2219cd74f87c3823",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/compute.vhd",
+    "original_sha256": "38781b2426f9fba06090deaee63a457dfca6bdaaf0af98cd36b2aadaff049638",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/fc.vhd",
+    "original_sha256": "52b0ee2860d3ddb1a27032519b240cc9e74860f2c36e38aad9d2221c969e6dcb",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/fc_am_addmul_16s_Zio.vhd",
+    "original_sha256": "66de0484ef2d5e72650e4f7eba83e45a41f96bb935c5ec3bfafb526554b5ced7",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/fc_CTRL_s_axi.vhd",
+    "original_sha256": "0e4350bf091d4bc918b2d1ab5360c32ab35a2b2e0b482fee193460817d0d12f5",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/fc_IN_r_m_axi.vhd",
+    "original_sha256": "2e586d53d77a58b4eacb6c6ef59e836589c27e4434d93c01784122f88a0eac44",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/fc_mac_muladd_11nYie.vhd",
+    "original_sha256": "3ad4b1ab3e0015385be16233a201a9891f08a22bc5c969b671ea4b496b763201",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/fc_mul_mul_16s_160iy.vhd",
+    "original_sha256": "61b35db18ee85eccc813631e80cc7fdedbfcf8c76936422d3840f3ca36aa83c8",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/fc_mux_63_16_1_1.vhd",
+    "original_sha256": "c4e1cad744d4ac657a0f41f4796e747e27e49326f111ca45164cad849d8525d1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/fc_mux_83_16_1_1.vhd",
+    "original_sha256": "cad016180eedbb97b01c6a3884a6e3b3d01dbe9ba6fec5265085e1b36b44c49f",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/fc_O_m_axi.vhd",
+    "original_sha256": "e44c63ffd360b64f2551bd99167272063ef341af6ecc3bbc08c81838e0ff91f0",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/fc_W_m_axi.vhd",
+    "original_sha256": "a7a5dfa2f21c5f8851e50c94cddf5b8c0ead207209aef017bff544c5a7c01121",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/fc_wt_buff1_V.vhd",
+    "original_sha256": "e2fcebbdbf02bb020179c5f07697b5aabc947aee0279179be5de66ab8be2ad36",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/load_feature.vhd",
+    "original_sha256": "5fb8428bec4799ba2f8585c93539090d63c5d5f213586e298f6bf73565c6fd8f",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/load_feature_buffbkb.vhd",
+    "original_sha256": "dfb96aada120b860a15b73c503ac199c1b666fa5a97a66edd1f84caf69eba851",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/hdl/vhdl/load_weight.vhd",
+    "original_sha256": "f8a4acfe33ffe00769299e07574120524f3e50454fc3bad3b449bb774392dadb",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/misc/logo.png",
+    "original_sha256": "773f5b82ab513194e413eeadc7eea9ff0ec860b85dd11a92a9d0dbe391b2747a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/fc/xgui/fc_v0_0.tcl",
+    "original_sha256": "c680f488432652ba453ec96f96e3fa7492a3fa48370413fbb98c0ee4cc907ec8",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/component.xml",
+    "original_sha256": "ed2f1ef7db519dc3c69cc6a266b0db9459186c6c7064ff08bd0c6b54e9655d91",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/constraints/pwdwconv_ooc.xdc",
+    "original_sha256": "48172b48ebc1b8664bdc2d62b33c3bf52f6352c6b40099ef5344296416764a2c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/doc/ReleaseNotes.txt",
+    "original_sha256": "0057e1c08a4017993637d1a192e713598294273ccb26d13949bae7c53c431f6c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/drivers/pwdwconv_v0_0/data/pwdwconv.mdd",
+    "original_sha256": "f5c461daadc8f9a73682e13a0a88808ab653fbc0988d6d48eb35fb59e12313df",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/drivers/pwdwconv_v0_0/data/pwdwconv.tcl",
+    "original_sha256": "0002622eb4effc006cc6c77504ebcf7e14f57396c800ea3bbe38f06dcf829a1a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/drivers/pwdwconv_v0_0/src/Makefile",
+    "original_sha256": "b6867ed9a5d7b26118d963ad5c2192dffd83286d90186756ce6752e882584783",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv.c",
+    "original_sha256": "965fca817384199b843445d3dd4b597da37011f2caa200f81b7606cfe3197128",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv.h",
+    "original_sha256": "7c86eb8c75a12603eb97841f4034837095aeaceae7f8a7f276176c7cc66cea50",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv_hw.h",
+    "original_sha256": "f255ae82274e28646315b3751074febb537ff2c691d5ddd7d6d6a3b46a8d617c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv_linux.c",
+    "original_sha256": "b801f33de615f161c43f9295f88576fb03b05b83938155604fe05c6af2269e9e",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv_sinit.c",
+    "original_sha256": "d19905af6e6509462b93b3b70e40092d1a963bc4dcb812ea5d37c52085065644",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/compute.v",
+    "original_sha256": "16aff7f3b0f0584f2c48f12f356576d18767311d3dc4d042e7d727601c945464",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/compute_1.v",
+    "original_sha256": "b62fc70edb375e0058f605754ee202d8053017cbc5d00a7afad919f7a6d86349",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/compute_output.v",
+    "original_sha256": "322cd07aed1e373c301e53a22ebbd7d99217945eb80bcb6ace5c38353cc497e6",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/compute_output_fmibs.v",
+    "original_sha256": "5f1b9888a691d80bee362bc2d539453ce2023cbe249ee90a62a4b6d775ada2a4",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/dwconv.v",
+    "original_sha256": "5faecdaedd9d75f4ebaa32f061f3f48ffd44f97859add7e9e16a2060ef14128b",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/dwconv_bias_buff_bom.v",
+    "original_sha256": "3709b0341db0c1a92c6bdba5ae1f54058d57a62378a768569d7f6fd173c1c050",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/dwconv_fm_in_buffShg.v",
+    "original_sha256": "5bb5b7e437418ff6bae02a361474a37d4ce187492ef1ba1e29cef97be15c60dc",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/dwconv_fm_out_buf8jQ.v",
+    "original_sha256": "a01e87ce864ca26dac1134576da5840127b0289c0b34222407e0e0c16129fbc6",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/dwconv_wt_buff1_0_V.v",
+    "original_sha256": "095eecac7cc8eb9cef9e42a10a8ce65e482a77cda916822de7460b84712cecf1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/load_bias.v",
+    "original_sha256": "ef288ffd0c82c885a2f110c0649fb88459e0d1d13cc3e6cf79d0fa23022faa9e",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/load_input.v",
+    "original_sha256": "8c775019f355886fa042f650d2c643042bf61d4606034bf10251864042555a59",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/load_input_1.v",
+    "original_sha256": "d07b6ff7ee9c9877297a6c4646c049fae6ee86cbf2678a23dd46f3762c4a97cb",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/load_weight.v",
+    "original_sha256": "fdebbb3708a48006182c7776e583d36eb0316292f562e0ecb2f236ad02f9b6b2",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/load_weight_1.v",
+    "original_sha256": "c92ee1e5213ff8c757ea608bbc7be92a77dc05698a6e8afb966da6af28e844d9",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/load_wrapper.v",
+    "original_sha256": "12d5ce617f3e256a7c9f9192b736d2800e8b9e622c96eb818d4020cf49ceaad1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwconv.v",
+    "original_sha256": "cd04171f64a934e93f1217fe6238672b8234a51b75caf96a680706997907e5ec",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwconv_bias_buff_tde.v",
+    "original_sha256": "b5d0c2e8d512f1442a23e45973b31b00b4ba25f28ebe5fd78a6fa05340cb3131",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwconv_fm_out1_0_V.v",
+    "original_sha256": "b0ca46b8633d6538a692ecebe9ce3bee03c61b8bb48e9cf5834106d8fb90f910",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv.v",
+    "original_sha256": "f03e332c8eafad6f106a38b64856f869a6796ea0bf19ee9905cd01985baa232f",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_am_addmufYi.v",
+    "original_sha256": "d6749bca7b088313dff0b35f7acb752c0ff8b53e9534e718161839ef95166549",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_am_addmug8j.v",
+    "original_sha256": "b6cb3d286b694bae26bede6c7e8456a663324667fc1eefa01e849b58b4867fbf",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_CTRL_s_axi.v",
+    "original_sha256": "4ed9f1866b0822864c8edacb8d77bed03b34ed05258b5d2f2da1fa0b9c904db9",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_mac_mulaOgC.v",
+    "original_sha256": "144d8b825673eaf46d02b69d82f8a0fc701ff0eea97769b5cf7508c5438f671f",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_mac_mulaPgM.v",
+    "original_sha256": "309d860a4f2d99db45ba5e2dd2b572c9190f46d35afa9e63a78b7f973a388732",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_mul_16nsMgi.v",
+    "original_sha256": "f373a502ac23834d3dd0a6836e43bc3121deeb33fb2f3cb94d31367f9f6ad1cc",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_mul_16nsqcK.v",
+    "original_sha256": "545d1b33657546d8e26be68bbac053fa2067f75855763dffb07c7b133add458c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_mul_31s_sc4.v",
+    "original_sha256": "09ff86617f438d5eb7497a9604be27e732b0a3c34fa0d2d41dcc39120fa0613a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_mul_32s_bkb.v",
+    "original_sha256": "91b67344fee33713c9cefa42f382be5930a1a5d1749165d10d54ed2541e4319a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_mul_32s_JfO.v",
+    "original_sha256": "65a5166f691419f37728b05776834e9fe1277ae00eb978300766b846e00da070",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_mul_32s_KfY.v",
+    "original_sha256": "9d38ff018ce9c3dccc5ac2b5eca5e57e528d52304264bc7980b489da9e59ad75",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_mul_32s_Rg6.v",
+    "original_sha256": "48d3407091e0bfadb1817c5cfe22a3eba91be89977adaf1c1e36209fca9f658e",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_mul_mul_cud.v",
+    "original_sha256": "d62da6c295f28b6332bd54b3d1d54d1420f1659f48077b6dd519bf5b3414d5f0",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_mul_mul_hbi.v",
+    "original_sha256": "3f0ac1b9f104603225cd9511caf5fa8a5aa399616ebfb67c4b690b03e4f3ebeb",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_mux_164_dEe.v",
+    "original_sha256": "fd40801f114f9e771eb15cfbece3eb4f3d7f972973a063ba3bb62479f49c0e60",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_mux_164_eOg.v",
+    "original_sha256": "051b87b23b99e914a392015f56a206ce61eedd259d8ff09e488239ae86fc6673",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_PBUS1_m_axi.v",
+    "original_sha256": "6a7387b434e501b96b7a956b17d2f4bfafd1db512f706615e34ce966b7a8139a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_PBUS2_m_axi.v",
+    "original_sha256": "47cf3e8c2db6eacabff133cc5710769f46734d8bdda2de7c99a0a6df6eabaf0f",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_PBUS3_m_axi.v",
+    "original_sha256": "195c33dba00cab9266ebfd032b209ae81205dc4872339517cccf5c8816da5044",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_PBUS4_m_axi.v",
+    "original_sha256": "cc80818541945bee16c2247533d74e55c15428810d51dcf7f2ff38732f5cc560",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_SBUS1_m_axi.v",
+    "original_sha256": "3bf410d83d10d7f17f4a89ad1ccb59c43a02b21a3dd559b0b878c1e677bde581",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_SBUS2_m_axi.v",
+    "original_sha256": "163a41911930b7655d98093bfe417d93087aa0a4ff335f73bad8f614160ab044",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_urem_38nrcU.v",
+    "original_sha256": "6d9bacf49c6f295c1b9382d70e8b29b4c56256f4b95b72c3dbb811f7b2372718",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_urem_6nsQgW.v",
+    "original_sha256": "b0daa94cfaf42bf85b34e8e2e9d47263994330952f0980307ccc4ff995742f43",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_urem_7nsNgs.v",
+    "original_sha256": "078fb11f670181ef00395d28a898fcb087301da96d5fdc3e8b14b2a6e7cd05c7",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/pwdwconv_urem_8nsLf8.v",
+    "original_sha256": "f9c99606e1bba62de00d75f49c481ee0cc8dac2656d4a77a060e666f61946c58",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/store_output.v",
+    "original_sha256": "ed5a5145aaa0cba7727c645d670dbf6243ccaab61cbf8ac15092020fb631999f",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/store_output_1.v",
+    "original_sha256": "75c9984387e99736d73873adf319edbe70bb6a5dc242c06587e75255e78eba72",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/verilog/update_three_block.v",
+    "original_sha256": "236e10857eb0540895fe0543c17fe7651f63ab5eb655cd2c29c7c29182a946e7",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/compute.vhd",
+    "original_sha256": "7cb96eabfa28a7534c517d9efed6370d1b46037c8e158c60caa2811a2a9b448c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/compute_1.vhd",
+    "original_sha256": "bf49e7458066ba92413665d57c2185317d67dd4a4e797543b6b620fdcd6fb4ab",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/compute_output.vhd",
+    "original_sha256": "fb6eb1dcf4c73298c4ec5256f1fad6a096f3d45d915d37a6a1cf15a0be3f6660",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/compute_output_fmibs.vhd",
+    "original_sha256": "21d048d35d74fec88f51c929b73dcb75eb86e6344c8a7b3f48eb79ebc8614020",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/dwconv.vhd",
+    "original_sha256": "56bf0543c0fd18019cd89fdb1b07d159e3a2334cd8cdd1c2423253273ebf8f58",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/dwconv_bias_buff_bom.vhd",
+    "original_sha256": "584ab7c1d024cc2bf7f9013ec81d15fc1fe6e9bc3607927e4fde1411c9ce4b49",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/dwconv_fm_in_buffShg.vhd",
+    "original_sha256": "394e351102d6e087cd240176656ee0638c8106f0ab02b2be0cf6ec7facc7b06c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/dwconv_fm_out_buf8jQ.vhd",
+    "original_sha256": "d0ea12f62d157d971ed2e383ce9541178e957a31cb68a96518f1d15b44ff5cd1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/dwconv_wt_buff1_0_V.vhd",
+    "original_sha256": "7a4ab8865c9dcabd25a2e9c9ba8e27375eae755720a4ea24fcd17767c31e3521",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/load_bias.vhd",
+    "original_sha256": "b702fc641ee14dc35212f98ad5a1d1854b13af3f319b3f7242c5213cf307fec4",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/load_input.vhd",
+    "original_sha256": "8ec68999aba8c3179e219923ae8d40de9e80903782d2fc0904ed1e2c13881d91",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/load_input_1.vhd",
+    "original_sha256": "d7ee68707064cf63b4591114fcb7c6588f3fcf9afe9db4850f8e94d14d9211ef",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/load_weight.vhd",
+    "original_sha256": "dbdab67969e5431695048b8b507d9fe3a7da630041a7da7480d677d11ff5803f",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/load_weight_1.vhd",
+    "original_sha256": "179fc7faeb13399a3fb3ea3da1d57419d9dc08854fbebffed61d17e0719ddecc",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/load_wrapper.vhd",
+    "original_sha256": "3e6e67509e9fa130bf3c54c025bfd51746893aee5e587483be89cf3f635e3c93",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwconv.vhd",
+    "original_sha256": "bf677005dfec77a8404ae5bec593972fae0aa090fecbb1981cc03da95f5de2ae",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwconv_bias_buff_tde.vhd",
+    "original_sha256": "efaa7daa3b0197ca4962047ecf362a78daab08d44227926cda909dfee990d7a7",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwconv_fm_out1_0_V.vhd",
+    "original_sha256": "6b9963d4bb08d86b66dbda753234e4e8a8d13f72e8dac0f89b1061f176ff792b",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv.vhd",
+    "original_sha256": "f3b0afd8b8ffe07433e3432371e18e4e362b923827d601f660ab32f1174cb0f8",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_am_addmufYi.vhd",
+    "original_sha256": "4af057504b91857628ffc090941af5c2c0158364eb29d91531d4adaf9bac8d6d",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_am_addmug8j.vhd",
+    "original_sha256": "b5a783d96b11e827cf662c0b50e5411cc5d5e32f63f1f6b250cf2f82901d2689",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_CTRL_s_axi.vhd",
+    "original_sha256": "119ce2da30c857fba96e04b05b31f57b28fe99d343f5d0fe31146fd182f0ebe5",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_mac_mulaOgC.vhd",
+    "original_sha256": "9f9db600be5411387583304bee370644b863231bf1cd7e0eb8b81ac0ca6f3bc1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_mac_mulaPgM.vhd",
+    "original_sha256": "f5fa336783e90f71f751bc420f1d47eb329607ffcb6b8f1748248fb8162e7440",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_mul_16nsMgi.vhd",
+    "original_sha256": "17808a445782f1e2f35158bb90c93fa11b639964e186a0fe3544298193b1cf3b",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_mul_16nsqcK.vhd",
+    "original_sha256": "c3eb1bb4d76c0f650f229561e7e6b90e2147f5c8395e7fd1ff24ad2f20be1bd2",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_mul_31s_sc4.vhd",
+    "original_sha256": "a5446e5329e0df1ac8296ca498a056d0d2692492bd4602936ffe9ef84dd402fa",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_mul_32s_bkb.vhd",
+    "original_sha256": "cf92d0e3f29274eb05ee4e5d6a26d5c1d1e8872a56ee2dcd4af0b8c6f2d6ff50",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_mul_32s_JfO.vhd",
+    "original_sha256": "69017a3be06ab090a117aebbafc8e78ade61803408d960da16b23943da04f89a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_mul_32s_KfY.vhd",
+    "original_sha256": "f19050bf1c9a6bfad706a983dc378d50da5ec9de847782c540476ccc607caad5",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_mul_32s_Rg6.vhd",
+    "original_sha256": "da3e17027a60307f8a3a8b0b26a70c9921378ac4a17c690fe9346b6d892d25ae",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_mul_mul_cud.vhd",
+    "original_sha256": "6f4cb0baaade625b37ef057fea1d7a5b67f4322453d6bca71fa10828a1d4823a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_mul_mul_hbi.vhd",
+    "original_sha256": "70d67075d91e64154317eb3cc29642382da6b4c3ba944c53c33451b8846976fe",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_mux_164_dEe.vhd",
+    "original_sha256": "68299800fbac780187842ad5b44ac24749f6e4d9730ca24b8b1e93acff659010",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_mux_164_eOg.vhd",
+    "original_sha256": "194ec6c65c94ebafccdcb59283d7f91389789b08cfc0e59e58a16b448c8b4a4b",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_PBUS1_m_axi.vhd",
+    "original_sha256": "2ef59a4b1c12773cadadc6282072bffb71ad64f79831dfb2e1075e48ddd27a0c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_PBUS2_m_axi.vhd",
+    "original_sha256": "842836eb97653128f36639491303ffed37f5b00a565fe5a9cba12a8e606b2064",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_PBUS3_m_axi.vhd",
+    "original_sha256": "a71ee42421d95396d233acc6811c22e67eb503063d62e59164e06bf28e194b88",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_PBUS4_m_axi.vhd",
+    "original_sha256": "fc8fd86356e52c800251dbbb396e226acf415a80eb82018de8aea492e2f1871d",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_SBUS1_m_axi.vhd",
+    "original_sha256": "a851836715f2c69cee2f9b9624da0a39eb3f6f5b03cfb8589d0eacb3284f4df0",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_SBUS2_m_axi.vhd",
+    "original_sha256": "43ca0d07baeaa9fde4141eba2dc688e73f589fd54c7d3955b36699bc7fd02f22",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_urem_38nrcU.vhd",
+    "original_sha256": "18ca76bcd3c8cf93364a5a81ae1057d91a23b59b77f5b8351eca72f573da89c8",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_urem_6nsQgW.vhd",
+    "original_sha256": "26953ce562f16e728059272e30755a58147b0ed1191278f329032befd839fe4b",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_urem_7nsNgs.vhd",
+    "original_sha256": "438369806be2dc41564a644ce5c9f6504acf73ec36db260580b2dff406063add",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/pwdwconv_urem_8nsLf8.vhd",
+    "original_sha256": "eb87fcb69cfce3402bea117531f4154a9ed7d8d473b1c24764412ce3227f5dc4",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/store_output.vhd",
+    "original_sha256": "8ec437e3243daa4971a869a8d77ff5ce599c65222ce39955e0252a3cf78904f7",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/store_output_1.vhd",
+    "original_sha256": "3162fa1441277c74738658cfe160e84b8accb7634bcef195516ccd104c19624d",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/hdl/vhdl/update_three_block.vhd",
+    "original_sha256": "18b813f0cd36861be93393b55a90a00128d5757ce3d129a57e078552abc170e0",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/misc/logo.png",
+    "original_sha256": "773f5b82ab513194e413eeadc7eea9ff0ec860b85dd11a92a9d0dbe391b2747a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/pwdwconv/xgui/pwdwconv_v0_0.tcl",
+    "original_sha256": "b4077d973223bf79d6b28dbd32ce2d561ec6bbe124c85a7063176b3aded0cf19",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/component.xml",
+    "original_sha256": "b1c5d9dfacdbd7508996597bea0d4dd674f3469dc7ed77863deef992615f7919",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/constraints/shortcut_ooc.xdc",
+    "original_sha256": "48172b48ebc1b8664bdc2d62b33c3bf52f6352c6b40099ef5344296416764a2c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/doc/ReleaseNotes.txt",
+    "original_sha256": "0057e1c08a4017993637d1a192e713598294273ccb26d13949bae7c53c431f6c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/drivers/shortcut_v0_0/data/shortcut.mdd",
+    "original_sha256": "73613a614142c4af677bc6754553615b6564d4ea8ad94812c55adea53cf9c40d",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/drivers/shortcut_v0_0/data/shortcut.tcl",
+    "original_sha256": "b7227ffbafcc4041929899bf44c9490481e4c96d8d7eef68c4130319a2e1a073",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/drivers/shortcut_v0_0/src/Makefile",
+    "original_sha256": "437153ab0e8b6bf5fdf216dbb749e8705b57a5500e43ac7d13bb2df6e5066725",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/drivers/shortcut_v0_0/src/xshortcut.c",
+    "original_sha256": "d1dda1fe76a67f2cbe97da6af95eef99fa8ab51e4912f0bdb5c7bee283a38e65",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/drivers/shortcut_v0_0/src/xshortcut.h",
+    "original_sha256": "6d15f98ed5fa7de42af760a4c571d409e652bf41e18e913c67f21009a044948b",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/drivers/shortcut_v0_0/src/xshortcut_hw.h",
+    "original_sha256": "6277dd0140ef097c4d79733115118618fe316e29cb67c06a2a50e839349aebed",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/drivers/shortcut_v0_0/src/xshortcut_linux.c",
+    "original_sha256": "dd3f92b20e8e6e209c40b94df6fcc00a1ba11d693ba59ea5d5e44cffb197f203",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/drivers/shortcut_v0_0/src/xshortcut_sinit.c",
+    "original_sha256": "c50ef7bfe20409fa63ba50a4f4519629238c7fd46cf6f79af35632a4c0f967ad",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/hdl/verilog/shortcut.v",
+    "original_sha256": "8dc357f34b8772d3b64a054af03c2164225dfd2e3aadccb58cea1d9c9b5987d0",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/hdl/verilog/shortcut_CTRL_s_axi.v",
+    "original_sha256": "449899b38b87c37a7e0604d3aaf542cbca5f8e55277ee74dc130bd5fd2a2f287",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/hdl/verilog/shortcut_IN1_m_axi.v",
+    "original_sha256": "593f292bcbc897973f4357fde7f62f971f5cbdec35e9f79d7b43d12b7933c42e",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/hdl/verilog/shortcut_IN2_m_axi.v",
+    "original_sha256": "873381b1fe40bf4ea4866d88866cf93ba9eabe00ba7a9dedd5074fd506e23bbb",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/hdl/verilog/shortcut_OUT_r_m_axi.v",
+    "original_sha256": "928f9d2b214374a37c0ac408f781f4319f3d59735c484f66f31af82dd7dd9d65",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/hdl/vhdl/shortcut.vhd",
+    "original_sha256": "c125474f0071c7e5447abbab85b6a8ee4d85aee4e0274ca1debdf9921d0dded6",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/hdl/vhdl/shortcut_CTRL_s_axi.vhd",
+    "original_sha256": "b0e92d88d1fc88f56af0f3909f29f35b4d8377595d39d3f4942afbabb23f50ed",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/hdl/vhdl/shortcut_IN1_m_axi.vhd",
+    "original_sha256": "76439f98bc9961f7ba40cb6293a2df5227fa546fe2d811e20b9bad67710fdab0",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/hdl/vhdl/shortcut_IN2_m_axi.vhd",
+    "original_sha256": "fc9beac174e469fb81eb72083948cc9892535e3fd32b04b8e7ffe450a47e4f7c",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/hdl/vhdl/shortcut_OUT_r_m_axi.vhd",
+    "original_sha256": "3017fbe18d8235015670678603cd1b9c19c7378191b963a04de5faf432532060",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/misc/logo.png",
+    "original_sha256": "773f5b82ab513194e413eeadc7eea9ff0ec860b85dd11a92a9d0dbe391b2747a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/ip_repo/shortcut/xgui/shortcut_v0_0.tcl",
+    "original_sha256": "59f8fae47e50bb0cbe9fca9dfde874c4ea4ab809dcccf7e2d8bebad445b937c5",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/prepare_config.tcl",
+    "original_sha256": "edef3b69035a2b66726b1db44335a57a645e6024ca6d00aa9cd3acc27496fb36",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "build/work/prepared/prepare_manifest.json",
+    "original_sha256": "6c58f4a2dc8a76735fbe1fd37050a06bf93440fee6e2636ea6e5471598cc9e51",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "data/captures/1792855160950797419.json",
+    "original_sha256": "05e89b4ff7e6233a83275c8a184e553d7949374e5409610051b82333fad2f813",
+    "preserved_in_snapshot": true,
+    "current_path": "data/captures/1792855160950797419.json",
+    "current_sha256": "05e89b4ff7e6233a83275c8a184e553d7949374e5409610051b82333fad2f813",
+    "content_changed": false
+  },
+  {
+    "original": "data/captures/1792855160950797419_bgr.bin",
+    "original_sha256": "0ed4ee2325a676886cb2789ee1c2dd3117fe593b8edbb2be0c00b22181b81bbd",
+    "preserved_in_snapshot": true,
+    "current_path": "data/captures/1792855160950797419_bgr.bin",
+    "current_sha256": "0ed4ee2325a676886cb2789ee1c2dd3117fe593b8edbb2be0c00b22181b81bbd",
+    "content_changed": false
+  },
+  {
+    "original": "data/captures/1792855160950797419_q10.bin",
+    "original_sha256": "e0bfaa5895b8580068f4429bf6b0a1e0a382b3e2d4241f3feffa25e899f40c8d",
+    "preserved_in_snapshot": true,
+    "current_path": "data/captures/1792855160950797419_q10.bin",
+    "current_sha256": "e0bfaa5895b8580068f4429bf6b0a1e0a382b3e2d4241f3feffa25e899f40c8d",
+    "content_changed": false
+  },
+  {
+    "original": "data/captures/1792855162881915091.json",
+    "original_sha256": "05e89b4ff7e6233a83275c8a184e553d7949374e5409610051b82333fad2f813",
+    "preserved_in_snapshot": true,
+    "current_path": "data/captures/1792855162881915091.json",
+    "current_sha256": "05e89b4ff7e6233a83275c8a184e553d7949374e5409610051b82333fad2f813",
+    "content_changed": false
+  },
+  {
+    "original": "data/captures/1792855162881915091_bgr.bin",
+    "original_sha256": "e6f5537220a24902afbc27bd12d3d31f0f0393b40f0d5627377a15a9b4bf325b",
+    "preserved_in_snapshot": true,
+    "current_path": "data/captures/1792855162881915091_bgr.bin",
+    "current_sha256": "e6f5537220a24902afbc27bd12d3d31f0f0393b40f0d5627377a15a9b4bf325b",
+    "content_changed": false
+  },
+  {
+    "original": "data/captures/1792855162881915091_q10.bin",
+    "original_sha256": "abcdd8e6c00be576062c2ab9171e2850800478fd1c39bf796e34d8f9d46f57d1",
+    "preserved_in_snapshot": true,
+    "current_path": "data/captures/1792855162881915091_q10.bin",
+    "current_sha256": "abcdd8e6c00be576062c2ab9171e2850800478fd1c39bf796e34d8f9d46f57d1",
+    "content_changed": false
+  },
+  {
+    "original": "data/captures/1792856351328546204.json",
+    "original_sha256": "5ca1ad19de39cff57b923533c5a3b96fddfc2ba22c83e14611353a9ef53c73b3",
+    "preserved_in_snapshot": true,
+    "current_path": "data/captures/1792856351328546204.json",
+    "current_sha256": "5ca1ad19de39cff57b923533c5a3b96fddfc2ba22c83e14611353a9ef53c73b3",
+    "content_changed": false
+  },
+  {
+    "original": "data/captures/1792856351328546204_bgr.bin",
+    "original_sha256": "e4c9a18d092066c7f8af642e0c40d1ddaf993bfc8bd48c57ee913f6903f74600",
+    "preserved_in_snapshot": true,
+    "current_path": "data/captures/1792856351328546204_bgr.bin",
+    "current_sha256": "e4c9a18d092066c7f8af642e0c40d1ddaf993bfc8bd48c57ee913f6903f74600",
+    "content_changed": false
+  },
+  {
+    "original": "data/captures/1792856351328546204_q10.bin",
+    "original_sha256": "8bd6bb1499161cd5fa6ed30bbce18d14ca5bec81c69fd1e2a00c3a7e30018827",
+    "preserved_in_snapshot": true,
+    "current_path": "data/captures/1792856351328546204_q10.bin",
+    "current_sha256": "8bd6bb1499161cd5fa6ed30bbce18d14ca5bec81c69fd1e2a00c3a7e30018827",
+    "content_changed": false
+  },
+  {
+    "original": "data/model_manifest.json",
+    "original_sha256": "0fc3708869ceb29eb7e7b2e3c7dec65f6a8e207f6595ff0447788924596e2ca3",
+    "preserved_in_snapshot": true,
+    "current_path": "data/model_manifest.json",
+    "current_sha256": "d3d4cef8d74efef7dd30a3fa9e42149d96647c6398d4311bad20e8cc12f05f9a",
+    "content_changed": true
+  },
+  {
+    "original": "data/peripherals/__pycache__/extract_from_vitis.cpython-38.pyc",
+    "original_sha256": "2f5c77600ae8f1b47dcd4b11d99af4f1cbd6b537ec78982b7d80c0bade428315",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "data/peripherals/extract_from_vitis.py",
+    "original_sha256": "ebdfc85a49433eff6137137f0432eefb868f3fea289086967948e6c323a11bc6",
+    "preserved_in_snapshot": true,
+    "current_path": "data/peripherals/extract_from_vitis.py",
+    "current_sha256": "ebdfc85a49433eff6137137f0432eefb868f3fea289086967948e6c323a11bc6",
+    "content_changed": false
+  },
+  {
+    "original": "data/peripherals/font12.bin",
+    "original_sha256": "f0540ce9a9f3f6452eec4ba4a2a253dfb36f69aeefa3ccc25ccd3c9bc5e3b9dc",
+    "preserved_in_snapshot": true,
+    "current_path": "data/peripherals/font12.bin",
+    "current_sha256": "f0540ce9a9f3f6452eec4ba4a2a253dfb36f69aeefa3ccc25ccd3c9bc5e3b9dc",
+    "content_changed": false
+  },
+  {
+    "original": "data/peripherals/font16.bin",
+    "original_sha256": "ce78d3d42ca1f7c16aa5bdab1f83dcc687782c098c5a152ddff782f7ecdfb0ca",
+    "preserved_in_snapshot": true,
+    "current_path": "data/peripherals/font16.bin",
+    "current_sha256": "ce78d3d42ca1f7c16aa5bdab1f83dcc687782c098c5a152ddff782f7ecdfb0ca",
+    "content_changed": false
+  },
+  {
+    "original": "data/peripherals/font24.bin",
+    "original_sha256": "d67fba42f7e5d29c841ad479e5c1f6d8216ae37f63cf2d20edc103af2ec8fc3b",
+    "preserved_in_snapshot": true,
+    "current_path": "data/peripherals/font24.bin",
+    "current_sha256": "d67fba42f7e5d29c841ad479e5c1f6d8216ae37f63cf2d20edc103af2ec8fc3b",
+    "content_changed": false
+  },
+  {
+    "original": "data/peripherals/font32.bin",
+    "original_sha256": "89bba4db891faa2bc47d07933f00639476cb352b97ec4e41986cc39118b91f79",
+    "preserved_in_snapshot": true,
+    "current_path": "data/peripherals/font32.bin",
+    "current_sha256": "89bba4db891faa2bc47d07933f00639476cb352b97ec4e41986cc39118b91f79",
+    "content_changed": false
+  },
+  {
+    "original": "data/peripherals/gt911_config.bin",
+    "original_sha256": "33932fd45e4f2185e4ff4b347c7415dfa0806299458e76ba92bd5e07be3af57f",
+    "preserved_in_snapshot": true,
+    "current_path": "data/peripherals/gt911_config.bin",
+    "current_sha256": "33932fd45e4f2185e4ff4b347c7415dfa0806299458e76ba92bd5e07be3af57f",
+    "content_changed": false
+  },
+  {
+    "original": "data/peripherals/manifest.json",
+    "original_sha256": "fe5e0b207da00ec4b5abcdd3f4f2706c0d3d1ef3324026a220dfddafb8136203",
+    "preserved_in_snapshot": true,
+    "current_path": "data/peripherals/manifest.json",
+    "current_sha256": "fe5e0b207da00ec4b5abcdd3f4f2706c0d3d1ef3324026a220dfddafb8136203",
+    "content_changed": false
+  },
+  {
+    "original": "data/peripherals/ov5640_af.bin",
+    "original_sha256": "439245623bc99f3b0d8c44d47baed3cc17cad01b9191509c89bb8d92a98949c9",
+    "preserved_in_snapshot": true,
+    "current_path": "data/peripherals/ov5640_af.bin",
+    "current_sha256": "439245623bc99f3b0d8c44d47baed3cc17cad01b9191509c89bb8d92a98949c9",
+    "content_changed": false
+  },
+  {
+    "original": "data/peripherals/ov5640_registers.json",
+    "original_sha256": "f39f5594e954e30f7e50c35eac73cf2f7fa574e2de2b04c9891f06f2d8dc0c82",
+    "preserved_in_snapshot": true,
+    "current_path": "data/peripherals/ov5640_registers.json",
+    "current_sha256": "f39f5594e954e30f7e50c35eac73cf2f7fa574e2de2b04c9891f06f2d8dc0c82",
+    "content_changed": false
+  },
+  {
+    "original": "data/samples/manifest.json",
+    "original_sha256": "8154fc561b2df0c292254135dc112dc4c00669e5eff846d67cf9e9ab92054835",
+    "preserved_in_snapshot": true,
+    "current_path": "data/samples/manifest.json",
+    "current_sha256": "8154fc561b2df0c292254135dc112dc4c00669e5eff846d67cf9e9ab92054835",
+    "content_changed": false
+  },
+  {
+    "original": "data/samples/original_camera_bgr.bin",
+    "original_sha256": "b808d6cfe3684aefc922af303b2980eb24e9969385c8f4234947ad034804bc28",
+    "preserved_in_snapshot": true,
+    "current_path": "data/samples/original_camera_bgr.bin",
+    "current_sha256": "b808d6cfe3684aefc922af303b2980eb24e9969385c8f4234947ad034804bc28",
+    "content_changed": false
+  },
+  {
+    "original": "data/samples/original_infer_q10.bin",
+    "original_sha256": "c4d215f60e913f7350e9b7f1f1f18328ba07655ffeb05d10ce64822d01e80b03",
+    "preserved_in_snapshot": true,
+    "current_path": "data/samples/original_infer_q10.bin",
+    "current_sha256": "c4d215f60e913f7350e9b7f1f1f18328ba07655ffeb05d10ce64822d01e80b03",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.0.bc1.bin",
+    "original_sha256": "178122962959370dc18843854e75c827001385daccb8ce7f28f46acc62a80de1",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.0.bc1.bin",
+    "current_sha256": "178122962959370dc18843854e75c827001385daccb8ce7f28f46acc62a80de1",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.0.bc2.bin",
+    "original_sha256": "b62b80fb7956406a5ddb35f73843c0aa0cfea4a8642365dbd6f57a8e0307635b",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.0.bc2.bin",
+    "current_sha256": "b62b80fb7956406a5ddb35f73843c0aa0cfea4a8642365dbd6f57a8e0307635b",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.0.bc3.bin",
+    "original_sha256": "913d6546f184355522b0650622ce0cab8b68c1e7c61a5ace3347f8679b1fbe44",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.0.bc3.bin",
+    "current_sha256": "913d6546f184355522b0650622ce0cab8b68c1e7c61a5ace3347f8679b1fbe44",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.0.Wc1.bin",
+    "original_sha256": "3c669aea22668eccee153c4f324c3cc25b7a13b5e4014570a0ef5346b1e8b282",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.0.wc1.bin",
+    "current_sha256": "3c669aea22668eccee153c4f324c3cc25b7a13b5e4014570a0ef5346b1e8b282",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.0.Wc2.bin",
+    "original_sha256": "d9699288aaa8af1c860b8eea41d8ba8874671581556aa4339b79393f5bbf956b",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.0.wc2.bin",
+    "current_sha256": "d9699288aaa8af1c860b8eea41d8ba8874671581556aa4339b79393f5bbf956b",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.0.Wc3.bin",
+    "original_sha256": "0ac4ce4a7f043623d652a94e37a8f071f25db0147c52c7627e711a239cf78a48",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.0.wc3.bin",
+    "current_sha256": "0ac4ce4a7f043623d652a94e37a8f071f25db0147c52c7627e711a239cf78a48",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.1.bc1.bin",
+    "original_sha256": "184687b9c01df8993375607fc18fd8276ea0e2c71b4dae08dd1237bf8d7ed295",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.1.bc1.bin",
+    "current_sha256": "184687b9c01df8993375607fc18fd8276ea0e2c71b4dae08dd1237bf8d7ed295",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.1.bc2.bin",
+    "original_sha256": "0417a8ac91d08c9f2d47500e126fb12b6bf84ec549f8108f5491c30e46fc87ab",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.1.bc2.bin",
+    "current_sha256": "0417a8ac91d08c9f2d47500e126fb12b6bf84ec549f8108f5491c30e46fc87ab",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.1.bc3.bin",
+    "original_sha256": "e41bf690554a6a2dede359fd9ab8f163c9424b3edd16f3429fca6c05df58d969",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.1.bc3.bin",
+    "current_sha256": "e41bf690554a6a2dede359fd9ab8f163c9424b3edd16f3429fca6c05df58d969",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.1.Wc1.bin",
+    "original_sha256": "b7f9a670a15123f16fc23d8f622e20d51d42c0c6ce94b123f37680126de6cbc7",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.1.wc1.bin",
+    "current_sha256": "b7f9a670a15123f16fc23d8f622e20d51d42c0c6ce94b123f37680126de6cbc7",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.1.Wc2.bin",
+    "original_sha256": "56a180f564a87ee14f104e3fb85077b323c833a779cad057f470ec39f5b8b8ff",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.1.wc2.bin",
+    "current_sha256": "56a180f564a87ee14f104e3fb85077b323c833a779cad057f470ec39f5b8b8ff",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.1.Wc3.bin",
+    "original_sha256": "f2e4e5d284cae8726e9381f5120f970319af36b3730719bd3cdc005b1c31243f",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.1.wc3.bin",
+    "current_sha256": "f2e4e5d284cae8726e9381f5120f970319af36b3730719bd3cdc005b1c31243f",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.10.bc1.bin",
+    "original_sha256": "38293b7a426736e609097da15e8021e18cfeadf8d98524222570a68382d7cae7",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.10.bc1.bin",
+    "current_sha256": "38293b7a426736e609097da15e8021e18cfeadf8d98524222570a68382d7cae7",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.10.bc2.bin",
+    "original_sha256": "808df9b57642b70e54492f7fd5b12c4c3cd77c6aa4117407249dfb2022c4734f",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.10.bc2.bin",
+    "current_sha256": "808df9b57642b70e54492f7fd5b12c4c3cd77c6aa4117407249dfb2022c4734f",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.10.bc3.bin",
+    "original_sha256": "e8445011450e40d5dce515d5756c6d35fe5945befe7a4afb88ebe95d3b6eae40",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.10.bc3.bin",
+    "current_sha256": "e8445011450e40d5dce515d5756c6d35fe5945befe7a4afb88ebe95d3b6eae40",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.10.Wc1.bin",
+    "original_sha256": "09297c94211ab1793749da7d902009425e0fd49f7b2917322b354f0dce47021d",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.10.wc1.bin",
+    "current_sha256": "09297c94211ab1793749da7d902009425e0fd49f7b2917322b354f0dce47021d",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.10.Wc2.bin",
+    "original_sha256": "15acc077b5b52c649d3549f446c7aaa849c2a9263ca5f799c38b184d42aab989",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.10.wc2.bin",
+    "current_sha256": "15acc077b5b52c649d3549f446c7aaa849c2a9263ca5f799c38b184d42aab989",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.10.Wc3.bin",
+    "original_sha256": "f717cf34e1d30d44ed4e04f9ede25d077078e899081fb13b826371b59921672a",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.10.wc3.bin",
+    "current_sha256": "f717cf34e1d30d44ed4e04f9ede25d077078e899081fb13b826371b59921672a",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.11.bc1.bin",
+    "original_sha256": "c2a934a6c3a5c241588aae620c3418a49a6103a76c0c7461f58c702aaec980d8",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.11.bc1.bin",
+    "current_sha256": "c2a934a6c3a5c241588aae620c3418a49a6103a76c0c7461f58c702aaec980d8",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.11.bc2.bin",
+    "original_sha256": "e30c1eb93828040ae529f79d973610c546a69850eee9392a1fc422cf25585360",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.11.bc2.bin",
+    "current_sha256": "e30c1eb93828040ae529f79d973610c546a69850eee9392a1fc422cf25585360",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.11.bc3.bin",
+    "original_sha256": "b58018c5822782986ba24b78c73219ac69df5ca15dc7dc013ab7157bd7aefd53",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.11.bc3.bin",
+    "current_sha256": "b58018c5822782986ba24b78c73219ac69df5ca15dc7dc013ab7157bd7aefd53",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.11.Wc1.bin",
+    "original_sha256": "ed76778d6ab36eb50c47cf704cadf4db0b0c8ce4b9a26c6272b10e6d8671d78e",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.11.wc1.bin",
+    "current_sha256": "ed76778d6ab36eb50c47cf704cadf4db0b0c8ce4b9a26c6272b10e6d8671d78e",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.11.Wc2.bin",
+    "original_sha256": "f404ce49aeb23e0ed6fe12b823fcac952ddecee8d40d7a3e2d32b6c1a2b6716c",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.11.wc2.bin",
+    "current_sha256": "f404ce49aeb23e0ed6fe12b823fcac952ddecee8d40d7a3e2d32b6c1a2b6716c",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.11.Wc3.bin",
+    "original_sha256": "13d1e06155405887b316b7aa64c3d8a187bfa138613664ce0fb7821500177a39",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.11.wc3.bin",
+    "current_sha256": "13d1e06155405887b316b7aa64c3d8a187bfa138613664ce0fb7821500177a39",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.12.bc1.bin",
+    "original_sha256": "b184fe791fd13d70ff1f3ef49b60aef7b4968171e3f8b9fde451997529de9306",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.12.bc1.bin",
+    "current_sha256": "b184fe791fd13d70ff1f3ef49b60aef7b4968171e3f8b9fde451997529de9306",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.12.bc2.bin",
+    "original_sha256": "00844fa9d351b9198aaf56a8b24d500e2f6d79ea525cf44a0fc9d4b57e96407b",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.12.bc2.bin",
+    "current_sha256": "00844fa9d351b9198aaf56a8b24d500e2f6d79ea525cf44a0fc9d4b57e96407b",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.12.bc3.bin",
+    "original_sha256": "b7e3c775ab79f09c124d5bd70627d937b7c242c513e248b29de6ec832bb4c1c8",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.12.bc3.bin",
+    "current_sha256": "b7e3c775ab79f09c124d5bd70627d937b7c242c513e248b29de6ec832bb4c1c8",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.12.Wc1.bin",
+    "original_sha256": "70c29f9c9daff43dc7670b7eb263056606f5ed97375491b0fdf701b89d155beb",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.12.wc1.bin",
+    "current_sha256": "70c29f9c9daff43dc7670b7eb263056606f5ed97375491b0fdf701b89d155beb",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.12.Wc2.bin",
+    "original_sha256": "1bdd51762ea70a3302f8ae7814317b4221b0ca272d76f248584a04d242ff1b53",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.12.wc2.bin",
+    "current_sha256": "1bdd51762ea70a3302f8ae7814317b4221b0ca272d76f248584a04d242ff1b53",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.12.Wc3.bin",
+    "original_sha256": "fe71de7c56039ca3b13d6a6019e5715e9fd3ad11e6779a0d4976d6ede1e0af5d",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.12.wc3.bin",
+    "current_sha256": "fe71de7c56039ca3b13d6a6019e5715e9fd3ad11e6779a0d4976d6ede1e0af5d",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.13.bc1.bin",
+    "original_sha256": "7663b92a39881377321f131cfce5c4b0309db90965dadefc6cd231ef2652e348",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.13.bc1.bin",
+    "current_sha256": "7663b92a39881377321f131cfce5c4b0309db90965dadefc6cd231ef2652e348",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.13.bc2.bin",
+    "original_sha256": "fe4f8bebafae7f2219bb6321c5968e42061597f0251a6d2a57034520ffa4ffbd",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.13.bc2.bin",
+    "current_sha256": "fe4f8bebafae7f2219bb6321c5968e42061597f0251a6d2a57034520ffa4ffbd",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.13.bc3.bin",
+    "original_sha256": "27947e9b84b8d3e11529739b748fe32a84d4ad3dee6419179106f7f33d23da98",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.13.bc3.bin",
+    "current_sha256": "27947e9b84b8d3e11529739b748fe32a84d4ad3dee6419179106f7f33d23da98",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.13.Wc1.bin",
+    "original_sha256": "c730fa8c2811ac7bd92d7800b3b3cb4e3f6086ade991c7db095651e9ead671b4",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.13.wc1.bin",
+    "current_sha256": "c730fa8c2811ac7bd92d7800b3b3cb4e3f6086ade991c7db095651e9ead671b4",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.13.Wc2.bin",
+    "original_sha256": "37c432a9f84a994e2d7c4e8762c0678fecf544f7072b82f439fd937dd819637f",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.13.wc2.bin",
+    "current_sha256": "37c432a9f84a994e2d7c4e8762c0678fecf544f7072b82f439fd937dd819637f",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.13.Wc3.bin",
+    "original_sha256": "86cfed545b54215dc5657b1fd7bcea22f9974c72094efb3f0bbcae27883119db",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.13.wc3.bin",
+    "current_sha256": "86cfed545b54215dc5657b1fd7bcea22f9974c72094efb3f0bbcae27883119db",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.14.bc1.bin",
+    "original_sha256": "b09ab1a1f3bcecb6f48e06f48f2d0d44f7ac02f47bf3fdcec9bded855b6139cf",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.14.bc1.bin",
+    "current_sha256": "b09ab1a1f3bcecb6f48e06f48f2d0d44f7ac02f47bf3fdcec9bded855b6139cf",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.14.bc2.bin",
+    "original_sha256": "0c62ad1e4028bb8fb2187d47e43de09e812103ec50cc5c60364a486afc60e7bf",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.14.bc2.bin",
+    "current_sha256": "0c62ad1e4028bb8fb2187d47e43de09e812103ec50cc5c60364a486afc60e7bf",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.14.bc3.bin",
+    "original_sha256": "23dae3936d2555de300667542571b44c267d252173e855b7c2e8997270ea4e1c",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.14.bc3.bin",
+    "current_sha256": "23dae3936d2555de300667542571b44c267d252173e855b7c2e8997270ea4e1c",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.14.Wc1.bin",
+    "original_sha256": "660ce099dc0d3a96188b2a8bc0f9d6547b5aceabdb076f927b906624cd54fe45",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.14.wc1.bin",
+    "current_sha256": "660ce099dc0d3a96188b2a8bc0f9d6547b5aceabdb076f927b906624cd54fe45",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.14.Wc2.bin",
+    "original_sha256": "9072a9fc5f6231b64bfa17ce55575f59e2c04bd02992a1c3d17464ec1f91744c",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.14.wc2.bin",
+    "current_sha256": "9072a9fc5f6231b64bfa17ce55575f59e2c04bd02992a1c3d17464ec1f91744c",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.14.Wc3.bin",
+    "original_sha256": "67ada6dd5c2775e7d80c8e929a43c711612a27b5a51021bbe504c649807ed9d2",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.14.wc3.bin",
+    "current_sha256": "67ada6dd5c2775e7d80c8e929a43c711612a27b5a51021bbe504c649807ed9d2",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.15.bc1.bin",
+    "original_sha256": "46f7a2c5b50593ba345c12e92865d3643fd130af4d0bfc64513e74eda48b2566",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.15.bc1.bin",
+    "current_sha256": "46f7a2c5b50593ba345c12e92865d3643fd130af4d0bfc64513e74eda48b2566",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.15.bc2.bin",
+    "original_sha256": "920ced535328b14fa03fbb28ad9062c7755713b3971c9d3d8dcee8b42e53c381",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.15.bc2.bin",
+    "current_sha256": "920ced535328b14fa03fbb28ad9062c7755713b3971c9d3d8dcee8b42e53c381",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.15.bc3.bin",
+    "original_sha256": "7493b32cc3eb56cc9c3bfe3b9cff3720d0f386e9dc990515bce30ed4a3441ebf",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.15.bc3.bin",
+    "current_sha256": "7493b32cc3eb56cc9c3bfe3b9cff3720d0f386e9dc990515bce30ed4a3441ebf",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.15.Wc1.bin",
+    "original_sha256": "b3bb76f1e59d0f72916952885b66e4caa05f998e79521221210fe364ed44ef51",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.15.wc1.bin",
+    "current_sha256": "b3bb76f1e59d0f72916952885b66e4caa05f998e79521221210fe364ed44ef51",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.15.Wc2.bin",
+    "original_sha256": "7e2a2333070f4f2fddbe6eb9a91f7ab1455ed1a0f538cf72105ec95139340b41",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.15.wc2.bin",
+    "current_sha256": "7e2a2333070f4f2fddbe6eb9a91f7ab1455ed1a0f538cf72105ec95139340b41",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.15.Wc3.bin",
+    "original_sha256": "0b6e25badfce477010e51685d7ebbc91af318e82201fea958dd3de2155b246f2",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.15.wc3.bin",
+    "current_sha256": "0b6e25badfce477010e51685d7ebbc91af318e82201fea958dd3de2155b246f2",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.2.bc1.bin",
+    "original_sha256": "d715ef90cae54699ab503626d484409bcb342a0f482c6e5c26bfaa47c8226c56",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.2.bc1.bin",
+    "current_sha256": "d715ef90cae54699ab503626d484409bcb342a0f482c6e5c26bfaa47c8226c56",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.2.bc2.bin",
+    "original_sha256": "45d16785d86c9c6521f73778e267e1906c734dbdb419cc426e780d0aa87c97e7",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.2.bc2.bin",
+    "current_sha256": "45d16785d86c9c6521f73778e267e1906c734dbdb419cc426e780d0aa87c97e7",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.2.bc3.bin",
+    "original_sha256": "555334e43ae83343f8853302cef7f77f6363678d85aef31945da6a34dc9cfd5e",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.2.bc3.bin",
+    "current_sha256": "555334e43ae83343f8853302cef7f77f6363678d85aef31945da6a34dc9cfd5e",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.2.Wc1.bin",
+    "original_sha256": "89b6cdd348148a9bc6484c09c0b765ba28079b8357f39384746659b684601cc2",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.2.wc1.bin",
+    "current_sha256": "89b6cdd348148a9bc6484c09c0b765ba28079b8357f39384746659b684601cc2",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.2.Wc2.bin",
+    "original_sha256": "1da15c0fadd5fc9cc7dd0d17853774fd436847bebd80a38fec35b280df29a8d3",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.2.wc2.bin",
+    "current_sha256": "1da15c0fadd5fc9cc7dd0d17853774fd436847bebd80a38fec35b280df29a8d3",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.2.Wc3.bin",
+    "original_sha256": "7400ebcd4db3fe6e375b87975f8c5b13920dc23d85e1b3f578b382eb1d291a50",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.2.wc3.bin",
+    "current_sha256": "7400ebcd4db3fe6e375b87975f8c5b13920dc23d85e1b3f578b382eb1d291a50",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.3.bc1.bin",
+    "original_sha256": "5f256c14ec79f793bb77314f72c663176722b45d3ccc0f0c9a2d7c32e3f71c7e",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.3.bc1.bin",
+    "current_sha256": "5f256c14ec79f793bb77314f72c663176722b45d3ccc0f0c9a2d7c32e3f71c7e",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.3.bc2.bin",
+    "original_sha256": "362999ada63573733fee5def8dfdcb27e2e2083f60460fcc87bdf82344236435",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.3.bc2.bin",
+    "current_sha256": "362999ada63573733fee5def8dfdcb27e2e2083f60460fcc87bdf82344236435",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.3.bc3.bin",
+    "original_sha256": "1d4c54760a97a2143263b598d9728f05a9d75a6217ba485caefce20015e3e8e3",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.3.bc3.bin",
+    "current_sha256": "1d4c54760a97a2143263b598d9728f05a9d75a6217ba485caefce20015e3e8e3",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.3.Wc1.bin",
+    "original_sha256": "fa006fb348333830d85b98a6f13ec429d0d4abeba30eeaec7d8411971cf027d6",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.3.wc1.bin",
+    "current_sha256": "fa006fb348333830d85b98a6f13ec429d0d4abeba30eeaec7d8411971cf027d6",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.3.Wc2.bin",
+    "original_sha256": "9eb26e2507d0b4370564ad7f898f426c594a4e6c5e437ca99c98e354e516e9ad",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.3.wc2.bin",
+    "current_sha256": "9eb26e2507d0b4370564ad7f898f426c594a4e6c5e437ca99c98e354e516e9ad",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.3.Wc3.bin",
+    "original_sha256": "0bc87c41a9e01950a6bfd53353550b1cc40b7d6c96df3443906440ec74f1dc61",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.3.wc3.bin",
+    "current_sha256": "0bc87c41a9e01950a6bfd53353550b1cc40b7d6c96df3443906440ec74f1dc61",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.4.bc1.bin",
+    "original_sha256": "82b50168cc22084be49088ef31d1d23634d2c0998775a94725c40cd72f4282a0",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.4.bc1.bin",
+    "current_sha256": "82b50168cc22084be49088ef31d1d23634d2c0998775a94725c40cd72f4282a0",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.4.bc2.bin",
+    "original_sha256": "6a568ec36c7f217df9125ecdb2092bee2de3df12d9ff04b009c4567aca7be96a",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.4.bc2.bin",
+    "current_sha256": "6a568ec36c7f217df9125ecdb2092bee2de3df12d9ff04b009c4567aca7be96a",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.4.bc3.bin",
+    "original_sha256": "f8874c5ebef70744c4100902043712a8f75b234156daddcb16a45feb0fd291d4",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.4.bc3.bin",
+    "current_sha256": "f8874c5ebef70744c4100902043712a8f75b234156daddcb16a45feb0fd291d4",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.4.Wc1.bin",
+    "original_sha256": "71214d212b32b898ee6088e9399069c096c1d3b1ec9a7757bd83fbd3978c3da4",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.4.wc1.bin",
+    "current_sha256": "71214d212b32b898ee6088e9399069c096c1d3b1ec9a7757bd83fbd3978c3da4",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.4.Wc2.bin",
+    "original_sha256": "fe3066bebfc519413ac0e42a2298b9f4a2d330dc7c6f61984fafa84f2a306267",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.4.wc2.bin",
+    "current_sha256": "fe3066bebfc519413ac0e42a2298b9f4a2d330dc7c6f61984fafa84f2a306267",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.4.Wc3.bin",
+    "original_sha256": "ca24141cafe07d835966b650f527aa020b03a778c5905d3283b07a32bcf6c587",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.4.wc3.bin",
+    "current_sha256": "ca24141cafe07d835966b650f527aa020b03a778c5905d3283b07a32bcf6c587",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.5.bc1.bin",
+    "original_sha256": "dd5f593a126eaed024c733c048ee4420bd0bfc36d7d96c992c24c6cf9047e369",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.5.bc1.bin",
+    "current_sha256": "dd5f593a126eaed024c733c048ee4420bd0bfc36d7d96c992c24c6cf9047e369",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.5.bc2.bin",
+    "original_sha256": "20e67286531436b639ebab215d2bbd0d0671b6cd7ef1884e7d750137c246e23e",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.5.bc2.bin",
+    "current_sha256": "20e67286531436b639ebab215d2bbd0d0671b6cd7ef1884e7d750137c246e23e",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.5.bc3.bin",
+    "original_sha256": "0f5624374ea9f12a007400b6a6b96b4dc4cdfe1d67eb308ab543792f9a964797",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.5.bc3.bin",
+    "current_sha256": "0f5624374ea9f12a007400b6a6b96b4dc4cdfe1d67eb308ab543792f9a964797",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.5.Wc1.bin",
+    "original_sha256": "45ea9ecc80a13546e5f548120b12468443c7e2fccdf6055bc198ed7749f09028",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.5.wc1.bin",
+    "current_sha256": "45ea9ecc80a13546e5f548120b12468443c7e2fccdf6055bc198ed7749f09028",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.5.Wc2.bin",
+    "original_sha256": "b102f2eeea4548d2318afa254f5f4595ad5e6a5779cc446076b54b0e63a44712",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.5.wc2.bin",
+    "current_sha256": "b102f2eeea4548d2318afa254f5f4595ad5e6a5779cc446076b54b0e63a44712",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.5.Wc3.bin",
+    "original_sha256": "62b13ed770d125872fe8d3b984ff1f9d6ad73512986facc79b279043d08baa5f",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.5.wc3.bin",
+    "current_sha256": "62b13ed770d125872fe8d3b984ff1f9d6ad73512986facc79b279043d08baa5f",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.6.bc1.bin",
+    "original_sha256": "83b6cd27af0e21caf0bdb2e53f6b0ca7802763904e6fbc620e1c3296f64f5bad",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.6.bc1.bin",
+    "current_sha256": "83b6cd27af0e21caf0bdb2e53f6b0ca7802763904e6fbc620e1c3296f64f5bad",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.6.bc2.bin",
+    "original_sha256": "9fce4c5b121c920b5f13e05bb933c623de51ec27826dff63ddda001539c21eda",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.6.bc2.bin",
+    "current_sha256": "9fce4c5b121c920b5f13e05bb933c623de51ec27826dff63ddda001539c21eda",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.6.bc3.bin",
+    "original_sha256": "e2a1f165e407064e8d2a1f8a12cdbb425323009212f94436d71b8ba4435bd817",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.6.bc3.bin",
+    "current_sha256": "e2a1f165e407064e8d2a1f8a12cdbb425323009212f94436d71b8ba4435bd817",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.6.Wc1.bin",
+    "original_sha256": "542ba050ca66b6ede42ba8cd21ed5910d2df64c6deeb507d9cd4a02483a47978",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.6.wc1.bin",
+    "current_sha256": "542ba050ca66b6ede42ba8cd21ed5910d2df64c6deeb507d9cd4a02483a47978",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.6.Wc2.bin",
+    "original_sha256": "bbc7c28b9d7dcc532ed8fc4425fca22ea49532e25994c77e60c656c9c191a967",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.6.wc2.bin",
+    "current_sha256": "bbc7c28b9d7dcc532ed8fc4425fca22ea49532e25994c77e60c656c9c191a967",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.6.Wc3.bin",
+    "original_sha256": "19b814bad15574d4b5e5f54934f9b94e66f4223f4e6bccc8d2ec5fc8ba418e10",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.6.wc3.bin",
+    "current_sha256": "19b814bad15574d4b5e5f54934f9b94e66f4223f4e6bccc8d2ec5fc8ba418e10",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.7.bc1.bin",
+    "original_sha256": "5cb766c25f29f9963793914817ea37528f384b8c6374aafcab2e85b2cd40ae79",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.7.bc1.bin",
+    "current_sha256": "5cb766c25f29f9963793914817ea37528f384b8c6374aafcab2e85b2cd40ae79",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.7.bc2.bin",
+    "original_sha256": "a221803165a8ef9f685691ee2b4e71ff7f4ecb59ad95e535a4a2c358c8722251",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.7.bc2.bin",
+    "current_sha256": "a221803165a8ef9f685691ee2b4e71ff7f4ecb59ad95e535a4a2c358c8722251",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.7.bc3.bin",
+    "original_sha256": "3ab0433845b003081d68e3874de8d1b42e989a57a1bf4af92fbbf7043ff9fa47",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.7.bc3.bin",
+    "current_sha256": "3ab0433845b003081d68e3874de8d1b42e989a57a1bf4af92fbbf7043ff9fa47",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.7.Wc1.bin",
+    "original_sha256": "bcb8afb8015edfc17a3f711616442cb18b56e8d17dac457126703e2a51b7f707",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.7.wc1.bin",
+    "current_sha256": "bcb8afb8015edfc17a3f711616442cb18b56e8d17dac457126703e2a51b7f707",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.7.Wc2.bin",
+    "original_sha256": "46ef695c6a9968fceada796e94491c69b9feb5408d3ede61b85bc19a90ffbcde",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.7.wc2.bin",
+    "current_sha256": "46ef695c6a9968fceada796e94491c69b9feb5408d3ede61b85bc19a90ffbcde",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.7.Wc3.bin",
+    "original_sha256": "3ac17d4154b513ad213835370ea667b62c65c4316f326397105e6976ff1c07c1",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.7.wc3.bin",
+    "current_sha256": "3ac17d4154b513ad213835370ea667b62c65c4316f326397105e6976ff1c07c1",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.8.bc1.bin",
+    "original_sha256": "69419fbbfff0fc40d0f5e9307a381cebf79d2ac776842937e51fd08cc1388238",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.8.bc1.bin",
+    "current_sha256": "69419fbbfff0fc40d0f5e9307a381cebf79d2ac776842937e51fd08cc1388238",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.8.bc2.bin",
+    "original_sha256": "db5e4b1b16553b861eea42684bc22e96ae9013ac6b585d8c43575ce55c281e26",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.8.bc2.bin",
+    "current_sha256": "db5e4b1b16553b861eea42684bc22e96ae9013ac6b585d8c43575ce55c281e26",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.8.bc3.bin",
+    "original_sha256": "8a74d12e20f8107e7ae9373edec70220e471c803c07a6d248406ea365a08a926",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.8.bc3.bin",
+    "current_sha256": "8a74d12e20f8107e7ae9373edec70220e471c803c07a6d248406ea365a08a926",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.8.Wc1.bin",
+    "original_sha256": "d44e6215eb74fdcbeee7aace7558e2c24017c7e2ac67caf9e2fc22e706e4d860",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.8.wc1.bin",
+    "current_sha256": "d44e6215eb74fdcbeee7aace7558e2c24017c7e2ac67caf9e2fc22e706e4d860",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.8.Wc2.bin",
+    "original_sha256": "984e8a9b2abd9c54907ddea6a6e12ef0f79da60b013c560754e31906b6d4d05a",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.8.wc2.bin",
+    "current_sha256": "984e8a9b2abd9c54907ddea6a6e12ef0f79da60b013c560754e31906b6d4d05a",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.8.Wc3.bin",
+    "original_sha256": "66ca4858139c63bc61ff6651c210f2db9b135ed5666d9f013d5c639824c0ade8",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.8.wc3.bin",
+    "current_sha256": "66ca4858139c63bc61ff6651c210f2db9b135ed5666d9f013d5c639824c0ade8",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.9.bc1.bin",
+    "original_sha256": "15aace7c1ff85afe50103f2bdb83ffa284fadf8875b5f4052cf2e778a9a393a3",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.9.bc1.bin",
+    "current_sha256": "15aace7c1ff85afe50103f2bdb83ffa284fadf8875b5f4052cf2e778a9a393a3",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.9.bc2.bin",
+    "original_sha256": "48c67d364e170a19add32a4eb7cc4d890c28b05b7b3a84c20ec73946724ef0dd",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.9.bc2.bin",
+    "current_sha256": "48c67d364e170a19add32a4eb7cc4d890c28b05b7b3a84c20ec73946724ef0dd",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.9.bc3.bin",
+    "original_sha256": "f2eb455789517a3023f724b4ee02151c1090fd5904d4336e3129eec599bf53d7",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.9.bc3.bin",
+    "current_sha256": "f2eb455789517a3023f724b4ee02151c1090fd5904d4336e3129eec599bf53d7",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.9.Wc1.bin",
+    "original_sha256": "e490a9c73ac0b5897a897d5defe0d53ef3ead428ea964f7768da4654c8717a9f",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.9.wc1.bin",
+    "current_sha256": "e490a9c73ac0b5897a897d5defe0d53ef3ead428ea964f7768da4654c8717a9f",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.9.Wc2.bin",
+    "original_sha256": "0d54cb31a877d392afb29325e53fe755058f603a7e5e216342dce44fd0b2bfff",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.9.wc2.bin",
+    "current_sha256": "0d54cb31a877d392afb29325e53fe755058f603a7e5e216342dce44fd0b2bfff",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/FoldedInvertedResidual.9.Wc3.bin",
+    "original_sha256": "bffb5b99d6d604e5a0139c2a9bf3113fcb55e5f74c37ed93a8e8e1fde4f065d1",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/foldedinvertedresidual.9.wc3.bin",
+    "current_sha256": "bffb5b99d6d604e5a0139c2a9bf3113fcb55e5f74c37ed93a8e8e1fde4f065d1",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/Head.bc1.bin",
+    "original_sha256": "812a284a41369b76432b56f587dd92cc3205afb1a770277f46fe10b70c75f4ca",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/head.bc1.bin",
+    "current_sha256": "812a284a41369b76432b56f587dd92cc3205afb1a770277f46fe10b70c75f4ca",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/Head.bc2.bin",
+    "original_sha256": "c574dc3b3a3a9b1254c4514d0236a9a14e3ef9c7cf5c65978d49a84946ed8922",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/head.bc2.bin",
+    "current_sha256": "c574dc3b3a3a9b1254c4514d0236a9a14e3ef9c7cf5c65978d49a84946ed8922",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/Head.bc3.bin",
+    "original_sha256": "e1218947d7966b497ecec3f41a24e3ad09109c57385a820a1715d388d2bdecb2",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/head.bc3.bin",
+    "current_sha256": "e1218947d7966b497ecec3f41a24e3ad09109c57385a820a1715d388d2bdecb2",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/Head.Wc1.bin",
+    "original_sha256": "d57cb0270d75b1bf43060b1c1645f13363adba4ed79c6baeca1c1518d5fce5d2",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/head.wc1.bin",
+    "current_sha256": "d57cb0270d75b1bf43060b1c1645f13363adba4ed79c6baeca1c1518d5fce5d2",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/Head.Wc2.bin",
+    "original_sha256": "9cd2349aee19fc16cb70d3df218e547e184fc2b65cdd1e8cef80473ac43dca72",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/head.wc2.bin",
+    "current_sha256": "9cd2349aee19fc16cb70d3df218e547e184fc2b65cdd1e8cef80473ac43dca72",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/Head.Wc3.bin",
+    "original_sha256": "9c5b8b9abee512df056658f7e0b1f2a971c3743cef3b19001cd58cf7c4a344e6",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/head.wc3.bin",
+    "current_sha256": "9c5b8b9abee512df056658f7e0b1f2a971c3743cef3b19001cd58cf7c4a344e6",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/Tail.bc1.bin",
+    "original_sha256": "c41614b04b4c3cb980505842bddf3d32ceab790c2ebc2847d967d37ba7827222",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/tail.bc1.bin",
+    "current_sha256": "c41614b04b4c3cb980505842bddf3d32ceab790c2ebc2847d967d37ba7827222",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/Tail.bf1.bin",
+    "original_sha256": "c58c999bcabfd93a21f94b38418a47624f5a9828b22aa0959c61123e5df8bd40",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/tail.bf1.bin",
+    "current_sha256": "c58c999bcabfd93a21f94b38418a47624f5a9828b22aa0959c61123e5df8bd40",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/Tail.Wc1.bin",
+    "original_sha256": "8eb2e7e71a25b6fd958e48d7eed60c946c33faae0e540f6febc29bc41a91af2a",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/tail.wc1.bin",
+    "current_sha256": "8eb2e7e71a25b6fd958e48d7eed60c946c33faae0e540f6febc29bc41a91af2a",
+    "content_changed": false
+  },
+  {
+    "original": "data/trash_weight/Tail.Wf1.bin",
+    "original_sha256": "adf5a2f2bc5cf3bb97ba683270ad3c3182e9e534d9669936fc418692a70e123b",
+    "preserved_in_snapshot": true,
+    "current_path": "data/trash_weight/tail.wf1.bin",
+    "current_sha256": "adf5a2f2bc5cf3bb97ba683270ad3c3182e9e534d9669936fc418692a70e123b",
+    "content_changed": false
+  },
+  {
+    "original": "lanuch.py",
+    "original_sha256": "91a36cf74ec928dbcda695cc8c0e4a71916f0dc209a7af477e326bffda7bca3b",
+    "preserved_in_snapshot": true,
+    "current_path": "board/lanuch.py",
+    "current_sha256": "5e8809562efd22b5edde645fda4db6d6f039474b3d5d832613d6859694f43b9f",
+    "content_changed": true
+  },
+  {
+    "original": "pyproject.toml",
+    "original_sha256": "b8ecaeaffde4e3e809afb8ebace86936e3e1c75287654badb84a140cbbf7118a",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "PYTHON_CODE_INDEX.md",
+    "original_sha256": "b44890679ac9807da2378f1613bd188d11bd2a43a6f56c99acd779bad74d6bfc",
+    "preserved_in_snapshot": true,
+    "current_path": "report/original_docs/python_code_index.md",
+    "current_sha256": "b44890679ac9807da2378f1613bd188d11bd2a43a6f56c99acd779bad74d6bfc",
+    "content_changed": false
+  },
+  {
+    "original": "README.md",
+    "original_sha256": "ed9d7ea6cb6fd6d427343cac1bd8f7ef3ec00a912179cbce5d3c7d7a3cdb6d78",
+    "preserved_in_snapshot": true,
+    "current_path": "report/original_docs/readme.md",
+    "current_sha256": "ed9d7ea6cb6fd6d427343cac1bd8f7ef3ec00a912179cbce5d3c7d7a3cdb6d78",
+    "content_changed": false
+  },
+  {
+    "original": "release_checksums.json",
+    "original_sha256": "fa2bfb2532f9031dd618430efb7328ab5f7338150ed0cdb3a970f408d862af31",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "report/application_audit.md",
+    "original_sha256": "a6c3555dc5a93055973b3ffbb93d62ae9e14ef3573469ba034896bcef4d44ce6",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/application_audit.md",
+    "current_sha256": "a6c3555dc5a93055973b3ffbb93d62ae9e14ef3573469ba034896bcef4d44ce6",
+    "content_changed": false
+  },
+  {
+    "original": "report/BOARD_AUDIT.md",
+    "original_sha256": "cb8cbcdd001884e80549350ead24e6d7e1bfeb1d6087dd27c2b82fd6a8022d39",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/board_audit.md",
+    "current_sha256": "cb8cbcdd001884e80549350ead24e6d7e1bfeb1d6087dd27c2b82fd6a8022d39",
+    "content_changed": false
+  },
+  {
+    "original": "report/board_doctor.json",
+    "original_sha256": "81c09d09ec58d23673170092808263db0d11633956037061ca2810e9b31eb63e",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/board_doctor.json",
+    "current_sha256": "81c09d09ec58d23673170092808263db0d11633956037061ca2810e9b31eb63e",
+    "content_changed": false
+  },
+  {
+    "original": "report/board_image_audit.md",
+    "original_sha256": "98e8f8c94b415199cd7cfe45c0f327f7100e249abca8e1c50ecaf0593da826f2",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/board_image_audit.md",
+    "current_sha256": "98e8f8c94b415199cd7cfe45c0f327f7100e249abca8e1c50ecaf0593da826f2",
+    "content_changed": false
+  },
+  {
+    "original": "report/board_image_fdt.json",
+    "original_sha256": "f31c5c4817edff9ab6178327b03e43d36aa6c852c3d31233aa702b3f518e8e36",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/board_image_fdt.json",
+    "current_sha256": "f31c5c4817edff9ab6178327b03e43d36aa6c852c3d31233aa702b3f518e8e36",
+    "content_changed": false
+  },
+  {
+    "original": "report/board_run.json",
+    "original_sha256": "e9fab85d76179a502e372abec816be2cb7a663bba2bfffdf4c658c25d9ef5f17",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/board_run.json",
+    "current_sha256": "e9fab85d76179a502e372abec816be2cb7a663bba2bfffdf4c658c25d9ef5f17",
+    "content_changed": false
+  },
+  {
+    "original": "report/board_run_10.json",
+    "original_sha256": "a1722dde8bf04ccad56675a002b2119e71526d988f7da099b75114ea0a01671e",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/board_run_10.json",
+    "current_sha256": "a1722dde8bf04ccad56675a002b2119e71526d988f7da099b75114ea0a01671e",
+    "content_changed": false
+  },
+  {
+    "original": "report/board_run_bgr.json",
+    "original_sha256": "19917e6186424a7a7bba5dac9640aa403d0b20515ef011fcde3e85031f22a2a0",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/board_run_bgr.json",
+    "current_sha256": "19917e6186424a7a7bba5dac9640aa403d0b20515ef011fcde3e85031f22a2a0",
+    "content_changed": false
+  },
+  {
+    "original": "report/boot_dtb_validation.json",
+    "original_sha256": "b4992e539248342228875145c8aa9ca9797e5b978625a587fbda279a36463bf2",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/boot_dtb_validation.json",
+    "current_sha256": "b4992e539248342228875145c8aa9ca9797e5b978625a587fbda279a36463bf2",
+    "content_changed": false
+  },
+  {
+    "original": "report/camera_backup_20261024T230036/board/01_bringup_and_demo.ipynb",
+    "original_sha256": "a406b7236a518888a519da134d14a52bb65717e7d7acb6b248c6eb1b56cfaa0a",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/camera_backup_20261024t230036/board/01_bringup_and_demo.ipynb",
+    "current_sha256": "a406b7236a518888a519da134d14a52bb65717e7d7acb6b248c6eb1b56cfaa0a",
+    "content_changed": false
+  },
+  {
+    "original": "report/camera_backup_20261024T230036/build/make_notebook.py",
+    "original_sha256": "757e5c14b4a465d93cf8c6de1825b3b42e398e03d0ebd9a3d492a2f25772fb50",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/camera_backup_20261024t230036/build/make_notebook.py",
+    "current_sha256": "757e5c14b4a465d93cf8c6de1825b3b42e398e03d0ebd9a3d492a2f25772fb50",
+    "content_changed": false
+  },
+  {
+    "original": "report/camera_backup_20261024T230036/installed_sha256.json",
+    "original_sha256": "0262583c5a9f182a48c4c7817ba3b1ef6f1b4fa0fd931685997e47d43ac611b5",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/camera_backup_20261024t230036/installed_sha256.json",
+    "current_sha256": "0262583c5a9f182a48c4c7817ba3b1ef6f1b4fa0fd931685997e47d43ac611b5",
+    "content_changed": false
+  },
+  {
+    "original": "report/camera_backup_20261024T230036/src/trash_pynq/ui.py",
+    "original_sha256": "4945fed294491fda13fabd23ae6560bb7f661ff3dddf5efb5cc67985e68f1b40",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/camera_backup_20261024t230036/src/trash_pynq/ui.py",
+    "current_sha256": "4945fed294491fda13fabd23ae6560bb7f661ff3dddf5efb5cc67985e68f1b40",
+    "content_changed": false
+  },
+  {
+    "original": "report/camera_debug_report.md",
+    "original_sha256": "6fde8ca1a96875c546fab34674882b307603aa286f4c32a0aca9998643c4d70e",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/camera_debug_report.md",
+    "current_sha256": "6fde8ca1a96875c546fab34674882b307603aa286f4c32a0aca9998643c4d70e",
+    "content_changed": false
+  },
+  {
+    "original": "report/camera_fps_baseline.json",
+    "original_sha256": "465092168ea690d0d2936b7fecf9f028600ae0b1923cd141f720aba0728345d7",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/camera_fps_baseline.json",
+    "current_sha256": "465092168ea690d0d2936b7fecf9f028600ae0b1923cd141f720aba0728345d7",
+    "content_changed": false
+  },
+  {
+    "original": "report/camera_fps_optimized.json",
+    "original_sha256": "1240be344da95fa172e44ca9871f7646e09945d763da816cb44d1e2dfe313a3d",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/camera_fps_optimized.json",
+    "current_sha256": "1240be344da95fa172e44ca9871f7646e09945d763da816cb44d1e2dfe313a3d",
+    "content_changed": false
+  },
+  {
+    "original": "report/camera_live_status.json",
+    "original_sha256": "234f905bfd2bfb00d66fd8f35d3213b2c6f4bf68a280ae0ba3ac304d64bdd06d",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/camera_live_status.json",
+    "current_sha256": "234f905bfd2bfb00d66fd8f35d3213b2c6f4bf68a280ae0ba3ac304d64bdd06d",
+    "content_changed": false
+  },
+  {
+    "original": "report/camera_optimized_preview.png",
+    "original_sha256": "1f99dd49e87a6944fce04f18b499e180a877181e13b1718ea720dc170209a7c6",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/camera_optimized_preview.png",
+    "current_sha256": "1f99dd49e87a6944fce04f18b499e180a877181e13b1718ea720dc170209a7c6",
+    "content_changed": false
+  },
+  {
+    "original": "report/camera_rearm_ab.json",
+    "original_sha256": "bd3d3fdc01284fb04ba6f96e3e286d935b67cc2731cd4217ca239746b5d0bc79",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/camera_rearm_ab.json",
+    "current_sha256": "bd3d3fdc01284fb04ba6f96e3e286d935b67cc2731cd4217ca239746b5d0bc79",
+    "content_changed": false
+  },
+  {
+    "original": "report/collaboration_record.md",
+    "original_sha256": "802be1375f4c663a9d813f0697b3a41d03079494c7d089f7d0617fda7ecf4892",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/collaboration_record.md",
+    "current_sha256": "802be1375f4c663a9d813f0697b3a41d03079494c7d089f7d0617fda7ecf4892",
+    "content_changed": false
+  },
+  {
+    "original": "report/contest_requirements.md",
+    "original_sha256": "866281c033b6b66a13e9fb23822713541755cf71f53a0ca31c593ac9202f2181",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/contest_requirements.md",
+    "current_sha256": "866281c033b6b66a13e9fb23822713541755cf71f53a0ca31c593ac9202f2181",
+    "content_changed": false
+  },
+  {
+    "original": "report/evidence/contest-22.png",
+    "original_sha256": "7f239dc9e9d561f236ace6f3dbd9c8325973479de8b1fc6f4b1c5866f7c1457d",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/evidence/contest-22.png",
+    "current_sha256": "7f239dc9e9d561f236ace6f3dbd9c8325973479de8b1fc6f4b1c5866f7c1457d",
+    "content_changed": false
+  },
+  {
+    "original": "report/evidence/contest-23.png",
+    "original_sha256": "701fb9254eee8e39ba4088d44b7511ef4086b2ff49dbafa36387ea97880685b9",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/evidence/contest-23.png",
+    "current_sha256": "701fb9254eee8e39ba4088d44b7511ef4086b2ff49dbafa36387ea97880685b9",
+    "content_changed": false
+  },
+  {
+    "original": "report/evidence/contest-24.png",
+    "original_sha256": "ebe4156edcbd3de63622fa350612fbfcf8d65fbbdf04f385887bdbf6033b863c",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/evidence/contest-24.png",
+    "current_sha256": "ebe4156edcbd3de63622fa350612fbfcf8d65fbbdf04f385887bdbf6033b863c",
+    "content_changed": false
+  },
+  {
+    "original": "report/evidence/contest-25.png",
+    "original_sha256": "912b97a1bf1b58115d1911582f793c17650dd6ee69ca87f88ed8d1a6344854ac",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/evidence/contest-25.png",
+    "current_sha256": "912b97a1bf1b58115d1911582f793c17650dd6ee69ca87f88ed8d1a6344854ac",
+    "content_changed": false
+  },
+  {
+    "original": "report/evidence/contest-28.png",
+    "original_sha256": "fd2d5f972fffca6969980a4cc476f16dd5a7e148ef695856274c5e3758d02560",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/evidence/contest-28.png",
+    "current_sha256": "fd2d5f972fffca6969980a4cc476f16dd5a7e148ef695856274c5e3758d02560",
+    "content_changed": false
+  },
+  {
+    "original": "report/fit_repack_smoke.json",
+    "original_sha256": "6ff5795c574ded7342e8c886dfbae5add87fe3aa16f73c85d5b0c1110ff280a4",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/fit_repack_smoke.json",
+    "current_sha256": "6ff5795c574ded7342e8c886dfbae5add87fe3aa16f73c85d5b0c1110ff280a4",
+    "content_changed": false
+  },
+  {
+    "original": "report/hardware_audit.md",
+    "original_sha256": "0bc41fbc9cebe9bd3111d4a8207047f572fb1d7ab82227649924eaf86e227732",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/hardware_audit.md",
+    "current_sha256": "0bc41fbc9cebe9bd3111d4a8207047f572fb1d7ab82227649924eaf86e227732",
+    "content_changed": false
+  },
+  {
+    "original": "report/hls_component_reference.json",
+    "original_sha256": "3bb35fd7f8452c24f4a5347d8e001c7eceea3f1b671ef59658989236a72e2b5f",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/hls_component_reference.json",
+    "current_sha256": "3bb35fd7f8452c24f4a5347d8e001c7eceea3f1b671ef59658989236a72e2b5f",
+    "content_changed": false
+  },
+  {
+    "original": "report/hls_source_integrity.json",
+    "original_sha256": "bfed27e417f15a3aed0a2415d85fce3b6a67085609dfe2b4bb1c1b9d3298d633",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/hls_source_integrity.json",
+    "current_sha256": "bfed27e417f15a3aed0a2415d85fce3b6a67085609dfe2b4bb1c1b9d3298d633",
+    "content_changed": false
+  },
+  {
+    "original": "report/host_doctor.json",
+    "original_sha256": "4bb2c8f9c38d53da7be26b34ca5b67a0085d1f892e87f64fe6af80d68fc2303c",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/host_doctor.json",
+    "current_sha256": "4bb2c8f9c38d53da7be26b34ca5b67a0085d1f892e87f64fe6af80d68fc2303c",
+    "content_changed": false
+  },
+  {
+    "original": "report/host_tests.json",
+    "original_sha256": "d269b286282b7c2635432ed26bb0cce76f1c289dddedd378f05be808fa3eeb3f",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/host_tests.json",
+    "current_sha256": "d269b286282b7c2635432ed26bb0cce76f1c289dddedd378f05be808fa3eeb3f",
+    "content_changed": false
+  },
+  {
+    "original": "report/host_tests.log",
+    "original_sha256": "1511f24a9b3cab3283b1263bc301564138dc36a5f442185708b590661ba4149f",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/host_tests.log",
+    "current_sha256": "1511f24a9b3cab3283b1263bc301564138dc36a5f442185708b590661ba4149f",
+    "content_changed": false
+  },
+  {
+    "original": "report/installer_readiness.json",
+    "original_sha256": "09a30a958c87158b950f09e21360902ed9ef1cd83b0a43b1e8998dcbb22ad54c",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/installer_readiness.json",
+    "current_sha256": "09a30a958c87158b950f09e21360902ed9ef1cd83b0a43b1e8998dcbb22ad54c",
+    "content_changed": false
+  },
+  {
+    "original": "report/lcd_ui_preview.png",
+    "original_sha256": "53a72b77210c06b6b689079b56dd784298a9e9c87f56838ea8a225c51c63422f",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/lcd_ui_preview.png",
+    "current_sha256": "53a72b77210c06b6b689079b56dd784298a9e9c87f56838ea8a225c51c63422f",
+    "content_changed": false
+  },
+  {
+    "original": "report/lcd_ui_preview_identified.png",
+    "original_sha256": "a506f6036e849fe1c4eed18667e4f31f88094bb0679cf89111e4643ac8949f11",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/lcd_ui_preview_identified.png",
+    "current_sha256": "a506f6036e849fe1c4eed18667e4f31f88094bb0679cf89111e4643ac8949f11",
+    "content_changed": false
+  },
+  {
+    "original": "report/real_weights_check.json",
+    "original_sha256": "daa4cd347ade57a402a85e0cf38d424848a2c73b482171fdbaa64aefcae0c5b7",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/real_weights_check.json",
+    "current_sha256": "daa4cd347ade57a402a85e0cf38d424848a2c73b482171fdbaa64aefcae0c5b7",
+    "content_changed": false
+  },
+  {
+    "original": "report/runtime_backup_20261024T233455/board/01_bringup_and_demo.ipynb",
+    "original_sha256": "bc1ac08165488688de3e9f11b007cbeebb80c17db9e96c22b76f439fec030ca2",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/runtime_backup_20261024t233455/board/01_bringup_and_demo.ipynb",
+    "current_sha256": "bc1ac08165488688de3e9f11b007cbeebb80c17db9e96c22b76f439fec030ca2",
+    "content_changed": false
+  },
+  {
+    "original": "report/runtime_backup_20261024T233455/board/01_bringup_and_demo_optimized.ipynb",
+    "original_sha256": "31f2b72f5150920918c6a0872286a4bb6cb0eba0266aade59ef4007be2cc2aed",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/runtime_backup_20261024t233455/board/01_bringup_and_demo_optimized.ipynb",
+    "current_sha256": "31f2b72f5150920918c6a0872286a4bb6cb0eba0266aade59ef4007be2cc2aed",
+    "content_changed": false
+  },
+  {
+    "original": "report/runtime_backup_20261024T233455/build/make_notebook.py",
+    "original_sha256": "5f988a31dcbc799a8265cdc95692e99b2eaa1a22c43c8b84d7046fb5cf97ff3c",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/runtime_backup_20261024t233455/build/make_notebook.py",
+    "current_sha256": "5f988a31dcbc799a8265cdc95692e99b2eaa1a22c43c8b84d7046fb5cf97ff3c",
+    "content_changed": false
+  },
+  {
+    "original": "report/runtime_backup_20261024T233455/build/package_release.py",
+    "original_sha256": "e4d50a992b2bf960d8d827a2eacfea376460b34ad6e831e4ec0ce452d388b211",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/runtime_backup_20261024t233455/build/package_release.py",
+    "current_sha256": "e4d50a992b2bf960d8d827a2eacfea376460b34ad6e831e4ec0ce452d388b211",
+    "content_changed": false
+  },
+  {
+    "original": "report/runtime_backup_20261024T233455/manifest.json",
+    "original_sha256": "104183d8032a16ec729633d6bb0b14ed4d4250c9b79462b423496ea51d22e5a3",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/runtime_backup_20261024t233455/manifest.json",
+    "current_sha256": "104183d8032a16ec729633d6bb0b14ed4d4250c9b79462b423496ea51d22e5a3",
+    "content_changed": false
+  },
+  {
+    "original": "report/runtime_backup_20261024T233455/README.md",
+    "original_sha256": "1aa5adf1efec6710066b5c1fd5bd8aaf5e4d52b1073fb074928800f25dc3ed33",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/runtime_backup_20261024t233455/readme.md",
+    "current_sha256": "1aa5adf1efec6710066b5c1fd5bd8aaf5e4d52b1073fb074928800f25dc3ed33",
+    "content_changed": false
+  },
+  {
+    "original": "report/runtime_launch_validation.json",
+    "original_sha256": "863d7be5ccdca5e1937dacc37822c0791b259dd9cb234719ced44a529ec9f401",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/runtime_launch_validation.json",
+    "current_sha256": "863d7be5ccdca5e1937dacc37822c0791b259dd9cb234719ced44a529ec9f401",
+    "content_changed": false
+  },
+  {
+    "original": "report/runtime_package_validation.json",
+    "original_sha256": "5ffb62ef2e86577c55993a723341bf70fc057de82cb060ef6b47b7a718c1f2b6",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/runtime_package_validation.json",
+    "current_sha256": "5ffb62ef2e86577c55993a723341bf70fc057de82cb060ef6b47b7a718c1f2b6",
+    "content_changed": false
+  },
+  {
+    "original": "report/tool_dtc.md",
+    "original_sha256": "195fa93672f60bfece831899f5086892302bbd5469b716782f5dd7ce591e9dae",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/tool_dtc.md",
+    "current_sha256": "195fa93672f60bfece831899f5086892302bbd5469b716782f5dd7ce591e9dae",
+    "content_changed": false
+  },
+  {
+    "original": "report/toolchain_2025_2.md",
+    "original_sha256": "631620cc7294d251ecab676f84ae5c7b86ef2b7d11256961a149a7200e677895",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/toolchain_2025_2.md",
+    "current_sha256": "631620cc7294d251ecab676f84ae5c7b86ef2b7d11256961a149a7200e677895",
+    "content_changed": false
+  },
+  {
+    "original": "report/touch_backup_20261024T232058/manifest.json",
+    "original_sha256": "3661ae9f8fd16c07cf38f819c233e8adedffdcba7164b6dcd6c91b04e38c7fa2",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/touch_backup_20261024t232058/manifest.json",
+    "current_sha256": "3661ae9f8fd16c07cf38f819c233e8adedffdcba7164b6dcd6c91b04e38c7fa2",
+    "content_changed": false
+  },
+  {
+    "original": "report/touch_debug_report.md",
+    "original_sha256": "cbb6116b354063d90d8d888b1f7f3f0ef3f50660abd5c69eb561b59b4c98fdf9",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/touch_debug_report.md",
+    "current_sha256": "cbb6116b354063d90d8d888b1f7f3f0ef3f50660abd5c69eb561b59b4c98fdf9",
+    "content_changed": false
+  },
+  {
+    "original": "report/touch_debug_status.json",
+    "original_sha256": "b1bf13cb2e5ce2769fed56cab172b913ffe609e52862af50c4258e883a46d760",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/touch_debug_status.json",
+    "current_sha256": "b1bf13cb2e5ce2769fed56cab172b913ffe609e52862af50c4258e883a46d760",
+    "content_changed": false
+  },
+  {
+    "original": "report/validation_status.md",
+    "original_sha256": "5e6468dbe1121e0ab426a6d2d3582a1fcf7f6e8271e8df703267eefb8cab1826",
+    "preserved_in_snapshot": true,
+    "current_path": "report/from_tar/validation_status.md",
+    "current_sha256": "5e6468dbe1121e0ab426a6d2d3582a1fcf7f6e8271e8df703267eefb8cab1826",
+    "content_changed": false
+  },
+  {
+    "original": "RUN_GUIDE_CN.md",
+    "original_sha256": "01db03b11d2c5a3114bb55a932dba1cfb8834c741ccec6f83931debad447b59d",
+    "preserved_in_snapshot": true,
+    "current_path": "report/original_docs/run_guide_cn.md",
+    "current_sha256": "01db03b11d2c5a3114bb55a932dba1cfb8834c741ccec6f83931debad447b59d",
+    "content_changed": false
+  },
+  {
+    "original": "sim/__pycache__/test_kernels.cpython-38.pyc",
+    "original_sha256": "6f78b9a4fee112b0879fdc83466e2c808eea4310f37c6f7be97bdccbb36bb1d1",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "sim/__pycache__/test_model.cpython-38.pyc",
+    "original_sha256": "6ecd443726dd77fd542f3c8cdca187e756812db6e0bc6041d41e1ff9fd52a2a8",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "sim/__pycache__/test_overlay.cpython-38.pyc",
+    "original_sha256": "a290ba10728d4d56ad4bbe62816606fe5848c02d44c6b3fd3ad05847eb0ca3b2",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "sim/__pycache__/test_peripherals.cpython-38.pyc",
+    "original_sha256": "36d2712f24cee85e5b37abf3a262319b2744bb345c381e521018e7edd53b15ad",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "sim/__pycache__/test_ui.cpython-38.pyc",
+    "original_sha256": "c2275356190de2f0ec5a95fec4b3d26af2561dcf0da1b87463d92d2bb4d46b34",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "sim/__pycache__/test_workflow.cpython-38.pyc",
+    "original_sha256": "415e2a17849cfc44456b2732bafbb741b55f31606c45106f9a86f424bf96b11e",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "sim/test_kernels.py",
+    "original_sha256": "deab999a204a4c083154bcf144ef4e791f699996f064aa00b96f19fd6ea57cd3",
+    "preserved_in_snapshot": true,
+    "current_path": "sim/test_kernels.py",
+    "current_sha256": "deab999a204a4c083154bcf144ef4e791f699996f064aa00b96f19fd6ea57cd3",
+    "content_changed": false
+  },
+  {
+    "original": "sim/test_model.py",
+    "original_sha256": "8dedf187b30879dba7b4487a233569c6b33f79640b9f38299d1b5f29e8bf6b58",
+    "preserved_in_snapshot": true,
+    "current_path": "sim/test_model.py",
+    "current_sha256": "8afe92cc389c4ad1bce218647514940f4d59a32ef20654b20e00ca7648feb3b3",
+    "content_changed": true
+  },
+  {
+    "original": "sim/test_overlay.py",
+    "original_sha256": "c1b6f9c1d8e09a83e6c6123789da181aa5334d770cc50c49fb8b6e854b2e08ea",
+    "preserved_in_snapshot": true,
+    "current_path": "sim/test_overlay.py",
+    "current_sha256": "c1b6f9c1d8e09a83e6c6123789da181aa5334d770cc50c49fb8b6e854b2e08ea",
+    "content_changed": false
+  },
+  {
+    "original": "sim/test_peripherals.py",
+    "original_sha256": "60e41f8e9c8713eb4b0e14978ca16bb98e1a20781bb99470876e9490643049d6",
+    "preserved_in_snapshot": true,
+    "current_path": "sim/test_peripherals.py",
+    "current_sha256": "60e41f8e9c8713eb4b0e14978ca16bb98e1a20781bb99470876e9490643049d6",
+    "content_changed": false
+  },
+  {
+    "original": "sim/test_ui.py",
+    "original_sha256": "df5cb2a8d747608139e4c9672fd46ab055ee9e73a0d141b64fb92a5c03fcb12c",
+    "preserved_in_snapshot": true,
+    "current_path": "sim/test_ui.py",
+    "current_sha256": "df5cb2a8d747608139e4c9672fd46ab055ee9e73a0d141b64fb92a5c03fcb12c",
+    "content_changed": false
+  },
+  {
+    "original": "sim/test_workflow.py",
+    "original_sha256": "d4e10681bd5648dbce306adb5c9db00d374829a4d2351958cd8cf5ce7ef9ff57",
+    "preserved_in_snapshot": true,
+    "current_path": "sim/test_workflow.py",
+    "current_sha256": "b83066ff6ba382606a1cd429b6e6ebb1f35d4b244fea547148b0a6e778dfa93a",
+    "content_changed": true
+  },
+  {
+    "original": "skill/pynq_overlay_porting/SKILL.md",
+    "original_sha256": "ffa5c7567bda0b75f794a35b83590e48a9be7c48dc5a8f5658495717cc6e1aa6",
+    "preserved_in_snapshot": true,
+    "current_path": "skill/from_tar/pynq_overlay_porting/skill.md",
+    "current_sha256": "ffa5c7567bda0b75f794a35b83590e48a9be7c48dc5a8f5658495717cc6e1aa6",
+    "content_changed": false
+  },
+  {
+    "original": "skill/README.md",
+    "original_sha256": "91fda9ec3a00ff1143779803fea73806d4154ca870588bc045c55531e2fb80bf",
+    "preserved_in_snapshot": true,
+    "current_path": "skill/from_tar/README.md",
+    "current_sha256": "91fda9ec3a00ff1143779803fea73806d4154ca870588bc045c55531e2fb80bf",
+    "content_changed": false
+  },
+  {
+    "original": "src/trash_pynq/__init__.py",
+    "original_sha256": "e28006061a23e5c2ac9e3d2fc447693e7d77112f8da1881e55e9680ef7f71a45",
+    "preserved_in_snapshot": true,
+    "current_path": "src/trash_pynq/__init__.py",
+    "current_sha256": "e28006061a23e5c2ac9e3d2fc447693e7d77112f8da1881e55e9680ef7f71a45",
+    "content_changed": false
+  },
+  {
+    "original": "src/trash_pynq/__pycache__/__init__.cpython-38.pyc",
+    "original_sha256": "50debb5557e8fb5c17ecb31e018295d09ac05ad445ebd8afb5577306315a2406",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "src/trash_pynq/__pycache__/kernels.cpython-38.pyc",
+    "original_sha256": "1e1ba87ca21f258ea11a72e0ce033d5a24c47bfb0ae0c93922268e461fe5f0dc",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "src/trash_pynq/__pycache__/model.cpython-38.pyc",
+    "original_sha256": "8a30b1443d7d24e0ee653ad021e1a3ff604c49acf5b289662f926444c847de29",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "src/trash_pynq/__pycache__/overlay.cpython-38.pyc",
+    "original_sha256": "e4e82065df89139e86b85fc92c0a83888589baca6f987e706687e2b6e38ac6f6",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "src/trash_pynq/__pycache__/peripherals.cpython-38.pyc",
+    "original_sha256": "7829b5dadc0847f0a1217042a042ab753718d45f4d169005b7e7acd3dda021a8",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "src/trash_pynq/__pycache__/preview.cpython-38.pyc",
+    "original_sha256": "6d939e4d3dfb4bf286ea717dbd586808c6d59fe80a8f78bf72d21f0559d832da",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "src/trash_pynq/__pycache__/ui.cpython-38.pyc",
+    "original_sha256": "5613dface4662b1f66a90150b250649a2e76753ed39abcc75c42b1a0134dfb5b",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "src/trash_pynq/kernels.py",
+    "original_sha256": "fec2320ecc2ced8a995d7a6f20a26b29e759d6196050f0412a87481a3326f4e0",
+    "preserved_in_snapshot": true,
+    "current_path": "src/trash_pynq/kernels.py",
+    "current_sha256": "fec2320ecc2ced8a995d7a6f20a26b29e759d6196050f0412a87481a3326f4e0",
+    "content_changed": false
+  },
+  {
+    "original": "src/trash_pynq/model.py",
+    "original_sha256": "ddd87de8469ac33240c42e1adc6cf675b5be71e9874b1fd1d0753c22f7ab7c19",
+    "preserved_in_snapshot": true,
+    "current_path": "src/trash_pynq/model.py",
+    "current_sha256": "92091990a52078888c28d63054ce866211aa3e7738742e5dfed0edd5b9f7e5ef",
+    "content_changed": true
+  },
+  {
+    "original": "src/trash_pynq/overlay.py",
+    "original_sha256": "656d8c06c8e2902b710f0b62345363688ac299c8ed9b918ed7d110fba659cf8a",
+    "preserved_in_snapshot": true,
+    "current_path": "src/trash_pynq/overlay.py",
+    "current_sha256": "656d8c06c8e2902b710f0b62345363688ac299c8ed9b918ed7d110fba659cf8a",
+    "content_changed": false
+  },
+  {
+    "original": "src/trash_pynq/peripherals.py",
+    "original_sha256": "e8a02b7b2c5d5b8343afa1b2281b6ab7f1fce90ed8725bca9d5f086e691b7020",
+    "preserved_in_snapshot": true,
+    "current_path": "src/trash_pynq/peripherals.py",
+    "current_sha256": "e8a02b7b2c5d5b8343afa1b2281b6ab7f1fce90ed8725bca9d5f086e691b7020",
+    "content_changed": false
+  },
+  {
+    "original": "src/trash_pynq/preview.py",
+    "original_sha256": "9eedd1b99559e3b106ddd737ead069603a3cb83bb6fbac349f270a7d41f725f7",
+    "preserved_in_snapshot": true,
+    "current_path": "src/trash_pynq/preview.py",
+    "current_sha256": "9eedd1b99559e3b106ddd737ead069603a3cb83bb6fbac349f270a7d41f725f7",
+    "content_changed": false
+  },
+  {
+    "original": "src/trash_pynq/reference.py",
+    "original_sha256": "29db15dabb25a3b0e6da021d9346f772d3d4fe7787e928c0f9d2b8a55a8b165b",
+    "preserved_in_snapshot": true,
+    "current_path": "src/trash_pynq/reference.py",
+    "current_sha256": "29db15dabb25a3b0e6da021d9346f772d3d4fe7787e928c0f9d2b8a55a8b165b",
+    "content_changed": false
+  },
+  {
+    "original": "src/trash_pynq/ui.py",
+    "original_sha256": "f0e3a79de0ae9899b0f933460a5368c2411d35715b77d7f3794f79b6adcff769",
+    "preserved_in_snapshot": true,
+    "current_path": "src/trash_pynq/ui.py",
+    "current_sha256": "f0e3a79de0ae9899b0f933460a5368c2411d35715b77d7f3794f79b6adcff769",
+    "content_changed": false
+  },
+  {
+    "original": "tests/__pycache__/test_lanuch.cpython-38.pyc",
+    "original_sha256": "d712ca9ff1fe42fc9f20f1b82d62ffc2079691239526a8cabd07adca1b47e6ce",
+    "preserved_in_snapshot": true,
+    "current_path": null,
+    "reason": "Native tool workspace, cache or archived helper; exact original retained in snapshot."
+  },
+  {
+    "original": "tests/test_lanuch.py",
+    "original_sha256": "30fd1d0b9a9d587f78bd20b53d3276c469175f622b2dee839d8801670d04f8d3",
+    "preserved_in_snapshot": true,
+    "current_path": "sim/test_lanuch.py",
+    "current_sha256": "f01af8d130ac7680b3218e521a81db4f3f2b0f9bfa7787e3704f4230c13f049a",
+    "content_changed": true
+  }
+]

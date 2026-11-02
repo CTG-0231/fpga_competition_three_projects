@@ -1,0 +1,46 @@
+{
+  "shortcut": {
+    "exit_code": 0,
+    "full_log_sha256": "885e17da49a192f50298ebe9ba81fc8fa94a78d74b8f540269e879310b254d38",
+    "full_log_bytes": 143738,
+    "excerpt_only_in_submission": true,
+    "errors": [
+      "INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***"
+    ]
+  },
+  "fc": {
+    "exit_code": 1,
+    "full_log_sha256": "ca8790ed94cca0eca7dd313d7c1d5ced6590c396ebfe44add831c8f0f4b28d5c",
+    "full_log_bytes": 69286,
+    "excerpt_only_in_submission": true,
+    "errors": [
+      "UVM_WARNING ./file_agent/mem_model.sv(78) @ 238000: reporter [mem_blk page 0] part of reading is out of boundary: addr:'d12800, length:'d12,offset:'d0,depth:'d12810",
+      "UVM_WARNING ./file_agent/mem_model.sv(78) @ 25043000: reporter [mem_blk page 0] part of reading is out of boundary: addr:'d12800, length:'d64,offset:'d0,depth:'d12810",
+      "FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.",
+      "ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***"
+    ]
+  },
+  "pwdwconv": {
+    "exit_code": 1,
+    "full_log_sha256": "60e615bdce7f7f430bf6d47a0f2449f549afa044945c404ce7d77aa9e837cd95",
+    "full_log_bytes": 6124,
+    "excerpt_only_in_submission": true,
+    "errors": [
+      "ERROR: System received a signal named SIGSEGV and the program has to stop immediately!",
+      "ERROR: [COSIM 212-360] Aborting co-simulation: C TB simulation failed.",
+      "ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.",
+      "ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***",
+      "ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***"
+    ]
+  },
+  "conv_pragma_compat": {
+    "exit_code": 1,
+    "full_log_sha256": "7578467d27f9cb17e2c4cc58f650ee125d6af6a638853a8370da36e99523363e",
+    "full_log_bytes": 4279242,
+    "excerpt_only_in_submission": true,
+    "errors": [
+      "FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.",
+      "ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***"
+    ]
+  }
+}

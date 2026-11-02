@@ -1,0 +1,65 @@
+{
+  "policy": "Original HLS preserved per user instruction; no source fixes.",
+  "files": [
+    {
+      "path": "conv/conv.cpp",
+      "sha256": "6395e26b33fb95731e1e854859ec1440e558d08468548742d30fc252d3bd8a3d",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "conv/conv.h",
+      "sha256": "9353ad09627d0ae5265b8eacc644bc0f9ccc2c60ba5e1d652dfceb13d89780f0",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "pwdwconv/pwdwconv.cpp",
+      "sha256": "aace3704fdbbdc6f020ae939a0da940d5c71c9c993c1ce7227ce32421cef934d",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "pwdwconv/pwdwconv.h",
+      "sha256": "f4008a5424b4e709f373ae783edb92bf40ea38fe54e1b55f33c92c6b844a6202",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "pwdwconv/pwconv.cpp",
+      "sha256": "fef26f3f656aca908a14f3fce055b86e18ab6f578637742d7419e3e3bc429b8e",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "pwdwconv/pwconv.h",
+      "sha256": "4ca69d5ace43d6a29ad30486801e7b37e7b909bfdeb29528b072a12b3502b522",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "pwdwconv/dwconv.cpp",
+      "sha256": "babe916030f747799bdfd1ed9453fe57f2847e4213e33e44dcfac8d6c80a96cf",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "pwdwconv/dwconv.h",
+      "sha256": "7ea240b93937ddfae0c920347ec315c921de21b57d13366ead14620f0b59fc53",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "avgpool_fc/fc.cpp",
+      "sha256": "05d6be6a49572cbc8e5ba8b104348a93bfe8544730692b80d446cd4dbb8e50bc",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "avgpool_fc/fc.h",
+      "sha256": "101ac1e0e72c452c3ca2e3b1a959a771474a19b594c74c46458361931a06f114",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "shortcut/shortcut.cpp",
+      "sha256": "c29de393154049d09fc9d7388d982539d27da105ffbff0d5ada4c6c202b70f92",
+      "byte_identical_to_original": true
+    },
+    {
+      "path": "shortcut/shortcut.h",
+      "sha256": "011e6546eb9fc09272ef19d40d0a90903442276d08b238460ea0a2f1aa91b996",
+      "byte_identical_to_original": true
+    }
+  ]
+}

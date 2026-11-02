@@ -1,0 +1,8 @@
+﻿{
+    "state":  "completed",
+    "start_time":  "2026-10-30T21:23:21.6063308+08:00",
+    "helper_pid":  6708,
+    "scope":  "load/validate/generate single-ID instance configuration; no synthesis",
+    "native_exit_code":  0,
+    "end_time":  "2026-10-30T21:24:15.6581141+08:00"
+}

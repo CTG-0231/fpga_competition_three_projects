@@ -1,0 +1,28 @@
+{
+  "snapshot_time": "2026-10-30T21:51:25.129494+08:00",
+  "source": "E:\\fpga25_f\\prepared\\inputs\\constraints\\trash.xdc",
+  "sha256": "c864139d61d61eddcf215ce16a2d79b5b2dfc49a8dce3e7ce346fc8d2c4cd1ff",
+  "source_xdc_commands": {
+    "create_clock": [],
+    "create_generated_clock": [],
+    "set_input_delay": [],
+    "set_output_delay": [],
+    "set_false_path": [],
+    "set_clock_groups": [],
+    "set_max_delay": [],
+    "set_bus_skew": []
+  },
+  "camera_route_exception": [
+    {
+      "line": 86,
+      "text": "set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets OV5640_PCLK_IBUF]"
+    }
+  ],
+  "io_standards": [
+    "LVCMOS33"
+  ],
+  "new_constraints_added": false,
+  "scope": "User board XDC source review only; generated IP constraints and implemented timing reports must be evaluated after completion.",
+  "conclusion": "Original user XDC pins/IO standards are preserved and contain no external camera clock or input/output delay constraints. Positive constrained setup/hold slack cannot establish camera/LCD electrical timing. No camera timing values were invented; no additional timing XDC supplied.",
+  "board_tested": false
+}

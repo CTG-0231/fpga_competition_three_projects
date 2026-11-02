@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "toolchain": "Vitis 2025.2 / ARM GCC 13.3.0",
+  "hardware_xsa": {
+    "sha256": "2b111cec0c83827a454aad4f890a42f251c392a8ac87c3f58691216f94408892",
+    "vivado_version": "2025.2"
+  },
+  "entry_point": "0x100000",
+  "load_segments": [
+    {
+      "address": "0x100000",
+      "file_bytes": 294932,
+      "memory_bytes": 287573328
+    }
+  ],
+  "heap_start": "0x113ed50",
+  "heap_end": "0x1113ed50",
+  "application_end": "0x11340550",
+  "video_reserved_start": "0x12100000",
+  "interrupt_ids": {
+    "UART1": 82,
+    "IIC0": 57,
+    "IIC1": 80,
+    "GPIO": 52
+  },
+  "long_filenames": true,
+  "elf_sha256": "3b30f5642c4a7acc0613609394528df424675068e6bc8ee46cfee89e6091bd5d",
+  "hardware_tested": false
+}

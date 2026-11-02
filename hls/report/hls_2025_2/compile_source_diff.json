@@ -1,0 +1,46 @@
+{
+  "canonical_algorithm_files_preserved": 12,
+  "changes": [
+    {
+      "file": "conv/conv.cpp",
+      "line": 85,
+      "old": "\t#pragma HLS DATAFLOW",
+      "new": "\t// HLS2025.2 migration: legacy DATAFLOW at compute_output loop disabled.",
+      "canonical_sha256": "6395e26b33fb95731e1e854859ec1440e558d08468548742d30fc252d3bd8a3d",
+      "compiled_sha256": "aa661751b7936e38de4b86e1313cba171745d3b77cdde230f331b1fe0aa7be9c",
+      "reason": "HLS200-994 on ch.0 across legacy loop DATAFLOW; scheduling-only, no expression/type/interface changed"
+    },
+    {
+      "file": "pwdwconv/pwconv.cpp",
+      "line": 202,
+      "old": "memcpy((data_t*)bias_buff,(const data_t*)bias,sizeof(data_t)*M);",
+      "new": "for (int bias_index = 0; bias_index < M; ++bias_index) { bias_buff[bias_index / Tm][bias_index % Tm] = bias[bias_index]; }",
+      "canonical_sha256": "fef26f3f656aca908a14f3fce055b86e18ab6f578637742d7419e3e3bc429b8e",
+      "compiled_sha256": "f5472ecd55cc435f0b5a1f3ef9aa3ee16c3ef835689435a1a92a4d886a64079e",
+      "reason": "2025.2 partitioned dynamic memcpy wrote only row0 for M24; explicit equivalent scalar copy preserves each of M data_t values without mathematical changes"
+    },
+    {
+      "file": "pwdwconv/dwconv.cpp",
+      "line": 179,
+      "old": "memcpy((data_t*)bias_buff,(const data_t*)bias,sizeof(data_t)*channel);",
+      "new": "for (int bias_index = 0; bias_index < channel; ++bias_index) { bias_buff[bias_index / Tm][bias_index % Tm] = bias[bias_index]; }",
+      "canonical_sha256": "babe916030f747799bdfd1ed9453fe57f2847e4213e33e44dcfac8d6c80a96cf",
+      "compiled_sha256": "866108afb8681a761bec0cacc36705fe5a41b94c6d88b7e06b285bf740e95243",
+      "reason": "2025.2 partitioned dynamic memcpy left subsequent bias row uninitialized; scalar copy preserves all channel data_t values"
+    },
+    {
+      "file": "pwdwconv/pwconv.h",
+      "line": 7,
+      "old": "#define MAX_LEN 1024",
+      "new": "#define MAX_LEN 1280",
+      "canonical_sha256": "4ca69d5ace43d6a29ad30486801e7b37e7b909bfdeb29528b072a12b3502b522",
+      "compiled_sha256": "340f526c557d66d3ce61f6036f635953976c34f2048d653b99fff92a264f94fd",
+      "reason": "Storage capacity must cover model final PW ch_out=1280; no arithmetic/type/network/quantization change"
+    }
+  ],
+  "external_directives": [
+    "set_directive_cache conv in1 -lines 1 -depth 1",
+    "set_directive_cache conv in2 -lines 1 -depth 1",
+    "set_directive_cache conv in3 -lines 1 -depth 1"
+  ]
+}

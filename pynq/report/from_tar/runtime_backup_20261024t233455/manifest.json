@@ -1,0 +1,42 @@
+{
+  "lanuch.py": {
+    "previously_existed": false,
+    "sha256": "a8bcd0afc608141604ff528cd3498e23a38dd00151d6d1efae74ca5001c652ee"
+  },
+  "RUN_GUIDE_CN.md": {
+    "previously_existed": false,
+    "sha256": "8b9574a8c6e84477631f8794ac3592acab2a10d728c5c4bc642579657d7dfba1"
+  },
+  "API_REFERENCE_CN.md": {
+    "previously_existed": false,
+    "sha256": "8d994d98429ee5b9c89a65ecc9ba68d5e48292e5b2a346bd5ffc58fe69361447"
+  },
+  "PYTHON_CODE_INDEX.md": {
+    "previously_existed": false,
+    "sha256": "4584571f35813f97ef1c85f302d32eed64243b8b4cbd0a413a15231008dda02f"
+  },
+  "README.md": {
+    "previously_existed": true,
+    "sha256": "3d21b97edd28d8e6912ef6e07d634f92d82299293e2791a4ceaa586c0b456de0"
+  },
+  "board/00_one_click_start.ipynb": {
+    "previously_existed": false,
+    "sha256": "3a7ace32b93dfe38a6e7304720dcd37c9e260e77674403b8085de6a586296efb"
+  },
+  "board/01_bringup_and_demo.ipynb": {
+    "previously_existed": true,
+    "sha256": "cca2a872d5e00d9093c94e11f9869869fc62747910e6a16f25a7713a039cd9ab"
+  },
+  "board/01_bringup_and_demo_optimized.ipynb": {
+    "previously_existed": true,
+    "sha256": "0ee5f0f1cbc3c5c8330393ee578b4dc2d4df0fbf8f6e939bc81fc21e2a336bed"
+  },
+  "build/make_notebook.py": {
+    "previously_existed": true,
+    "sha256": "5ed897440aa7acea402b8758559cfdba264f394e14a5a494b31028df3775c010"
+  },
+  "tests/test_lanuch.py": {
+    "previously_existed": false,
+    "sha256": "30fd1d0b9a9d587f78bd20b53d3276c469175f622b2dee839d8801670d04f8d3"
+  }
+}

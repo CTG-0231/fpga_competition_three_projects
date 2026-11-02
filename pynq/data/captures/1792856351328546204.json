@@ -1,0 +1,14 @@
+{
+  "shape": [
+    224,
+    224,
+    3
+  ],
+  "format": "BGR888",
+  "green_gain": [
+    200,
+    256
+  ],
+  "last_label": "healthy",
+  "last_label_is_from_this_frame": false
+}

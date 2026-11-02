@@ -1,0 +1,536 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Oct 30 20:58:56 2026
+# Process ID         : 60468
+# Current directory  : E:/fpga25_v
+# Command line       : vivado.exe -mode batch -nojournal -log E:\fpga25_v\vivado.log -source E:/fpga_work/qian_20261030_1/fpga_competition/build/vivado_2025_2/migrate.tcl -tclargs E:\fpga25_v\prepared E:\fpga25_v\r E:/fpga_work/qian_20261030_1/original_native/FPGA_COMPETION/vivado/board all
+# Log file           : E:/fpga25_v/vivado.log
+# Journal file       : 
+# Running On         : CTG-COM
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen AI 7 H 350 w/ Radeon 860M 
+# CPU Frequency      : 1996 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33413 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 46298 MB
+# Available Virtual  : 8558 MB
+#-----------------------------------------------------------
+INFO: [Common 17-1239] XILINX_LOCAL_USER_DATA is set to 'no'.
+source E:/fpga_work/qian_20261030_1/fpga_competition/build/vivado_2025_2/migrate.tcl
+# if {$argc < 3 || $argc > 4} { error "Expected prepared input, NEW output, ORIGINAL project, optional load|all" }
+# set build_mode all
+# if {$argc == 4} { set build_mode [lindex $argv 3] }
+# if {$build_mode ni {load all}} { error "Mode must be load or all" }
+# set_param general.maxThreads 1
+# set helper_root [file dirname [file normalize [info script]]]
+# if {[info exists ::env(FPGA_PYTHON)]} {
+#     set python_executable $::env(FPGA_PYTHON)
+# } else {
+#     set python_executable [lindex [auto_execok python] 0]
+#     if {$python_executable eq ""} { set python_executable [lindex [auto_execok python3] 0] }
+#     if {$python_executable eq ""} { error "Set FPGA_PYTHON to a Python 3 executable" }
+# }
+# set original_project [file normalize [lindex $argv 2]]
+# set prepared [file normalize [lindex $argv 0]]
+# set output_dir [file normalize [lindex $argv 1]]
+# if {![file isfile [file join $prepared prepare_config.tcl]]} {
+#     error "Run prepare_vivado.py first; input must be its self-contained output directory"
+# }
+# if {[file exists $output_dir]} { error "Use a new output directory to preserve prior results" }
+# proc path_is_within {candidate parent} {
+#     set candidate_parts [file split [file normalize $candidate]]
+#     set parent_parts [file split [file normalize $parent]]
+#     if {[llength $candidate_parts] < [llength $parent_parts]} { return 0 }
+#     for {set index 0} {$index < [llength $parent_parts]} {incr index} {
+#         if {![string equal -nocase [lindex $candidate_parts $index] [lindex $parent_parts $index]]} {
+#             return 0
+#         }
+#     }
+#     return 1
+# }
+# if {[path_is_within $output_dir $prepared] || [path_is_within $prepared $output_dir]} {
+#     error "Prepared input and output trees must not overlap"
+# }
+# foreach entry {inputs ip_repo prepare_config.tcl prepare_manifest.json} {
+#     if {![file exists [file join $prepared $entry]]} {
+#         error "Incomplete prepared input: missing $entry"
+#     }
+# }
+# file mkdir $output_dir
+# set workspace [file join $output_dir workspace]
+# file mkdir $workspace
+# foreach entry {inputs ip_repo prepare_config.tcl prepare_manifest.json} {
+#     file copy [file join $prepared $entry] [file join $workspace $entry]
+# }
+# source [file join $workspace prepare_config.tcl]
+## set prepare_root [file dirname [file normalize [info script]]]
+## set prepare_part {xc7z020clg484-2}
+## set prepare_source_version {2019.2}
+## set prepare_target_version {2025.2}
+## set prepare_ip_dirs [list]
+## lappend prepare_ip_dirs [file join $prepare_root {ip_repo} {conv}]
+## lappend prepare_ip_dirs [file join $prepare_root {ip_repo} {fc}]
+## lappend prepare_ip_dirs [file join $prepare_root {ip_repo} {pwdwconv}]
+## lappend prepare_ip_dirs [file join $prepare_root {ip_repo} {shortcut}]
+## set prepare_bd [file join $prepare_root {inputs} {bd} {design_1.bd}]
+## set prepare_rtl [file join $prepare_root {inputs} {rtl} {rgb888_to_rgb565.v}]
+## set prepare_xdc [list [file join $prepare_root {inputs} {constraints} {trash.xdc}]]
+# foreach input [concat [list $prepare_root $prepare_bd $prepare_rtl] $prepare_xdc $prepare_ip_dirs] {
+#     if {![path_is_within $input $workspace]} {
+#         error "Copied configuration references a path outside the build workspace: $input"
+#     }
+# }
+# set actual_version [version -short]
+# if {![info exists prepare_target_version]} { set prepare_target_version $prepare_source_version }
+# if {$actual_version ne $prepare_target_version} {
+#     error "Prepared target is Vivado $prepare_target_version; actual tool is $actual_version. Do not downgrade to 2018.3."
+# }
+# puts [exec $python_executable -B [file join $helper_root patch_bd.py] $prepare_bd [file join $output_dir compatibility_patch.json]]
+WORKSPACE_BD_COMPATIBILITY_PATCHED
+# create_project leaf [file join $output_dir p] -part $prepare_part
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 523.418 ; gain = 215.840
+# set_property target_language Verilog [current_project]
+# set_property ip_repo_paths $prepare_ip_dirs [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/fpga25_v/r/workspace/ip_repo/conv'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/fpga25_v/r/workspace/ip_repo/fc'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/fpga25_v/r/workspace/ip_repo/pwdwconv'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/fpga25_v/r/workspace/ip_repo/shortcut'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/vivado2025.2/2025.2/Vivado/data/ip'.
+# foreach name {conv fc pwdwconv shortcut} {
+#     if {![llength [get_ipdefs -all -quiet xilinx.com:hls:${name}:0.0]]} {
+#         error "Packaged HLS IP not discovered: $name"
+#     }
+# }
+# add_files -norecurse $prepare_rtl
+# add_files -fileset constrs_1 -norecurse $prepare_xdc
+# add_files -norecurse $prepare_bd
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_fc_0_0/design_1_fc_0_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_conv_0_0/design_1_conv_0_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_shortcut_0_0/design_1_shortcut_0_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_pwdwconv_0_0/design_1_pwdwconv_0_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_xbar_1/design_1_xbar_1.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_us_0/design_1_auto_us_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_us_1/design_1_auto_us_1.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_us_2/design_1_auto_us_2.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_axi_mem_intercon_4/design_1_axi_mem_intercon_4.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_xbar_2/design_1_xbar_2.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_us_3/design_1_auto_us_3.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_us_4/design_1_auto_us_4.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_us_5/design_1_auto_us_5.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_pc_1/design_1_auto_pc_1.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_s04_mmu_0/design_1_s04_mmu_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_s05_mmu_0/design_1_s05_mmu_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_axi_mem_intercon_1_1/design_1_axi_mem_intercon_1_1.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_xbar_3/design_1_xbar_3.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_us_6/design_1_auto_us_6.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_us_7/design_1_auto_us_7.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_us_8/design_1_auto_us_8.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_us_9/design_1_auto_us_9.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_pc_2/design_1_auto_pc_2.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_s04_mmu_1/design_1_s04_mmu_1.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_s05_mmu_1/design_1_s05_mmu_1.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_axi_mem_intercon_2_1/design_1_axi_mem_intercon_2_1.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_xbar_4/design_1_xbar_4.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_us_10/design_1_auto_us_10.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_pc_3/design_1_auto_pc_3.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_axi_mem_intercon_3_1/design_1_axi_mem_intercon_3_1.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_axi_cdma_0_0/design_1_axi_cdma_0_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_xbar_5/design_1_xbar_5.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_auto_pc_4/design_1_auto_pc_4.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_ps7_0_axi_periph_2/design_1_ps7_0_axi_periph_2.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_rgb888torgb565_0_0/design_1_rgb888torgb565_0_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_axis_dwidth_converter_0_0/design_1_axis_dwidth_converter_0_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'E:/fpga25_v/r/workspace/inputs/bd/ip/design_1_axis_subset_converter_0_1/design_1_axis_subset_converter_0_1.xci' referenced by design 'design_1' could not be found.
+# set bd_file [get_files design_1.bd]
+# open_bd_design E:/fpga25_v/r/workspace/inputs/bd/design_1.bd
+Reading block design file <E:/fpga25_v/r/workspace/inputs/bd/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_processing_system7_0_0 
+Adding component instance block -- xilinx.com:hls:fc:0.0 - fc_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_fc_0_0 
+Adding component instance block -- xilinx.com:hls:conv:0.0 - conv_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_conv_0_0 
+Adding component instance block -- xilinx.com:hls:shortcut:0.0 - shortcut_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_shortcut_0_0 
+Adding component instance block -- xilinx.com:hls:pwdwconv:0.0 - pwdwconv_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_pwdwconv_0_0 
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_axi_mem_intercon_4 
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_xbar_1 
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_us_0 
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_us_1 
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_us_2 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_pc_0 
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon_1
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_axi_mem_intercon_1_1 
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_xbar_2 
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_us_3 
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_us_4 
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_us_5 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_pc_1 
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s04_mmu
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_s04_mmu_0 
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s05_mmu
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_s05_mmu_0 
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon_2
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_axi_mem_intercon_2_1 
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_xbar_3 
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_us_6 
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_us_7 
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_us_8 
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_us_9 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_pc_2 
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s04_mmu
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_s04_mmu_1 
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s05_mmu
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_s05_mmu_1 
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon_3
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_axi_mem_intercon_3_1 
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_xbar_4 
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_us_10 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_pc_3 
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_axi_vdma_0_0 
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_v_axi4s_vid_out_0_0 
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:5.0 - v_vid_in_axi4s_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_v_vid_in_axi4s_0_0 
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_v_tc_0_0 
+Adding component instance block -- xilinx.com:ip:axi_cdma:4.1 - axi_cdma_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_axi_cdma_0_0 
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_ps7_0_axi_periph_2 
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_xbar_5 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_pc_4 
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_rst_ps7_0_100M_0 
+Adding component instance block -- xilinx.com:module_ref:rgb888torgb565:1.0 - rgb888torgb565_0
+INFO: [BD 41-1728] Could not find a module with name: design_1_rgb888torgb565_0_0 
+Adding component instance block -- xilinx.com:ip:axis_dwidth_converter:1.1 - axis_dwidth_converter_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_axis_dwidth_converter_0_0 
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_axis_subset_converter_0_1 
+Successfully read diagram <design_1> from block design file <E:/fpga25_v/r/workspace/inputs/bd/design_1.bd>
+INFO: [BD 41-433] Design successfully migrated to use XCI files...
+open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 847.117 ; gain = 306.645
+# report_ip_status -file [file join $output_dir ip_status_before.rpt]
+# proc save_ip_snapshot {path} {
+#     set channel [open $path w]
+#     puts $channel "cell\tvlnv"
+#     foreach cell [lsort [get_bd_cells -hierarchical -quiet]] {
+#         set identity [get_property -quiet VLNV $cell]
+#         if {$identity ne ""} { puts $channel "$cell\t$identity" }
+#     }
+#     close $channel
+# }
+# proc save_address_snapshot {path} {
+#     set channel [open $path w]
+#     puts $channel "segment\toffset\trange"
+#     foreach segment [lsort [get_bd_addr_segs -hierarchical -quiet]] {
+#         puts $channel "$segment\t[get_property -quiet OFFSET $segment]\t[get_property -quiet RANGE $segment]"
+#     }
+#     close $channel
+# }
+# save_ip_snapshot [file join $output_dir ip_before.tsv]
+# save_address_snapshot [file join $output_dir address_before.tsv]
+# if {$prepare_target_version eq "2025.2"} {
+#     # UG835 2025.2 permits upgrade_ip on bd_cell objects. Do not upgrade HLS
+#     # cells, do not run HLS synthesis and do not change user algorithm sources.
+#     set system_cells [get_bd_cells -hierarchical -quiet -filter {VLNV =~ xilinx.com:ip:*}]
+#     if {[llength $system_cells]} {
+#         upgrade_ip -log [file join $output_dir system_ip_upgrade.log] $system_cells
+#     }
+# }
+WARNING: [Coretcl 2-1042] No IP was identified for upgrade.
+# foreach name {conv fc pwdwconv shortcut} {
+#     set identity [get_property VLNV [get_bd_cells /${name}_0]]
+#     if {$identity ne "xilinx.com:hls:${name}:0.0"} {
+#         error "HLS identity changed unexpectedly: $name -> $identity"
+#     }
+# }
+# set subset [get_bd_cells /axis_subset_converter_0]
+# set_property CONFIG.S_TDATA_NUM_BYTES.VALUE_MODE MANUAL $subset
+# set_property CONFIG.M_TDATA_NUM_BYTES.VALUE_MODE MANUAL $subset
+# set_property -dict [list CONFIG.S_TDATA_NUM_BYTES {2} CONFIG.M_TDATA_NUM_BYTES {3}] $subset
+# set_property CONFIG.TDATA_REMAP {tdata[15:11],3'b000,tdata[10:5],2'b00,tdata[4:0],3'b000} $subset
+# validate_bd_design
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /axi_mem_intercon/S05_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressable -of_object /axi_mem_intercon/S05_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /axi_mem_intercon/S05_AXI'
+validate_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 857.078 ; gain = 7.000
+# save_bd_design
+Wrote  : <E:\fpga25_v\r\workspace\inputs\bd\design_1.bd> 
+# save_ip_snapshot [file join $output_dir ip_after.tsv]
+# save_address_snapshot [file join $output_dir address_after.tsv]
+# report_ip_status -file [file join $output_dir ip_status_after.rpt]
+# write_bd_tcl -force [file join $output_dir design_upgraded.tcl]
+WARNING: [BD 41-2937] The design that will be created by this Tcl script contains the following user IPs:
+/fc_0, /conv_0, /shortcut_0, /pwdwconv_0
+Please add the following user repository(s):
+e:/fpga25_v/r/workspace/ip_repo/fc
+e:/fpga25_v/r/workspace/ip_repo/conv
+e:/fpga25_v/r/workspace/ip_repo/shortcut
+e:/fpga25_v/r/workspace/ip_repo/pwdwconv
+before sourcing this Tcl script or use write_project_tcl.
+WARNING: [BD 41-2925] The design that will be created by this Tcl script contains the following module references: rgb888torgb565.
+Please add the sources of those modules before sourcing this Tcl script or use write_project_tcl.
+INFO: [BD 5-148] Tcl file written out <E:/fpga25_v/r/design_upgraded.tcl>.
+
+# generate_target all $bd_file
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s02_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s02_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(4) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(4) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(4) to pin: '/axi_mem_intercon/s03_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s03_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s03_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(4) to pin: '/axi_mem_intercon/s03_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(4) to pin: '/axi_mem_intercon/s04_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s04_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s04_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(4) to pin: '/axi_mem_intercon/s04_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s03_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s03_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_rid'(4) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_bid'(4) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_awid'(4) to pin: '/axi_mem_intercon_1/s02_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s02_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s02_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_arid'(4) to pin: '/axi_mem_intercon_1/s02_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_2/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_2/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_2/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_2/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_2/m00_couplers/auto_pc/m_axi_rid'(4) to pin: '/axi_mem_intercon_2/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_2/m00_couplers/auto_pc/m_axi_bid'(4) to pin: '/axi_mem_intercon_2/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_2/xbar/s_axi_awid'(4) to pin: '/axi_mem_intercon_2/s02_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_2/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon_2/s02_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_2/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon_2/s02_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_2/xbar/s_axi_arid'(4) to pin: '/axi_mem_intercon_2/s02_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_2/xbar/s_axi_awid'(4) to pin: '/axi_mem_intercon_2/s03_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_2/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon_2/s03_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_2/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon_2/s03_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_2/xbar/s_axi_arid'(4) to pin: '/axi_mem_intercon_2/s03_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/s02_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_3/s02_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/m00_couplers/auto_pc/m_axi_rid'(3) to pin: '/axi_mem_intercon_3/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/m00_couplers/auto_pc/m_axi_bid'(3) to pin: '/axi_mem_intercon_3/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/xbar/s_axi_awid'(3) to pin: '/axi_mem_intercon_3/s00_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon_3/s00_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon_3/s00_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/xbar/s_axi_arid'(3) to pin: '/axi_mem_intercon_3/s00_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/xbar/s_axi_awid'(3) to pin: '/axi_mem_intercon_3/s01_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon_3/s01_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon_3/s01_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/xbar/s_axi_arid'(3) to pin: '/axi_mem_intercon_3/s01_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/xbar/s_axi_awid'(3) to pin: '/axi_mem_intercon_3/s03_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon_3/s03_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon_3/s03_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_3/xbar/s_axi_arid'(3) to pin: '/axi_mem_intercon_3/s03_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_0/m_axi_OUT_r_BID'(1) to pin: '/axi_mem_intercon_3/S00_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/conv_0/m_axi_OUT_r_RID'(1) to pin: '/axi_mem_intercon_3/S00_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/pwdwconv_0/m_axi_PBUS3_BID'(1) to pin: '/axi_mem_intercon_1/S02_AXI_bid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/pwdwconv_0/m_axi_PBUS3_RID'(1) to pin: '/axi_mem_intercon_1/S02_AXI_rid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP3_WID'(6) to pin: '/axi_mem_intercon_3/M00_AXI_wid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP3_ARID'(6) to pin: '/axi_mem_intercon_3/M00_AXI_arid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP3_AWID'(6) to pin: '/axi_mem_intercon_3/M00_AXI_awid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_WID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_wid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_arid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_awid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/shortcut_0/m_axi_IN1_BID'(1) to pin: '/axi_mem_intercon/S04_AXI_bid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/shortcut_0/m_axi_IN1_RID'(1) to pin: '/axi_mem_intercon/S04_AXI_rid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/pwdwconv_0/m_axi_PBUS2_BID'(1) to pin: '/axi_mem_intercon_2/S02_AXI_bid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/pwdwconv_0/m_axi_PBUS2_RID'(1) to pin: '/axi_mem_intercon_2/S02_AXI_rid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_WID'(6) to pin: '/axi_mem_intercon_2/M00_AXI_wid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/axi_mem_intercon_2/M00_AXI_arid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/axi_mem_intercon_2/M00_AXI_awid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/shortcut_0/m_axi_IN2_BID'(1) to pin: '/axi_mem_intercon_2/S03_AXI_bid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/shortcut_0/m_axi_IN2_RID'(1) to pin: '/axi_mem_intercon_2/S03_AXI_rid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/shortcut_0/m_axi_OUT_r_BID'(1) to pin: '/axi_mem_intercon_3/S03_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/shortcut_0/m_axi_OUT_r_RID'(1) to pin: '/axi_mem_intercon_3/S03_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/pwdwconv_0/m_axi_PBUS1_BID'(1) to pin: '/axi_mem_intercon/S03_AXI_bid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/pwdwconv_0/m_axi_PBUS1_RID'(1) to pin: '/axi_mem_intercon/S03_AXI_rid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/pwdwconv_0/m_axi_PBUS4_BID'(1) to pin: '/axi_mem_intercon_3/S01_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/pwdwconv_0/m_axi_PBUS4_RID'(1) to pin: '/axi_mem_intercon_3/S01_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_vdma_0/s_axis_s2mm_tuser'(1) to pin: '/axis_subset_converter_0/m_axis_tuser'(2) - Only lower order bits will be connected.
+Verilog Output written to : e:/fpga25_v/r/workspace/inputs/bd/generated/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s02_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s02_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(4) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(4) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(4) to pin: '/axi_mem_intercon/s03_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s03_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s03_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(4) to pin: '/axi_mem_intercon/s03_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awid'(4) to pin: '/axi_mem_intercon/s04_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s04_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s04_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/xbar/s_axi_arid'(4) to pin: '/axi_mem_intercon/s04_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s03_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s03_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_rid'(4) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_bid'(4) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_awid'(4) to pin: '/axi_mem_intercon_1/s02_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s02_couplers/M_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s02_couplers/M_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/xbar/s_axi_arid'(4) to pin: '/axi_mem_intercon_1/s02_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+INFO: [Common 17-14] Message 'BD 41-2384' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Verilog Output written to : e:/fpga25_v/r/workspace/inputs/bd/generated/sim/design_1.v
+Verilog Output written to : e:/fpga25_v/r/workspace/inputs/bd/generated/hdl/design_1_wrapper.v
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP1'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP2'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP3'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block conv_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block shortcut_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pwdwconv_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_2/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_3/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb888torgb565_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_dwidth_converter_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_1_imp_auto_us_0/design_1_axi_mem_intercon_1_imp_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_1_imp_auto_us_1/design_1_axi_mem_intercon_1_imp_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_1_imp_auto_us_2/design_1_axi_mem_intercon_1_imp_auto_us_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s03_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_1_imp_auto_pc_0/design_1_axi_mem_intercon_1_imp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s04_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s05_mmu .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_2_imp_auto_us_0/design_1_axi_mem_intercon_2_imp_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_2/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_2_imp_auto_us_1/design_1_axi_mem_intercon_2_imp_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_2/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_2_imp_auto_us_2/design_1_axi_mem_intercon_2_imp_auto_us_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_2/s04_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_2_imp_auto_us_3/design_1_axi_mem_intercon_2_imp_auto_us_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_2/s05_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_2_imp_auto_pc_0/design_1_axi_mem_intercon_2_imp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_2/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_2/s04_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_2/s05_mmu .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_3_imp_auto_us_0/design_1_axi_mem_intercon_3_imp_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_3/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_axi_mem_intercon_3_imp_auto_pc_0/design_1_axi_mem_intercon_3_imp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_3/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/fpga25_v/r/workspace/inputs/bd/generated/ip/design_1_ps7_0_axi_periph_imp_auto_pc_0/design_1_ps7_0_axi_periph_imp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file e:/fpga25_v/r/workspace/inputs/bd/generated/hw_handoff/design_1.hwh
+Generated Hardware Definition File e:/fpga25_v/r/workspace/inputs/bd/generated/synth/design_1.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file e:/fpga25_v/r/workspace/inputs/bd/generated/design_1.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file e:/fpga25_v/r/workspace/inputs/bd/generated/design_1.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file e:/fpga25_v/r/workspace/inputs/bd/generated/design_1_sv.sveo
+generate_target: Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 951.453 ; gain = 87.230
+# set wrapper [make_wrapper -files $bd_file -top]
+# foreach path $wrapper {
+#     if {![path_is_within $path $workspace]} { error "Generated wrapper escaped this workspace: $path" }
+# }
+# add_files -norecurse $wrapper
+# set_property top design_1_wrapper [current_fileset]
+# update_compile_order -fileset sources_1
+# report_ip_status -file [file join $output_dir ip_status.rpt]
+Traceback (most recent call last):
+  File "D:\software\vivado2025.2\2025.2\Vivado\tps\win64\python-3.13.0\lib\xml\etree\ElementTree.py", line 1522, in __init__
+    from xml.parsers import expat
+  File "D:\software\vivado2025.2\2025.2\Vivado\tps\win64\python-3.13.0\lib\xml\parsers\expat.py", line 4, in <module>
+    from pyexpat import *
+ImportError: Module use of python313.dll conflicts with this version of Python.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\software\vivado2025.2\2025.2\Vivado\tps\win64\python-3.13.0\lib\xml\etree\ElementTree.py", line 1525, in __init__
+    import pyexpat as expat
+ImportError: Module use of python313.dll conflicts with this version of Python.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\fpga_work\qian_20261030_1\fpga_competition\build\vivado_2025_2\check_inputs.py", line 176, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "E:\fpga_work\qian_20261030_1\fpga_competition\build\vivado_2025_2\check_inputs.py", line 62, in main
+    hwh = ET.parse(hwh_file).getroot()
+          ~~~~~~~~^^^^^^^^^^
+  File "D:\software\vivado2025.2\2025.2\Vivado\tps\win64\python-3.13.0\lib\xml\etree\ElementTree.py", line 1204, in parse
+    tree.parse(source, parser)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\software\vivado2025.2\2025.2\Vivado\tps\win64\python-3.13.0\lib\xml\etree\ElementTree.py", line 563, in parse
+    parser = XMLParser()
+  File "D:\software\vivado2025.2\2025.2\Vivado\tps\win64\python-3.13.0\lib\xml\etree\ElementTree.py", line 1527, in __init__
+    raise ImportError(
+        "No module named expat; use SimpleXMLTreeBuilder instead"
+        )
+ImportError: No module named expat; use SimpleXMLTreeBuilder instead
+    while executing
+"exec $python_executable -B [file join $helper_root check_inputs.py] $output_dir $original_project"
+    invoked from within
+"puts [exec $python_executable -B [file join $helper_root check_inputs.py] $output_dir $original_project]"
+    (file "E:/fpga_work/qian_20261030_1/fpga_competition/build/vivado_2025_2/migrate.tcl" line 139)
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 21:00:44 2026...

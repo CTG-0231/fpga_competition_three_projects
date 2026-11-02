@@ -1,0 +1,103 @@
+{
+  "snapshot_time": "2026-10-30T21:37:24.632451+08:00",
+  "state": "load_probe_pass_final_numeric_inputs_not_frozen",
+  "vivado": "2025.2",
+  "board_tested": false,
+  "new_2025_2_bit_created": false,
+  "new_2025_2_xsa_created": false,
+  "legacy_stage": {
+    "hls": "original RTL reused; not a full 2025.2 HLS migration",
+    "result": "OOC retry completed; top synthesis stopped on out-of-memory before implementation",
+    "failure_notes": "PS7/video-out first OOC processes crashed after synth_design/utilization. Both succeeded on one-shot retry. Top add_files then reported out-of-memory. Concurrent HLS VIP memory peak was reported separately; causation is not proven."
+  },
+  "new_hls_load_probe": {
+    "status": "PASS",
+    "source_files_checked": 265,
+    "actual_hls_source_files_checked": 101,
+    "xci_count": 44,
+    "official_instance_id_overrides": 17,
+    "wrapper_id_bindings_checked": 85,
+    "response_id_inputs_zero": 34,
+    "address_spaces_equal": true,
+    "arithmetic_scope": "Current probe still contains conv_pragma_compat2 and the initial pwdwconv export, which are rejected for final release. A later conv_cache candidate has separately passed RTL numerical verification. Wait for the HLS owner to provide the final four numerically approved packages."
+  },
+  "entrypoint_checks": {
+    "isolated_python_prepare_only": "PASS; copied original sources and current candidate exports without launching Vivado",
+    "python_ast_files": 6,
+    "powershell_parse_errors": 0
+  },
+  "files": [
+    {
+      "file": "legacy_first_build.log",
+      "source": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\implement_legacy_hls.log",
+      "bytes": 40401,
+      "sha256": "73eb4cad50d7d4218912590990a9890bf4fc182ee13f5a4d4300a3eb915a8b78"
+    },
+    {
+      "file": "legacy_resumed_build.log",
+      "source": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\implement_legacy_hls_resumed_v2.log",
+      "bytes": 71409,
+      "sha256": "f3395bc2f9c0bcb623fe16e9cf00db28b036af9daa4c77a16e55253a26d536a2"
+    },
+    {
+      "file": "legacy_system_retry.log",
+      "source": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\implement_legacy_hls_system_retry.log",
+      "bytes": 34695,
+      "sha256": "4861b3eb087cbef841bbffedb9114fe1712b15352552a66e40d8d0e8df951494"
+    },
+    {
+      "file": "new_hls_first_environment_failure.log",
+      "source": "E:\\fpga25_v\\vivado.log",
+      "bytes": 56633,
+      "sha256": "d14de67f7b8822e7efd53d28072e6ff379714af8fd131d5cc09bfff334c0b7b3"
+    },
+    {
+      "file": "single_id_load_probe.log",
+      "source": "E:\\fpga25_v\\single_id_probe_v2.log",
+      "bytes": 61980,
+      "sha256": "c37274ffdbc689cb3a30c53e2529bc9d29e29081dc90c7443228d2bdd345ebe3"
+    },
+    {
+      "file": "single_id_load_probe_status.json",
+      "source": "E:\\fpga25_v\\single_id_probe_v2_status.json",
+      "bytes": 291,
+      "sha256": "b9af91957887505e6122af14d1a0e47b6a220523c88458f5f5d1fab7940dc248"
+    },
+    {
+      "file": "single_id_candidate_input_gate.json",
+      "source": "E:\\fpga25_v\\r\\migration_input_gate.json",
+      "bytes": 224559,
+      "sha256": "7ea7d7eca92759713d9039355ecbff38d1c9452262e862330a6baac11cd222ea"
+    },
+    {
+      "file": "single_id_candidate_rtl_review.json",
+      "source": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\single_id_pattern_gate_v1.json",
+      "bytes": 15920,
+      "sha256": "a278dc39d8cc48c97671e387e952718383ae94a2d71b2f146f5bfa39307c6333"
+    },
+    {
+      "file": "conv_cache_candidate_contract_review.json",
+      "source": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\conv_cache_2025_contract_review.json",
+      "bytes": 99658,
+      "sha256": "43afbccdfb32d21af2771d7a2775f9c48c1397c744948fae81a922e3780dd887"
+    },
+    {
+      "file": "fc_candidate_contract_review.json",
+      "source": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\fc_2025_contract_review_v1.json",
+      "bytes": 68555,
+      "sha256": "e6965324eee9c96f7819efc7f61358954a69267b9df3d380597925efcb500de6"
+    },
+    {
+      "file": "pwdwconv_initial_candidate_contract_review.json",
+      "source": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\pwdwconv_2025_contract_review_v1.json",
+      "bytes": 122493,
+      "sha256": "396bc24f9d14f3c9159db1cefcdbdc9fa74e164752736d4f75639f365919a773"
+    },
+    {
+      "file": "shortcut_candidate_contract_review.json",
+      "source": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\shortcut_2025_contract_review_v1.json",
+      "bytes": 70007,
+      "sha256": "da25cdbdedff10e2087c90411fa60a84d20fe91cecbc8220ce5bcd7c6ea9f3c0"
+    }
+  ]
+}

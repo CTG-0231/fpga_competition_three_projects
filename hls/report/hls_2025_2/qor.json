@@ -1,0 +1,206 @@
+{
+  "shortcut": {
+    "old_2019_2": {
+      "report_version": "2019.2",
+      "part": "xc7z020-clg400-2",
+      "target_ns": "5.00",
+      "estimated_ns": "4.375",
+      "latency": {
+        "unit": "clock cycles",
+        "Best-caseLatency": "undef",
+        "Average-caseLatency": "undef",
+        "Worst-caseLatency": "undef",
+        "Best-caseRealTimeLatency": "undef",
+        "Average-caseRealTimeLatency": "undef",
+        "Worst-caseRealTimeLatency": "undef",
+        "Interval-min": "undef",
+        "Interval-max": "undef"
+      },
+      "resources": {
+        "BRAM_18K": "54",
+        "FF": "2402",
+        "LUT": "3163",
+        "DSP48E": "0",
+        "URAM": "0"
+      }
+    },
+    "new_2025_2": {
+      "report_version": "2025.2",
+      "part": "xc7z020-clg484-2",
+      "target_ns": "5.00",
+      "estimated_ns": "4.443",
+      "latency": {
+        "unit": "clock cycles",
+        "Best-caseLatency": "19",
+        "Average-caseLatency": "268435476",
+        "Worst-caseLatency": "536870932",
+        "Best-caseRealTimeLatency": "95.000 ns",
+        "Average-caseRealTimeLatency": "1.342 sec",
+        "Worst-caseRealTimeLatency": "2.684 sec",
+        "Interval-min": "20",
+        "Interval-max": "536870933",
+        "PerformancePragma": "-"
+      },
+      "resources": {
+        "BRAM_18K": "36",
+        "FF": "2885",
+        "LUT": "3679",
+        "DSP": "0",
+        "URAM": "0"
+      }
+    }
+  },
+  "pwdwconv": {
+    "old_2019_2": {
+      "report_version": "2019.2",
+      "part": "xc7z020-clg400-2",
+      "target_ns": "5.00",
+      "estimated_ns": "7.146",
+      "latency": {
+        "unit": "clock cycles",
+        "Best-caseLatency": "undef",
+        "Average-caseLatency": "undef",
+        "Worst-caseLatency": "undef",
+        "Best-caseRealTimeLatency": "undef",
+        "Average-caseRealTimeLatency": "undef",
+        "Worst-caseRealTimeLatency": "undef",
+        "Interval-min": "undef",
+        "Interval-max": "undef"
+      },
+      "resources": {
+        "BRAM_18K": "110",
+        "DSP48E": "112",
+        "FF": "41625",
+        "LUT": "38966",
+        "URAM": "0"
+      }
+    },
+    "new_2025_2": {
+      "report_version": "2025.2",
+      "part": "xc7z020-clg484-2",
+      "target_ns": "5.00",
+      "estimated_ns": "5.152",
+      "latency": {
+        "unit": "clock cycles",
+        "Best-caseLatency": "undef",
+        "Average-caseLatency": "undef",
+        "Worst-caseLatency": "undef",
+        "Best-caseRealTimeLatency": "undef",
+        "Average-caseRealTimeLatency": "undef",
+        "Worst-caseRealTimeLatency": "undef",
+        "Interval-min": "undef",
+        "Interval-max": "undef",
+        "PerformancePragma": "-"
+      },
+      "resources": {
+        "BRAM_18K": "120",
+        "DSP": "97",
+        "FF": "37914",
+        "LUT": "34449",
+        "URAM": "0"
+      }
+    }
+  },
+  "fc": {
+    "old_2019_2": {
+      "report_version": "2019.2",
+      "part": "xc7z020-clg400-2",
+      "target_ns": "5.00",
+      "estimated_ns": "4.375",
+      "latency": {
+        "unit": "clock cycles",
+        "Best-caseLatency": "65650",
+        "Average-caseLatency": "65650",
+        "Worst-caseLatency": "65650",
+        "Best-caseRealTimeLatency": "0.328 ms",
+        "Average-caseRealTimeLatency": "0.328 ms",
+        "Worst-caseRealTimeLatency": "0.328 ms",
+        "Interval-min": "65651",
+        "Interval-max": "65651"
+      },
+      "resources": {
+        "BRAM_18K": "14",
+        "DSP48E": "3",
+        "FF": "6323",
+        "LUT": "8779",
+        "URAM": "0"
+      }
+    },
+    "new_2025_2": {
+      "report_version": "2025.2",
+      "part": "xc7z020-clg484-2",
+      "target_ns": "5.00",
+      "estimated_ns": "4.834",
+      "latency": {
+        "unit": "clock cycles",
+        "Best-caseLatency": "191146",
+        "Average-caseLatency": "191146",
+        "Worst-caseLatency": "191146",
+        "Best-caseRealTimeLatency": "0.956 ms",
+        "Average-caseRealTimeLatency": "0.956 ms",
+        "Worst-caseRealTimeLatency": "0.956 ms",
+        "Interval-min": "191147",
+        "Interval-max": "191147",
+        "PerformancePragma": "-"
+      },
+      "resources": {
+        "BRAM_18K": "18",
+        "DSP": "3",
+        "FF": "5658",
+        "LUT": "9582",
+        "URAM": "0"
+      }
+    }
+  },
+  "conv": {
+    "old_2019_2": {
+      "report_version": "2019.2",
+      "part": "xc7z020-clg400-2",
+      "target_ns": "5.00",
+      "estimated_ns": "4.539",
+      "latency": {
+        "unit": "clock cycles",
+        "Best-caseLatency": "undef",
+        "Average-caseLatency": "undef",
+        "Worst-caseLatency": "undef",
+        "Best-caseRealTimeLatency": "undef",
+        "Average-caseRealTimeLatency": "undef",
+        "Worst-caseRealTimeLatency": "undef",
+        "Interval-min": "undef",
+        "Interval-max": "undef"
+      },
+      "resources": {
+        "BRAM_18K": "44",
+        "DSP48E": "28",
+        "FF": "14014",
+        "LUT": "13957",
+        "URAM": "0"
+      }
+    },
+    "new_2025_2": {
+      "report_version": "2025.2",
+      "part": "xc7z020-clg484-2",
+      "target_ns": "5.00",
+      "estimated_ns": "5.311",
+      "latency": {
+        "unit": "clock cycles",
+        "Best-caseLatency": "undef",
+        "Average-caseLatency": "undef",
+        "Worst-caseLatency": "undef",
+        "Best-caseRealTimeLatency": "undef",
+        "Average-caseRealTimeLatency": "undef",
+        "Worst-caseRealTimeLatency": "undef",
+        "Interval-min": "undef",
+        "Interval-max": "undef",
+        "PerformancePragma": "-"
+      },
+      "resources": {
+        "BRAM_18K": "34",
+        "DSP": "28",
+        "FF": "11127",
+        "LUT": "12431",
+        "URAM": "0"
+      }
+    }
+  }
+}

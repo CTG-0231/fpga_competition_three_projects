@@ -1,0 +1,1 @@
+final_application_contract.json是此前PL/PS地址和接口核对记录；新构建还需通过Vivado实现、DRC、时序及固定输入实测，不用空目录或历史记录冒充新仿真。

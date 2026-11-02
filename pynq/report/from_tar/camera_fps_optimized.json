@@ -1,0 +1,47 @@
+{
+  "scope": "ARM camera/LCD producer loop; includes browser encoding when enabled; excludes browser network/render latency",
+  "io_voltage": "3.3",
+  "stages": {
+    "optimized_ui_hot": {
+      "median_ms": 38.17002699997829,
+      "p95_ms": 40.093682099961825,
+      "fps": 26.064496960029594,
+      "samples": 20
+    },
+    "jpeg_native_bgr": {
+      "median_ms": 83.7430864999078,
+      "p95_ms": 118.813103949958,
+      "fps": 11.096018023834764,
+      "samples": 10
+    },
+    "original_lcd_browser_loop": {
+      "median_ms": 1711.2864719999834,
+      "p95_ms": 1737.3384991999046,
+      "fps": 0.584297587498338,
+      "samples": 5
+    },
+    "optimized_lcd_only_loop": {
+      "median_ms": 133.21064899992052,
+      "p95_ms": 136.9669587000544,
+      "fps": 7.495161253453829,
+      "samples": 35
+    },
+    "optimized_lcd_browser_2fps_loop": {
+      "median_ms": 178.4506970000166,
+      "p95_ms": 220.33270619999712,
+      "fps": 5.969323753022395,
+      "samples": 35
+    }
+  },
+  "pixel_comparison": "4 live frames exactly matched on ARM",
+  "lcd_pixel_comparison": "Complete LCD buffer exactly matched rotated UI",
+  "vdma_status": {
+    "capture": "0x11001",
+    "display": "0x11000"
+  },
+  "last_camera": {
+    "min": 0,
+    "max": 96,
+    "mean": 5.838196215986395
+  }
+}

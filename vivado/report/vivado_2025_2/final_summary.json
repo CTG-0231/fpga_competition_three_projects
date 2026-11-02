@@ -1,0 +1,40 @@
+{
+  "completed_at": "2026-10-30T22:36:02+08:00",
+  "status": "PASS_IMPLEMENTED_BIT_XSA",
+  "vivado": "2025.2 build6299465",
+  "native_exit_code": 0,
+  "normal_first_build_no_retry": true,
+  "io_voltage_branch": "3.3V PL",
+  "board_tested": false,
+  "artifacts": {
+    "bit": {
+      "path": "E:\\fpga25_f\\r\\p\\leaf.runs\\impl_1\\design_1_wrapper.bit",
+      "bytes": 4045692,
+      "sha256": "b0a00f0051148a356884ab19ae8281fb6308dae3108e2e538f40f3f321bd0557"
+    },
+    "xsa": {
+      "path": "E:\\fpga25_f\\r\\leaf.xsa",
+      "bytes": 1683842,
+      "sha256": "2b111cec0c83827a454aad4f890a42f251c392a8ac87c3f58691216f94408892"
+    },
+    "hwh": {
+      "path": "E:\\fpga25_f\\r\\workspace\\inputs\\bd\\generated\\hw_handoff\\design_1.hwh",
+      "bytes": 1227336,
+      "sha256": "c93a96ce131be3f1b873c8df19ec7c9c8a05a36826dce9ff799724cb7dcc454a"
+    },
+    "routed_checkpoint": {
+      "path": "E:\\fpga25_f\\r\\p\\leaf.runs\\impl_1\\design_1_wrapper_routed.dcp",
+      "bytes": 36267700,
+      "sha256": "2340c968d20924a57f6b3cfd4e0a152b45fcea2e189914df4f0a9742ca19d994"
+    }
+  },
+  "native_source_bundle": {
+    "path": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\native_2025_2_sources",
+    "files": 918,
+    "bytes": 183746210,
+    "archive_created_by_this_agent": false
+  },
+  "hls_policy": "regenerated_2025_2_original_algorithm",
+  "hls_numeric_rtl_match_files": 101,
+  "scope": "Actual four-new-HLS PL implementation and matching bit/XSA/HWH. Whole-network FPGA inference, camera/LCD electrical timing, other voltage branches and board validation are separate."
+}

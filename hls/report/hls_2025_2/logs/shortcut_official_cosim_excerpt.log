@@ -1,0 +1,37 @@
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+--- last lines ---
+
+4
+
+4
+
+4
+
+4
+
+4
+
+4
+
+4
+
+4
+
+4
+
+4
+
+4
+
+4
+
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:01:38; Allocated memory: 14.023 MB.
+
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 100.683 seconds; peak allocated memory: 143.992 MB.
+
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 42s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

@@ -1,0 +1,13 @@
+
+****** Xilinx Vitis Development Environment
+****** Vitis v2025.2 (64-bit)
+****** SW Build 6295257 on 2025-11-13-08:29:30
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Traceback (most recent call last):
+  File "E:\fpga_work\qian_20261030_1\fpga_competition\src\vitis\scripts\create_platform.py", line 22, in <module>
+    client = vitis.create_client()
+  File "D:\software\vivado2025.2\2025.2\Vitis\cli\vitis\__init__.py", line 48, in create_client
+    raise exc_type(f"{exc_value}") from None
+Exception: [31mVitis Create Client failed, 'utf-8' codec can't decode byte 0xd5 in position 4: invalid continuation byte[0m

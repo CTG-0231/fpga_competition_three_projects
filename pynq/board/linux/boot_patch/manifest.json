@@ -1,0 +1,117 @@
+{
+  "status": "offline_repack_verified_not_board_tested",
+  "writes_physical_sd": false,
+  "source_files_modified": false,
+  "source_fit": {
+    "path": "E:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\board_image\\boot_files\\image.ub",
+    "bytes": 5890380,
+    "sha256": "b063e9f858a72875259832842d178b895ddfaae4100d0c2dec12bcf94a36b2d4"
+  },
+  "replacement_dtb": {
+    "path": "E:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\dtc\\real_validation\\system_leaf.dtb",
+    "bytes": 15557,
+    "sha256": "8e154dbf9659ac0ad81be59381a2e56dbf25babbc57b21ab0cf5133ef02af858"
+  },
+  "output_fit": {
+    "name": "image.ub",
+    "bytes": 5885888,
+    "sha256": "39b17b17ff7f37becc800319801df628ae779c8490f97d5fea7427d453f05d6c"
+  },
+  "default_configuration": "/configurations/conf@1",
+  "selected_fdt_image": "/images/fdt@0",
+  "kernel_image": "/images/kernel@0",
+  "kernel_bytes_identical": true,
+  "kernel_sha256": "cbd2d2ade6b3f187a1114f8eb60b7ae92fd0c1feca814856df184fa1c07573d9",
+  "all_payload_hashes_valid_before": true,
+  "all_payload_hashes_valid_after": true,
+  "property_changes": [
+    "/images/fdt@0/data",
+    "/images/fdt@0/hash@1/value"
+  ],
+  "only_selected_dtb_data_and_its_existing_hash_values_may_change": true,
+  "fit_node_set_and_other_properties_identical": true,
+  "dtc": {
+    "path": "E:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\dtc\\bin\\dtc.exe",
+    "sha256": "e19af986181d7d19d3f8b02716f9cd860623313f90b2fcd997f6b600fd694c1f",
+    "command": [
+      "E:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\dtc\\bin\\dtc.exe",
+      "-I",
+      "dts",
+      "-O",
+      "dtb",
+      "-V",
+      "17",
+      "-b",
+      "0",
+      "-o",
+      "E:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\fit_repack\\f6cb92d08fe6463f89cc69f7dbd8443a\\image.ub",
+      "E:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\fit_repack\\f6cb92d08fe6463f89cc69f7dbd8443a\\repacked.its"
+    ],
+    "returncode": 0,
+    "warnings": "E:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\fit_repack\\f6cb92d08fe6463f89cc69f7dbd8443a\\repacked.its:8.18-21.11: Warning (unit_address_vs_reg): /images/kernel@0: node has a unit name, but no reg or ranges property\nE:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\fit_repack\\f6cb92d08fe6463f89cc69f7dbd8443a\\repacked.its:17.20-20.15: Warning (unit_address_vs_reg): /images/kernel@0/hash@1: node has a unit name, but no reg or ranges property\nE:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\fit_repack\\f6cb92d08fe6463f89cc69f7dbd8443a\\repacked.its:22.15-32.11: Warning (unit_address_vs_reg): /images/fdt@0: node has a unit name, but no reg or ranges property\nE:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\fit_repack\\f6cb92d08fe6463f89cc69f7dbd8443a\\repacked.its:28.20-31.15: Warning (unit_address_vs_reg): /images/fdt@0/hash@1: node has a unit name, but no reg or ranges property\nE:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\fit_repack\\f6cb92d08fe6463f89cc69f7dbd8443a\\repacked.its:36.16-43.11: Warning (unit_address_vs_reg): /configurations/conf@1: node has a unit name, but no reg or ranges property\nE:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\fit_repack\\f6cb92d08fe6463f89cc69f7dbd8443a\\repacked.its:40.20-42.15: Warning (unit_address_vs_reg): /configurations/conf@1/hash@1: node has a unit name, but no reg or ranges property\n"
+  },
+  "work_directory": "E:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\fit_repack\\f6cb92d08fe6463f89cc69f7dbd8443a",
+  "intermediate_payloads": [
+    {
+      "node": "/images/kernel@0",
+      "file": "payload_00.bin",
+      "bytes": 5869440,
+      "sha256": "cbd2d2ade6b3f187a1114f8eb60b7ae92fd0c1feca814856df184fa1c07573d9"
+    },
+    {
+      "node": "/images/fdt@0",
+      "file": "payload_01.bin",
+      "bytes": 15557,
+      "sha256": "8e154dbf9659ac0ad81be59381a2e56dbf25babbc57b21ab0cf5133ef02af858"
+    }
+  ],
+  "payloads_before": {
+    "/images/kernel@0": {
+      "bytes": 5869440,
+      "sha256": "cbd2d2ade6b3f187a1114f8eb60b7ae92fd0c1feca814856df184fa1c07573d9",
+      "hashes": [
+        {
+          "node": "/images/kernel@0/hash@1",
+          "algorithm": "sha1",
+          "value": "6f188c9aba48c90f30693e1b87c397ec41a0cfa0"
+        }
+      ]
+    },
+    "/images/fdt@0": {
+      "bytes": 19123,
+      "sha256": "28d656e6da69a652484d29210fe99ef990a105125d9d834666ca69736a427f2f",
+      "hashes": [
+        {
+          "node": "/images/fdt@0/hash@1",
+          "algorithm": "sha1",
+          "value": "9a0cbc2d04c7a85f894616764850b823123feaaa"
+        }
+      ]
+    }
+  },
+  "payloads_after": {
+    "/images/kernel@0": {
+      "bytes": 5869440,
+      "sha256": "cbd2d2ade6b3f187a1114f8eb60b7ae92fd0c1feca814856df184fa1c07573d9",
+      "hashes": [
+        {
+          "node": "/images/kernel@0/hash@1",
+          "algorithm": "sha1",
+          "value": "6f188c9aba48c90f30693e1b87c397ec41a0cfa0"
+        }
+      ]
+    },
+    "/images/fdt@0": {
+      "bytes": 15557,
+      "sha256": "8e154dbf9659ac0ad81be59381a2e56dbf25babbc57b21ab0cf5133ef02af858",
+      "hashes": [
+        {
+          "node": "/images/fdt@0/hash@1",
+          "algorithm": "sha1",
+          "value": "d06fd955da9cdc62529026ab56093c279cdf6696"
+        }
+      ]
+    }
+  },
+  "validation_limit": "Verifies FIT serialization and integrity only; does not establish electrical correctness, boot success or peripheral operation."
+}

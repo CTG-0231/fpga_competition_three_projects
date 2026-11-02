@@ -1,0 +1,57 @@
+{
+  "path_names_pass": true,
+  "readme_exception": "README.md",
+  "required_directories": [
+    "src",
+    "sim",
+    "build",
+    "board",
+    "data",
+    "skill",
+    "report"
+  ],
+  "python_syntax_files": 54,
+  "skills": {
+    "pynq": "Skill is valid!",
+    "hls": "Skill is valid!",
+    "vivado": "Skill is valid!"
+  },
+  "entry_help": {
+    "pynq/board/lanuch.py": "passed",
+    "pynq/build/doctor.py": "passed",
+    "pynq/build/restore_sources.py": "passed",
+    "pynq/sim/run_host_tests.py": "passed",
+    "hls/build/hls_2025_2.py": "passed",
+    "hls/build/validate_hls_rtl.py": "passed",
+    "hls/build/restore_sources.py": "passed",
+    "vivado/build/vivado_2025_2/build.py": "passed",
+    "vivado/build/vivado_2025_2/prepare_inputs.py": "passed",
+    "vivado/build/build_vitis_2025_2.py": "passed",
+    "vivado/build/export_overlay.py": "passed",
+    "vivado/build/validate_pynq27_hwh.py": "passed",
+    "vivado/build/restore_sources.py": "passed"
+  },
+  "new_document_links_checked": 14,
+  "input_archives_unchanged": true,
+  "product_code_changes_restricted_to_case_and_paths": true,
+  "board_accessed": false,
+  "new_synthesis_or_implementation": false,
+  "project": "hls",
+  "snapshots": {
+    "native_2019_2": {
+      "files": 2168,
+      "sha256": "192ed7e1a566e294df2352e47f10cd02c90f2c9cf2afd04beee339df7eaf6c84",
+      "restoration_passed": true,
+      "exact_input_tree_compared": true,
+      "seconds": 7.219
+    },
+    "native_2025_2": {
+      "files": 355,
+      "sha256": "8e05e74e179a54f21786aec06ebbfd6fba526b8fc97ccf2321f6ee02963da7ef",
+      "restoration_passed": true,
+      "exact_input_tree_compared": false,
+      "seconds": 0.297
+    }
+  },
+  "canonical_source_manifest_passed": true
+}

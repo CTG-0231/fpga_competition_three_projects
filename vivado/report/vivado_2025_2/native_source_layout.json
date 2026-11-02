@@ -1,0 +1,290 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "xci_count": 44,
+  "xci_generators": [
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axis_dwidth_converter_0_0/design_1_axis_dwidth_converter_0_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axis_dwidth_converter_0_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axis_subset_converter_0_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_cdma_0_0/design_1_axi_cdma_0_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_cdma_0_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_0/design_1_axi_mem_intercon_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_1_0/design_1_axi_mem_intercon_1_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_1_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_1_imp_auto_pc_0/design_1_axi_mem_intercon_1_imp_auto_pc_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_1_imp_auto_pc_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_1_imp_auto_us_0/design_1_axi_mem_intercon_1_imp_auto_us_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_1_imp_auto_us_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_1_imp_auto_us_1/design_1_axi_mem_intercon_1_imp_auto_us_1.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_1_imp_auto_us_1",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_1_imp_auto_us_2/design_1_axi_mem_intercon_1_imp_auto_us_2.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_1_imp_auto_us_2",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_1_imp_s04_mmu_0/design_1_axi_mem_intercon_1_imp_s04_mmu_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_1_imp_s04_mmu_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_1_imp_s05_mmu_0/design_1_axi_mem_intercon_1_imp_s05_mmu_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_1_imp_s05_mmu_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_1_imp_xbar_0/design_1_axi_mem_intercon_1_imp_xbar_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_1_imp_xbar_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_2_0/design_1_axi_mem_intercon_2_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_2_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_2_imp_auto_pc_0/design_1_axi_mem_intercon_2_imp_auto_pc_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_2_imp_auto_pc_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_2_imp_auto_us_0/design_1_axi_mem_intercon_2_imp_auto_us_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_2_imp_auto_us_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_2_imp_auto_us_1/design_1_axi_mem_intercon_2_imp_auto_us_1.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_2_imp_auto_us_1",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_2_imp_auto_us_2/design_1_axi_mem_intercon_2_imp_auto_us_2.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_2_imp_auto_us_2",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_2_imp_auto_us_3/design_1_axi_mem_intercon_2_imp_auto_us_3.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_2_imp_auto_us_3",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_2_imp_s04_mmu_0/design_1_axi_mem_intercon_2_imp_s04_mmu_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_2_imp_s04_mmu_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_2_imp_s05_mmu_0/design_1_axi_mem_intercon_2_imp_s05_mmu_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_2_imp_s05_mmu_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_2_imp_xbar_0/design_1_axi_mem_intercon_2_imp_xbar_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_2_imp_xbar_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_3_0/design_1_axi_mem_intercon_3_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_3_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_3_imp_auto_pc_0/design_1_axi_mem_intercon_3_imp_auto_pc_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_3_imp_auto_pc_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_3_imp_auto_us_0/design_1_axi_mem_intercon_3_imp_auto_us_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_3_imp_auto_us_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_3_imp_xbar_0/design_1_axi_mem_intercon_3_imp_xbar_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_3_imp_xbar_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_imp_auto_pc_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_imp_auto_us_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_imp_auto_us_1",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_imp_auto_us_2/design_1_axi_mem_intercon_imp_auto_us_2.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_imp_auto_us_2",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_mem_intercon_imp_xbar_0/design_1_axi_mem_intercon_imp_xbar_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_mem_intercon_imp_xbar_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xci",
+      "gen_directory": "../../generated/ip/design_1_axi_vdma_0_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_conv_0_0/design_1_conv_0_0.xci",
+      "gen_directory": "../../generated/ip/design_1_conv_0_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_fc_0_0/design_1_fc_0_0.xci",
+      "gen_directory": "../../generated/ip/design_1_fc_0_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci",
+      "gen_directory": "../../generated/ip/design_1_processing_system7_0_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_ps7_0_axi_periph_0/design_1_ps7_0_axi_periph_0.xci",
+      "gen_directory": "../../generated/ip/design_1_ps7_0_axi_periph_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_ps7_0_axi_periph_imp_auto_pc_0/design_1_ps7_0_axi_periph_imp_auto_pc_0.xci",
+      "gen_directory": "../../generated/ip/design_1_ps7_0_axi_periph_imp_auto_pc_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_ps7_0_axi_periph_imp_xbar_0/design_1_ps7_0_axi_periph_imp_xbar_0.xci",
+      "gen_directory": "../../generated/ip/design_1_ps7_0_axi_periph_imp_xbar_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_pwdwconv_0_0/design_1_pwdwconv_0_0.xci",
+      "gen_directory": "../../generated/ip/design_1_pwdwconv_0_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_rgb888torgb565_0_0/design_1_rgb888torgb565_0_0.xci",
+      "gen_directory": "../../generated/ip/design_1_rgb888torgb565_0_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xci",
+      "gen_directory": "../../generated/ip/design_1_rst_ps7_0_100M_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_shortcut_0_0/design_1_shortcut_0_0.xci",
+      "gen_directory": "../../generated/ip/design_1_shortcut_0_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.xci",
+      "gen_directory": "../../generated/ip/design_1_v_axi4s_vid_out_0_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.xci",
+      "gen_directory": "../../generated/ip/design_1_v_tc_0_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    },
+    {
+      "file": "workspace/inputs/bd/ip/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0.xci",
+      "gen_directory": "../../generated/ip/design_1_v_vid_in_axi4s_0_0",
+      "relative": true,
+      "inside_relocated_tree": true
+    }
+  ],
+  "project_sources": [
+    {
+      "path": "$PPRDIR/../workspace/inputs/rtl/rgb888_to_rgb565.v",
+      "exists_within_relocated_tree": true
+    },
+    {
+      "path": "$PPRDIR/../workspace/inputs/bd/design_1.bd",
+      "exists_within_relocated_tree": true
+    },
+    {
+      "path": "$PPRDIR/../workspace/inputs/bd/generated/hdl/design_1_wrapper.v",
+      "exists_within_relocated_tree": true
+    },
+    {
+      "path": "$PPRDIR/../workspace/inputs/constraints/trash.xdc",
+      "exists_within_relocated_tree": true
+    }
+  ],
+  "scope": "Read-only relocated-layout resolution of actual synthesis source references and XCI generation directories; no tool/project open or synthesis executed."
+}

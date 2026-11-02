@@ -1,0 +1,1085 @@
+--- tar/board/00_one_click_start.ipynb
++++ pynq/board/00_one_click_start.ipynb
+@@ -86,13 +86,13 @@
+     "from pathlib import Path\n",
+     "import sys\n",
+     "for candidate in (Path.cwd(), *Path.cwd().parents):\n",
+-    "    if (candidate/'lanuch.py').is_file() and (candidate/'src/trash_pynq').is_dir():\n",
++    "    if (candidate/'board/lanuch.py').is_file() and (candidate/'src/trash_pynq').is_dir():\n",
+     "        ROOT=candidate\n",
+     "        break\n",
+     "else:\n",
+-    "    raise RuntimeError('Open this notebook inside the pynq_port folder')\n",
+-    "if str(ROOT) not in sys.path:\n",
+-    "    sys.path.insert(0,str(ROOT))\n",
++    "    raise RuntimeError('Open this notebook inside the pynq project folder')\n",
++    "if str(ROOT/'board') not in sys.path:\n",
++    "    sys.path.insert(0,str(ROOT/'board'))\n",
+     "import lanuch\n",
+     "app=lanuch.start()\n"
+    ]
+@@ -139,7 +139,7 @@
+     "在新单元中查看状态：`app.status()`；停止：`await app.stop()`。\n",
+     "只预览不加载模型：先停止，再调用 `app = lanuch.start(enable_model=False)`。\n",
+     "\n",
+-    "完整运行文档：[RUN_GUIDE_CN.md](../RUN_GUIDE_CN.md)；API：[API_REFERENCE_CN.md](../API_REFERENCE_CN.md)。\n"
++    "完整运行文档：[README.md](../README.md)；API：[api_reference_cn.md](../report/original_docs/api_reference_cn.md)。\n"
+    ]
+   },
+   {
+--- tar/data/model_manifest.json
++++ pynq/data/model_manifest.json
+@@ -70,7 +70,7 @@
+   "validation_scope": "File sizes, hashes, finite/range checks, class order and metadata verified. User confirms existing hardware works and requests original HLS unchanged; source observations do not block use. No claim of independent board-level numeric equivalence.",
+   "files": [
+     {
+-      "name": "Head.Wc1.bin",
++      "name": "head.wc1.bin",
+       "elements": 864,
+       "bytes": 3456,
+       "sha256": "d57cb0270d75b1bf43060b1c1645f13363adba4ed79c6baeca1c1518d5fce5d2",
+@@ -78,7 +78,7 @@
+       "float32_max": 0.8317906856536865
+     },
+     {
+-      "name": "Head.bc1.bin",
++      "name": "head.bc1.bin",
+       "elements": 32,
+       "bytes": 128,
+       "sha256": "812a284a41369b76432b56f587dd92cc3205afb1a770277f46fe10b70c75f4ca",
+@@ -86,7 +86,7 @@
+       "float32_max": 1.0249238014221191
+     },
+     {
+-      "name": "Head.Wc2.bin",
++      "name": "head.wc2.bin",
+       "elements": 288,
+       "bytes": 1152,
+       "sha256": "9cd2349aee19fc16cb70d3df218e547e184fc2b65cdd1e8cef80473ac43dca72",
+@@ -94,7 +94,7 @@
+       "float32_max": 14.440558433532715
+     },
+     {
+-      "name": "Head.bc2.bin",
++      "name": "head.bc2.bin",
+       "elements": 32,
+       "bytes": 128,
+       "sha256": "c574dc3b3a3a9b1254c4514d0236a9a14e3ef9c7cf5c65978d49a84946ed8922",
+@@ -102,7 +102,7 @@
+       "float32_max": 3.0707905292510986
+     },
+     {
+-      "name": "Head.Wc3.bin",
++      "name": "head.wc3.bin",
+       "elements": 512,
+       "bytes": 2048,
+       "sha256": "9c5b8b9abee512df056658f7e0b1f2a971c3743cef3b19001cd58cf7c4a344e6",
+@@ -110,7 +110,7 @@
+       "float32_max": 1.0327001810073853
+     },
+     {
+-      "name": "Head.bc3.bin",
++      "name": "head.bc3.bin",
+       "elements": 16,
+       "bytes": 64,
+       "sha256": "e1218947d7966b497ecec3f41a24e3ad09109c57385a820a1715d388d2bdecb2",
+@@ -118,7 +118,7 @@
+       "float32_max": 2.2203335762023926
+     },
+     {
+-      "name": "FoldedInvertedResidual.0.Wc1.bin",
++      "name": "foldedinvertedresidual.0.wc1.bin",
+       "elements": 1536,
+       "bytes": 6144,
+       "sha256": "3c669aea22668eccee153c4f324c3cc25b7a13b5e4014570a0ef5346b1e8b282",
+@@ -126,7 +126,7 @@
+       "float32_max": 0.5457044839859009
+     },
+     {
+-      "name": "FoldedInvertedResidual.0.bc1.bin",
++      "name": "foldedinvertedresidual.0.bc1.bin",
+       "elements": 96,
+       "bytes": 384,
+       "sha256": "178122962959370dc18843854e75c827001385daccb8ce7f28f46acc62a80de1",
+@@ -134,7 +134,7 @@
+       "float32_max": 0.749316930770874
+     },
+     {
+-      "name": "FoldedInvertedResidual.0.Wc2.bin",
++      "name": "foldedinvertedresidual.0.wc2.bin",
+       "elements": 864,
+       "bytes": 3456,
+       "sha256": "d9699288aaa8af1c860b8eea41d8ba8874671581556aa4339b79393f5bbf956b",
+@@ -142,7 +142,7 @@
+       "float32_max": 16.934852600097656
+     },
+     {
+-      "name": "FoldedInvertedResidual.0.bc2.bin",
++      "name": "foldedinvertedresidual.0.bc2.bin",
+       "elements": 96,
+       "bytes": 384,
+       "sha256": "b62b80fb7956406a5ddb35f73843c0aa0cfea4a8642365dbd6f57a8e0307635b",
+@@ -150,7 +150,7 @@
+       "float32_max": 2.0107409954071045
+     },
+     {
+-      "name": "FoldedInvertedResidual.0.Wc3.bin",
++      "name": "foldedinvertedresidual.0.wc3.bin",
+       "elements": 2304,
+       "bytes": 9216,
+       "sha256": "0ac4ce4a7f043623d652a94e37a8f071f25db0147c52c7627e711a239cf78a48",
+@@ -158,7 +158,7 @@
+       "float32_max": 0.7857794165611267
+     },
+     {
+-      "name": "FoldedInvertedResidual.0.bc3.bin",
++      "name": "foldedinvertedresidual.0.bc3.bin",
+       "elements": 24,
+       "bytes": 96,
+       "sha256": "913d6546f184355522b0650622ce0cab8b68c1e7c61a5ace3347f8679b1fbe44",
+@@ -166,7 +166,7 @@
+       "float32_max": 1.661514401435852
+     },
+     {
+-      "name": "FoldedInvertedResidual.1.Wc1.bin",
++      "name": "foldedinvertedresidual.1.wc1.bin",
+       "elements": 3456,
+       "bytes": 13824,
+       "sha256": "b7f9a670a15123f16fc23d8f622e20d51d42c0c6ce94b123f37680126de6cbc7",
+@@ -174,7 +174,7 @@
+       "float32_max": 0.39784249663352966
+     },
+     {
+-      "name": "FoldedInvertedResidual.1.bc1.bin",
++      "name": "foldedinvertedresidual.1.bc1.bin",
+       "elements": 144,
+       "bytes": 576,
+       "sha256": "184687b9c01df8993375607fc18fd8276ea0e2c71b4dae08dd1237bf8d7ed295",
+@@ -182,7 +182,7 @@
+       "float32_max": 1.0239228010177612
+     },
+     {
+-      "name": "FoldedInvertedResidual.1.Wc2.bin",
++      "name": "foldedinvertedresidual.1.wc2.bin",
+       "elements": 1296,
+       "bytes": 5184,
+       "sha256": "56a180f564a87ee14f104e3fb85077b323c833a779cad057f470ec39f5b8b8ff",
+@@ -190,7 +190,7 @@
+       "float32_max": 23.74016571044922
+     },
+     {
+-      "name": "FoldedInvertedResidual.1.bc2.bin",
++      "name": "foldedinvertedresidual.1.bc2.bin",
+       "elements": 144,
+       "bytes": 576,
+       "sha256": "0417a8ac91d08c9f2d47500e126fb12b6bf84ec549f8108f5491c30e46fc87ab",
+@@ -198,7 +198,7 @@
+       "float32_max": 3.4801759719848633
+     },
+     {
+-      "name": "FoldedInvertedResidual.1.Wc3.bin",
++      "name": "foldedinvertedresidual.1.wc3.bin",
+       "elements": 3456,
+       "bytes": 13824,
+       "sha256": "f2e4e5d284cae8726e9381f5120f970319af36b3730719bd3cdc005b1c31243f",
+@@ -206,7 +206,7 @@
+       "float32_max": 1.1235110759735107
+     },
+     {
+-      "name": "FoldedInvertedResidual.1.bc3.bin",
++      "name": "foldedinvertedresidual.1.bc3.bin",
+       "elements": 24,
+       "bytes": 96,
+       "sha256": "e41bf690554a6a2dede359fd9ab8f163c9424b3edd16f3429fca6c05df58d969",
+@@ -214,7 +214,7 @@
+       "float32_max": 1.4448477029800415
+     },
+     {
+-      "name": "FoldedInvertedResidual.2.Wc1.bin",
++      "name": "foldedinvertedresidual.2.wc1.bin",
+       "elements": 3456,
+       "bytes": 13824,
+       "sha256": "89b6cdd348148a9bc6484c09c0b765ba28079b8357f39384746659b684601cc2",
+@@ -222,7 +222,7 @@
+       "float32_max": 0.35545068979263306
+     },
+     {
+-      "name": "FoldedInvertedResidual.2.bc1.bin",
++      "name": "foldedinvertedresidual.2.bc1.bin",
+       "elements": 144,
+       "bytes": 576,
+       "sha256": "d715ef90cae54699ab503626d484409bcb342a0f482c6e5c26bfaa47c8226c56",
+@@ -230,7 +230,7 @@
+       "float32_max": 0.3363991677761078
+     },
+     {
+-      "name": "FoldedInvertedResidual.2.Wc2.bin",
++      "name": "foldedinvertedresidual.2.wc2.bin",
+       "elements": 1296,
+       "bytes": 5184,
+       "sha256": "1da15c0fadd5fc9cc7dd0d17853774fd436847bebd80a38fec35b280df29a8d3",
+@@ -238,7 +238,7 @@
+       "float32_max": 5.1253204345703125
+     },
+     {
+-      "name": "FoldedInvertedResidual.2.bc2.bin",
++      "name": "foldedinvertedresidual.2.bc2.bin",
+       "elements": 144,
+       "bytes": 576,
+       "sha256": "45d16785d86c9c6521f73778e267e1906c734dbdb419cc426e780d0aa87c97e7",
+@@ -246,7 +246,7 @@
+       "float32_max": 1.9125837087631226
+     },
+     {
+-      "name": "FoldedInvertedResidual.2.Wc3.bin",
++      "name": "foldedinvertedresidual.2.wc3.bin",
+       "elements": 4608,
+       "bytes": 18432,
+       "sha256": "7400ebcd4db3fe6e375b87975f8c5b13920dc23d85e1b3f578b382eb1d291a50",
+@@ -254,7 +254,7 @@
+       "float32_max": 0.9326619505882263
+     },
+     {
+-      "name": "FoldedInvertedResidual.2.bc3.bin",
++      "name": "foldedinvertedresidual.2.bc3.bin",
+       "elements": 32,
+       "bytes": 128,
+       "sha256": "555334e43ae83343f8853302cef7f77f6363678d85aef31945da6a34dc9cfd5e",
+@@ -262,7 +262,7 @@
+       "float32_max": 1.1286317110061646
+     },
+     {
+-      "name": "FoldedInvertedResidual.3.Wc1.bin",
++      "name": "foldedinvertedresidual.3.wc1.bin",
+       "elements": 6144,
+       "bytes": 24576,
+       "sha256": "fa006fb348333830d85b98a6f13ec429d0d4abeba30eeaec7d8411971cf027d6",
+@@ -270,7 +270,7 @@
+       "float32_max": 0.2316926270723343
+     },
+     {
+-      "name": "FoldedInvertedResidual.3.bc1.bin",
++      "name": "foldedinvertedresidual.3.bc1.bin",
+       "elements": 192,
+       "bytes": 768,
+       "sha256": "5f256c14ec79f793bb77314f72c663176722b45d3ccc0f0c9a2d7c32e3f71c7e",
+@@ -278,7 +278,7 @@
+       "float32_max": 0.4217214286327362
+     },
+     {
+-      "name": "FoldedInvertedResidual.3.Wc2.bin",
++      "name": "foldedinvertedresidual.3.wc2.bin",
+       "elements": 1728,
+       "bytes": 6912,
+       "sha256": "9eb26e2507d0b4370564ad7f898f426c594a4e6c5e437ca99c98e354e516e9ad",
+@@ -286,7 +286,7 @@
+       "float32_max": 5.422533988952637
+     },
+     {
+-      "name": "FoldedInvertedResidual.3.bc2.bin",
++      "name": "foldedinvertedresidual.3.bc2.bin",
+       "elements": 192,
+       "bytes": 768,
+       "sha256": "362999ada63573733fee5def8dfdcb27e2e2083f60460fcc87bdf82344236435",
+@@ -294,7 +294,7 @@
+       "float32_max": 1.166595220565796
+     },
+     {
+-      "name": "FoldedInvertedResidual.3.Wc3.bin",
++      "name": "foldedinvertedresidual.3.wc3.bin",
+       "elements": 6144,
+       "bytes": 24576,
+       "sha256": "0bc87c41a9e01950a6bfd53353550b1cc40b7d6c96df3443906440ec74f1dc61",
+@@ -302,7 +302,7 @@
+       "float32_max": 0.7464110255241394
+     },
+     {
+-      "name": "FoldedInvertedResidual.3.bc3.bin",
++      "name": "foldedinvertedresidual.3.bc3.bin",
+       "elements": 32,
+       "bytes": 128,
+       "sha256": "1d4c54760a97a2143263b598d9728f05a9d75a6217ba485caefce20015e3e8e3",
+@@ -310,7 +310,7 @@
+       "float32_max": 0.590740978717804
+     },
+     {
+-      "name": "FoldedInvertedResidual.4.Wc1.bin",
++      "name": "foldedinvertedresidual.4.wc1.bin",
+       "elements": 6144,
+       "bytes": 24576,
+       "sha256": "71214d212b32b898ee6088e9399069c096c1d3b1ec9a7757bd83fbd3978c3da4",
+@@ -318,7 +318,7 @@
+       "float32_max": 0.16226863861083984
+     },
+     {
+-      "name": "FoldedInvertedResidual.4.bc1.bin",
++      "name": "foldedinvertedresidual.4.bc1.bin",
+       "elements": 192,
+       "bytes": 768,
+       "sha256": "82b50168cc22084be49088ef31d1d23634d2c0998775a94725c40cd72f4282a0",
+@@ -326,7 +326,7 @@
+       "float32_max": 0.34099772572517395
+     },
+     {
+-      "name": "FoldedInvertedResidual.4.Wc2.bin",
++      "name": "foldedinvertedresidual.4.wc2.bin",
+       "elements": 1728,
+       "bytes": 6912,
+       "sha256": "fe3066bebfc519413ac0e42a2298b9f4a2d330dc7c6f61984fafa84f2a306267",
+@@ -334,7 +334,7 @@
+       "float32_max": 12.102289199829102
+     },
+     {
+-      "name": "FoldedInvertedResidual.4.bc2.bin",
++      "name": "foldedinvertedresidual.4.bc2.bin",
+       "elements": 192,
+       "bytes": 768,
+       "sha256": "6a568ec36c7f217df9125ecdb2092bee2de3df12d9ff04b009c4567aca7be96a",
+@@ -342,7 +342,7 @@
+       "float32_max": 1.0530803203582764
+     },
+     {
+-      "name": "FoldedInvertedResidual.4.Wc3.bin",
++      "name": "foldedinvertedresidual.4.wc3.bin",
+       "elements": 6144,
+       "bytes": 24576,
+       "sha256": "ca24141cafe07d835966b650f527aa020b03a778c5905d3283b07a32bcf6c587",
+@@ -350,7 +350,7 @@
+       "float32_max": 0.829096794128418
+     },
+     {
+-      "name": "FoldedInvertedResidual.4.bc3.bin",
++      "name": "foldedinvertedresidual.4.bc3.bin",
+       "elements": 32,
+       "bytes": 128,
+       "sha256": "f8874c5ebef70744c4100902043712a8f75b234156daddcb16a45feb0fd291d4",
+@@ -358,7 +358,7 @@
+       "float32_max": 0.5229084491729736
+     },
+     {
+-      "name": "FoldedInvertedResidual.5.Wc1.bin",
++      "name": "foldedinvertedresidual.5.wc1.bin",
+       "elements": 6144,
+       "bytes": 24576,
+       "sha256": "45ea9ecc80a13546e5f548120b12468443c7e2fccdf6055bc198ed7749f09028",
+@@ -366,7 +366,7 @@
+       "float32_max": 0.25699618458747864
+     },
+     {
+-      "name": "FoldedInvertedResidual.5.bc1.bin",
++      "name": "foldedinvertedresidual.5.bc1.bin",
+       "elements": 192,
+       "bytes": 768,
+       "sha256": "dd5f593a126eaed024c733c048ee4420bd0bfc36d7d96c992c24c6cf9047e369",
+@@ -374,7 +374,7 @@
+       "float32_max": 0.3398066759109497
+     },
+     {
+-      "name": "FoldedInvertedResidual.5.Wc2.bin",
++      "name": "foldedinvertedresidual.5.wc2.bin",
+       "elements": 1728,
+       "bytes": 6912,
+       "sha256": "b102f2eeea4548d2318afa254f5f4595ad5e6a5779cc446076b54b0e63a44712",
+@@ -382,7 +382,7 @@
+       "float32_max": 4.984480857849121
+     },
+     {
+-      "name": "FoldedInvertedResidual.5.bc2.bin",
++      "name": "foldedinvertedresidual.5.bc2.bin",
+       "elements": 192,
+       "bytes": 768,
+       "sha256": "20e67286531436b639ebab215d2bbd0d0671b6cd7ef1884e7d750137c246e23e",
+@@ -390,7 +390,7 @@
+       "float32_max": 1.8437144756317139
+     },
+     {
+-      "name": "FoldedInvertedResidual.5.Wc3.bin",
++      "name": "foldedinvertedresidual.5.wc3.bin",
+       "elements": 12288,
+       "bytes": 49152,
+       "sha256": "62b13ed770d125872fe8d3b984ff1f9d6ad73512986facc79b279043d08baa5f",
+@@ -398,7 +398,7 @@
+       "float32_max": 0.5915775895118713
+     },
+     {
+-      "name": "FoldedInvertedResidual.5.bc3.bin",
++      "name": "foldedinvertedresidual.5.bc3.bin",
+       "elements": 64,
+       "bytes": 256,
+       "sha256": "0f5624374ea9f12a007400b6a6b96b4dc4cdfe1d67eb308ab543792f9a964797",
+@@ -406,7 +406,7 @@
+       "float32_max": 1.1925885677337646
+     },
+     {
+-      "name": "FoldedInvertedResidual.6.Wc1.bin",
++      "name": "foldedinvertedresidual.6.wc1.bin",
+       "elements": 24576,
+       "bytes": 98304,
+       "sha256": "542ba050ca66b6ede42ba8cd21ed5910d2df64c6deeb507d9cd4a02483a47978",
+@@ -414,7 +414,7 @@
+       "float32_max": 0.1280750036239624
+     },
+     {
+-      "name": "FoldedInvertedResidual.6.bc1.bin",
++      "name": "foldedinvertedresidual.6.bc1.bin",
+       "elements": 384,
+       "bytes": 1536,
+       "sha256": "83b6cd27af0e21caf0bdb2e53f6b0ca7802763904e6fbc620e1c3296f64f5bad",
+@@ -422,7 +422,7 @@
+       "float32_max": 0.3714751601219177
+     },
+     {
+-      "name": "FoldedInvertedResidual.6.Wc2.bin",
++      "name": "foldedinvertedresidual.6.wc2.bin",
+       "elements": 3456,
+       "bytes": 13824,
+       "sha256": "bbc7c28b9d7dcc532ed8fc4425fca22ea49532e25994c77e60c656c9c191a967",
+@@ -430,7 +430,7 @@
+       "float32_max": 16.276601791381836
+     },
+     {
+-      "name": "FoldedInvertedResidual.6.bc2.bin",
++      "name": "foldedinvertedresidual.6.bc2.bin",
+       "elements": 384,
+       "bytes": 1536,
+       "sha256": "9fce4c5b121c920b5f13e05bb933c623de51ec27826dff63ddda001539c21eda",
+@@ -438,7 +438,7 @@
+       "float32_max": 0.8846349120140076
+     },
+     {
+-      "name": "FoldedInvertedResidual.6.Wc3.bin",
++      "name": "foldedinvertedresidual.6.wc3.bin",
+       "elements": 24576,
+       "bytes": 98304,
+       "sha256": "19b814bad15574d4b5e5f54934f9b94e66f4223f4e6bccc8d2ec5fc8ba418e10",
+@@ -446,7 +446,7 @@
+       "float32_max": 0.49733707308769226
+     },
+     {
+-      "name": "FoldedInvertedResidual.6.bc3.bin",
++      "name": "foldedinvertedresidual.6.bc3.bin",
+       "elements": 64,
+       "bytes": 256,
+       "sha256": "e2a1f165e407064e8d2a1f8a12cdbb425323009212f94436d71b8ba4435bd817",
+@@ -454,7 +454,7 @@
+       "float32_max": 0.7879741191864014
+     },
+     {
+-      "name": "FoldedInvertedResidual.7.Wc1.bin",
++      "name": "foldedinvertedresidual.7.wc1.bin",
+       "elements": 24576,
+       "bytes": 98304,
+       "sha256": "bcb8afb8015edfc17a3f711616442cb18b56e8d17dac457126703e2a51b7f707",
+@@ -462,7 +462,7 @@
+       "float32_max": 0.10598745197057724
+     },
+     {
+-      "name": "FoldedInvertedResidual.7.bc1.bin",
++      "name": "foldedinvertedresidual.7.bc1.bin",
+       "elements": 384,
+       "bytes": 1536,
+       "sha256": "5cb766c25f29f9963793914817ea37528f384b8c6374aafcab2e85b2cd40ae79",
+@@ -470,7 +470,7 @@
+       "float32_max": 0.25419971346855164
+     },
+     {
+-      "name": "FoldedInvertedResidual.7.Wc2.bin",
++      "name": "foldedinvertedresidual.7.wc2.bin",
+       "elements": 3456,
+       "bytes": 13824,
+       "sha256": "46ef695c6a9968fceada796e94491c69b9feb5408d3ede61b85bc19a90ffbcde",
+@@ -478,7 +478,7 @@
+       "float32_max": 11.879443168640137
+     },
+     {
+-      "name": "FoldedInvertedResidual.7.bc2.bin",
++      "name": "foldedinvertedresidual.7.bc2.bin",
+       "elements": 384,
+       "bytes": 1536,
+       "sha256": "a221803165a8ef9f685691ee2b4e71ff7f4ecb59ad95e535a4a2c358c8722251",
+@@ -486,7 +486,7 @@
+       "float32_max": 0.656440019607544
+     },
+     {
+-      "name": "FoldedInvertedResidual.7.Wc3.bin",
++      "name": "foldedinvertedresidual.7.wc3.bin",
+       "elements": 24576,
+       "bytes": 98304,
+       "sha256": "3ac17d4154b513ad213835370ea667b62c65c4316f326397105e6976ff1c07c1",
+@@ -494,7 +494,7 @@
+       "float32_max": 0.332123339176178
+     },
+     {
+-      "name": "FoldedInvertedResidual.7.bc3.bin",
++      "name": "foldedinvertedresidual.7.bc3.bin",
+       "elements": 64,
+       "bytes": 256,
+       "sha256": "3ab0433845b003081d68e3874de8d1b42e989a57a1bf4af92fbbf7043ff9fa47",
+@@ -502,7 +502,7 @@
+       "float32_max": 0.49686211347579956
+     },
+     {
+-      "name": "FoldedInvertedResidual.8.Wc1.bin",
++      "name": "foldedinvertedresidual.8.wc1.bin",
+       "elements": 24576,
+       "bytes": 98304,
+       "sha256": "d44e6215eb74fdcbeee7aace7558e2c24017c7e2ac67caf9e2fc22e706e4d860",
+@@ -510,7 +510,7 @@
+       "float32_max": 0.12275265902280807
+     },
+     {
+-      "name": "FoldedInvertedResidual.8.bc1.bin",
++      "name": "foldedinvertedresidual.8.bc1.bin",
+       "elements": 384,
+       "bytes": 1536,
+       "sha256": "69419fbbfff0fc40d0f5e9307a381cebf79d2ac776842937e51fd08cc1388238",
+@@ -518,7 +518,7 @@
+       "float32_max": 0.25089120864868164
+     },
+     {
+-      "name": "FoldedInvertedResidual.8.Wc2.bin",
++      "name": "foldedinvertedresidual.8.wc2.bin",
+       "elements": 3456,
+       "bytes": 13824,
+       "sha256": "984e8a9b2abd9c54907ddea6a6e12ef0f79da60b013c560754e31906b6d4d05a",
+@@ -526,7 +526,7 @@
+       "float32_max": 17.995832443237305
+     },
+     {
+-      "name": "FoldedInvertedResidual.8.bc2.bin",
++      "name": "foldedinvertedresidual.8.bc2.bin",
+       "elements": 384,
+       "bytes": 1536,
+       "sha256": "db5e4b1b16553b861eea42684bc22e96ae9013ac6b585d8c43575ce55c281e26",
+@@ -534,7 +534,7 @@
+       "float32_max": 0.9253984093666077
+     },
+     {
+-      "name": "FoldedInvertedResidual.8.Wc3.bin",
++      "name": "foldedinvertedresidual.8.wc3.bin",
+       "elements": 24576,
+       "bytes": 98304,
+       "sha256": "66ca4858139c63bc61ff6651c210f2db9b135ed5666d9f013d5c639824c0ade8",
+@@ -542,7 +542,7 @@
+       "float32_max": 0.3812125325202942
+     },
+     {
+-      "name": "FoldedInvertedResidual.8.bc3.bin",
++      "name": "foldedinvertedresidual.8.bc3.bin",
+       "elements": 64,
+       "bytes": 256,
+       "sha256": "8a74d12e20f8107e7ae9373edec70220e471c803c07a6d248406ea365a08a926",
+@@ -550,7 +550,7 @@
+       "float32_max": 0.34528496861457825
+     },
+     {
+-      "name": "FoldedInvertedResidual.9.Wc1.bin",
++      "name": "foldedinvertedresidual.9.wc1.bin",
+       "elements": 24576,
+       "bytes": 98304,
+       "sha256": "e490a9c73ac0b5897a897d5defe0d53ef3ead428ea964f7768da4654c8717a9f",
+@@ -558,7 +558,7 @@
+       "float32_max": 0.12037000805139542
+     },
+     {
+-      "name": "FoldedInvertedResidual.9.bc1.bin",
++      "name": "foldedinvertedresidual.9.bc1.bin",
+       "elements": 384,
+       "bytes": 1536,
+       "sha256": "15aace7c1ff85afe50103f2bdb83ffa284fadf8875b5f4052cf2e778a9a393a3",
+@@ -566,7 +566,7 @@
+       "float32_max": 0.3044310212135315
+     },
+     {
+-      "name": "FoldedInvertedResidual.9.Wc2.bin",
++      "name": "foldedinvertedresidual.9.wc2.bin",
+       "elements": 3456,
+       "bytes": 13824,
+       "sha256": "0d54cb31a877d392afb29325e53fe755058f603a7e5e216342dce44fd0b2bfff",
+@@ -574,7 +574,7 @@
+       "float32_max": 16.322490692138672
+     },
+     {
+-      "name": "FoldedInvertedResidual.9.bc2.bin",
++      "name": "foldedinvertedresidual.9.bc2.bin",
+       "elements": 384,
+       "bytes": 1536,
+       "sha256": "48c67d364e170a19add32a4eb7cc4d890c28b05b7b3a84c20ec73946724ef0dd",
+@@ -582,7 +582,7 @@
+       "float32_max": 1.5475878715515137
+     },
+     {
+-      "name": "FoldedInvertedResidual.9.Wc3.bin",
++      "name": "foldedinvertedresidual.9.wc3.bin",
+       "elements": 36864,
+       "bytes": 147456,
+       "sha256": "bffb5b99d6d604e5a0139c2a9bf3113fcb55e5f74c37ed93a8e8e1fde4f065d1",
+@@ -590,7 +590,7 @@
+       "float32_max": 0.35798564553260803
+     },
+     {
+-      "name": "FoldedInvertedResidual.9.bc3.bin",
++      "name": "foldedinvertedresidual.9.bc3.bin",
+       "elements": 96,
+       "bytes": 384,
+       "sha256": "f2eb455789517a3023f724b4ee02151c1090fd5904d4336e3129eec599bf53d7",
+@@ -598,7 +598,7 @@
+       "float32_max": 0.5466375350952148
+     },
+     {
+-      "name": "FoldedInvertedResidual.10.Wc1.bin",
++      "name": "foldedinvertedresidual.10.wc1.bin",
+       "elements": 55296,
+       "bytes": 221184,
+       "sha256": "09297c94211ab1793749da7d902009425e0fd49f7b2917322b354f0dce47021d",
+@@ -606,7 +606,7 @@
+       "float32_max": 0.14343050122261047
+     },
+     {
+-      "name": "FoldedInvertedResidual.10.bc1.bin",
++      "name": "foldedinvertedresidual.10.bc1.bin",
+       "elements": 576,
+       "bytes": 2304,
+       "sha256": "38293b7a426736e609097da15e8021e18cfeadf8d98524222570a68382d7cae7",
+@@ -614,7 +614,7 @@
+       "float32_max": 0.27621281147003174
+     },
+     {
+-      "name": "FoldedInvertedResidual.10.Wc2.bin",
++      "name": "foldedinvertedresidual.10.wc2.bin",
+       "elements": 5184,
+       "bytes": 20736,
+       "sha256": "15acc077b5b52c649d3549f446c7aaa849c2a9263ca5f799c38b184d42aab989",
+@@ -622,7 +622,7 @@
+       "float32_max": 12.943270683288574
+     },
+     {
+-      "name": "FoldedInvertedResidual.10.bc2.bin",
++      "name": "foldedinvertedresidual.10.bc2.bin",
+       "elements": 576,
+       "bytes": 2304,
+       "sha256": "808df9b57642b70e54492f7fd5b12c4c3cd77c6aa4117407249dfb2022c4734f",
+@@ -630,7 +630,7 @@
+       "float32_max": 1.2738155126571655
+     },
+     {
+-      "name": "FoldedInvertedResidual.10.Wc3.bin",
++      "name": "foldedinvertedresidual.10.wc3.bin",
+       "elements": 55296,
+       "bytes": 221184,
+       "sha256": "f717cf34e1d30d44ed4e04f9ede25d077078e899081fb13b826371b59921672a",
+@@ -638,7 +638,7 @@
+       "float32_max": 0.23690907657146454
+     },
+     {
+-      "name": "FoldedInvertedResidual.10.bc3.bin",
++      "name": "foldedinvertedresidual.10.bc3.bin",
+       "elements": 96,
+       "bytes": 384,
+       "sha256": "e8445011450e40d5dce515d5756c6d35fe5945befe7a4afb88ebe95d3b6eae40",
+@@ -646,7 +646,7 @@
+       "float32_max": 0.4533083140850067
+     },
+     {
+-      "name": "FoldedInvertedResidual.11.Wc1.bin",
++      "name": "foldedinvertedresidual.11.wc1.bin",
+       "elements": 55296,
+       "bytes": 221184,
+       "sha256": "ed76778d6ab36eb50c47cf704cadf4db0b0c8ce4b9a26c6272b10e6d8671d78e",
+@@ -654,7 +654,7 @@
+       "float32_max": 0.11622367054224014
+     },
+     {
+-      "name": "FoldedInvertedResidual.11.bc1.bin",
++      "name": "foldedinvertedresidual.11.bc1.bin",
+       "elements": 576,
+       "bytes": 2304,
+       "sha256": "c2a934a6c3a5c241588aae620c3418a49a6103a76c0c7461f58c702aaec980d8",
+@@ -662,7 +662,7 @@
+       "float32_max": 0.21966245770454407
+     },
+     {
+-      "name": "FoldedInvertedResidual.11.Wc2.bin",
++      "name": "foldedinvertedresidual.11.wc2.bin",
+       "elements": 5184,
+       "bytes": 20736,
+       "sha256": "f404ce49aeb23e0ed6fe12b823fcac952ddecee8d40d7a3e2d32b6c1a2b6716c",
+@@ -670,7 +670,7 @@
+       "float32_max": 15.275740623474121
+     },
+     {
+-      "name": "FoldedInvertedResidual.11.bc2.bin",
++      "name": "foldedinvertedresidual.11.bc2.bin",
+       "elements": 576,
+       "bytes": 2304,
+       "sha256": "e30c1eb93828040ae529f79d973610c546a69850eee9392a1fc422cf25585360",
+@@ -678,7 +678,7 @@
+       "float32_max": 0.7908705472946167
+     },
+     {
+-      "name": "FoldedInvertedResidual.11.Wc3.bin",
++      "name": "foldedinvertedresidual.11.wc3.bin",
+       "elements": 55296,
+       "bytes": 221184,
+       "sha256": "13d1e06155405887b316b7aa64c3d8a187bfa138613664ce0fb7821500177a39",
+@@ -686,7 +686,7 @@
+       "float32_max": 0.43082743883132935
+     },
+     {
+-      "name": "FoldedInvertedResidual.11.bc3.bin",
++      "name": "foldedinvertedresidual.11.bc3.bin",
+       "elements": 96,
+       "bytes": 384,
+       "sha256": "b58018c5822782986ba24b78c73219ac69df5ca15dc7dc013ab7157bd7aefd53",
+@@ -694,7 +694,7 @@
+       "float32_max": 0.5697144865989685
+     },
+     {
+-      "name": "FoldedInvertedResidual.12.Wc1.bin",
++      "name": "foldedinvertedresidual.12.wc1.bin",
+       "elements": 55296,
+       "bytes": 221184,
+       "sha256": "70c29f9c9daff43dc7670b7eb263056606f5ed97375491b0fdf701b89d155beb",
+@@ -702,7 +702,7 @@
+       "float32_max": 0.15915243327617645
+     },
+     {
+-      "name": "FoldedInvertedResidual.12.bc1.bin",
++      "name": "foldedinvertedresidual.12.bc1.bin",
+       "elements": 576,
+       "bytes": 2304,
+       "sha256": "b184fe791fd13d70ff1f3ef49b60aef7b4968171e3f8b9fde451997529de9306",
+@@ -710,7 +710,7 @@
+       "float32_max": 0.31253400444984436
+     },
+     {
+-      "name": "FoldedInvertedResidual.12.Wc2.bin",
++      "name": "foldedinvertedresidual.12.wc2.bin",
+       "elements": 5184,
+       "bytes": 20736,
+       "sha256": "1bdd51762ea70a3302f8ae7814317b4221b0ca272d76f248584a04d242ff1b53",
+@@ -718,7 +718,7 @@
+       "float32_max": 16.851600646972656
+     },
+     {
+-      "name": "FoldedInvertedResidual.12.bc2.bin",
++      "name": "foldedinvertedresidual.12.bc2.bin",
+       "elements": 576,
+       "bytes": 2304,
+       "sha256": "00844fa9d351b9198aaf56a8b24d500e2f6d79ea525cf44a0fc9d4b57e96407b",
+@@ -726,7 +726,7 @@
+       "float32_max": 0.6991699934005737
+     },
+     {
+-      "name": "FoldedInvertedResidual.12.Wc3.bin",
++      "name": "foldedinvertedresidual.12.wc3.bin",
+       "elements": 92160,
+       "bytes": 368640,
+       "sha256": "fe71de7c56039ca3b13d6a6019e5715e9fd3ad11e6779a0d4976d6ede1e0af5d",
+@@ -734,7 +734,7 @@
+       "float32_max": 0.16858753561973572
+     },
+     {
+-      "name": "FoldedInvertedResidual.12.bc3.bin",
++      "name": "foldedinvertedresidual.12.bc3.bin",
+       "elements": 160,
+       "bytes": 640,
+       "sha256": "b7e3c775ab79f09c124d5bd70627d937b7c242c513e248b29de6ec832bb4c1c8",
+@@ -742,7 +742,7 @@
+       "float32_max": 1.3752027750015259
+     },
+     {
+-      "name": "FoldedInvertedResidual.13.Wc1.bin",
++      "name": "foldedinvertedresidual.13.wc1.bin",
+       "elements": 153600,
+       "bytes": 614400,
+       "sha256": "c730fa8c2811ac7bd92d7800b3b3cb4e3f6086ade991c7db095651e9ead671b4",
+@@ -750,7 +750,7 @@
+       "float32_max": 0.20840506255626678
+     },
+     {
+-      "name": "FoldedInvertedResidual.13.bc1.bin",
++      "name": "foldedinvertedresidual.13.bc1.bin",
+       "elements": 960,
+       "bytes": 3840,
+       "sha256": "7663b92a39881377321f131cfce5c4b0309db90965dadefc6cd231ef2652e348",
+@@ -758,7 +758,7 @@
+       "float32_max": 0.3483515679836273
+     },
+     {
+-      "name": "FoldedInvertedResidual.13.Wc2.bin",
++      "name": "foldedinvertedresidual.13.wc2.bin",
+       "elements": 8640,
+       "bytes": 34560,
+       "sha256": "37c432a9f84a994e2d7c4e8762c0678fecf544f7072b82f439fd937dd819637f",
+@@ -766,7 +766,7 @@
+       "float32_max": 13.9125394821167
+     },
+     {
+-      "name": "FoldedInvertedResidual.13.bc2.bin",
++      "name": "foldedinvertedresidual.13.bc2.bin",
+       "elements": 960,
+       "bytes": 3840,
+       "sha256": "fe4f8bebafae7f2219bb6321c5968e42061597f0251a6d2a57034520ffa4ffbd",
+@@ -774,7 +774,7 @@
+       "float32_max": 0.7173261046409607
+     },
+     {
+-      "name": "FoldedInvertedResidual.13.Wc3.bin",
++      "name": "foldedinvertedresidual.13.wc3.bin",
+       "elements": 153600,
+       "bytes": 614400,
+       "sha256": "86cfed545b54215dc5657b1fd7bcea22f9974c72094efb3f0bbcae27883119db",
+@@ -782,7 +782,7 @@
+       "float32_max": 0.1627616435289383
+     },
+     {
+-      "name": "FoldedInvertedResidual.13.bc3.bin",
++      "name": "foldedinvertedresidual.13.bc3.bin",
+       "elements": 160,
+       "bytes": 640,
+       "sha256": "27947e9b84b8d3e11529739b748fe32a84d4ad3dee6419179106f7f33d23da98",
+@@ -790,7 +790,7 @@
+       "float32_max": 0.2571088969707489
+     },
+     {
+-      "name": "FoldedInvertedResidual.14.Wc1.bin",
++      "name": "foldedinvertedresidual.14.wc1.bin",
+       "elements": 153600,
+       "bytes": 614400,
+       "sha256": "660ce099dc0d3a96188b2a8bc0f9d6547b5aceabdb076f927b906624cd54fe45",
+@@ -798,7 +798,7 @@
+       "float32_max": 0.1437351554632187
+     },
+     {
+-      "name": "FoldedInvertedResidual.14.bc1.bin",
++      "name": "foldedinvertedresidual.14.bc1.bin",
+       "elements": 960,
+       "bytes": 3840,
+       "sha256": "b09ab1a1f3bcecb6f48e06f48f2d0d44f7ac02f47bf3fdcec9bded855b6139cf",
+@@ -806,7 +806,7 @@
+       "float32_max": 0.2797607481479645
+     },
+     {
+-      "name": "FoldedInvertedResidual.14.Wc2.bin",
++      "name": "foldedinvertedresidual.14.wc2.bin",
+       "elements": 8640,
+       "bytes": 34560,
+       "sha256": "9072a9fc5f6231b64bfa17ce55575f59e2c04bd02992a1c3d17464ec1f91744c",
+@@ -814,7 +814,7 @@
+       "float32_max": 9.236621856689453
+     },
+     {
+-      "name": "FoldedInvertedResidual.14.bc2.bin",
++      "name": "foldedinvertedresidual.14.bc2.bin",
+       "elements": 960,
+       "bytes": 3840,
+       "sha256": "0c62ad1e4028bb8fb2187d47e43de09e812103ec50cc5c60364a486afc60e7bf",
+@@ -822,7 +822,7 @@
+       "float32_max": 1.1506763696670532
+     },
+     {
+-      "name": "FoldedInvertedResidual.14.Wc3.bin",
++      "name": "foldedinvertedresidual.14.wc3.bin",
+       "elements": 153600,
+       "bytes": 614400,
+       "sha256": "67ada6dd5c2775e7d80c8e929a43c711612a27b5a51021bbe504c649807ed9d2",
+@@ -830,7 +830,7 @@
+       "float32_max": 0.227176696062088
+     },
+     {
+-      "name": "FoldedInvertedResidual.14.bc3.bin",
++      "name": "foldedinvertedresidual.14.bc3.bin",
+       "elements": 160,
+       "bytes": 640,
+       "sha256": "23dae3936d2555de300667542571b44c267d252173e855b7c2e8997270ea4e1c",
+@@ -838,7 +838,7 @@
+       "float32_max": 0.3220703899860382
+     },
+     {
+-      "name": "FoldedInvertedResidual.15.Wc1.bin",
++      "name": "foldedinvertedresidual.15.wc1.bin",
+       "elements": 153600,
+       "bytes": 614400,
+       "sha256": "b3bb76f1e59d0f72916952885b66e4caa05f998e79521221210fe364ed44ef51",
+@@ -846,7 +846,7 @@
+       "float32_max": 0.21631556749343872
+     },
+     {
+-      "name": "FoldedInvertedResidual.15.bc1.bin",
++      "name": "foldedinvertedresidual.15.bc1.bin",
+       "elements": 960,
+       "bytes": 3840,
+       "sha256": "46f7a2c5b50593ba345c12e92865d3643fd130af4d0bfc64513e74eda48b2566",
+@@ -854,7 +854,7 @@
+       "float32_max": 0.20182350277900696
+     },
+     {
+-      "name": "FoldedInvertedResidual.15.Wc2.bin",
++      "name": "foldedinvertedresidual.15.wc2.bin",
+       "elements": 8640,
+       "bytes": 34560,
+       "sha256": "7e2a2333070f4f2fddbe6eb9a91f7ab1455ed1a0f538cf72105ec95139340b41",
+@@ -862,7 +862,7 @@
+       "float32_max": 8.1181058883667
+     },
+     {
+-      "name": "FoldedInvertedResidual.15.bc2.bin",
++      "name": "foldedinvertedresidual.15.bc2.bin",
+       "elements": 960,
+       "bytes": 3840,
+       "sha256": "920ced535328b14fa03fbb28ad9062c7755713b3971c9d3d8dcee8b42e53c381",
+@@ -870,7 +870,7 @@
+       "float32_max": 0.6196843385696411
+     },
+     {
+-      "name": "FoldedInvertedResidual.15.Wc3.bin",
++      "name": "foldedinvertedresidual.15.wc3.bin",
+       "elements": 307200,
+       "bytes": 1228800,
+       "sha256": "0b6e25badfce477010e51685d7ebbc91af318e82201fea958dd3de2155b246f2",
+@@ -878,7 +878,7 @@
+       "float32_max": 0.06846018880605698
+     },
+     {
+-      "name": "FoldedInvertedResidual.15.bc3.bin",
++      "name": "foldedinvertedresidual.15.bc3.bin",
+       "elements": 320,
+       "bytes": 1280,
+       "sha256": "7493b32cc3eb56cc9c3bfe3b9cff3720d0f386e9dc990515bce30ed4a3441ebf",
+@@ -886,7 +886,7 @@
+       "float32_max": 0.22307400405406952
+     },
+     {
+-      "name": "Tail.Wc1.bin",
++      "name": "tail.wc1.bin",
+       "elements": 409600,
+       "bytes": 1638400,
+       "sha256": "8eb2e7e71a25b6fd958e48d7eed60c946c33faae0e540f6febc29bc41a91af2a",
+@@ -894,7 +894,7 @@
+       "float32_max": 0.4353177547454834
+     },
+     {
+-      "name": "Tail.bc1.bin",
++      "name": "tail.bc1.bin",
+       "elements": 1280,
+       "bytes": 5120,
+       "sha256": "c41614b04b4c3cb980505842bddf3d32ceab790c2ebc2847d967d37ba7827222",
+@@ -902,7 +902,7 @@
+       "float32_max": 0.31040483713150024
+     },
+     {
+-      "name": "Tail.Wf1.bin",
++      "name": "tail.wf1.bin",
+       "elements": 7680,
+       "bytes": 30720,
+       "sha256": "adf5a2f2bc5cf3bb97ba683270ad3c3182e9e534d9669936fc418692a70e123b",
+@@ -910,7 +910,7 @@
+       "float32_max": 0.0600980781018734
+     },
+     {
+-      "name": "Tail.bf1.bin",
++      "name": "tail.bf1.bin",
+       "elements": 6,
+       "bytes": 24,
+       "sha256": "c58c999bcabfd93a21f94b38418a47624f5a9828b22aa0959c61123e5df8bd40",
+--- tar/lanuch.py
++++ pynq/board/lanuch.py
+@@ -2,7 +2,7 @@
+ """One-command AC820 LCD/camera application, reusing the verified notebook.
+ 
+ Jupyter: ``from lanuch import start; app = start()`` and ``await app.stop()``.
+-SSH: ``sudo /usr/local/share/pynq-venv/bin/python3 lanuch.py`` (Ctrl+C stops).
++SSH: ``sudo /usr/local/share/pynq-venv/bin/python3 board/lanuch.py`` (Ctrl+C stops).
+ The filename intentionally follows the requested spelling, ``lanuch.py``.
+ """
+ import argparse
+@@ -30,7 +30,7 @@
+ 
+ 
+ def _find_root(root=None):
+-    result = Path(root).expanduser().resolve() if root is not None else Path(__file__).resolve().parent
++    result = Path(root).expanduser().resolve() if root is not None else Path(__file__).resolve().parents[1]
+     if not (result / "src/trash_pynq").is_dir():
+         raise RuntimeError("Project root must contain src/trash_pynq: " + str(result))
+     return result
+@@ -347,7 +347,7 @@
+     _validate_options(args.io_voltage, args.browser_fps)
+     if args.duration is not None and (not math.isfinite(args.duration) or args.duration <= 0):
+         parser.error("--duration must be finite and positive")
+-    print("Jupyter: http://pynq:9090/notebooks/pynq_port/board/00_one_click_start.ipynb")
++    print("Jupyter: http://<board-ip>:9090/notebooks/fpga_competition/pynq/board/00_one_click_start.ipynb")
+     if args.check:
+         root = _find_root()
+         _load_stages(root)
+--- tar/sim/test_model.py
++++ pynq/sim/test_model.py
+@@ -264,13 +264,13 @@
+                 load_weights(directory, failing)
+             self.assertEqual(len(failing.buffers), 3)
+             self.assertTrue(all(b.freed for b in failing.buffers))
+-            (directory / "Head.Wc1.bin").write_bytes(b"wrong length")
+-            np.full(32, np.nan, dtype="<f4").tofile(str(directory / "Head.bc1.bin"))
+-            np.full(6, 32.0, dtype="<f4").tofile(str(directory / "Tail.bf1.bin"))
++            (directory / "head.wc1.bin").write_bytes(b"wrong length")
++            np.full(32, np.nan, dtype="<f4").tofile(str(directory / "head.bc1.bin"))
++            np.full(6, 32.0, dtype="<f4").tofile(str(directory / "tail.bf1.bin"))
+             allocator2 = Allocator()
+             with self.assertRaises(ValueError) as raised:
+                 load_weights(directory, allocator2)
+-            for diagnostic in ("Head.Wc1.bin", "Head.bc1.bin", "Tail.bf1.bin", "NaN", "range"):
++            for diagnostic in ("head.wc1.bin", "head.bc1.bin", "tail.bf1.bin", "NaN", "range"):
+                 self.assertIn(diagnostic, str(raised.exception))
+             self.assertEqual(allocator2.buffers, [])
+ 
+--- tar/sim/test_workflow.py
++++ pynq/sim/test_workflow.py
+@@ -141,7 +141,7 @@
+                 shutil.copytree(ROOT/'data/trash_weight',directory,dirs_exist_ok=True)
+                 for value,diagnostic in ((np.nan,'NaN'),(32.0,'range')):
+                     with self.subTest(value=value):
+-                        np.full(32,value,dtype='<f4').tofile(str(directory/'Head.bc1.bin'))
++                        np.full(32,value,dtype='<f4').tofile(str(directory/'head.bc1.bin'))
+                         with self.assertRaisesRegex(ValueError,diagnostic):
+                             infer.main()
+                         download.assert_not_called()
+@@ -155,7 +155,7 @@
+             shutil.copytree(ROOT/'data/trash_weight',directory)
+ 
+             def download(*args):
+-                np.full(32,np.nan,dtype='<f4').tofile(str(directory/'Head.bc1.bin'))
++                np.full(32,np.nan,dtype='<f4').tofile(str(directory/'head.bc1.bin'))
+                 return object()
+ 
+             arguments=self._cli_arguments(directory,Path(tmp)/'run.json')
+--- tar/src/trash_pynq/model.py
++++ pynq/src/trash_pynq/model.py
+@@ -113,7 +113,7 @@
+         "Tail.Wf1.bin": 1280 * NUM_CLASSES,
+         "Tail.bf1.bin": NUM_CLASSES,
+     })
+-    return specs
++    return {name.lower(): count for name, count in specs.items()}
+ 
+ 
+ def _free(buffer):
+@@ -279,7 +279,7 @@
+             raise
+ 
+     def _weight(self, prefix, name):
+-        return self.weights[prefix + "." + name + ".bin"]
++        return self.weights[(prefix + "." + name + ".bin").lower()]
+ 
+     @_exclusive
+     def run(self, image_q):
+--- tar/tests/test_lanuch.py
++++ pynq/sim/test_lanuch.py
+@@ -8,7 +8,7 @@
+ from unittest.mock import Mock, patch
+ 
+ 
+-SCRIPT = Path(__file__).resolve().parents[1] / "lanuch.py"
++SCRIPT = Path(__file__).resolve().parents[1] / "board/lanuch.py"
+ SPEC = importlib.util.spec_from_file_location("lanuch_test_subject", str(SCRIPT))
+ lanuch = importlib.util.module_from_spec(SPEC)
+ SPEC.loader.exec_module(lanuch)

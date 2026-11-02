@@ -1,0 +1,40 @@
+{
+  "shortcut": {
+    "exit_code": 0,
+    "log_sha256": "314d6a6f37506d28e36fc119650457035154af1d73e4e01202a563d6bfc03b2f",
+    "printed_pair_count": 0,
+    "printed_mismatch_count": 0,
+    "csim_done_zero_errors": true,
+    "printed_scalar_count": 10000,
+    "all_printed_values_equal_four": true,
+    "reason": "Original a+b==4 exactly in Q10, no overflow in its generated range"
+  },
+  "pwdwconv": {
+    "exit_code": 0,
+    "log_sha256": "95dc2da40da6bcf93724a34be1552fb5767234d9f0ae9b1d25e7e765e1b7b8c8",
+    "printed_pair_count": 18816,
+    "printed_mismatch_count": 0,
+    "csim_done_zero_errors": true,
+    "expected_pair_count": 18816,
+    "explicit_test_pass": true,
+    "oracle": "Original TB compares all 24x28x28 pointwise outputs with !=, returns -1; commented depthwise TB is not coverage"
+  },
+  "fc": {
+    "exit_code": 0,
+    "log_sha256": "b78c70e9340ca09179f6726d3a53a47a716cec908bca483652c586f42dc36c1c",
+    "printed_pair_count": 6,
+    "printed_mismatch_count": 0,
+    "csim_done_zero_errors": true,
+    "expected_pair_count": 6,
+    "oracle": "Original TB only prints; all six printed pairs compared independently, finite precision text is weaker than raw int16 equality"
+  },
+  "conv": {
+    "exit_code": 0,
+    "log_sha256": "d1f787d82e2073b97889670dddb0a7483bd22229df4e330743c1a1505af00837",
+    "printed_pair_count": 401408,
+    "printed_mismatch_count": 0,
+    "csim_done_zero_errors": true,
+    "expected_pair_count": 401408,
+    "oracle": "Original TB returns -1 on any exact ap_fixed comparison mismatch; signed integer overflow in original pseudo-random generator remains a limitation"
+  }
+}

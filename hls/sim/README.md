@@ -1,0 +1,1 @@
+testbenches/保存原测试台审阅副本。rtl_functional_results.json是此前实际有界RTL结果。新的RTL验证从工程build/validate_hls_rtl.py入口执行，不能把历史csim/cosim失败写为通过。

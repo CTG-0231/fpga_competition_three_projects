@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "state": "running",
+      "live_pid_rejected": true
+    },
+    {
+      "state": "failed",
+      "live_pid_rejected": true
+    },
+    {
+      "state": "interrupted_or_launcher_error",
+      "live_pid_rejected": true
+    },
+    {
+      "state": "completed",
+      "live_pid_rejected": true
+    }
+  ],
+  "dead_pid_allowed": true,
+  "tcl_target_condition_review": "PASS using Tcl interpreter without Tk/GUI or AMD processes",
+  "scope": "Only resume branches changed after the successful first build; normal first-build path unchanged. No AMD resume execution claimed.",
+  "tcl_interpreter_checks": [
+    {
+      "status": "route_design Complete!",
+      "progress": "100%",
+      "nonempty_bit": true,
+      "accepted": false
+    },
+    {
+      "status": "write_bitstream Complete!",
+      "progress": "100%",
+      "nonempty_bit": false,
+      "accepted": false
+    },
+    {
+      "status": "write_bitstream Complete!",
+      "progress": "90%",
+      "nonempty_bit": true,
+      "accepted": false
+    },
+    {
+      "status": "write_bitstream Complete!",
+      "progress": "100%",
+      "nonempty_bit": true,
+      "accepted": true
+    }
+  ]
+}

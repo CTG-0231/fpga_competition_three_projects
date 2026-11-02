@@ -1,0 +1,29 @@
+{
+  "base_sha256": "28d656e6da69a652484d29210fe99ef990a105125d9d834666ca69736a427f2f",
+  "migrated_sha256": "8e154dbf9659ac0ad81be59381a2e56dbf25babbc57b21ab0cf5133ef02af858",
+  "base_bytes": 19123,
+  "migrated_bytes": 15557,
+  "changed_properties": [
+    "/__symbols__:leaf_i2c0_default",
+    "/__symbols__:leaf_touch_gpio_default",
+    "/amba/gpio@e000a000:pinctrl-0",
+    "/amba/gpio@e000a000:pinctrl-names",
+    "/amba/i2c@e0004000:clock-frequency",
+    "/amba/i2c@e0004000:pinctrl-0",
+    "/amba/i2c@e0004000:pinctrl-names",
+    "/amba/i2c@e0004000:status",
+    "/amba/i2c@e0005000:clock-frequency",
+    "/amba/i2c@e0005000:status"
+  ],
+  "added_nodes": [
+    "/amba/slcr@f8000000/pinctrl@700/leaf-i2c0-default",
+    "/amba/slcr@f8000000/pinctrl@700/leaf-i2c0-default/mux",
+    "/amba/slcr@f8000000/pinctrl@700/leaf-touch-gpio-default",
+    "/amba/slcr@f8000000/pinctrl@700/leaf-touch-gpio-default/mux"
+  ],
+  "other_properties_unchanged": true,
+  "reservations_unchanged": true,
+  "kernel_execution": false,
+  "board_tested": false,
+  "validation": "passed"
+}

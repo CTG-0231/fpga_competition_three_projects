@@ -1,0 +1,37 @@
+/* Integration fragment for an AC820 PetaLinux/PYNQ image source tree.
+ * NOT a ready-to-load dtbo. Confirm the running kernel's labels and pinctrl
+ * driver, the AC820 schematic and MIO ownership before including this file.
+ * Reference original XSA: I2C0=MIO50/51; I2C1=EMIO; touch INT=MIO0.
+ * Do not replace BOOT.BIN with the bare-metal XSA's FSBL: it disables ENET0.
+ */
+&pinctrl0 {
+    leaf_i2c0_default: leaf-i2c0-default {
+        mux { groups = "i2c0_10_grp"; function = "i2c0"; };
+        conf { groups = "i2c0_10_grp"; bias-pull-up; slew-rate = <0>; };
+    };
+    leaf_touch_gpio_default: leaf-touch-gpio-default {
+        mux { groups = "gpio0_0_grp"; function = "gpio0"; };
+    };
+};
+
+&i2c0 {
+    status = "okay";
+    clock-frequency = <300000>;
+    pinctrl-names = "default";
+    pinctrl-0 = <&leaf_i2c0_default>;
+    /* Userspace i2c-dev owns GT911 0x5d; do not bind a second touch driver. */
+};
+
+&i2c1 {
+    status = "okay";
+    clock-frequency = <40000>;
+    /* EMIO, no MIO group. PL wiring must be the supplied leaf overlay. */
+    /* Userspace i2c-dev owns OV5640 0x3c; no kernel camera child here. */
+};
+
+/* MIO0 must also be muxed as GPIO in the boot pinctrl configuration.
+ * Integrate leaf_touch_gpio_default into the existing gpio0 default state;
+ * do not overwrite another peripheral's pinctrl state blindly.
+ * Kernel must enable CONFIG_I2C_CADENCE, CONFIG_I2C_CHARDEV,
+ * CONFIG_PINCTRL_ZYNQ, CONFIG_GPIO_ZYNQ and GPIO sysfs for PYNQ 2.7 GPIO.
+ */

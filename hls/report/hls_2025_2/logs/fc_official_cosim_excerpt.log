@@ -1,0 +1,40 @@
+UVM_WARNING ./file_agent/mem_model.sv(78) @ 238000: reporter [mem_blk page 0] part of reading is out of boundary: addr:'d12800, length:'d12,offset:'d0,depth:'d12810
+UVM_WARNING ./file_agent/mem_model.sv(78) @ 25043000: reporter [mem_blk page 0] part of reading is out of boundary: addr:'d12800, length:'d64,offset:'d0,depth:'d12810
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+--- last lines ---
+
+
+HDL Line: E:/fpga_work/qian_20261030_1/hls_migration/abi_2025_2_v1/projects/fc/solution1/sim/verilog/fc.autotb.v:410
+
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:01:01 . Memory (MB): peak = 226.824 ; gain = 0.000
+
+## quit
+
+INFO: xsimkernel Simulation Memory Usage: 18194872 KB (Peak: 18194872 KB), Simulation CPU Usage: 59655 ms
+
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 20:40:22 2026...
+
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:02:51; Allocated memory: 14.297 MB.
+
+command 'ap_source' returned error code
+
+    while executing
+
+"source E:/fpga_work/qian_20261030_1/hls_migration/abi_2025_2_v1/cosim_original/fc/cosim.tcl"
+
+    ("uplevel" body line 1)
+
+    invoked from within
+
+"uplevel \#0 [list source $tclfile] "
+
+
+
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 173.557 seconds; peak allocated memory: 145.555 MB.
+
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

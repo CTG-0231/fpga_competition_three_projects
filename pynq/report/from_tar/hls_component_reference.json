@@ -1,0 +1,63 @@
+{
+  "scope": "Original HLS FC/shortcut host components; not full network or board proof",
+  "compiler": "D:\\environment\\mingw64\\bin\\g++.exe",
+  "vendor_headers": "D:\\software\\X\\Vivado\\2018.3\\include",
+  "actual_hls": {
+    "shortcut": [
+      32767,
+      -32768,
+      0,
+      0,
+      32767,
+      -32768,
+      1024,
+      -1024
+    ],
+    "fc_saturated": [
+      1344,
+      1344,
+      32767,
+      -1344,
+      123,
+      672
+    ],
+    "fc_packed_pattern": [
+      -46,
+      51,
+      -129,
+      202,
+      -29,
+      109
+    ]
+  },
+  "python_integer_reference": {
+    "shortcut": [
+      32767,
+      -32768,
+      0,
+      0,
+      32767,
+      -32768,
+      1024,
+      -1024
+    ],
+    "fc_saturated": [
+      1344,
+      1344,
+      32767,
+      -1344,
+      123,
+      672
+    ],
+    "fc_packed_pattern": [
+      -46,
+      51,
+      -129,
+      202,
+      -29,
+      109
+    ]
+  },
+  "all_equal": true,
+  "hls_source_policy": "Original sources unedited; 12-file hashes in hls_source_integrity.json"
+}

@@ -1,0 +1,1124 @@
+{
+  "tool": "Vitis HLS 2025.2 build6295257",
+  "unique_components": 4,
+  "projects": {
+    "conv": "conv_cache_compat",
+    "pwdwconv": "pwdw_scalarcopy3",
+    "fc": "fc",
+    "shortcut": "shortcut"
+  },
+  "files": {
+    "conv/component.xml": {
+      "sha256": "a2b6c44dbbe0a89892eb209cb818a31fd3673d900ccd37a3479720845ade1359",
+      "bytes": 406773
+    },
+    "conv/constraints/conv_ooc.xdc": {
+      "sha256": "214f07d7a9485c10f4a76c739e47c36737766f1a6e03a72d5f975048e3716825",
+      "bytes": 394
+    },
+    "conv/dfx_runtime.txt": {
+      "sha256": "ca01760064802f7c1390bb24c0508090531bf3d805455060d856478963e774d9",
+      "bytes": 113
+    },
+    "conv/doc/ReleaseNotes.txt": {
+      "sha256": "f2c9178f26ebc8f6b478d11bf3cd79578133a1ed798eabef178c0d02f9b8968d",
+      "bytes": 108
+    },
+    "conv/drivers/conv_v0_0/data/conv.mdd": {
+      "sha256": "f9b2539e40ed310b79bfe3cf65ff45f59e3209a39e3ff36ce823b539b1c1bf28",
+      "bytes": 590
+    },
+    "conv/drivers/conv_v0_0/data/conv.tcl": {
+      "sha256": "3f50e3b3eb84eb2992d86e9f332f5c668c899f45bd0f37969de69c85f93dc464",
+      "bytes": 867
+    },
+    "conv/drivers/conv_v0_0/data/conv.yaml": {
+      "sha256": "206e24cd16f39dadb0d03f4f7cfe837e471f2a8417847ca0e48baed5a65d125f",
+      "bytes": 639
+    },
+    "conv/drivers/conv_v0_0/src/CMakeLists.txt": {
+      "sha256": "c0971e6c8653e540f25197d8f6af4849c47d02a0683a1902ea512f813ac7d992",
+      "bytes": 1145
+    },
+    "conv/drivers/conv_v0_0/src/Makefile": {
+      "sha256": "7e2f5ee8e4a2b214b765be3c3422bad3dbea6e7835611b5c89dc2aa7b61710c3",
+      "bytes": 1497
+    },
+    "conv/drivers/conv_v0_0/src/xconv.c": {
+      "sha256": "62a39dd8cdd9a660e0bb0ca428c104776da2189a670bb0d951c7c1212e1817c7",
+      "bytes": 8012
+    },
+    "conv/drivers/conv_v0_0/src/xconv.h": {
+      "sha256": "f630188aa0f7f1160bed65033774dc04bc899ac1b11d50ce2859eb76239f0844",
+      "bytes": 3933
+    },
+    "conv/drivers/conv_v0_0/src/xconv_hw.h": {
+      "sha256": "b2cba7f449b38a05e367ce11aa63824ffbc10aee5962409d3468f452f6847c33",
+      "bytes": 2558
+    },
+    "conv/drivers/conv_v0_0/src/xconv_linux.c": {
+      "sha256": "734b19a1f679efac36b3e086649f5b50a7893d42fafb4fe74f94c41705f986f8",
+      "bytes": 4731
+    },
+    "conv/drivers/conv_v0_0/src/xconv_sinit.c": {
+      "sha256": "45491fa2a92eb276bb5701f09456d43f3cf0568e5c0845744be55fbb82cdaa22",
+      "bytes": 1906
+    },
+    "conv/hdl/verilog/compute3.v": {
+      "sha256": "225d62c8988318711ee3ce49ca617d522b8cc36e8666cbc8972e4b443e492274",
+      "bytes": 206624
+    },
+    "conv/hdl/verilog/compute_output.v": {
+      "sha256": "a3efe390469dcb810335ea1ba7db3cbcef634755d0f6c61a03219d9d89dde3f1",
+      "bytes": 112045
+    },
+    "conv/hdl/verilog/compute_output_fm_out_buff_RAM_AUTO_1R1W.v": {
+      "sha256": "16737bea551c54ab6a20ad847e7543bb7509d85f7c55023968b3acda6c8c7cf3",
+      "bytes": 1184
+    },
+    "conv/hdl/verilog/compute_output_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2_VITIS_LOOP_45_3.v": {
+      "sha256": "8fb5d42d5bfccf1bef28aeb0b45117394457133499a35b09564e06326479c568",
+      "bytes": 41153
+    },
+    "conv/hdl/verilog/compute_output_wt_buff_RAM_AUTO_1R1W.v": {
+      "sha256": "e0933a6f5091f88d2cd8cc65a4074a6e0bd65583c615f60b8590192ba4c7e0f8",
+      "bytes": 967
+    },
+    "conv/hdl/verilog/conv.v": {
+      "sha256": "d3bc68d633b2ffafc486d8bd40922e3d16781c98e67d0f75e584dd5a6410a3d8",
+      "bytes": 122879
+    },
+    "conv/hdl/verilog/conv_Outline_1.v": {
+      "sha256": "d67d07f626597cd518b57abeb56407ba20f3cfc0e7607dd5a986500f8e8d593d",
+      "bytes": 27859
+    },
+    "conv/hdl/verilog/CTRL_s_axi.v": {
+      "sha256": "9eb7d1063375bc1aabac99bfd39b77362385def2ae14bb855e8e7cc1dbf0c2b7",
+      "bytes": 15720
+    },
+    "conv/hdl/verilog/flow_control_loop_pipe_sequential_init.v": {
+      "sha256": "658507cf534200af1c1d50e4bd04029b3bf5e9f0ec0ac6428967640ea9b13bb0",
+      "bytes": 2917
+    },
+    "conv/hdl/verilog/fm_in_buff1_RAM_AUTO_1R1W.v": {
+      "sha256": "28ecca63115416683fa48a958669c5871026b78138dce48c308fb6e869b97f2c",
+      "bytes": 960
+    },
+    "conv/hdl/verilog/IN1_m_axi.v": {
+      "sha256": "563295dd1bcd20525896ef1835dc713f04a99cb0fc0d047b63d36af4c86655fb",
+      "bytes": 118146
+    },
+    "conv/hdl/verilog/IN2_m_axi.v": {
+      "sha256": "078a6f5a897310ea2c41e9ec6246e684349106b6dc2102eb90d7bd4baca9f7b0",
+      "bytes": 118146
+    },
+    "conv/hdl/verilog/IN3_m_axi.v": {
+      "sha256": "ee5be947a547ebd6fd72d27b98d0539ec6414514ec7af85fc46f1698eea1b755",
+      "bytes": 118146
+    },
+    "conv/hdl/verilog/load_input.v": {
+      "sha256": "7798a60f80790087f431c469e227c55121517d0061db4d73ea25cb2ef95e5f2d",
+      "bytes": 44411
+    },
+    "conv/hdl/verilog/mac_muladd_14ns_2ns_17s_17_4_1.v": {
+      "sha256": "2724b3c0e4c29c0e4bbdb0e013b19d8357a9d2e354385b53415177d9d0841797",
+      "bytes": 1937
+    },
+    "conv/hdl/verilog/mac_muladd_6ns_6ns_6ns_12_4_1.v": {
+      "sha256": "a7f3ed61311590d1240a8e24f7b78058ea05c14c185b7786f7399f0bf70a1b3f",
+      "bytes": 1933
+    },
+    "conv/hdl/verilog/mac_muladd_9ns_2ns_32s_32_4_1.v": {
+      "sha256": "db8d7b7d9b3cbb1a03e6b5803624516d0e3bbeeaaecaa59a91cf778393750d1a",
+      "bytes": 1932
+    },
+    "conv/hdl/verilog/mul_16s_16s_32_2_1.v": {
+      "sha256": "b1351f706ec30004cdcadabf324e1fda6c74d79cdc6fb57303343f256fd8029c",
+      "bytes": 897
+    },
+    "conv/hdl/verilog/mul_5ns_7ns_11_1_1.v": {
+      "sha256": "c074f59429f728513ae2da76fe91e42a6cf508e5b9756875157e655513e65475",
+      "bytes": 691
+    },
+    "conv/hdl/verilog/OUT_r_m_axi.v": {
+      "sha256": "31d8ee134d2dbce6329de31c28501b85eb101b8d2b754309d0a57be7b6fe61a0",
+      "bytes": 119273
+    },
+    "conv/hdl/verilog/sparsemux_51_5_16_1_1.v": {
+      "sha256": "30e0bf6c322644c75c00f790bcc6eaec744be71b80da78ae0b1b213c943a5526",
+      "bytes": 4482
+    },
+    "conv/hdl/verilog/urem_5ns_5ns_5_9_seq_1.v": {
+      "sha256": "96a03d0e336663b1c8684aa3cd5ba62a0b28a05e858c392e303849aded8902fb",
+      "bytes": 4597
+    },
+    "conv/hdl/verilog/W_m_axi.v": {
+      "sha256": "cf95b380ec8e4af71374ab1c82b3ee19ddfd6a7a84c439217b7def7aa35e947b",
+      "bytes": 92293
+    },
+    "conv/hdl/vhdl/compute3.vhd": {
+      "sha256": "a4bed257e30ecc47a3b2b8b33ace1c0002f6013cdbf4aea6f5eefd0222557545",
+      "bytes": 289094
+    },
+    "conv/hdl/vhdl/compute_output.vhd": {
+      "sha256": "0fd97ebec1da6b3c6989e17497d349f5c1fd6fdb936ddffeefc9484aeafec116",
+      "bytes": 179770
+    },
+    "conv/hdl/vhdl/compute_output_fm_out_buff_RAM_AUTO_1R1W.vhd": {
+      "sha256": "84386bf73800419e091c5417c66f63b6c2febc4df8afd890c4a1cf42c7c09561",
+      "bytes": 2994
+    },
+    "conv/hdl/vhdl/compute_output_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2_VITIS_LOOP_45_3.vhd": {
+      "sha256": "1949d950d49ea48be7e44b13161c548c5d8df8d2058f084aef2bc2b264bd7773",
+      "bytes": 62826
+    },
+    "conv/hdl/vhdl/compute_output_wt_buff_RAM_AUTO_1R1W.vhd": {
+      "sha256": "79d035164c50ea17fb4961cff368f71201fbb4de8af693f2519a263aa7531a81",
+      "bytes": 2233
+    },
+    "conv/hdl/vhdl/conv.vhd": {
+      "sha256": "cf11b56ab7467c6b131c7f92739355c5e7fa2286bfb8c2342135f1016a941532",
+      "bytes": 213620
+    },
+    "conv/hdl/vhdl/conv_Outline_1.vhd": {
+      "sha256": "2f5b7ab7d00e4b8bad6a6788ee7fee2da0d662322cef60593704b41fb07677dd",
+      "bytes": 42966
+    },
+    "conv/hdl/vhdl/CTRL_s_axi.vhd": {
+      "sha256": "9012ca62f0d22551c7708d0f185b2dbe84e58001a1510f7553d39e11a421f377",
+      "bytes": 21563
+    },
+    "conv/hdl/vhdl/flow_control_loop_pipe_sequential_init.vhd": {
+      "sha256": "fae8db4668dfe98e4489dc482d2d9efab9bbaeebe0acda1eb8e0fa0b6d381a28",
+      "bytes": 3535
+    },
+    "conv/hdl/vhdl/fm_in_buff1_RAM_AUTO_1R1W.vhd": {
+      "sha256": "c7d5cfbdddc3ac498d99e262b4abb36b81ad9ac0546137fcd7868c4beda70cdf",
+      "bytes": 2215
+    },
+    "conv/hdl/vhdl/IN1_m_axi.vhd": {
+      "sha256": "060d4d4423aaca8df052389df362f1200b140a30f913ceb6cbafd73f82c80fb7",
+      "bytes": 166493
+    },
+    "conv/hdl/vhdl/IN2_m_axi.vhd": {
+      "sha256": "e8c3303e6a7087431a031f8e3e0fa2f2606d96aaecf6d42cbe3b85b44ce37e95",
+      "bytes": 166493
+    },
+    "conv/hdl/vhdl/IN3_m_axi.vhd": {
+      "sha256": "bda74a1c0ccd20d7d7226422659f503ddb8320ac142ae3995bce15f69218888f",
+      "bytes": 166493
+    },
+    "conv/hdl/vhdl/load_input.vhd": {
+      "sha256": "6cdde9a8e1657dbba5c2b268e9119d16bb209fb58262ebd5b251a21b712c3ac0",
+      "bytes": 64527
+    },
+    "conv/hdl/vhdl/mac_muladd_14ns_2ns_17s_17_4_1.vhd": {
+      "sha256": "0d12abc44af4fb6b718b511b5c404a7d1a9c95394c094b7277abf4218f8f1633",
+      "bytes": 3168
+    },
+    "conv/hdl/vhdl/mac_muladd_6ns_6ns_6ns_12_4_1.vhd": {
+      "sha256": "0880ebe3c5978522e7cc81bd58daf6a078a7cbf78f49adc58f6675604be9722d",
+      "bytes": 3161
+    },
+    "conv/hdl/vhdl/mac_muladd_9ns_2ns_32s_32_4_1.vhd": {
+      "sha256": "8fd7a345eeb745a2857bfb35ee47396fbd7d9da6e4f2ea2b87821deb17f6bf71",
+      "bytes": 3160
+    },
+    "conv/hdl/vhdl/mul_16s_16s_32_2_1.vhd": {
+      "sha256": "efbd233da47e4d8e2b8c330d5b81d99125ad45861cc981ab07867de4ac90048b",
+      "bytes": 1718
+    },
+    "conv/hdl/vhdl/mul_5ns_7ns_11_1_1.vhd": {
+      "sha256": "ebfc484534e1c11af59ba1bc5b3270e4b20be00e1838fa702baa66d8d8e6ba85",
+      "bytes": 1317
+    },
+    "conv/hdl/vhdl/OUT_r_m_axi.vhd": {
+      "sha256": "07df93e5f58a8eff6b67cedef56918d1915927ad2ee9ef71cb9b79006ad8cc9a",
+      "bytes": 162485
+    },
+    "conv/hdl/vhdl/sparsemux_51_5_16_1_1.vhd": {
+      "sha256": "9ff938b4bfc3bbb78f5bccc0db48e95f7643fa4e3c276ec23814b1aaefdf76dd",
+      "bytes": 6950
+    },
+    "conv/hdl/vhdl/urem_5ns_5ns_5_9_seq_1.vhd": {
+      "sha256": "c680a5cabfd542576e588efee66ff6c91b2f629c2421a94c2db7742923c90890",
+      "bytes": 6926
+    },
+    "conv/hdl/vhdl/W_m_axi.vhd": {
+      "sha256": "6cb2b030b2bf1445f71bc12e898699faf4700977fd641fe0b1eb6cd8fec49a31",
+      "bytes": 127038
+    },
+    "conv/misc/logo.png": {
+      "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af",
+      "bytes": 2297
+    },
+    "conv/pack.bat": {
+      "sha256": "6df069301a13130cf4cf53f6b0fb9bde909646e2ecbf915a6c8939916fa199d7",
+      "bytes": 491
+    },
+    "conv/run_ippack.tcl": {
+      "sha256": "af4bf14efa63deb19c8b3cf24d582d4f05856ff6d0ade54490c8e9d47b77d79f",
+      "bytes": 964
+    },
+    "conv/sysgen_info.xml": {
+      "sha256": "b223a4e73acfe1232a6c19a44a1f3883cc85a73da32d231a7cffc6113e4d7ca1",
+      "bytes": 341
+    },
+    "conv/xgui/conv_v0_0.tcl": {
+      "sha256": "d5509bc9a1038a8537e2f17e1f556c942f027dd16faebec71c9fab57ea103707",
+      "bytes": 47332
+    },
+    "fc/component.xml": {
+      "sha256": "76ba73091940aa10c45251897054b6f4dd72521a98edb4bf74f92169172b51eb",
+      "bytes": 268912
+    },
+    "fc/constraints/fc_ooc.xdc": {
+      "sha256": "214f07d7a9485c10f4a76c739e47c36737766f1a6e03a72d5f975048e3716825",
+      "bytes": 394
+    },
+    "fc/dfx_runtime.txt": {
+      "sha256": "b75c9e4c66aa27b672ca9b417568b0eb52826563b51020c6a96eccbf45e9dea3",
+      "bytes": 113
+    },
+    "fc/doc/ReleaseNotes.txt": {
+      "sha256": "f2c9178f26ebc8f6b478d11bf3cd79578133a1ed798eabef178c0d02f9b8968d",
+      "bytes": 108
+    },
+    "fc/drivers/fc_v0_0/data/fc.mdd": {
+      "sha256": "b4c3ba6aec8a59f0900967246680bd8730a3fa984ee77f9b9236c0da8edf136c",
+      "bytes": 584
+    },
+    "fc/drivers/fc_v0_0/data/fc.tcl": {
+      "sha256": "0e3f6c83bc565b9fe310a40105be6ed5c66957e717e0c539e619dc96c7e205b4",
+      "bytes": 859
+    },
+    "fc/drivers/fc_v0_0/data/fc.yaml": {
+      "sha256": "a71a36f6f872a35fe60eaa5cb44c9ff75ae022528847ffd5bc6f6911b1383613",
+      "bytes": 633
+    },
+    "fc/drivers/fc_v0_0/src/CMakeLists.txt": {
+      "sha256": "63605d5005ea19623736de53ccc8bd583578c9e8aad51f1bf2eea470d40096fa",
+      "bytes": 1127
+    },
+    "fc/drivers/fc_v0_0/src/Makefile": {
+      "sha256": "192ca162f894dec76fe5085f2ba2c20febdea17a180b40a5ea7eeb3fa808822e",
+      "bytes": 1495
+    },
+    "fc/drivers/fc_v0_0/src/xfc.c": {
+      "sha256": "29743c15bbaeb4af751960f0912cec0883e211b519eb3eddab70fb88ef8a83e7",
+      "bytes": 6728
+    },
+    "fc/drivers/fc_v0_0/src/xfc.h": {
+      "sha256": "1f4075ef96afeb01b8db8b9677c6489def9713d13d9a913363cf3a28894935ce",
+      "bytes": 3609
+    },
+    "fc/drivers/fc_v0_0/src/xfc_hw.h": {
+      "sha256": "62d296e624331db0b50730b910158325a5dd024fd63cb1230534c99fe17ac82d",
+      "bytes": 2162
+    },
+    "fc/drivers/fc_v0_0/src/xfc_linux.c": {
+      "sha256": "ec4e706e5af4dae21a82ad9e764989d46ee8b875a3c9ca89560394e48f7c0be9",
+      "bytes": 4701
+    },
+    "fc/drivers/fc_v0_0/src/xfc_sinit.c": {
+      "sha256": "1196df3d0704fc2d9e309dd7b49a4201d8004630fc9828103aabc12dffd7dac0",
+      "bytes": 1856
+    },
+    "fc/hdl/verilog/am_addmul_16s_16s_5ns_23_4_1.v": {
+      "sha256": "dab02de6c3568dedaaea9d75daf29fb099366fb166a8879c59f549eb6da9b39e",
+      "bytes": 1941
+    },
+    "fc/hdl/verilog/compute.v": {
+      "sha256": "232b2b2dc8aa0da5f21fa6e525d6b72820184ae79798dd5aa56d03da2bd62b5f",
+      "bytes": 27043
+    },
+    "fc/hdl/verilog/CTRL_s_axi.v": {
+      "sha256": "6f3ed19421a8f03658b0f3e1b06bcbced4bce247dbb255cc0f1f43bba7333b48",
+      "bytes": 14318
+    },
+    "fc/hdl/verilog/fc.v": {
+      "sha256": "2b6e1fdbcb7029bb8dc09ac2cf4565ffec30966096567f13057b141a3f49b411",
+      "bytes": 103006
+    },
+    "fc/hdl/verilog/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2.v": {
+      "sha256": "5b50ef23f40c1869d85ab68359d6c1472daf7521f9545b0be84442783c41f43b",
+      "bytes": 25148
+    },
+    "fc/hdl/verilog/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_22.v": {
+      "sha256": "974b1d0bb2b9ba96674a8ec7e648e0681ed776746a9f5beb243cbe25748ab86c",
+      "bytes": 26602
+    },
+    "fc/hdl/verilog/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_23.v": {
+      "sha256": "27ed69e3659d097dc6b385c5b5c627b7d49c50c437ed9cd9e272e27f8077c012",
+      "bytes": 26624
+    },
+    "fc/hdl/verilog/fc_Pipeline_VITIS_LOOP_72_1.v": {
+      "sha256": "35b594aed8cc33870b376a8cadfca2ae18f2f06d82df078379641b0c1ccf57c2",
+      "bytes": 19574
+    },
+    "fc/hdl/verilog/flow_control_loop_pipe_sequential_init.v": {
+      "sha256": "658507cf534200af1c1d50e4bd04029b3bf5e9f0ec0ac6428967640ea9b13bb0",
+      "bytes": 2917
+    },
+    "fc/hdl/verilog/IN_r_m_axi.v": {
+      "sha256": "3d9e6b2e5cc9b1719645fea8121b2941deb6404000bfcff68ba2d9537f609631",
+      "bytes": 92380
+    },
+    "fc/hdl/verilog/load_feature.v": {
+      "sha256": "dc4d51e5473a9e0e27f4af49a8a621d81b8c4064bb2ce9e5370906db1b0179a3",
+      "bytes": 104597
+    },
+    "fc/hdl/verilog/load_feature_buff_RAM_AUTO_1R1W.v": {
+      "sha256": "48ff86556db10af20e208c2c377ad33e8005d54d075ae93e78e48b05b24b6a1e",
+      "bytes": 963
+    },
+    "fc/hdl/verilog/load_feature_Pipeline_VITIS_LOOP_15_1_VITIS_LOOP_16_2.v": {
+      "sha256": "0b1bf88ea47cc9181a103388e2970bffc7fadac23023d30aa9231d4af6d21b86",
+      "bytes": 117575
+    },
+    "fc/hdl/verilog/mac_muladd_11ns_7ns_32s_32_4_1.v": {
+      "sha256": "da333d29b96b4c68f8c0524ded25174854e4c494c2d2584fdc8a404b61719682",
+      "bytes": 1937
+    },
+    "fc/hdl/verilog/mul_16s_16s_32_2_1.v": {
+      "sha256": "b1351f706ec30004cdcadabf324e1fda6c74d79cdc6fb57303343f256fd8029c",
+      "bytes": 897
+    },
+    "fc/hdl/verilog/O_m_axi.v": {
+      "sha256": "48684fdde893287682f5f35319ce99cab11a5ce6d147b58179a0a8a8dd2ac57c",
+      "bytes": 119117
+    },
+    "fc/hdl/verilog/sparsemux_13_3_16_1_1.v": {
+      "sha256": "9ed36784fccab5c47aafa4439494ed499a2dd0030b40b7b7a00fb74311d81077",
+      "bytes": 1679
+    },
+    "fc/hdl/verilog/W_m_axi.v": {
+      "sha256": "cf95b380ec8e4af71374ab1c82b3ee19ddfd6a7a84c439217b7def7aa35e947b",
+      "bytes": 92293
+    },
+    "fc/hdl/verilog/wt_buff1_RAM_AUTO_1R1W.v": {
+      "sha256": "faa28714941b70f38ce2de78420951ed14d7f5145a72794ad13484a55b021423",
+      "bytes": 955
+    },
+    "fc/hdl/vhdl/am_addmul_16s_16s_5ns_23_4_1.vhd": {
+      "sha256": "93e2096dbed45871b32cbc623b7b82f864137784caad8e8055be099c19302d1d",
+      "bytes": 3158
+    },
+    "fc/hdl/vhdl/compute.vhd": {
+      "sha256": "fb2433a37ef67b029d5dffd0fb96b8664f90ba93f39572af78bb1df0e454aaee",
+      "bytes": 45653
+    },
+    "fc/hdl/vhdl/CTRL_s_axi.vhd": {
+      "sha256": "9acef1649ec31e86d482ed02588464563c6c0a7c8cd856bddb40e39ea3a93c51",
+      "bytes": 19448
+    },
+    "fc/hdl/vhdl/fc.vhd": {
+      "sha256": "ef5d40aa1a1bad2a49e3080ef27bc49d05fd67318d3dad46e9cf77f583db3c6e",
+      "bytes": 172755
+    },
+    "fc/hdl/vhdl/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2.vhd": {
+      "sha256": "e5fdd055dbcd6f31cbe5ecdbb10538aff3afa8d19a0e84a1b20ba7ddee8d44df",
+      "bytes": 38488
+    },
+    "fc/hdl/vhdl/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_22.vhd": {
+      "sha256": "fdef4b936c84eed0766e0a708caa933a83aaf39e3145d6d4d8489a967a3e96fa",
+      "bytes": 40387
+    },
+    "fc/hdl/vhdl/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_23.vhd": {
+      "sha256": "92f1a176dda06033955a8d9ab441f206720c3c57433e2ebd508b78d4151a3c44",
+      "bytes": 40411
+    },
+    "fc/hdl/vhdl/fc_Pipeline_VITIS_LOOP_72_1.vhd": {
+      "sha256": "626569d348ad7bf2db6f246848478a374d1081e2870e5713154399ec418b21a2",
+      "bytes": 29925
+    },
+    "fc/hdl/vhdl/flow_control_loop_pipe_sequential_init.vhd": {
+      "sha256": "fae8db4668dfe98e4489dc482d2d9efab9bbaeebe0acda1eb8e0fa0b6d381a28",
+      "bytes": 3535
+    },
+    "fc/hdl/vhdl/IN_r_m_axi.vhd": {
+      "sha256": "734fd4b4510be2a81b95943ac62a40abde49fac9cc338fde55505f8b634b1cf8",
+      "bytes": 127263
+    },
+    "fc/hdl/vhdl/load_feature.vhd": {
+      "sha256": "d694399f9ab243979d9d634498af541d85c98d8c11c73d58638d567cf8dc6e1e",
+      "bytes": 174136
+    },
+    "fc/hdl/vhdl/load_feature_buff_RAM_AUTO_1R1W.vhd": {
+      "sha256": "886758a3928c89c8ea3f2faf622369ecb979ecd890e386d1480605bdb4b91ab1",
+      "bytes": 2224
+    },
+    "fc/hdl/vhdl/load_feature_Pipeline_VITIS_LOOP_15_1_VITIS_LOOP_16_2.vhd": {
+      "sha256": "88a315b0071aac8185838f304723453042cc479bd1fd45ad15a4e89ddf98b250",
+      "bytes": 166774
+    },
+    "fc/hdl/vhdl/mac_muladd_11ns_7ns_32s_32_4_1.vhd": {
+      "sha256": "052a893f3347f9f22f38f054c9d60472ccd7ab6af0416124384cb62fb45ed336",
+      "bytes": 3168
+    },
+    "fc/hdl/vhdl/mul_16s_16s_32_2_1.vhd": {
+      "sha256": "efbd233da47e4d8e2b8c330d5b81d99125ad45861cc981ab07867de4ac90048b",
+      "bytes": 1718
+    },
+    "fc/hdl/vhdl/O_m_axi.vhd": {
+      "sha256": "ce735ba3a21a327c3433a2bd0c14628936280361e8b21f3ce0ed0d490154722b",
+      "bytes": 162121
+    },
+    "fc/hdl/vhdl/sparsemux_13_3_16_1_1.vhd": {
+      "sha256": "eab5b59ef945e43d05a696f1f2694c99a6eabdd2c8204cd646eb135560768420",
+      "bytes": 2589
+    },
+    "fc/hdl/vhdl/W_m_axi.vhd": {
+      "sha256": "6cb2b030b2bf1445f71bc12e898699faf4700977fd641fe0b1eb6cd8fec49a31",
+      "bytes": 127038
+    },
+    "fc/hdl/vhdl/wt_buff1_RAM_AUTO_1R1W.vhd": {
+      "sha256": "40d78507826ca349d9e01bb62b02dd16ad131753fa74a4529217a9fdd3b55c2a",
+      "bytes": 2207
+    },
+    "fc/misc/logo.png": {
+      "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af",
+      "bytes": 2297
+    },
+    "fc/pack.bat": {
+      "sha256": "6df069301a13130cf4cf53f6b0fb9bde909646e2ecbf915a6c8939916fa199d7",
+      "bytes": 491
+    },
+    "fc/run_ippack.tcl": {
+      "sha256": "907f598cba9d12db01ac5ddf564fc4f502b6f2b58d052c68f7021f3604dfbec6",
+      "bytes": 934
+    },
+    "fc/sysgen_info.xml": {
+      "sha256": "e368bb665ee2d9df274e1e38956b78a731f75ad6f929a35408fdc33633298934",
+      "bytes": 343
+    },
+    "fc/xgui/fc_v0_0.tcl": {
+      "sha256": "eebbe27d18cc6665f7f59020dc977943f318532515cca7ef5ec4361b0cd92a41",
+      "bytes": 28243
+    },
+    "pwdwconv/component.xml": {
+      "sha256": "c26a6b7b501aad6653b86dc8763b16a69d8619cf6b22b2d5231f0a5bce3f3e01",
+      "bytes": 505881
+    },
+    "pwdwconv/constraints/pwdwconv_ooc.xdc": {
+      "sha256": "214f07d7a9485c10f4a76c739e47c36737766f1a6e03a72d5f975048e3716825",
+      "bytes": 394
+    },
+    "pwdwconv/dfx_runtime.txt": {
+      "sha256": "ca01760064802f7c1390bb24c0508090531bf3d805455060d856478963e774d9",
+      "bytes": 113
+    },
+    "pwdwconv/doc/ReleaseNotes.txt": {
+      "sha256": "f2c9178f26ebc8f6b478d11bf3cd79578133a1ed798eabef178c0d02f9b8968d",
+      "bytes": 108
+    },
+    "pwdwconv/drivers/pwdwconv_v0_0/data/pwdwconv.mdd": {
+      "sha256": "03df0e08339487630ec7a8993bfae3f32d7d292245be2410696bbd487827df74",
+      "bytes": 602
+    },
+    "pwdwconv/drivers/pwdwconv_v0_0/data/pwdwconv.tcl": {
+      "sha256": "0f37f4b398f8b0b0f017dc67cd8f184f9c1a8e4bdee41c1b471b27ad882d6b28",
+      "bytes": 883
+    },
+    "pwdwconv/drivers/pwdwconv_v0_0/data/pwdwconv.yaml": {
+      "sha256": "9c8e1f058ddcafc4187df0c45d2aac926cf5a2511e05fadc87a275e896fc27a1",
+      "bytes": 651
+    },
+    "pwdwconv/drivers/pwdwconv_v0_0/src/CMakeLists.txt": {
+      "sha256": "b045407ea232a54fbfcf2c842ac19b411fcd4624f862a759ed24ce56ffae0fc2",
+      "bytes": 1181
+    },
+    "pwdwconv/drivers/pwdwconv_v0_0/src/Makefile": {
+      "sha256": "340ecd3004591654af2399b2c7ba5e3cdae5fa078b317374f70d360c0af4b409",
+      "bytes": 1501
+    },
+    "pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv.c": {
+      "sha256": "9b7ef9d3e6f4a8df529f19732ff4b752eca172480b35e780265ca1c906518f91",
+      "bytes": 11956
+    },
+    "pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv.h": {
+      "sha256": "a95e6f654d3bf811dceb08df405378cb48b576afff5a40ce51c3d48c1775b7ca",
+      "bytes": 4913
+    },
+    "pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv_hw.h": {
+      "sha256": "9200640fb5b5476a207337513441f49f15110aa169b5a5704917e4804907059d",
+      "bytes": 3770
+    },
+    "pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv_linux.c": {
+      "sha256": "41178b97772adb815e7137ad81ae31a30c52eca4da7cfd353825847cd09a75ab",
+      "bytes": 4791
+    },
+    "pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv_sinit.c": {
+      "sha256": "d3716bbd489828d60ad7f6d5fee86de5d9c071025ad6eaec09a59c0dcb8fbb58",
+      "bytes": 2006
+    },
+    "pwdwconv/hdl/verilog/am_addmul_4ns_16ns_16ns_31_4_1.v": {
+      "sha256": "0624936981fdd01a91d7edbf0b7463d1bcc38bab9b10ca432f298a405ca07b73",
+      "bytes": 1953
+    },
+    "pwdwconv/hdl/verilog/bias_buff_RAM_AUTO_1R1W.v": {
+      "sha256": "bebba384bad66d57def624196c2edd1484431967b4ec18e2295bc339c474410b",
+      "bytes": 955
+    },
+    "pwdwconv/hdl/verilog/compute.v": {
+      "sha256": "3add57d32ef756c7683263a3e7dee6bd9bf22652cf53641325e86399aa466970",
+      "bytes": 93406
+    },
+    "pwdwconv/hdl/verilog/compute_1.v": {
+      "sha256": "add8b2987102680e2fb0b926c7c7fc55350dc9fe43aa58b8ba4a7906326b1a6b",
+      "bytes": 421352
+    },
+    "pwdwconv/hdl/verilog/compute_output.v": {
+      "sha256": "f22483df0c5721477bd5f6befec694dfab276dd74b68c220ea876141fa476f66",
+      "bytes": 297179
+    },
+    "pwdwconv/hdl/verilog/compute_output_fm_in_buff1_RAM_AUTO_1R1W.v": {
+      "sha256": "273789e01a90d382eecb46f8d9c12432b616ae8d695a2a7f0b36a45e607bbffa",
+      "bytes": 973
+    },
+    "pwdwconv/hdl/verilog/compute_output_Pipeline_VITIS_LOOP_31_1.v": {
+      "sha256": "86b051467fcc99ef36ecc4f1919cfcb6f42937e750d8378025f8f8b77dbf4b33",
+      "bytes": 17863
+    },
+    "pwdwconv/hdl/verilog/compute_output_Pipeline_VITIS_LOOP_31_15.v": {
+      "sha256": "495934a5b9be82cda1da9167f368d5c9e365d214caf3a3b5631cd466c09c1dc6",
+      "bytes": 17849
+    },
+    "pwdwconv/hdl/verilog/compute_output_Pipeline_VITIS_LOOP_31_16.v": {
+      "sha256": "2e2188cf87697c536c008a45435b52b92a41388e384bf55c62efca9536b56af7",
+      "bytes": 17863
+    },
+    "pwdwconv/hdl/verilog/CTRL_s_axi.v": {
+      "sha256": "3d2964231db0bc454a94edfd397839c38426a322cfb4a889a1576e95c775b33d",
+      "bytes": 19963
+    },
+    "pwdwconv/hdl/verilog/dwconv.v": {
+      "sha256": "66b9070671d69248f03109e5a694437fd317c0c238b8e51bcc981e22b30e9a65",
+      "bytes": 284124
+    },
+    "pwdwconv/hdl/verilog/dwconv_bias_buff_RAM_AUTO_1R1W.v": {
+      "sha256": "62563bb25661efc4460e305d6ac919c2d7e71acfd8daf3ac14fb8c518530e37f",
+      "bytes": 963
+    },
+    "pwdwconv/hdl/verilog/dwconv_fm_in_buff1_7_RAM_AUTO_1R1W.v": {
+      "sha256": "049f8ab6b3fac53f858981f0af6f6b0d5e2f05400c5c7d79359e2bb73ec5e402",
+      "bytes": 967
+    },
+    "pwdwconv/hdl/verilog/dwconv_fm_in_buff1_RAM_AUTO_1R1W.v": {
+      "sha256": "a5b3dc799547b72488a10a337f74f11cf73f74bb76876bd2aa2173fd00021ce1",
+      "bytes": 1209
+    },
+    "pwdwconv/hdl/verilog/dwconv_fm_out_buff1_RAM_AUTO_1R1W.v": {
+      "sha256": "f6d11566f07efc3389f58414bf36f710a98c20cc8ddf4f45f5052f2725344bb2",
+      "bytes": 1175
+    },
+    "pwdwconv/hdl/verilog/dwconv_Outline_VITIS_LOOP_179_1.v": {
+      "sha256": "acd875e706ac82997712ec62b9987e2591131247e63bc39ab71385e28c055fc3",
+      "bytes": 16918
+    },
+    "pwdwconv/hdl/verilog/dwconv_wt_buff1_RAM_AUTO_1R1W.v": {
+      "sha256": "5ab6506b3853cdf90851ee20e06a4103aba352f127c85d902e29433067801671",
+      "bytes": 960
+    },
+    "pwdwconv/hdl/verilog/flow_control_loop_pipe_sequential_init.v": {
+      "sha256": "658507cf534200af1c1d50e4bd04029b3bf5e9f0ec0ac6428967640ea9b13bb0",
+      "bytes": 2917
+    },
+    "pwdwconv/hdl/verilog/fm_out1_RAM_AUTO_1R1W.v": {
+      "sha256": "bb0c8ed5cece9cae90f7a86cc7edca9b81788daf2c4681d57681f0c2801e809a",
+      "bytes": 1164
+    },
+    "pwdwconv/hdl/verilog/load_bias.v": {
+      "sha256": "481dde59b09001976ccbb0fbeaa728872e57287047094e63002a46074f6c7cbd",
+      "bytes": 37708
+    },
+    "pwdwconv/hdl/verilog/load_bias_Pipeline_VITIS_LOOP_91_1.v": {
+      "sha256": "010ca2e7abe9ec0c33798100947c14622ca667bda288a4bce2bfc7176a456842",
+      "bytes": 24052
+    },
+    "pwdwconv/hdl/verilog/load_input.v": {
+      "sha256": "ca990a829bf40f10748277ab221a89dd34c5b25e45aea077866fc1d5544049f6",
+      "bytes": 134438
+    },
+    "pwdwconv/hdl/verilog/load_input_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2.v": {
+      "sha256": "30eb7c9e027ff72f4f5201715201f62d4d8cb89904ae64c6cbf44f32365a9653",
+      "bytes": 70739
+    },
+    "pwdwconv/hdl/verilog/load_input_Pipeline_VITIS_LOOP_42_5_VITIS_LOOP_43_6.v": {
+      "sha256": "e939d42bf107b24f17c0d31f2eab5110958c226f6053ca3acd9b95f494db8f66",
+      "bytes": 70653
+    },
+    "pwdwconv/hdl/verilog/load_weight.v": {
+      "sha256": "dbbb54c9f31a164b8bcf1a0d0bbc3fb8009830f1b2e6bcd2cc62a4b7f2431827",
+      "bytes": 60771
+    },
+    "pwdwconv/hdl/verilog/load_wrapper.v": {
+      "sha256": "1c92b26d8512f4eadec02c54db485d794871d95f92243093e593b309d126cbbc",
+      "bytes": 65362
+    },
+    "pwdwconv/hdl/verilog/load_wrapper_Outline_1.v": {
+      "sha256": "8dc7d7404753cc0b5c22bb8fae9a451199478f530d119d93b87235fdf3ebf8cf",
+      "bytes": 17434
+    },
+    "pwdwconv/hdl/verilog/mac_muladd_8s_3ns_2ns_8_4_1.v": {
+      "sha256": "df700e57bc6f9f6363f8e33e379bd94450ec04ee761ab312865272fb12352b6a",
+      "bytes": 1922
+    },
+    "pwdwconv/hdl/verilog/mul_16ns_16ns_29_2_1.v": {
+      "sha256": "78948e35cc65d96878285d011c50c634eeed1c4af2198ecd4d49966040466c52",
+      "bytes": 915
+    },
+    "pwdwconv/hdl/verilog/mul_16ns_16ns_32_2_1.v": {
+      "sha256": "ffff246c7b2ae8723868c5eee60dc80652358fe7dd05d6ed5e3c46f3265a28a7",
+      "bytes": 915
+    },
+    "pwdwconv/hdl/verilog/mul_16s_16s_32_2_1.v": {
+      "sha256": "b1351f706ec30004cdcadabf324e1fda6c74d79cdc6fb57303343f256fd8029c",
+      "bytes": 897
+    },
+    "pwdwconv/hdl/verilog/mul_29s_15ns_29_5_1.v": {
+      "sha256": "78f6ec9fbc3259829bac422b33df1c98797b152cce326490ba9473edc76cf5e5",
+      "bytes": 1180
+    },
+    "pwdwconv/hdl/verilog/mul_29s_16ns_29_5_1.v": {
+      "sha256": "082214128e587db03699dded926979cbf6dbe5e9802319deb1e5be5ea1d4b58e",
+      "bytes": 1180
+    },
+    "pwdwconv/hdl/verilog/mul_29s_29s_29_5_1.v": {
+      "sha256": "a6f7efb45d295c3bbfc158f7715a9fa6d218c1bfc851c4b0a56472aab7da9c65",
+      "bytes": 1171
+    },
+    "pwdwconv/hdl/verilog/mul_3ns_29s_29_5_1.v": {
+      "sha256": "698494ee5ee461ed01669883ac96c1b2772b5c540f13ab4d38d698ff9bd152de",
+      "bytes": 1179
+    },
+    "pwdwconv/hdl/verilog/mul_3ns_4s_4_1_1.v": {
+      "sha256": "8862538319c3f7d3a9efa378b0f291403aa2938214eb7c2e83cc68f1a54ce7dc",
+      "bytes": 681
+    },
+    "pwdwconv/hdl/verilog/mul_3ns_9s_10_1_1.v": {
+      "sha256": "b808590120c157b5ca05528a6251a72e447a641bfc9895c0f1299a3314d7dabf",
+      "bytes": 682
+    },
+    "pwdwconv/hdl/verilog/mul_4ns_16ns_20_2_1.v": {
+      "sha256": "a36ce0fc06a985188078451b7a0d8f3e0ff8a9a8dee00d8f0e671d78267081fb",
+      "bytes": 914
+    },
+    "pwdwconv/hdl/verilog/PBUS1_m_axi.v": {
+      "sha256": "b8ee2235346379e84d09913862c600d0300d30532acadba37fc5762243d3a13e",
+      "bytes": 92409
+    },
+    "pwdwconv/hdl/verilog/PBUS2_m_axi.v": {
+      "sha256": "24ec17556b41fe24085d628821415ee1b24b0099399ef3193c69827b6827651d",
+      "bytes": 92409
+    },
+    "pwdwconv/hdl/verilog/PBUS3_m_axi.v": {
+      "sha256": "c9a2078d5ed3aa4520f4dd502571b37793427cbcd3c473b4a81ee14f7db0af0d",
+      "bytes": 153749
+    },
+    "pwdwconv/hdl/verilog/PBUS4_m_axi.v": {
+      "sha256": "0b2871ca633cd407d869bc81ee1e2a5fbe04f2cdec511b15be0688896ffad5fd",
+      "bytes": 119273
+    },
+    "pwdwconv/hdl/verilog/pwdwconv.v": {
+      "sha256": "d67440f8edcc769f4b2cf1d77d16662d372c16e439ca4d3a8c2378807f59ac91",
+      "bytes": 271430
+    },
+    "pwdwconv/hdl/verilog/SBUS1_m_axi.v": {
+      "sha256": "c0a50f465970a4389baa81064e866695014a18b3256aa5ecb86704a7b08c4d18",
+      "bytes": 92409
+    },
+    "pwdwconv/hdl/verilog/SBUS2_m_axi.v": {
+      "sha256": "5a388ff056273210818e5311632701e94d665f6246aba2c254019d03062e8205",
+      "bytes": 92409
+    },
+    "pwdwconv/hdl/verilog/sparsemux_7_2_16_1_1.v": {
+      "sha256": "47dcad130747e0498017cc443704bbd947dda7a5bb8d3471318093ab33edb76f",
+      "bytes": 1252
+    },
+    "pwdwconv/hdl/verilog/sparsemux_9_4_16_1_1.v": {
+      "sha256": "f5206ad58d5a4dce46f94972fe72f042837458a8cb2bd6625d5023bc53a9d17d",
+      "bytes": 1394
+    },
+    "pwdwconv/hdl/verilog/store_output.v": {
+      "sha256": "5e7e24f325a7142502006f7585c2dd4ceb1c168c1857e8e0886a3d4328ee77ab",
+      "bytes": 38423
+    },
+    "pwdwconv/hdl/verilog/store_output_2.v": {
+      "sha256": "07fb3e5a65ddfd7745a62244aaf6f76ebc4eee844467e453ccc17d92c88ea412",
+      "bytes": 46117
+    },
+    "pwdwconv/hdl/verilog/store_output_2_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2.v": {
+      "sha256": "78d39f6011907243250924e8b4f2f2ef2c20781f9b3b4086b0479ad015eebe3b",
+      "bytes": 48065
+    },
+    "pwdwconv/hdl/verilog/store_output_Pipeline_VITIS_LOOP_111_1_VITIS_LOOP_112_2.v": {
+      "sha256": "acdffa43357fde6c7ca31d68010aee7924a9e9626023e48fd0214e57a9a2ba57",
+      "bytes": 49506
+    },
+    "pwdwconv/hdl/verilog/update_three_block.v": {
+      "sha256": "c2a88709d82ba0f67785c4b073a0e970c20bb57145a9f8e5ed3063fef78a2477",
+      "bytes": 13677
+    },
+    "pwdwconv/hdl/vhdl/am_addmul_4ns_16ns_16ns_31_4_1.vhd": {
+      "sha256": "1c3d10efaf56472b90d8fe8b6f504d1fd5aa20d1a3c913aaadb70b0ca9548c84",
+      "bytes": 3176
+    },
+    "pwdwconv/hdl/vhdl/bias_buff_RAM_AUTO_1R1W.vhd": {
+      "sha256": "5e3c7cd8e55f026d8294170f15686fcc3fc62bf5288c253a8221f4b745752b24",
+      "bytes": 2208
+    },
+    "pwdwconv/hdl/vhdl/compute.vhd": {
+      "sha256": "52921fe41f39fe8670a36d35b1f34383e4a02781714725e5b2fae41b9f69ba0d",
+      "bytes": 133942
+    },
+    "pwdwconv/hdl/vhdl/compute_1.vhd": {
+      "sha256": "2a307fd158c01ad3a4c4ed95782a76be90606de36656f2c8f1b28be58470c1cf",
+      "bytes": 571260
+    },
+    "pwdwconv/hdl/vhdl/compute_output.vhd": {
+      "sha256": "d77458b6e4aafa9100243568bf477a9390051befbbddc5fc939ffb9666554a4d",
+      "bytes": 470665
+    },
+    "pwdwconv/hdl/vhdl/compute_output_fm_in_buff1_RAM_AUTO_1R1W.vhd": {
+      "sha256": "cf1fd6b7838585e043c6ac30eff8313b38c55947b1c87622695c5b0d9dca2d07",
+      "bytes": 2243
+    },
+    "pwdwconv/hdl/vhdl/compute_output_Pipeline_VITIS_LOOP_31_1.vhd": {
+      "sha256": "93f9bfcdc81e52eb46cb90782abdadf722c8f16bd24c75e15d224a4cc0d6971b",
+      "bytes": 26504
+    },
+    "pwdwconv/hdl/vhdl/compute_output_Pipeline_VITIS_LOOP_31_15.vhd": {
+      "sha256": "f556f3826b48cddf2bf5235cbd31fd4140ab4427005bc942df6f8bc5a438fb16",
+      "bytes": 26488
+    },
+    "pwdwconv/hdl/vhdl/compute_output_Pipeline_VITIS_LOOP_31_16.vhd": {
+      "sha256": "88a178f65fede2a6c694a5261577b845da3f87df2de8ba96e819995a395ac7f9",
+      "bytes": 26502
+    },
+    "pwdwconv/hdl/vhdl/CTRL_s_axi.vhd": {
+      "sha256": "2ff1a4be41fe1f04a3d140e203e76d0bdb63556da71d6ea8ee80d3850f8d7a39",
+      "bytes": 27934
+    },
+    "pwdwconv/hdl/vhdl/dwconv.vhd": {
+      "sha256": "877efeef47ed0c63f0a7a8489eda3aee23f7bfc31ca01e1f6938bb4b2a263206",
+      "bytes": 455256
+    },
+    "pwdwconv/hdl/vhdl/dwconv_bias_buff_RAM_AUTO_1R1W.vhd": {
+      "sha256": "4cfdff919bca7edca976b0d7568c88e59672cb7256b63cb3f27f7954d1c78863",
+      "bytes": 2223
+    },
+    "pwdwconv/hdl/vhdl/dwconv_fm_in_buff1_7_RAM_AUTO_1R1W.vhd": {
+      "sha256": "33a7e1d26eccde218e98e2624ae0152abb19b34f585c0a2a2a9d333548f40a23",
+      "bytes": 2231
+    },
+    "pwdwconv/hdl/vhdl/dwconv_fm_in_buff1_RAM_AUTO_1R1W.vhd": {
+      "sha256": "ea8992c002e94ac329c496d1a84b62ba07d6fd973d64fa66b0da05407512725a",
+      "bytes": 2697
+    },
+    "pwdwconv/hdl/vhdl/dwconv_fm_out_buff1_RAM_AUTO_1R1W.vhd": {
+      "sha256": "073cbdfedda0be90464463d368f648784b84e37f223c5c2aa7b0d057dbac9bbb",
+      "bytes": 2978
+    },
+    "pwdwconv/hdl/vhdl/dwconv_Outline_VITIS_LOOP_179_1.vhd": {
+      "sha256": "2093f9fdb2a515a7dbc5b762d776c469a6ca4b7f7170b2a9f9c660f3d511450c",
+      "bytes": 23768
+    },
+    "pwdwconv/hdl/vhdl/dwconv_wt_buff1_RAM_AUTO_1R1W.vhd": {
+      "sha256": "ac9cd14cadc456d67ecd86ad1d0336169f5240778f54d989a7642339abab206a",
+      "bytes": 2219
+    },
+    "pwdwconv/hdl/vhdl/flow_control_loop_pipe_sequential_init.vhd": {
+      "sha256": "fae8db4668dfe98e4489dc482d2d9efab9bbaeebe0acda1eb8e0fa0b6d381a28",
+      "bytes": 3535
+    },
+    "pwdwconv/hdl/vhdl/fm_out1_RAM_AUTO_1R1W.vhd": {
+      "sha256": "1957c2d4dd47fd0698c999576c7dfed40192135a497ba25c442a1ef6ffe308e5",
+      "bytes": 2955
+    },
+    "pwdwconv/hdl/vhdl/load_bias.vhd": {
+      "sha256": "6fe0b800eea0c5b838831fe9b82c2a74a4f8db76e98e550f7b1db19cb325ec5b",
+      "bytes": 50220
+    },
+    "pwdwconv/hdl/vhdl/load_bias_Pipeline_VITIS_LOOP_91_1.vhd": {
+      "sha256": "62d284fe668abbb0869a045f69e6dfaf01eaa60a2e0976ebff72ef7dcaaae5da",
+      "bytes": 35100
+    },
+    "pwdwconv/hdl/vhdl/load_input.vhd": {
+      "sha256": "decf41fa7c5c0b602dc978beaa21e14fd5c7aa23882ed8b25a6efa552a8d8e37",
+      "bytes": 202247
+    },
+    "pwdwconv/hdl/vhdl/load_input_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2.vhd": {
+      "sha256": "5cd681da97931728c5a534776f94351e838e2d091ee5034ee583e033ee7040df",
+      "bytes": 101453
+    },
+    "pwdwconv/hdl/vhdl/load_input_Pipeline_VITIS_LOOP_42_5_VITIS_LOOP_43_6.vhd": {
+      "sha256": "fe29251851ad403dfc7e6d24ef7b1c5ce8c55dccd371480f9f141e135ae3bf2c",
+      "bytes": 101287
+    },
+    "pwdwconv/hdl/vhdl/load_weight.vhd": {
+      "sha256": "68b182f8ea967fd357195698d4c082b19ae0867b50b258e29a7d711edafc50f8",
+      "bytes": 87760
+    },
+    "pwdwconv/hdl/vhdl/load_wrapper.vhd": {
+      "sha256": "61b8673a1dc12e1e20834176b5e4cab93c10399e8f72dfbdeec5ec109465539e",
+      "bytes": 91867
+    },
+    "pwdwconv/hdl/vhdl/load_wrapper_Outline_1.vhd": {
+      "sha256": "4d63e7a14ddc93b19e5ea4c1696174fc7dabba61e7e1ef01d915cb8f1bcdb44b",
+      "bytes": 25248
+    },
+    "pwdwconv/hdl/vhdl/mac_muladd_8s_3ns_2ns_8_4_1.vhd": {
+      "sha256": "c5c21a2a6196ea01037d3fe0e652640ff325b4ab35ab294e228ea7072bc9d478",
+      "bytes": 3143
+    },
+    "pwdwconv/hdl/vhdl/mul_16ns_16ns_29_2_1.vhd": {
+      "sha256": "ecdddfdc4e70207ffd407169f1d46742aae0ad7c5dbbc2dca60a6d275a0eaf98",
+      "bytes": 1698
+    },
+    "pwdwconv/hdl/vhdl/mul_16ns_16ns_32_2_1.vhd": {
+      "sha256": "9121a66121e4e0fc7869d1e47649dcc61b4958f6a4a71432ec6b978c9de5617f",
+      "bytes": 1698
+    },
+    "pwdwconv/hdl/vhdl/mul_16s_16s_32_2_1.vhd": {
+      "sha256": "efbd233da47e4d8e2b8c330d5b81d99125ad45861cc981ab07867de4ac90048b",
+      "bytes": 1718
+    },
+    "pwdwconv/hdl/vhdl/mul_29s_15ns_29_5_1.vhd": {
+      "sha256": "a14c1024cfb547348dc915d6d561c6586410d89081bb0161f693ad45995b60f2",
+      "bytes": 2134
+    },
+    "pwdwconv/hdl/vhdl/mul_29s_16ns_29_5_1.vhd": {
+      "sha256": "908e65db158efd4c7c67468c8843caf72b1d794b074c74463e6afc8c1d1e6a30",
+      "bytes": 2134
+    },
+    "pwdwconv/hdl/vhdl/mul_29s_29s_29_5_1.vhd": {
+      "sha256": "5560fdc4bde00014b60086575db69f99266b9a7000be6d0eb2082ed89c29511f",
+      "bytes": 2126
+    },
+    "pwdwconv/hdl/vhdl/mul_3ns_29s_29_5_1.vhd": {
+      "sha256": "d3cb58e83541d5104415e867054fb02f9b41debd5a795a8e6ded1258ddc2a5ce",
+      "bytes": 2132
+    },
+    "pwdwconv/hdl/vhdl/mul_3ns_4s_4_1_1.vhd": {
+      "sha256": "3032e78517bb2e390cb902487965052fb36f821c603948ebec10a7c47e060f0c",
+      "bytes": 1343
+    },
+    "pwdwconv/hdl/vhdl/mul_3ns_9s_10_1_1.vhd": {
+      "sha256": "a957207108fb4bcaec384014eb669acf4f7ee3393c746017a2575e78832bee2c",
+      "bytes": 1345
+    },
+    "pwdwconv/hdl/vhdl/mul_4ns_16ns_20_2_1.vhd": {
+      "sha256": "55e3c5fcc640e46fbf7af6532b3c4f7d87965bf3484b53f3edb2f47ad4cafae3",
+      "bytes": 1696
+    },
+    "pwdwconv/hdl/vhdl/PBUS1_m_axi.vhd": {
+      "sha256": "03bd759e57f38a223969484776cb600736199cd90dd9d17c291ae34943669a89",
+      "bytes": 127338
+    },
+    "pwdwconv/hdl/vhdl/PBUS2_m_axi.vhd": {
+      "sha256": "bbef470e5b7b72b6d6ad13e527fb3600639a0c601e417753006f699d2a3cfc44",
+      "bytes": 127338
+    },
+    "pwdwconv/hdl/vhdl/PBUS3_m_axi.vhd": {
+      "sha256": "3118e00e3b619f6a2786e25f34291c86068d8553acb960dedbcedbc50360b4fd",
+      "bytes": 212937
+    },
+    "pwdwconv/hdl/vhdl/PBUS4_m_axi.vhd": {
+      "sha256": "21d9922445fbb3eb096f1be0517407d6d541773e076890801103a1b0ad93c074",
+      "bytes": 162485
+    },
+    "pwdwconv/hdl/vhdl/pwdwconv.vhd": {
+      "sha256": "5e7d07d5b130026c1589553d2db2410afd91cac2c1bf12566901f537ef9fbdf7",
+      "bytes": 463146
+    },
+    "pwdwconv/hdl/vhdl/SBUS1_m_axi.vhd": {
+      "sha256": "b5e6fa3a5715e0e702952581edd3e11ad892182911b0966c2b50bd7c4fae14db",
+      "bytes": 127338
+    },
+    "pwdwconv/hdl/vhdl/SBUS2_m_axi.vhd": {
+      "sha256": "4367b6de9d42c3919da4f408eacb6f3af2315457c6e4774b949640b6e7b16424",
+      "bytes": 127338
+    },
+    "pwdwconv/hdl/vhdl/sparsemux_7_2_16_1_1.vhd": {
+      "sha256": "8483269c9b95423425ded93a5e6f804841fb67e2ed267e47cdc8da950783e96d",
+      "bytes": 1915
+    },
+    "pwdwconv/hdl/vhdl/sparsemux_9_4_16_1_1.vhd": {
+      "sha256": "c091cbc1213adf6b0dcd6561525b6aa82c718dfbb8a2dddf8d4822a02435348f",
+      "bytes": 2139
+    },
+    "pwdwconv/hdl/vhdl/store_output.vhd": {
+      "sha256": "682b47db671d46712e8ac382b78a786e082980d8f51feb34038cc704c419cae1",
+      "bytes": 53824
+    },
+    "pwdwconv/hdl/vhdl/store_output_2.vhd": {
+      "sha256": "93fbcd4b41d6b342ccd55c70b5e18b4ebb8593d1a839d9b602b9bfb4bcba6939",
+      "bytes": 63243
+    },
+    "pwdwconv/hdl/vhdl/store_output_2_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2.vhd": {
+      "sha256": "5ddbe3b13bc278f4a366c2f9b50c98b767c4c342bc3cf5f23342f9238fbe7fe5",
+      "bytes": 69659
+    },
+    "pwdwconv/hdl/vhdl/store_output_Pipeline_VITIS_LOOP_111_1_VITIS_LOOP_112_2.vhd": {
+      "sha256": "f18042bcc4206ffdb02879d1d70196f6b7a6a445e310953f82465a1644530665",
+      "bytes": 73817
+    },
+    "pwdwconv/hdl/vhdl/update_three_block.vhd": {
+      "sha256": "29ca180ce7d28291da4925a1238c455fbeca80e2a31e14896556ee65443d5982",
+      "bytes": 20496
+    },
+    "pwdwconv/misc/logo.png": {
+      "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af",
+      "bytes": 2297
+    },
+    "pwdwconv/pack.bat": {
+      "sha256": "6df069301a13130cf4cf53f6b0fb9bde909646e2ecbf915a6c8939916fa199d7",
+      "bytes": 491
+    },
+    "pwdwconv/run_ippack.tcl": {
+      "sha256": "3d2195ad377555e7953e69438782aeee0b50b7bcc0f709c0aeadea599357289c",
+      "bytes": 962
+    },
+    "pwdwconv/sysgen_info.xml": {
+      "sha256": "b223a4e73acfe1232a6c19a44a1f3883cc85a73da32d231a7cffc6113e4d7ca1",
+      "bytes": 341
+    },
+    "pwdwconv/xgui/pwdwconv_v0_0.tcl": {
+      "sha256": "7adbb0bef8c1cea36c5dce563828ab5e9a5bebf82742598f98953be932064bbd",
+      "bytes": 58294
+    },
+    "shortcut/component.xml": {
+      "sha256": "ef11406a13ef613581d4ccdcd76b61588960ea86ea039619725cbd4f51135409",
+      "bytes": 260136
+    },
+    "shortcut/constraints/shortcut_ooc.xdc": {
+      "sha256": "214f07d7a9485c10f4a76c739e47c36737766f1a6e03a72d5f975048e3716825",
+      "bytes": 394
+    },
+    "shortcut/dfx_runtime.txt": {
+      "sha256": "b75c9e4c66aa27b672ca9b417568b0eb52826563b51020c6a96eccbf45e9dea3",
+      "bytes": 113
+    },
+    "shortcut/doc/ReleaseNotes.txt": {
+      "sha256": "f2c9178f26ebc8f6b478d11bf3cd79578133a1ed798eabef178c0d02f9b8968d",
+      "bytes": 108
+    },
+    "shortcut/drivers/shortcut_v0_0/data/shortcut.mdd": {
+      "sha256": "20d7a63992f0219d6a87c9ac7ebbeb274f7e3b0531e76a37b074c04686a7c3f0",
+      "bytes": 602
+    },
+    "shortcut/drivers/shortcut_v0_0/data/shortcut.tcl": {
+      "sha256": "9cbca9fe5439649e706d2248ce5ed1ca1186fbcafc338f0207c181976113495a",
+      "bytes": 883
+    },
+    "shortcut/drivers/shortcut_v0_0/data/shortcut.yaml": {
+      "sha256": "a0de3bb0b65a54a1286590aab0f4d24d43c8a46888fe44a6521dc9d5c1112e67",
+      "bytes": 651
+    },
+    "shortcut/drivers/shortcut_v0_0/src/CMakeLists.txt": {
+      "sha256": "72718485636be68333be4b91da401db0c0a2725a14f258150e6d7db38d0af456",
+      "bytes": 1181
+    },
+    "shortcut/drivers/shortcut_v0_0/src/Makefile": {
+      "sha256": "283393c84b6b6de73c1f28a47a02bca334ae2fd67aee5d97c497f11805e57df5",
+      "bytes": 1501
+    },
+    "shortcut/drivers/shortcut_v0_0/src/xshortcut.c": {
+      "sha256": "757f2b2a54d8753e83d925ba7c936f4771da7cc6497817b46aaed3e19215d321",
+      "bytes": 7288
+    },
+    "shortcut/drivers/shortcut_v0_0/src/xshortcut.h": {
+      "sha256": "dec245d3711aa64c01e4b1df387322c92279d36bf37a7048d0e1d890bc04256e",
+      "bytes": 4003
+    },
+    "shortcut/drivers/shortcut_v0_0/src/xshortcut_hw.h": {
+      "sha256": "aa5e4fa1d91af9399b315d51607a342b86d70285537f4ff3e47d88d32dd85153",
+      "bytes": 2232
+    },
+    "shortcut/drivers/shortcut_v0_0/src/xshortcut_linux.c": {
+      "sha256": "07ca6b68c587ea1aea70b68cbf6cb5ad70729f49b23328cdb3a9dadd97d70452",
+      "bytes": 4791
+    },
+    "shortcut/drivers/shortcut_v0_0/src/xshortcut_sinit.c": {
+      "sha256": "3e697c6a78499e93b1f254d81c4d95fc59ff34b061357772e603db85ae3a0d3c",
+      "bytes": 2006
+    },
+    "shortcut/hdl/verilog/CTRL_s_axi.v": {
+      "sha256": "f55971e5ada905fe8dbec2d008d7b1e58bae2ab831e6fa43d67247f4ba3ac714",
+      "bytes": 14306
+    },
+    "shortcut/hdl/verilog/flow_control_loop_pipe_sequential_init.v": {
+      "sha256": "658507cf534200af1c1d50e4bd04029b3bf5e9f0ec0ac6428967640ea9b13bb0",
+      "bytes": 2917
+    },
+    "shortcut/hdl/verilog/IN1_m_axi.v": {
+      "sha256": "a0132b09675aae33b074e4f973bb762dc166e7f8c8176711171e12c8d0e0987e",
+      "bytes": 92351
+    },
+    "shortcut/hdl/verilog/IN2_m_axi.v": {
+      "sha256": "f64b1c3b95661c1da90b9f5820576e52b9a12ceaeb208322dcdd30834303abb7",
+      "bytes": 92351
+    },
+    "shortcut/hdl/verilog/OUT_r_m_axi.v": {
+      "sha256": "31d8ee134d2dbce6329de31c28501b85eb101b8d2b754309d0a57be7b6fe61a0",
+      "bytes": 119273
+    },
+    "shortcut/hdl/verilog/shortcut.v": {
+      "sha256": "ab632fa9204baaf736d41d4da7b5c668e3aa7314cdd892f6e629206c3848555a",
+      "bytes": 58508
+    },
+    "shortcut/hdl/verilog/shortcut_Pipeline_VITIS_LOOP_16_1.v": {
+      "sha256": "88ad920351d7e5c8cb80ff41ab240deb859223cf45ca1683581f029eb0e91d24",
+      "bytes": 28373
+    },
+    "shortcut/hdl/vhdl/CTRL_s_axi.vhd": {
+      "sha256": "2f07165c7948f0c67614d0b1125323bb9fc57e029f964c0a06f7d7103e126cd1",
+      "bytes": 19439
+    },
+    "shortcut/hdl/vhdl/flow_control_loop_pipe_sequential_init.vhd": {
+      "sha256": "fae8db4668dfe98e4489dc482d2d9efab9bbaeebe0acda1eb8e0fa0b6d381a28",
+      "bytes": 3535
+    },
+    "shortcut/hdl/vhdl/IN1_m_axi.vhd": {
+      "sha256": "342cc7d490e810f41f12a54374a9745d939e6191ecae5fc9f4e6c31279d902e5",
+      "bytes": 127188
+    },
+    "shortcut/hdl/vhdl/IN2_m_axi.vhd": {
+      "sha256": "898ffaeec803d20b484fca73b3c563c819ab2c92e458718c849800c9776eb70d",
+      "bytes": 127188
+    },
+    "shortcut/hdl/vhdl/OUT_r_m_axi.vhd": {
+      "sha256": "07df93e5f58a8eff6b67cedef56918d1915927ad2ee9ef71cb9b79006ad8cc9a",
+      "bytes": 162485
+    },
+    "shortcut/hdl/vhdl/shortcut.vhd": {
+      "sha256": "6ecd2fcba408dc7b19aad130652544f44781a3c6e81a5da95e4329a35b32343a",
+      "bytes": 98430
+    },
+    "shortcut/hdl/vhdl/shortcut_Pipeline_VITIS_LOOP_16_1.vhd": {
+      "sha256": "83993f51277930cf0cb1e263fff8293a7b8ec80732cd5d8582783833c6717a78",
+      "bytes": 38890
+    },
+    "shortcut/misc/logo.png": {
+      "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af",
+      "bytes": 2297
+    },
+    "shortcut/pack.bat": {
+      "sha256": "6df069301a13130cf4cf53f6b0fb9bde909646e2ecbf915a6c8939916fa199d7",
+      "bytes": 491
+    },
+    "shortcut/run_ippack.tcl": {
+      "sha256": "29889cd50c70d4a160e7f357b6755c46095ff3a9c85d90b26d8a215c8a6c1b97",
+      "bytes": 946
+    },
+    "shortcut/sysgen_info.xml": {
+      "sha256": "2762a576bb8b31e75ffb2583cc60b2ce7f0a802d6de76d9bb2a512173e073ee9",
+      "bytes": 347
+    },
+    "shortcut/xgui/shortcut_v0_0.tcl": {
+      "sha256": "5d546e08617365e76cb5e1845e3d4594ee7eeb878e8c85d2433e1e7c0b60464b",
+      "bytes": 28918
+    }
+  }
+}

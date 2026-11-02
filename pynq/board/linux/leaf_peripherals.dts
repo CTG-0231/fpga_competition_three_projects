@@ -1,0 +1,74 @@
+/dts-v1/;
+/plugin/;
+
+/*
+ * Candidate for the ACTUAL AC820 vendor image.ub system DTB:
+ * SHA256 28d656e6da69a652484d29210fe99ef990a105125d9d834666ca69736a427f2f.
+ * Kernel: 5.4.0-xilinx-v2020.2, vendor build 2024-09-25.
+ *
+ * OFFLINE COMPILE/MERGE CANDIDATE; no board validation has been performed.
+ * On this exact base, i2c0 and gpio0 have NO pinctrl-0/pinctrl-names, and
+ * pinctrl0 has no child states. Verify these preconditions before merging.
+ * Do not replace another image's existing pinctrl state with these lists.
+ *
+ * Only MIO0/50/51 muxes are specified. Electrical IO standard, pulls, slew,
+ * PS clocks/resets, DDR, Ethernet, SD and UART are preserved. Their correctness
+ * for the actual board is a separate prerequisite, not established by dtc.
+ * PS I2C1 EMIO and PS GPIO54 need the correct original PL bit/HWH wiring.
+ *
+ * Runtime configfs overlay application alone does not guarantee an already
+ * probed gpio0 device reselects its newly added default pinctrl state. Prefer
+ * validating an offline merge before kernel device probing; no auto-loader.
+ */
+
+/ {
+    compatible = "xlnx,zynq-7000";
+
+    fragment@0 {
+        target = <&pinctrl0>;
+        __overlay__ {
+            leaf_i2c0_default: leaf-i2c0-default {
+                mux {
+                    groups = "i2c0_10_grp";
+                    function = "i2c0";
+                };
+            };
+
+            leaf_touch_gpio_default: leaf-touch-gpio-default {
+                mux {
+                    groups = "gpio0_0_grp";
+                    function = "gpio0";
+                };
+            };
+        };
+    };
+
+    fragment@1 {
+        target = <&i2c0>;
+        __overlay__ {
+            status = "okay";
+            clock-frequency = <300000>;
+            pinctrl-names = "default";
+            pinctrl-0 = <&leaf_i2c0_default>;
+            /* GT911 7-bit 0x5d is controlled through userspace i2c-dev. */
+        };
+    };
+
+    fragment@2 {
+        target = <&i2c1>;
+        __overlay__ {
+            status = "okay";
+            clock-frequency = <40000>;
+            /* EMIO uses original PL routing; do not select a MIO group. */
+        };
+    };
+
+    fragment@3 {
+        target = <&gpio0>;
+        __overlay__ {
+            pinctrl-names = "default";
+            pinctrl-0 = <&leaf_touch_gpio_default>;
+            /* Do not hog/output-drive MIO0: GT911 initialization changes it. */
+        };
+    };
+};

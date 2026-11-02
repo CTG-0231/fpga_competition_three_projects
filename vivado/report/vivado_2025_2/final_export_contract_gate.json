@@ -1,0 +1,2106 @@
+{
+  "time": "2026-10-30T21:44:22.652326+08:00",
+  "status": "PASS",
+  "cores": {
+    "conv": {
+      "component_sha256": "a2b6c44dbbe0a89892eb209cb818a31fd3673d900ccd37a3479720845ade1359",
+      "raw_registers": [
+        {
+          "name": "CTRL",
+          "offset": 0,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "AP_START",
+              "offset": 0,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "AP_DONE",
+              "offset": 1,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "AP_IDLE",
+              "offset": 2,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "AP_READY",
+              "offset": 3,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "RESERVED_1",
+              "offset": 4,
+              "width": 3,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "AUTO_RESTART",
+              "offset": 7,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "RESERVED_2",
+              "offset": 8,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "INTERRUPT",
+              "offset": 9,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "RESERVED_3",
+              "offset": 10,
+              "width": 22,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "GIER",
+          "offset": 4,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "Enable",
+              "offset": 0,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "offset": 1,
+              "width": 31,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "IP_IER",
+          "offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "CHAN0_INT_EN",
+              "offset": 0,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "CHAN1_INT_EN",
+              "offset": 1,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "RESERVED_0",
+              "offset": 2,
+              "width": 30,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "IP_ISR",
+          "offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "CHAN0_INT_ST",
+              "offset": 0,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": "oneToToggle"
+            },
+            {
+              "name": "CHAN1_INT_ST",
+              "offset": 1,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": "oneToToggle"
+            },
+            {
+              "name": "RESERVED_0",
+              "offset": 2,
+              "width": 30,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "in1_V",
+          "offset": 16,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "in1_V",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "in2_V",
+          "offset": 24,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "in2_V",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "in3_V",
+          "offset": 32,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "in3_V",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "weight_V",
+          "offset": 40,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "weight_V",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "bias",
+          "offset": 48,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "bias",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "out_V",
+          "offset": 56,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "out_V",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        }
+      ],
+      "canonical_registers": {
+        "IN1_V": 16,
+        "IN2_V": 24,
+        "IN3_V": 32,
+        "WEIGHT_V": 40,
+        "BIAS_V": 48,
+        "OUT_V": 56
+      },
+      "reviewed_register_differences": [
+        {
+          "path": "/memory_maps/0/blocks/0/registers/0/fields/6/width",
+          "before": 24,
+          "after": 1
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/0/fields/7",
+          "before": null,
+          "after": {
+            "name": "INTERRUPT",
+            "offset": 9,
+            "width": 1,
+            "access": "read-only",
+            "read_action": "modify",
+            "modified_write_value": null
+          }
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/0/fields/8",
+          "before": null,
+          "after": {
+            "name": "RESERVED_3",
+            "offset": 10,
+            "width": 22,
+            "access": "read-only",
+            "read_action": "modify",
+            "modified_write_value": null
+          }
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/2/fields/2/name",
+          "before": "RESERVED",
+          "after": "RESERVED_0"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/3/fields/2/name",
+          "before": "RESERVED",
+          "after": "RESERVED_0"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/8/fields/0/name",
+          "before": "bias_V",
+          "after": "bias"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/8/name",
+          "before": "bias_V",
+          "after": "bias"
+        }
+      ],
+      "physical_port_declarations_equal": true,
+      "interface_pin_maps_equal": true
+    },
+    "fc": {
+      "component_sha256": "76ba73091940aa10c45251897054b6f4dd72521a98edb4bf74f92169172b51eb",
+      "raw_registers": [
+        {
+          "name": "CTRL",
+          "offset": 0,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "AP_START",
+              "offset": 0,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "AP_DONE",
+              "offset": 1,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "AP_IDLE",
+              "offset": 2,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "AP_READY",
+              "offset": 3,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "RESERVED_1",
+              "offset": 4,
+              "width": 3,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "AUTO_RESTART",
+              "offset": 7,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "RESERVED_2",
+              "offset": 8,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "INTERRUPT",
+              "offset": 9,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "RESERVED_3",
+              "offset": 10,
+              "width": 22,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "GIER",
+          "offset": 4,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "Enable",
+              "offset": 0,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "offset": 1,
+              "width": 31,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "IP_IER",
+          "offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "CHAN0_INT_EN",
+              "offset": 0,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "CHAN1_INT_EN",
+              "offset": 1,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "RESERVED_0",
+              "offset": 2,
+              "width": 30,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "IP_ISR",
+          "offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "CHAN0_INT_ST",
+              "offset": 0,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": "oneToToggle"
+            },
+            {
+              "name": "CHAN1_INT_ST",
+              "offset": 1,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": "oneToToggle"
+            },
+            {
+              "name": "RESERVED_0",
+              "offset": 2,
+              "width": 30,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "in_V",
+          "offset": 16,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "in_V",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "weight_V",
+          "offset": 24,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "weight_V",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "bias",
+          "offset": 32,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "bias",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "out_V",
+          "offset": 40,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "out_V",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        }
+      ],
+      "canonical_registers": {
+        "IN_V": 16,
+        "WEIGHT_V": 24,
+        "BIAS_V": 32,
+        "OUT_V": 40
+      },
+      "reviewed_register_differences": [
+        {
+          "path": "/memory_maps/0/blocks/0/registers/0/fields/6/width",
+          "before": 24,
+          "after": 1
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/0/fields/7",
+          "before": null,
+          "after": {
+            "name": "INTERRUPT",
+            "offset": 9,
+            "width": 1,
+            "access": "read-only",
+            "read_action": "modify",
+            "modified_write_value": null
+          }
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/0/fields/8",
+          "before": null,
+          "after": {
+            "name": "RESERVED_3",
+            "offset": 10,
+            "width": 22,
+            "access": "read-only",
+            "read_action": "modify",
+            "modified_write_value": null
+          }
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/2/fields/2/name",
+          "before": "RESERVED",
+          "after": "RESERVED_0"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/3/fields/2/name",
+          "before": "RESERVED",
+          "after": "RESERVED_0"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/6/fields/0/name",
+          "before": "bias_V",
+          "after": "bias"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/6/name",
+          "before": "bias_V",
+          "after": "bias"
+        }
+      ],
+      "physical_port_declarations_equal": true,
+      "interface_pin_maps_equal": true
+    },
+    "pwdwconv": {
+      "component_sha256": "c26a6b7b501aad6653b86dc8763b16a69d8619cf6b22b2d5231f0a5bce3f3e01",
+      "raw_registers": [
+        {
+          "name": "CTRL",
+          "offset": 0,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "AP_START",
+              "offset": 0,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "AP_DONE",
+              "offset": 1,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "AP_IDLE",
+              "offset": 2,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "AP_READY",
+              "offset": 3,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "RESERVED_1",
+              "offset": 4,
+              "width": 3,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "AUTO_RESTART",
+              "offset": 7,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "RESERVED_2",
+              "offset": 8,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "INTERRUPT",
+              "offset": 9,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "RESERVED_3",
+              "offset": 10,
+              "width": 22,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "GIER",
+          "offset": 4,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "Enable",
+              "offset": 0,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "offset": 1,
+              "width": 31,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "IP_IER",
+          "offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "CHAN0_INT_EN",
+              "offset": 0,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "CHAN1_INT_EN",
+              "offset": 1,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "RESERVED_0",
+              "offset": 2,
+              "width": 30,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "IP_ISR",
+          "offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "CHAN0_INT_ST",
+              "offset": 0,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": "oneToToggle"
+            },
+            {
+              "name": "CHAN1_INT_ST",
+              "offset": 1,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": "oneToToggle"
+            },
+            {
+              "name": "RESERVED_0",
+              "offset": 2,
+              "width": 30,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "PBUS1_V",
+          "offset": 16,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "PBUS1_V",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "PBUS2_V",
+          "offset": 24,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "PBUS2_V",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "PBUS3_V",
+          "offset": 32,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "PBUS3_V",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "PBUS4_V",
+          "offset": 40,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "PBUS4_V",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "SBUS1_r",
+          "offset": 48,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "SBUS1_r",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "SBUS2_V",
+          "offset": 56,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "SBUS2_V",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "ch_in",
+          "offset": 64,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "ch_in",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "ch_out",
+          "offset": 72,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "ch_out",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "stride",
+          "offset": 80,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "stride",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "fsize",
+          "offset": 88,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "fsize",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "act",
+          "offset": 96,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "act",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "mode",
+          "offset": 104,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "mode",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        }
+      ],
+      "canonical_registers": {
+        "PBUS1_V": 16,
+        "PBUS2_V": 24,
+        "PBUS3_V": 32,
+        "PBUS4_V": 40,
+        "SBUS1_V": 48,
+        "SBUS2_V": 56,
+        "CH_IN": 64,
+        "CH_OUT": 72,
+        "STRIDE": 80,
+        "FSIZE": 88,
+        "ACT": 96,
+        "MODE": 104
+      },
+      "reviewed_register_differences": [
+        {
+          "path": "/memory_maps/0/blocks/0/registers/0/fields/6/width",
+          "before": 24,
+          "after": 1
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/0/fields/7",
+          "before": null,
+          "after": {
+            "name": "INTERRUPT",
+            "offset": 9,
+            "width": 1,
+            "access": "read-only",
+            "read_action": "modify",
+            "modified_write_value": null
+          }
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/0/fields/8",
+          "before": null,
+          "after": {
+            "name": "RESERVED_3",
+            "offset": 10,
+            "width": 22,
+            "access": "read-only",
+            "read_action": "modify",
+            "modified_write_value": null
+          }
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/2/fields/2/name",
+          "before": "RESERVED",
+          "after": "RESERVED_0"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/3/fields/2/name",
+          "before": "RESERVED",
+          "after": "RESERVED_0"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/8/fields/0/name",
+          "before": "SBUS1_V",
+          "after": "SBUS1_r"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/8/name",
+          "before": "SBUS1_V",
+          "after": "SBUS1_r"
+        }
+      ],
+      "physical_port_declarations_equal": true,
+      "interface_pin_maps_equal": true
+    },
+    "shortcut": {
+      "component_sha256": "ef11406a13ef613581d4ccdcd76b61588960ea86ea039619725cbd4f51135409",
+      "raw_registers": [
+        {
+          "name": "CTRL",
+          "offset": 0,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "AP_START",
+              "offset": 0,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "AP_DONE",
+              "offset": 1,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "AP_IDLE",
+              "offset": 2,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "AP_READY",
+              "offset": 3,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "RESERVED_1",
+              "offset": 4,
+              "width": 3,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "AUTO_RESTART",
+              "offset": 7,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "RESERVED_2",
+              "offset": 8,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "INTERRUPT",
+              "offset": 9,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            },
+            {
+              "name": "RESERVED_3",
+              "offset": 10,
+              "width": 22,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "GIER",
+          "offset": 4,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "Enable",
+              "offset": 0,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "RESERVED",
+              "offset": 1,
+              "width": 31,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "IP_IER",
+          "offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "CHAN0_INT_EN",
+              "offset": 0,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "CHAN1_INT_EN",
+              "offset": 1,
+              "width": 1,
+              "access": "read-write",
+              "read_action": null,
+              "modified_write_value": "modify"
+            },
+            {
+              "name": "RESERVED_0",
+              "offset": 2,
+              "width": 30,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "IP_ISR",
+          "offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "CHAN0_INT_ST",
+              "offset": 0,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": "oneToToggle"
+            },
+            {
+              "name": "CHAN1_INT_ST",
+              "offset": 1,
+              "width": 1,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": "oneToToggle"
+            },
+            {
+              "name": "RESERVED_0",
+              "offset": 2,
+              "width": 30,
+              "access": "read-only",
+              "read_action": "modify",
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "src1",
+          "offset": 16,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "src1",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "src2",
+          "offset": 24,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "src2",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "dest",
+          "offset": 32,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "dest",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        },
+        {
+          "name": "length_r",
+          "offset": 40,
+          "size": 32,
+          "access": "write-only",
+          "reset": "0",
+          "fields": [
+            {
+              "name": "length_r",
+              "offset": 0,
+              "width": 32,
+              "access": "write-only",
+              "read_action": null,
+              "modified_write_value": null
+            }
+          ]
+        }
+      ],
+      "canonical_registers": {
+        "SRC1_V": 16,
+        "SRC2_V": 24,
+        "DEST_V": 32,
+        "LENGTH_R": 40
+      },
+      "reviewed_register_differences": [
+        {
+          "path": "/memory_maps/0/blocks/0/registers/0/fields/6/width",
+          "before": 24,
+          "after": 1
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/0/fields/7",
+          "before": null,
+          "after": {
+            "name": "INTERRUPT",
+            "offset": 9,
+            "width": 1,
+            "access": "read-only",
+            "read_action": "modify",
+            "modified_write_value": null
+          }
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/0/fields/8",
+          "before": null,
+          "after": {
+            "name": "RESERVED_3",
+            "offset": 10,
+            "width": 22,
+            "access": "read-only",
+            "read_action": "modify",
+            "modified_write_value": null
+          }
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/2/fields/2/name",
+          "before": "RESERVED",
+          "after": "RESERVED_0"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/3/fields/2/name",
+          "before": "RESERVED",
+          "after": "RESERVED_0"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/4/fields/0/name",
+          "before": "src1_V",
+          "after": "src1"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/4/name",
+          "before": "src1_V",
+          "after": "src1"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/5/fields/0/name",
+          "before": "src2_V",
+          "after": "src2"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/5/name",
+          "before": "src2_V",
+          "after": "src2"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/6/fields/0/name",
+          "before": "dest_V",
+          "after": "dest"
+        },
+        {
+          "path": "/memory_maps/0/blocks/0/registers/6/name",
+          "before": "dest_V",
+          "after": "dest"
+        }
+      ],
+      "physical_port_declarations_equal": true,
+      "interface_pin_maps_equal": true
+    }
+  },
+  "board_tested": false,
+  "scope": "Independent raw register/interface ABI and single-ID profile; numerical evidence provided separately by HLS owner.",
+  "single_id_source_profile": {
+    "status": "PASS",
+    "failures": [],
+    "masters": 17,
+    "records": [
+      {
+        "core": "conv",
+        "master": "IN1",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\conv\\hdl\\verilog\\IN1_m_axi.v",
+        "sha256": "563295dd1bcd20525896ef1835dc713f04a99cb0fc0d047b63d36af4c86655fb",
+        "logical_ports": [
+          "1",
+          "0"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "WID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "conv",
+        "master": "IN2",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\conv\\hdl\\verilog\\IN2_m_axi.v",
+        "sha256": "078a6f5a897310ea2c41e9ec6246e684349106b6dc2102eb90d7bd4baca9f7b0",
+        "logical_ports": [
+          "1",
+          "0"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "WID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "conv",
+        "master": "IN3",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\conv\\hdl\\verilog\\IN3_m_axi.v",
+        "sha256": "ee5be947a547ebd6fd72d27b98d0539ec6414514ec7af85fc46f1698eea1b755",
+        "logical_ports": [
+          "1",
+          "0"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "WID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "conv",
+        "master": "W",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\conv\\hdl\\verilog\\W_m_axi.v",
+        "sha256": "cf95b380ec8e4af71374ab1c82b3ee19ddfd6a7a84c439217b7def7aa35e947b",
+        "logical_ports": [
+          "1",
+          "0"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "WID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "conv",
+        "master": "OUT_r",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\conv\\hdl\\verilog\\OUT_r_m_axi.v",
+        "sha256": "31d8ee134d2dbce6329de31c28501b85eb101b8d2b754309d0a57be7b6fe61a0",
+        "logical_ports": [
+          "0",
+          "1"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "fc",
+        "master": "IN_r",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\fc\\hdl\\verilog\\IN_r_m_axi.v",
+        "sha256": "3d9e6b2e5cc9b1719645fea8121b2941deb6404000bfcff68ba2d9537f609631",
+        "logical_ports": [
+          "1",
+          "0"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "WID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "fc",
+        "master": "W",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\fc\\hdl\\verilog\\W_m_axi.v",
+        "sha256": "cf95b380ec8e4af71374ab1c82b3ee19ddfd6a7a84c439217b7def7aa35e947b",
+        "logical_ports": [
+          "1",
+          "0"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "WID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "fc",
+        "master": "O",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\fc\\hdl\\verilog\\O_m_axi.v",
+        "sha256": "48684fdde893287682f5f35319ce99cab11a5ce6d147b58179a0a8a8dd2ac57c",
+        "logical_ports": [
+          "0",
+          "1"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "pwdwconv",
+        "master": "PBUS1",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\pwdwconv\\hdl\\verilog\\PBUS1_m_axi.v",
+        "sha256": "b8ee2235346379e84d09913862c600d0300d30532acadba37fc5762243d3a13e",
+        "logical_ports": [
+          "1",
+          "0"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "WID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "pwdwconv",
+        "master": "PBUS2",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\pwdwconv\\hdl\\verilog\\PBUS2_m_axi.v",
+        "sha256": "24ec17556b41fe24085d628821415ee1b24b0099399ef3193c69827b6827651d",
+        "logical_ports": [
+          "1",
+          "0"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "WID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "pwdwconv",
+        "master": "PBUS3",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\pwdwconv\\hdl\\verilog\\PBUS3_m_axi.v",
+        "sha256": "c9a2078d5ed3aa4520f4dd502571b37793427cbcd3c473b4a81ee14f7db0af0d",
+        "logical_ports": [
+          "1",
+          "1"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "local_AXI_ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "pwdwconv",
+        "master": "PBUS4",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\pwdwconv\\hdl\\verilog\\PBUS4_m_axi.v",
+        "sha256": "0b2871ca633cd407d869bc81ee1e2a5fbe04f2cdec511b15be0688896ffad5fd",
+        "logical_ports": [
+          "0",
+          "1"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "pwdwconv",
+        "master": "SBUS1",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\pwdwconv\\hdl\\verilog\\SBUS1_m_axi.v",
+        "sha256": "c0a50f465970a4389baa81064e866695014a18b3256aa5ecb86704a7b08c4d18",
+        "logical_ports": [
+          "1",
+          "0"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "WID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "pwdwconv",
+        "master": "SBUS2",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\pwdwconv\\hdl\\verilog\\SBUS2_m_axi.v",
+        "sha256": "5a388ff056273210818e5311632701e94d665f6246aba2c254019d03062e8205",
+        "logical_ports": [
+          "1",
+          "0"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "WID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "shortcut",
+        "master": "IN1",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\shortcut\\hdl\\verilog\\IN1_m_axi.v",
+        "sha256": "a0132b09675aae33b074e4f973bb762dc166e7f8c8176711171e12c8d0e0987e",
+        "logical_ports": [
+          "1",
+          "0"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "WID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "shortcut",
+        "master": "IN2",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\shortcut\\hdl\\verilog\\IN2_m_axi.v",
+        "sha256": "f64b1c3b95661c1da90b9f5820576e52b9a12ceaeb208322dcdd30834303abb7",
+        "logical_ports": [
+          "1",
+          "0"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "WID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      },
+      {
+        "core": "shortcut",
+        "master": "OUT_r",
+        "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\final_hls_exports_snapshot\\shortcut\\hdl\\verilog\\OUT_r_m_axi.v",
+        "sha256": "31d8ee134d2dbce6329de31c28501b85eb101b8d2b754309d0a57be7b6fe61a0",
+        "logical_ports": [
+          "0",
+          "1"
+        ],
+        "maps": [
+          {
+            "name": "compress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          },
+          {
+            "name": "decompress_axi_id",
+            "values": [
+              "'d0",
+              "'d0"
+            ]
+          }
+        ],
+        "direct_assignments": [
+          [
+            "ARID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ],
+          [
+            "local_AXI_AWID",
+            "{C_M_AXI_ID_WIDTH{1'b0}}"
+          ]
+        ]
+      }
+    ],
+    "scope": "Reviewed 2025.2 generated adapter source patterns only. Not formal equivalence, arithmetic verification, physical timing or board validation."
+  }
+}

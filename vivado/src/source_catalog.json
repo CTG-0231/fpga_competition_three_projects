@@ -1,0 +1,28 @@
+{
+  "native_2019_2": {
+    "files": 407,
+    "objects": 283,
+    "sha256": "77ae4a0c2bfcfcc0be6854bc666b0d33b577c83a02d3d9d6e4a7a1229a5dc1be",
+    "bytes": 15212020,
+    "archive": "src/native_2019_2.zip"
+  },
+  "vitis_from_rar": {
+    "files": 3028,
+    "objects": 1517,
+    "sha256": "7b194a7e66df836217111631147a3e34251e0c1c9add0b552202d312ca1666f4",
+    "bytes": 18314599,
+    "archive": "src/vitis/native_from_rar.zip"
+  },
+  "native_2025_2": {
+    "archive": "src/native_2025_2.zip",
+    "files": 919,
+    "sha256": "a7107e8dcd210e0b423280351e3c78867247b1eadc37e964e75e3a41efb02761",
+    "bytes": 34419733
+  },
+  "vitis_2025_2": {
+    "archive": "src/vitis/native_2025_2.zip",
+    "files": 2369,
+    "sha256": "9d6e56be11e2a43e718e6f2939d92cac0ec42e2e00e9d721bb37f98f0e713f7c",
+    "bytes": 9154238
+  }
+}

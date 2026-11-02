@@ -1,0 +1,16 @@
+{
+  "snapshot": {
+    "files": 355,
+    "objects": 319,
+    "sha256": "8e05e74e179a54f21786aec06ebbfd6fba526b8fc97ccf2321f6ee02963da7ef",
+    "bytes": 1668298
+  },
+  "verification": {
+    "passed": true,
+    "label": "hls_2025_2",
+    "files_checked": 355,
+    "checks": "exact native paths, object SHA256 and byte lengths, no extra archive members"
+  },
+  "restoration": 355,
+  "hardware_execution": false
+}

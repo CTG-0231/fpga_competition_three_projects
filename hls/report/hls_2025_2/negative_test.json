@@ -1,0 +1,10 @@
+{
+  "mutation": "Only first expected uint16 XOR 1; RTL and original passing fixture unchanged",
+  "simulator_exit_code": 0,
+  "q10_mismatch_observed": true,
+  "pass_marker_absent": true,
+  "validation_gate_exit_code": 1,
+  "note": "Xsim returns 0 even after $fatal on this host; wrapper requires functional pass marker and returns 1 on this failure.",
+  "checker_command": "python -I -B build/validate_hls_rtl.py --check-log <negative.log>",
+  "checker_actual_exit_code": 1
+}

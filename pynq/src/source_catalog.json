@@ -1,0 +1,16 @@
+{
+  "runtime": {
+    "files": 519,
+    "objects": 507,
+    "sha256": "1524ac68c0c203c38714ea8abfa481f30e26a707c065e55619a6f1ab4e2a592a",
+    "bytes": 20564624,
+    "archive": "src/runtime_snapshot.zip"
+  },
+  "prepared_inputs": {
+    "files": 253,
+    "objects": 244,
+    "sha256": "d477a9e1d0a684ae3e8c79f8537b5f48c312d32c0866ec70dcd0f04fabb2f3b8",
+    "bytes": 1552787,
+    "archive": "build/prepared_inputs.zip"
+  }
+}

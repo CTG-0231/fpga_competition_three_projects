@@ -1,0 +1,22 @@
+{
+  "snapshot_time": "2026-10-30T21:47:52.763455+08:00",
+  "source": "E:\\fpga25_f\\prepared\\inputs\\bd\\design_1.bd",
+  "generated": "E:\\fpga25_f\\r\\workspace\\inputs\\bd\\design_1.bd",
+  "status": "PASS",
+  "checks": {
+    "nets": {
+      "original_count": 16,
+      "generated_count": 16,
+      "different_nets": [],
+      "equal": true
+    },
+    "interface_nets": {
+      "original_count": 42,
+      "generated_count": 42,
+      "different_nets": [],
+      "equal": true
+    }
+  },
+  "board_tested": false,
+  "scope": "Top-level BD named signal/interface-net endpoint sets, independent of serialization order. Not an internal IP equivalence proof."
+}

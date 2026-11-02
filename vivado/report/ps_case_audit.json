@@ -1,0 +1,302 @@
+[
+  {
+    "path": "src/camera_detection.c",
+    "original_sha256": "0d89ec2eea1b0ead9186708fbbef9a11a0d21d0f7b6142f9d98bf47fc48fc91c",
+    "current_sha256": "3fbf736ef7514370f36d0d6e19dc6f1037771565cc2299f2fd4c15fc0bc15e85",
+    "case_changes_only": true
+  },
+  {
+    "path": "src/camera_detection.h",
+    "original_sha256": "fb1f9e2e2abb59d3eaed9d9559b0eff937db0e49a57e5ac4b8c1c37e93563295",
+    "current_sha256": "97081068260aa55183d742f698f482b730640ae7d32a2121d50857ec4869b104",
+    "case_changes_only": true
+  },
+  {
+    "path": "src/common.h",
+    "original_sha256": "487e342f64e1b3423070cd4821153ad36a027a97dbfbd97b14dd0dff3e76a189",
+    "current_sha256": "487e342f64e1b3423070cd4821153ad36a027a97dbfbd97b14dd0dff3e76a189",
+    "case_changes_only": false
+  },
+  {
+    "path": "src/hw_config.h",
+    "original_sha256": "b5f6cccb17339a10bb3140b5f40e8e1c6c6d7485570a0bacd6e33a09aaa0f4cd",
+    "current_sha256": "b5f6cccb17339a10bb3140b5f40e8e1c6c6d7485570a0bacd6e33a09aaa0f4cd",
+    "case_changes_only": false
+  },
+  {
+    "path": "src/lscript.ld",
+    "original_sha256": "b0e886772ea05f814fe7d7b1e96b6f72c79266fb130a7623da08a619175e553e",
+    "current_sha256": "b0e886772ea05f814fe7d7b1e96b6f72c79266fb130a7623da08a619175e553e",
+    "case_changes_only": false
+  },
+  {
+    "path": "src/main.c",
+    "original_sha256": "745ed9fe5aebbee7252612edbeba921ab87ece25b13499b8165949f84854f8dc",
+    "current_sha256": "254c390ff791feb0d8d8e8ec3f29efb7c560d2acf2909ff8f8c7174c12677821",
+    "case_changes_only": true
+  },
+  {
+    "path": "src/mess.c",
+    "original_sha256": "ca94c368c2664bd20f999d0e552cbd63e530556d7b2b37fa80c813c56eabdd37",
+    "current_sha256": "ca94c368c2664bd20f999d0e552cbd63e530556d7b2b37fa80c813c56eabdd37",
+    "case_changes_only": false
+  },
+  {
+    "path": "src/mess.h",
+    "original_sha256": "0c7b113b6f15cfa4e1eb3c388182ec400aeffee5981c6f90335d1bf7aa1f9c83",
+    "current_sha256": "79850a5c0d0799e224222983a5b28e0a817d76654bdefc0e7d8b41927838e419",
+    "case_changes_only": true
+  },
+  {
+    "path": "src/readme.txt",
+    "original_sha256": "265e6e74d7913c397b2e78997cb08682ffdae7c838f321a3f21f521f51e92dbc",
+    "current_sha256": "265e6e74d7913c397b2e78997cb08682ffdae7c838f321a3f21f521f51e92dbc",
+    "case_changes_only": false
+  },
+  {
+    "path": "src/xilinx.spec",
+    "original_sha256": "f100af82b444989adf5aad4ad612b9ae3b4ddac007f5d9653f1abf254235b085",
+    "current_sha256": "f100af82b444989adf5aad4ad612b9ae3b4ddac007f5d9653f1abf254235b085",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/conv/xconv.c",
+    "original_sha256": "5dc1924050cc4ed006c51f301151b0a3eb8870627ad092c1941934406c28bd7c",
+    "current_sha256": "5dc1924050cc4ed006c51f301151b0a3eb8870627ad092c1941934406c28bd7c",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/conv/xconv.h",
+    "original_sha256": "2a471c1ce613778b00bb4945d75a355caa0c9f9a43a9d4e41329e57463555b5f",
+    "current_sha256": "2a471c1ce613778b00bb4945d75a355caa0c9f9a43a9d4e41329e57463555b5f",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/conv/xconv_hw.h",
+    "original_sha256": "9f0de7e94905f12e08c2395c3b9b4dad150b83f70fce09afaba5bbbc26667d83",
+    "current_sha256": "9f0de7e94905f12e08c2395c3b9b4dad150b83f70fce09afaba5bbbc26667d83",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/conv/xconv_sinit.c",
+    "original_sha256": "2fc1fbe85e9941b0f52018d68a550d331231389b59c8968c3c920a7e40be64ff",
+    "current_sha256": "2fc1fbe85e9941b0f52018d68a550d331231389b59c8968c3c920a7e40be64ff",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/fc/xfc.c",
+    "original_sha256": "6de40156d97ff9ce6de0390ea70a3e888b5deee099d19d2901f84f9e8fe167df",
+    "current_sha256": "6de40156d97ff9ce6de0390ea70a3e888b5deee099d19d2901f84f9e8fe167df",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/fc/xfc.h",
+    "original_sha256": "e44ae2484077e7d7ea9ebb759d97c4adc2f827c00b628fe2a036fbaa5c6e1687",
+    "current_sha256": "e44ae2484077e7d7ea9ebb759d97c4adc2f827c00b628fe2a036fbaa5c6e1687",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/fc/xfc_hw.h",
+    "original_sha256": "506f61a4b20cb82ca3b9243b19b5a383d33ac0a098373aed8bd91305071d0706",
+    "current_sha256": "506f61a4b20cb82ca3b9243b19b5a383d33ac0a098373aed8bd91305071d0706",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/fc/xfc_sinit.c",
+    "original_sha256": "2addc116ac72e51f8de615c58b09fcf97577917a8738d24d20a4ab3b4fbed740",
+    "current_sha256": "2addc116ac72e51f8de615c58b09fcf97577917a8738d24d20a4ab3b4fbed740",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/pwdwconv/xpwdwconv.c",
+    "original_sha256": "07045cbdb8d86c3a1ba886aeb1f716ca6ecdb03c5750bcb19c426960c4a71f9a",
+    "current_sha256": "07045cbdb8d86c3a1ba886aeb1f716ca6ecdb03c5750bcb19c426960c4a71f9a",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/pwdwconv/xpwdwconv.h",
+    "original_sha256": "28003b310b07c0949ecadfbd8d1d0a5b3d334176861bc56317edbe5532d038bc",
+    "current_sha256": "28003b310b07c0949ecadfbd8d1d0a5b3d334176861bc56317edbe5532d038bc",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/pwdwconv/xpwdwconv_hw.h",
+    "original_sha256": "f255ae82274e28646315b3751074febb537ff2c691d5ddd7d6d6a3b46a8d617c",
+    "current_sha256": "f255ae82274e28646315b3751074febb537ff2c691d5ddd7d6d6a3b46a8d617c",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/pwdwconv/xpwdwconv_sinit.c",
+    "original_sha256": "95af7aade5cc0e58134c3a8aa783afe4d15cf4766968602c8d0ea9669c5065f1",
+    "current_sha256": "95af7aade5cc0e58134c3a8aa783afe4d15cf4766968602c8d0ea9669c5065f1",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/shortcut/xshortcut.c",
+    "original_sha256": "1b6576046342d301d820f09dc3f4cba96230524537d51e721eefb201779edcd2",
+    "current_sha256": "1b6576046342d301d820f09dc3f4cba96230524537d51e721eefb201779edcd2",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/shortcut/xshortcut.h",
+    "original_sha256": "b03efb8b07775be218206760903202201c9e330190235a6d74ffcf7c875046d9",
+    "current_sha256": "b03efb8b07775be218206760903202201c9e330190235a6d74ffcf7c875046d9",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/shortcut/xshortcut_hw.h",
+    "original_sha256": "6277dd0140ef097c4d79733115118618fe316e29cb67c06a2a50e839349aebed",
+    "current_sha256": "6277dd0140ef097c4d79733115118618fe316e29cb67c06a2a50e839349aebed",
+    "case_changes_only": false
+  },
+  {
+    "path": "drivers/shortcut/xshortcut_sinit.c",
+    "original_sha256": "f5397200cb1cace49a9ff9e29e261285494fe90e0155ab5da390a8e617bc82ba",
+    "current_sha256": "f5397200cb1cace49a9ff9e29e261285494fe90e0155ab5da390a8e617bc82ba",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/iic/iic.c",
+    "original_sha256": "3227d678588c8b3b5de32e8889f2940d27969a222109730a464c9bb461ae2c3b",
+    "current_sha256": "da05e6cd3febdfc7a9cd69dc1bdb1ddd096137887d771cb352510c1d6aaa5dfa",
+    "case_changes_only": true
+  },
+  {
+    "path": "lib/iic/iic.h",
+    "original_sha256": "259848753ffffdc5d71768daf93e84afaa8a68fbdc72e4967576dc9975a65e39",
+    "current_sha256": "059a8302db0775cd79e8fface07de3ae97cf46f8cf252741715b78a21d72c39c",
+    "case_changes_only": true
+  },
+  {
+    "path": "lib/lcd/font.h",
+    "original_sha256": "419cfaa8a28b139612fb94b9293c535345e8ee3b28e5acf4b70fcabe4e7cbfaa",
+    "current_sha256": "419cfaa8a28b139612fb94b9293c535345e8ee3b28e5acf4b70fcabe4e7cbfaa",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/lcd/lcd.c",
+    "original_sha256": "59e8bb94e8625804bf5734e4aa61676361c32d4bddf55a721ff3610008500636",
+    "current_sha256": "c98f52084e9c500d24180f794967f07d52723ca4c474cb8e1659557b69ff9d6e",
+    "case_changes_only": true
+  },
+  {
+    "path": "lib/lcd/lcd.h",
+    "original_sha256": "62f2fb935a27ba58649c9eb0f2ea6a06d6d7152b3bc9fecba55277a8dd376d84",
+    "current_sha256": "0313fe634bc0533317a9ee31453cd5e45fd360ca90044b4025bf0405cbc2798a",
+    "case_changes_only": true
+  },
+  {
+    "path": "lib/lcd/vdma_api.c",
+    "original_sha256": "84328819e6c3c694c8879ff5123753f0e59744a0a41f1d00394448917e96f770",
+    "current_sha256": "84328819e6c3c694c8879ff5123753f0e59744a0a41f1d00394448917e96f770",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/net/inference.c",
+    "original_sha256": "5f491f4e7279c401c91b2f5122b2b9020620e121ec093db95205c8962867ab04",
+    "current_sha256": "5f491f4e7279c401c91b2f5122b2b9020620e121ec093db95205c8962867ab04",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/net/inference.h",
+    "original_sha256": "bdd2633caaab9526ffa03289a70766b4cf04936aef141ca6d0acbea44b7b59b6",
+    "current_sha256": "bdd2633caaab9526ffa03289a70766b4cf04936aef141ca6d0acbea44b7b59b6",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/net/layer.c",
+    "original_sha256": "481414a8167741dc0820bd2aaf13c894abc15469abace66f443fc8bd44c6a6d7",
+    "current_sha256": "9daac2652617ea11d84351ec9e454a9dfe239628ed0b78a03eb670519d32e4f5",
+    "case_changes_only": true
+  },
+  {
+    "path": "lib/net/layer.h",
+    "original_sha256": "3a8e60ed6e469795f9f8acc23fa9c8e3b408ee98ee1e81f6ff2538c9cb6e77a8",
+    "current_sha256": "3a8e60ed6e469795f9f8acc23fa9c8e3b408ee98ee1e81f6ff2538c9cb6e77a8",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/net/platform.c",
+    "original_sha256": "d417c35ea4a283aa4a4a5b43362d05b024668b7eb1d2da2fe4c87c0ac8610d6c",
+    "current_sha256": "d417c35ea4a283aa4a4a5b43362d05b024668b7eb1d2da2fe4c87c0ac8610d6c",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/net/platform.h",
+    "original_sha256": "9253c4a945340271c4479ae34af2a16b5f4aab84bb62722b6691b1ad5a21a93a",
+    "current_sha256": "9253c4a945340271c4479ae34af2a16b5f4aab84bb62722b6691b1ad5a21a93a",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/net/platform_config.h",
+    "original_sha256": "dc609a74cf6d2ef160a6756449c87587dc6518e63bf5d51adf915c73dfdb0c1b",
+    "current_sha256": "dc609a74cf6d2ef160a6756449c87587dc6518e63bf5d51adf915c73dfdb0c1b",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/net/pl_conv.c",
+    "original_sha256": "7143a559a2266e471ba6abb9d9154452685c0c07df1c50662b29f689bf4c4e05",
+    "current_sha256": "7143a559a2266e471ba6abb9d9154452685c0c07df1c50662b29f689bf4c4e05",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/net/pl_conv.h",
+    "original_sha256": "5941c4ec5c53b5c3201c69e2e6a7f22946cfa1b2d38f549d0e4eb28846c46b4c",
+    "current_sha256": "5941c4ec5c53b5c3201c69e2e6a7f22946cfa1b2d38f549d0e4eb28846c46b4c",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/net/sd_io.c",
+    "original_sha256": "32fd40cfaa02977ca49f218b163b2381fdbbb78a3171892ad7c0955de61abad4",
+    "current_sha256": "32fd40cfaa02977ca49f218b163b2381fdbbb78a3171892ad7c0955de61abad4",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/net/sd_io.h",
+    "original_sha256": "5a60d8d944c12a6c8ba547b6fabc85da909574ea70f0724f3a8157bc5c262be8",
+    "current_sha256": "5a60d8d944c12a6c8ba547b6fabc85da909574ea70f0724f3a8157bc5c262be8",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/ov5640/ov5640.c",
+    "original_sha256": "1bdaa11f66860e01932907b24e284813f1180095c9b13fc3daae612ebfd8334e",
+    "current_sha256": "0b77d9bc92c372aca48b71379d317b0349ef5110ac52879b080136a846cea061",
+    "case_changes_only": true
+  },
+  {
+    "path": "lib/ov5640/ov5640.h",
+    "original_sha256": "2b4cfa3c4574a55493582c291776113ef2fdccbb9726c4e9976dd56a4bd31021",
+    "current_sha256": "2e4b7e7fca9926492ef1226f2e15407b9244c205571d376e2670e327d4ca072d",
+    "case_changes_only": true
+  },
+  {
+    "path": "lib/ov5640/vdma_api_ov5640.c",
+    "original_sha256": "0e53410d54c9a63283e6b08020f8e8249bccb34356b46f9988d6ed7e625a0d7b",
+    "current_sha256": "0e53410d54c9a63283e6b08020f8e8249bccb34356b46f9988d6ed7e625a0d7b",
+    "case_changes_only": false
+  },
+  {
+    "path": "lib/scu/scu.h",
+    "original_sha256": "9828ecba3f26d9056197e14e052af899bedadfe11dabf5e464aed9abcb237e99",
+    "current_sha256": "0863cdf056d9e777d42dee5f993cbaf84aeafdfaab4ea750b712f42458115097",
+    "case_changes_only": true
+  },
+  {
+    "path": "lib/scu/suc.c",
+    "original_sha256": "90b7a98d5a06c0b43fe8518d3d065c473621b9bfdc12516e7fa2ed4c8b33fb8a",
+    "current_sha256": "c1fbe1cdfb03bf52ecdcc741dba6072cd8febb73acba31d55e10dc83d62cb519",
+    "case_changes_only": true
+  },
+  {
+    "path": "lib/uart/uart.c",
+    "original_sha256": "3acde777a4a67d184f64bc644d0ce3807b7a786654037a7d3b9437d138324108",
+    "current_sha256": "53128a77b55f4b74963e979c253b3716207f996a9ed9e679c8d81fa3a9c88959",
+    "case_changes_only": true
+  },
+  {
+    "path": "lib/uart/uart.h",
+    "original_sha256": "aa6aa64d2fa3eca5027a61000b1efb90f04471f2cc1d9a98ddf77e521ca6bc19",
+    "current_sha256": "41f0a299a8eeff69f2e0cbbe4fd5594c8394068890a98230a873d820641eecb2",
+    "case_changes_only": true
+  }
+]

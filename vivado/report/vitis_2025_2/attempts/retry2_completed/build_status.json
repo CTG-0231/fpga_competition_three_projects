@@ -1,0 +1,33 @@
+{
+  "state": "passed",
+  "source_xsa_sha256": "2b111cec0c83827a454aad4f890a42f251c392a8ac87c3f58691216f94408892",
+  "hardware_version": "2025.2",
+  "hardware_tested": false,
+  "stages": [
+    {
+      "name": "platform",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 85.835
+    },
+    {
+      "name": "app",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 17.721
+    },
+    {
+      "name": "verify",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.218
+    },
+    {
+      "name": "package",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.854
+    }
+  ],
+  "current_stage": "package"
+}

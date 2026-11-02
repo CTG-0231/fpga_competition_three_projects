@@ -1,0 +1,36 @@
+{
+  "original": {
+    "fps": 7.507027412814011,
+    "median_ms": 133.11760550004692,
+    "s2mm_status": "0x11001",
+    "frame_range": [
+      0,
+      48
+    ],
+    "frame_mean": 7.928093112244898
+  },
+  "frame_counter_reset": {
+    "fps": 7.527388547190938,
+    "median_ms": 133.21063449996018,
+    "s2mm_status": "0x11001",
+    "frame_range": [
+      0,
+      48
+    ],
+    "frame_mean": 8.028326955782314
+  },
+  "frame_counter_rearm": {
+    "error": "Camera VDMA status 0x00014810",
+    "completed": 8
+  },
+  "original_again": {
+    "fps": 7.563298602672847,
+    "median_ms": 133.12107199999446,
+    "s2mm_status": "0x11001",
+    "frame_range": [
+      0,
+      48
+    ],
+    "frame_mean": 8.345769557823129
+  }
+}

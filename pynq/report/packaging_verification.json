@@ -1,0 +1,78 @@
+{
+  "path_names_pass": true,
+  "readme_exception": "README.md",
+  "required_directories": [
+    "src",
+    "sim",
+    "build",
+    "board",
+    "data",
+    "skill",
+    "report"
+  ],
+  "python_syntax_files": 54,
+  "skills": {
+    "pynq": "Skill is valid!",
+    "hls": "Skill is valid!",
+    "vivado": "Skill is valid!"
+  },
+  "entry_help": {
+    "pynq/board/lanuch.py": "passed",
+    "pynq/build/doctor.py": "passed",
+    "pynq/build/restore_sources.py": "passed",
+    "pynq/sim/run_host_tests.py": "passed",
+    "hls/build/hls_2025_2.py": "passed",
+    "hls/build/validate_hls_rtl.py": "passed",
+    "hls/build/restore_sources.py": "passed",
+    "vivado/build/vivado_2025_2/build.py": "passed",
+    "vivado/build/vivado_2025_2/prepare_inputs.py": "passed",
+    "vivado/build/build_vitis_2025_2.py": "passed",
+    "vivado/build/export_overlay.py": "passed",
+    "vivado/build/validate_pynq27_hwh.py": "passed",
+    "vivado/build/restore_sources.py": "passed"
+  },
+  "new_document_links_checked": 14,
+  "input_archives_unchanged": true,
+  "product_code_changes_restricted_to_case_and_paths": true,
+  "board_accessed": false,
+  "new_synthesis_or_implementation": false,
+  "project": "pynq",
+  "snapshots": {
+    "runtime": {
+      "files": 519,
+      "sha256": "1524ac68c0c203c38714ea8abfa481f30e26a707c065e55619a6f1ab4e2a592a",
+      "restoration_passed": true,
+      "exact_input_tree_compared": true,
+      "seconds": 0.86
+    },
+    "prepared_inputs": {
+      "files": 253,
+      "sha256": "d477a9e1d0a684ae3e8c79f8537b5f48c312d32c0866ec70dcd0f04fabb2f3b8",
+      "restoration_passed": true,
+      "exact_input_tree_compared": true,
+      "seconds": 0.343
+    }
+  },
+  "host_tests": {
+    "tests": 53,
+    "failures": 0,
+    "errors": 0,
+    "skipped": [
+      {
+        "test": "test_configs_and_labels_match_original_sources (test_model.ModelTests.test_configs_and_labels_match_original_sources)",
+        "reason": "original source not included in deployed package"
+      },
+      {
+        "test": "test_original_data_extracts_byte_for_byte (test_peripherals.PeripheralTests.test_original_data_extracts_byte_for_byte)",
+        "reason": "Original source is not present in deployed package"
+      }
+    ],
+    "passed": true,
+    "seconds": 4.015,
+    "board_accessed": false,
+    "hls_arithmetic_emulated": false
+  },
+  "threshold_unchanged": 4000,
+  "weight_files_unchanged": 106,
+  "current_source_mapping": "input_file_mapping.json"
+}

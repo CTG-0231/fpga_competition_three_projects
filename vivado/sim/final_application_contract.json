@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "scope": "final exported XSA/pair provenance, official PYNQ metadata and reference-asset static contract; not FPGA numeric execution",
+  "hardware_execution": false,
+  "board_tested": false,
+  "board_logits_exact_match": "not_run",
+  "source_xsa_sha256": "2b111cec0c83827a454aad4f890a42f251c392a8ac87c3f58691216f94408892",
+  "active_overlay": {
+    "vivado_version": "2025.2",
+    "hls_policy": "regenerated_2025_2_original_algorithm",
+    "files": {
+      "leaf.bit": "b0a00f0051148a356884ab19ae8281fb6308dae3108e2e538f40f3f321bd0557",
+      "leaf.hwh": "c93a96ce131be3f1b873c8df19ec7c9c8a05a36826dce9ff799724cb7dcc454a"
+    },
+    "byte_identical_to_selected_xsa": true
+  },
+  "official_pynq27_hwh_report": "report/pynq27_hwh_2025_2_final.json",
+  "legacy_3v3_preserved": {
+    "leaf.bit": "22c3d981440b32a197cef94d61f2de6cc62610ae0f7cb7fc633f62e90a744a1e",
+    "leaf.hwh": "443d9dfca798825c6a2ad817e8a0d0dab8bb47f388213a1ae1e53bfbada09ec4"
+  },
+  "historical_1v8_retained": {
+    "leaf.bit": "65a3258f77962381583c65474dce849b5cf5187f2067476d47d9f96087572659",
+    "leaf.hwh": "443d9dfca798825c6a2ad817e8a0d0dab8bb47f388213a1ae1e53bfbada09ec4"
+  },
+  "final_hls_copied_export_files_checked": 262,
+  "hls_packaging_only_files_not_copied": [
+    "conv/dfx_runtime.txt",
+    "conv/pack.bat",
+    "conv/run_ippack.tcl",
+    "conv/sysgen_info.xml",
+    "fc/dfx_runtime.txt",
+    "fc/pack.bat",
+    "fc/run_ippack.tcl",
+    "fc/sysgen_info.xml",
+    "pwdwconv/dfx_runtime.txt",
+    "pwdwconv/pack.bat",
+    "pwdwconv/run_ippack.tcl",
+    "pwdwconv/sysgen_info.xml",
+    "shortcut/dfx_runtime.txt",
+    "shortcut/pack.bat",
+    "shortcut/run_ippack.tcl",
+    "shortcut/sysgen_info.xml"
+  ],
+  "final_hls_projects": {
+    "conv": "conv_cache_compat",
+    "pwdwconv": "pwdw_scalarcopy3",
+    "fc": "fc",
+    "shortcut": "shortcut"
+  },
+  "pointwise_bias_storage": {
+    "rtl": "pwdwconv/hdl/verilog/pwdwconv.v",
+    "rtl_sha256": "d67440f8edcc769f4b2cf1d77d16662d372c16e439ca4d3a8c2378807f59ac91",
+    "lane_count": 16,
+    "each_lane_rows": 80,
+    "address_width": 7,
+    "capacity": 1280
+  },
+  "q10_reference": {
+    "report": "report/q10_reference_2025_2.json",
+    "golden": "data/samples/reference_logits_2025_2.bin",
+    "golden_sha256": "8235cd5c02873620ec71b2cc066a5044abb657596aab07e67215275fa3afacc1",
+    "logits_int16": [
+      -15876,
+      8046,
+      -4286,
+      -3750,
+      1904,
+      -8651
+    ],
+    "tail_bias_entries": 1280,
+    "kernel_calls": 63,
+    "input_sha256": "c4d215f60e913f7350e9b7f1f1f18328ba07655ffeb05d10ce64822d01e80b03"
+  },
+  "numeric_interpretation": "The new RTL storage covers the complete1280-bias math used by the software reference. Actual bitstream-versus-golden equality remains to be measured on the board."
+}

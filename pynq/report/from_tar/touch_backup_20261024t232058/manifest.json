@@ -1,0 +1,14 @@
+{
+  "/usr/local/sbin/ac820-touch-pinctrl.py": {
+    "previously_existed": false,
+    "installed_sha256": "572644400e783493c8faac5bd0adcc6e047c78e83c88632f3689363acfbebbd4"
+  },
+  "/usr/local/share/ac820-touch/gt911_pads_fix.dtbo": {
+    "previously_existed": false,
+    "installed_sha256": "32e2889a68310f618fe81ff092079325e78720a510d18a56c17807c1f53e6821"
+  },
+  "/etc/systemd/system/ac820-touch-pinctrl.service": {
+    "previously_existed": false,
+    "installed_sha256": "643bf216468fdb91362261d1db4358ee36d9dc82cc28e0a35fe5ba9ff63b4398"
+  }
+}

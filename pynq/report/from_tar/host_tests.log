@@ -1,0 +1,47 @@
+test_conv_fc_shortcut_and_cache_sync (test_kernels.KernelTests) ... ok
+test_pw_and_dw_match_bsp_register_writes (test_kernels.KernelTests) ... ok
+test_reject_virtual_unaligned_outside_window_and_small (test_kernels.KernelTests) ... ok
+test_timeout_faults_and_pins_buffers (test_kernels.KernelTests) ... ok
+test_classify_applies_no_leaf_threshold (test_model.ModelTests) ... ok
+test_complete_schedule_shapes_reuse_and_cpu_owned_scores (test_model.ModelTests) ... ok
+test_configs_and_labels_match_original_sources (test_model.ModelTests) ... skipped 'original source not included in deployed package'
+test_dma_timeout_retains_buffers_until_explicit_reset_acknowledgment (test_model.ModelTests) ... ok
+test_missing_weights_are_all_reported_before_allocation (test_model.ModelTests) ... ok
+test_preprocess_against_original_c_expressions_all_256_values (test_model.ModelTests) ... ok
+test_preprocess_boundaries_channels_and_negative_truncation (test_model.ModelTests) ... ok
+test_preprocess_rejects_ambiguous_input (test_model.ModelTests) ... ok
+test_weight_float32_conversion_and_validation (test_model.ModelTests) ... ok
+test_board_and_variant_checked_before_pynq_import (test_overlay.OverlayTests) ... ok
+test_both_xsa_pairs_and_register_contract (test_overlay.OverlayTests) ... ok
+test_corrupted_hwh_rejected (test_overlay.OverlayTests) ... ok
+test_camera_af_transfer_id_and_light (test_peripherals.PeripheralTests) ... ok
+test_camera_wrong_id_and_unknown_clock_fail (test_peripherals.PeripheralTests) ... ok
+test_discovery_matches_ps_address_and_frequency (test_peripherals.PeripheralTests) ... ok
+test_dma_halt_timeout_retains_target_globally (test_peripherals.PeripheralTests) ... ok
+test_gpio_factory_maps_only_mio0_and_emio0 (test_peripherals.PeripheralTests) ... ok
+test_lcd_bgr_and_rotation_and_fonts (test_peripherals.PeripheralTests) ... ok
+test_linux_i2c_combined_transaction_structure (test_peripherals.PeripheralTests) ... ok
+test_original_data_extracts_byte_for_byte (test_peripherals.PeripheralTests) ... skipped 'Original source is not present in deployed package'
+test_touch_bad_count_acknowledged_and_state_cleared (test_peripherals.PeripheralTests) ... ok
+test_touch_reset_address_press_release_and_flip (test_peripherals.PeripheralTests) ... ok
+test_vdma_rejects_upper_cma_window (test_peripherals.PeripheralTests) ... ok
+test_vdma_snapshot_and_independent_channels (test_peripherals.PeripheralTests) ... ok
+test_wrong_vdma_configuration_fails_before_io (test_peripherals.PeripheralTests) ... ok
+test_invalid_image_or_prediction_fails (test_ui.UITests) ... ok
+test_light_state_changes_only_the_light_button (test_ui.UITests) ... ok
+test_output_rotation_is_exactly_once_and_render_is_independent (test_ui.UITests) ... ok
+test_six_labels_render_without_mutating_camera (test_ui.UITests) ... ok
+test_touch_targets_match_drawn_buttons_and_half_open_edges (test_ui.UITests) ... ok
+test_all_python_sources_target_python_38 (test_workflow.WorkflowTests) ... ok
+test_cli_downloads_overlay_before_xrt_allocation (test_workflow.WorkflowTests) ... ok
+test_cli_rejects_missing_or_invalid_weights_before_pl_download (test_workflow.WorkflowTests) ... ok
+test_cli_revalidates_files_changed_after_preflight (test_workflow.WorkflowTests) ... ok
+test_int16_files_reject_odd_trailing_bytes (test_workflow.WorkflowTests) ... ok
+test_notebook_code_syntax_and_no_fabricated_outputs (test_workflow.WorkflowTests) ... ok
+test_notebook_generator_has_no_live_application_guard (test_workflow.WorkflowTests) ... ok
+test_notebook_reentry_preserves_existing_handles (test_workflow.WorkflowTests) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 28.996s
+
+OK (skipped=2)

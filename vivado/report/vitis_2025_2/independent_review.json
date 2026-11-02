@@ -1,0 +1,195 @@
+{
+  "status": "PASS",
+  "scope": "Actual Vitis2025.2 platform/BSP/FSBL/app/Bootgen artifacts with final rebuilt2025.2 PL; offline software/hardware pairing only",
+  "source_workspace": "E:\\fpga_work\\qian_20261030_1\\vitis_migration_final_retry2",
+  "source_xsa_sha256": "2b111cec0c83827a454aad4f890a42f251c392a8ac87c3f58691216f94408892",
+  "vivado_version": "2025.2",
+  "bit_sha256": "b0a00f0051148a356884ab19ae8281fb6308dae3108e2e538f40f3f321bd0557",
+  "hwh_sha256": "c93a96ce131be3f1b873c8df19ec7c9c8a05a36826dce9ff799724cb7dcc454a",
+  "same_bit_as_pynq_default_3v3": true,
+  "all_manifest_files_match": true,
+  "bootgen_success": true,
+  "elf_review": {
+    "fsbl.elf": {
+      "elf32_little_endian_arm": true,
+      "entry_point": "0x0",
+      "segments": [
+        {
+          "physical_address": "0x0",
+          "file_bytes": 115160,
+          "memory_bytes": 115160,
+          "end_address": "0x1c1d8"
+        },
+        {
+          "physical_address": "0x20000",
+          "file_bytes": 16404,
+          "memory_bytes": 26068,
+          "end_address": "0x265d4"
+        },
+        {
+          "physical_address": "0x265d4",
+          "file_bytes": 176,
+          "memory_bytes": 8380,
+          "end_address": "0x28690"
+        },
+        {
+          "physical_address": "0xffff0000",
+          "file_bytes": 0,
+          "memory_bytes": 54272,
+          "end_address": "0xffffd400"
+        }
+      ],
+      "sha256": "5eee928614d568b40a6e89200b0df5b3da7e0bf0034365d6af5c255b19ffce2f"
+    },
+    "trash_app.elf": {
+      "elf32_little_endian_arm": true,
+      "entry_point": "0x100000",
+      "segments": [
+        {
+          "physical_address": "0x100000",
+          "file_bytes": 294932,
+          "memory_bytes": 287573328,
+          "end_address": "0x11340550"
+        }
+      ],
+      "sha256": "3b30f5642c4a7acc0613609394528df424675068e6bc8ee46cfee89e6091bd5d"
+    }
+  },
+  "driver_register_contracts": {
+    "conv": {
+      "raw_data_offsets": {
+        "IN1_V": 16,
+        "IN2_V": 24,
+        "IN3_V": 32,
+        "WEIGHT_V": 40,
+        "BIAS": 48,
+        "OUT_V": 56
+      },
+      "canonical_driver_offsets": {
+        "IN1_V": 16,
+        "IN2_V": 24,
+        "IN3_V": 32,
+        "WEIGHT_V": 40,
+        "BIAS_V": 48,
+        "OUT_V": 56
+      },
+      "all_widths_bits": 32,
+      "controls": {
+        "CTRL": 0,
+        "GIER": 4,
+        "IP_IER": 8,
+        "IP_ISR": 12
+      },
+      "driver_header_sha256": "9f0de7e94905f12e08c2395c3b9b4dad150b83f70fce09afaba5bbbc26667d83"
+    },
+    "fc": {
+      "raw_data_offsets": {
+        "IN_V": 16,
+        "WEIGHT_V": 24,
+        "BIAS": 32,
+        "OUT_V": 40
+      },
+      "canonical_driver_offsets": {
+        "IN_V": 16,
+        "WEIGHT_V": 24,
+        "BIAS_V": 32,
+        "OUT_V": 40
+      },
+      "all_widths_bits": 32,
+      "controls": {
+        "CTRL": 0,
+        "GIER": 4,
+        "IP_IER": 8,
+        "IP_ISR": 12
+      },
+      "driver_header_sha256": "506f61a4b20cb82ca3b9243b19b5a383d33ac0a098373aed8bd91305071d0706"
+    },
+    "pwdwconv": {
+      "raw_data_offsets": {
+        "PBUS1_V": 16,
+        "PBUS2_V": 24,
+        "PBUS3_V": 32,
+        "PBUS4_V": 40,
+        "SBUS1_R": 48,
+        "SBUS2_V": 56,
+        "CH_IN": 64,
+        "CH_OUT": 72,
+        "STRIDE": 80,
+        "FSIZE": 88,
+        "ACT": 96,
+        "MODE": 104
+      },
+      "canonical_driver_offsets": {
+        "PBUS1_V": 16,
+        "PBUS2_V": 24,
+        "PBUS3_V": 32,
+        "PBUS4_V": 40,
+        "SBUS1_V": 48,
+        "SBUS2_V": 56,
+        "CH_IN": 64,
+        "CH_OUT": 72,
+        "STRIDE": 80,
+        "FSIZE": 88,
+        "ACT": 96,
+        "MODE": 104
+      },
+      "all_widths_bits": 32,
+      "controls": {
+        "CTRL": 0,
+        "GIER": 4,
+        "IP_IER": 8,
+        "IP_ISR": 12
+      },
+      "driver_header_sha256": "f255ae82274e28646315b3751074febb537ff2c691d5ddd7d6d6a3b46a8d617c"
+    },
+    "shortcut": {
+      "raw_data_offsets": {
+        "SRC1": 16,
+        "SRC2": 24,
+        "DEST": 32,
+        "LENGTH_R": 40
+      },
+      "canonical_driver_offsets": {
+        "SRC1_V": 16,
+        "SRC2_V": 24,
+        "DEST_V": 32,
+        "LENGTH_R": 40
+      },
+      "all_widths_bits": 32,
+      "controls": {
+        "CTRL": 0,
+        "GIER": 4,
+        "IP_IER": 8,
+        "IP_ISR": 12
+      },
+      "driver_header_sha256": "6277dd0140ef097c4d79733115118618fe316e29cb67c06a2a50e839349aebed"
+    }
+  },
+  "lfn_headers_sha256": [
+    "b7d17b6fc4f3e336ffdcf03a0b67720dd76720df3dc30412f8b99b50d6de6d98",
+    "b7d17b6fc4f3e336ffdcf03a0b67720dd76720df3dc30412f8b99b50d6de6d98",
+    "b7d17b6fc4f3e336ffdcf03a0b67720dd76720df3dc30412f8b99b50d6de6d98"
+  ],
+  "lfn_libraries_sha256": [
+    "6ff73328ab74f822a54743a0543b61e449390754e5452571a05120224336b98a",
+    "6ff73328ab74f822a54743a0543b61e449390754e5452571a05120224336b98a",
+    "6ff73328ab74f822a54743a0543b61e449390754e5452571a05120224336b98a"
+  ],
+  "video_reserved_start": "0x12100000",
+  "application_end": "0x11340550",
+  "gap_before_video_bytes": 14416560,
+  "hardware_tested": false,
+  "limitations": [
+    "Not a PYNQ Linux boot image",
+    "No standalone board boot or full application inference was executed",
+    "PL external timing/Camera CDC coverage remains as reported in the Vivado timing review"
+  ],
+  "compiler_comments": {
+    "fsbl.elf": [
+      "GCC: (GNU) 13.3.0"
+    ],
+    "trash_app.elf": [
+      "GCC: (GNU) 13.3.0"
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "host": "192.168.5.9",
+  "address": "0x5d",
+  "product": "911",
+  "consecutive_product_reads": 100,
+  "product_reads_seconds": 0.06072777899998982,
+  "initialized": true,
+  "preview_running": true,
+  "lcd_fps": 5.8382644725983,
+  "events": [
+    {
+      "seconds": 816.395772519,
+      "points": [
+        [
+          669,
+          473
+        ]
+      ],
+      "pressed": true,
+      "just_pressed": true,
+      "action": null
+    },
+    {
+      "seconds": 816.661465535,
+      "points": [],
+      "pressed": false,
+      "just_pressed": false,
+      "action": null
+    },
+    {
+      "seconds": 817.062179911,
+      "points": [
+        [
+          673,
+          464
+        ]
+      ],
+      "pressed": true,
+      "just_pressed": true,
+      "action": "save"
+    },
+    {
+      "seconds": 818.06070931,
+      "points": [],
+      "pressed": false,
+      "just_pressed": false,
+      "action": null
+    },
+    {
+      "seconds": 818.9936524,
+      "points": [
+        [
+          682,
+          455
+        ]
+      ],
+      "pressed": true,
+      "just_pressed": true,
+      "action": "save"
+    },
+    {
+      "seconds": 819.992429884,
+      "points": [],
+      "pressed": false,
+      "just_pressed": false,
+      "action": null
+    },
+    {
+      "seconds": 821.326039628,
+      "points": [
+        [
+          171,
+          446
+        ]
+      ],
+      "pressed": true,
+      "just_pressed": true,
+      "action": "detect"
+    },
+    {
+      "seconds": 822.592309836,
+      "points": [],
+      "pressed": false,
+      "just_pressed": false,
+      "action": null
+    },
+    {
+      "seconds": 823.523776031,
+      "points": [
+        [
+          184,
+          443
+        ]
+      ],
+      "pressed": true,
+      "just_pressed": true,
+      "action": "detect"
+    },
+    {
+      "seconds": 824.789038194,
+      "points": [],
+      "pressed": false,
+      "just_pressed": false,
+      "action": null
+    },
+    {
+      "seconds": 825.189199996,
+      "points": [
+        [
+          187,
+          450
+        ]
+      ],
+      "pressed": true,
+      "just_pressed": true,
+      "action": "detect"
+    },
+    {
+      "seconds": 826.4552798,
+      "points": [],
+      "pressed": false,
+      "just_pressed": false,
+      "action": null
+    },
+    {
+      "seconds": 826.854477952,
+      "points": [
+        [
+          180,
+          468
+        ]
+      ],
+      "pressed": true,
+      "just_pressed": true,
+      "action": "detect"
+    },
+    {
+      "seconds": 828.120319379,
+      "points": [],
+      "pressed": false,
+      "just_pressed": false,
+      "action": null
+    },
+    {
+      "seconds": 828.520287399,
+      "points": [
+        [
+          190,
+          444
+        ]
+      ],
+      "pressed": true,
+      "just_pressed": true,
+      "action": "detect"
+    },
+    {
+      "seconds": 829.786135538,
+      "points": [],
+      "pressed": false,
+      "just_pressed": false,
+      "action": null
+    },
+    {
+      "seconds": 830.186334693,
+      "points": [
+        [
+          169,
+          440
+        ]
+      ],
+      "pressed": true,
+      "just_pressed": true,
+      "action": "detect"
+    },
+    {
+      "seconds": 831.451860224,
+      "points": [],
+      "pressed": false,
+      "just_pressed": false,
+      "action": null
+    },
+    {
+      "seconds": 831.852139717,
+      "points": [
+        [
+          163,
+          466
+        ]
+      ],
+      "pressed": true,
+      "just_pressed": true,
+      "action": "detect"
+    },
+    {
+      "seconds": 833.250362475,
+      "points": [],
+      "pressed": false,
+      "just_pressed": false,
+      "action": null
+    },
+    {
+      "seconds": 835.115603336,
+      "points": [
+        [
+          194,
+          459
+        ]
+      ],
+      "pressed": true,
+      "just_pressed": true,
+      "action": "detect"
+    },
+    {
+      "seconds": 836.514426473,
+      "points": [],
+      "pressed": false,
+      "just_pressed": false,
+      "action": null
+    },
+    {
+      "seconds": 837.047812384,
+      "points": [
+        [
+          190,
+          462
+        ]
+      ],
+      "pressed": true,
+      "just_pressed": true,
+      "action": "detect"
+    },
+    {
+      "seconds": 838.312836685,
+      "points": [],
+      "pressed": false,
+      "just_pressed": false,
+      "action": null
+    }
+  ],
+  "configuration_head": [
+    93,
+    32,
+    3,
+    224,
+    1,
+    5
+  ],
+  "persistence_service": "ac820-touch-pinctrl.service: enabled, active (exited)"
+}

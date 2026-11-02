@@ -1,0 +1,16 @@
+{
+  "host": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "overlay_pair_integrity": "passed",
+  "fpga_part": "xc7z020clg484-2",
+  "source_vivado": "2019.2",
+  "hls_policy": "reuse_original_unchanged_per_user_instruction",
+  "pynq_board_validation": "pending",
+  "weight_format": "little-endian float32; quantize to int16 Q10",
+  "weights_required": 106,
+  "weights_missing": [],
+  "weights_wrong_size": [],
+  "board_execution": "not_performed",
+  "i2c_adapters": [],
+  "cma": []
+}

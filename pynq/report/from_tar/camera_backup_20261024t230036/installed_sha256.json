@@ -1,0 +1,7 @@
+{
+  "src/trash_pynq/ui.py": "1baff1599331006742e5f92fab8f97ff6aebef7e64514b6edaa8d97f081f8871",
+  "src/trash_pynq/preview.py": "9eedd1b99559e3b106ddd737ead069603a3cb83bb6fbac349f270a7d41f725f7",
+  "board/01_bringup_and_demo.ipynb": "ad1081d1875ea665dc0fe10ace099e005a2685bbd207e2b02132d1e35545d07a",
+  "board/01_bringup_and_demo_optimized.ipynb": "ad1081d1875ea665dc0fe10ace099e005a2685bbd207e2b02132d1e35545d07a",
+  "build/make_notebook.py": "4cfb214a6140bf6c213aae74b1c4e97f4684ee3878729f23ce001aed1c81d9b3"
+}

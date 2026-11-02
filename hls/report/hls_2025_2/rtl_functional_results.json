@@ -1,0 +1,405 @@
+{
+  "all_four_pass": true,
+  "original_algorithm_sha256_pass": 12,
+  "kernels": {
+    "shortcut": {
+      "kernel": "shortcut",
+      "component_xml": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\abi_2025_2_v1\\projects\\shortcut\\solution1\\impl\\ip\\component.xml",
+      "cases": [
+        {
+          "name": "signed_saturation",
+          "expected_values": 16,
+          "expected_sha256": "b15208015b8a2f16c77eddfd7d4735f44fab692b01ea99f1a8ecbb3244ab94d0",
+          "register_writes": {
+            "16": 4096,
+            "24": 8192,
+            "32": 12288,
+            "40": 16
+          },
+          "memory_input_sha256": "684bec9e1ef60f982adcb3ed0a788263eca38d50286d8acc797a51bf346c220f"
+        }
+      ],
+      "rtl_sources": {
+        "CTRL_s_axi.v": "f55971e5ada905fe8dbec2d008d7b1e58bae2ab831e6fa43d67247f4ba3ac714",
+        "flow_control_loop_pipe_sequential_init.v": "658507cf534200af1c1d50e4bd04029b3bf5e9f0ec0ac6428967640ea9b13bb0",
+        "IN1_m_axi.v": "a0132b09675aae33b074e4f973bb762dc166e7f8c8176711171e12c8d0e0987e",
+        "IN2_m_axi.v": "f64b1c3b95661c1da90b9f5820576e52b9a12ceaeb208322dcdd30834303abb7",
+        "OUT_r_m_axi.v": "31d8ee134d2dbce6329de31c28501b85eb101b8d2b754309d0a57be7b6fe61a0",
+        "shortcut.v": "ab632fa9204baaf736d41d4da7b5c668e3aa7314cdd892f6e629206c3848555a",
+        "shortcut_Pipeline_VITIS_LOOP_16_1.v": "88ad920351d7e5c8cb80ff41ab240deb859223cf45ca1683581f029eb0e91d24"
+      },
+      "scope": "top RTL AXI-Lite CTRL + all DMA buses with independent integer Q10 reference",
+      "limitations": [
+        "one outstanding burst per memory port",
+        "no randomized stalls",
+        "bounded deterministic vectors, not whole-model equivalence",
+        "no implementation timing or hardware board validation"
+      ],
+      "status": "pass",
+      "started_at": "2026-10-30T21:27:24+0800",
+      "exit_code": 0,
+      "markers": [
+        "CASE_PASS signed_saturation values=16 cycles=73",
+        "RTL_FUNCTIONAL_PASS kernel=shortcut checks=16 read_beats=8 write_beats=4 cycles=73"
+      ],
+      "finished_at": "2026-10-30T21:27:34+0800"
+    },
+    "fc": {
+      "kernel": "fc",
+      "component_xml": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\abi_2025_2_v1\\projects\\fc\\solution1\\impl\\ip\\component.xml",
+      "cases": [
+        {
+          "name": "six_outputs_q10",
+          "expected_values": 6,
+          "expected_sha256": "c56615a0726157b91a9522a5d568f6d71b59f23d23bb90b89e246a35ff2960d0",
+          "register_writes": {
+            "16": 4096,
+            "24": 196608,
+            "32": 262144,
+            "40": 327680
+          },
+          "memory_input_sha256": "076e31b139b0945057df3bc1305dbf16d882ac321256b032cd128e1e99d899b5"
+        }
+      ],
+      "rtl_sources": {
+        "am_addmul_16s_16s_5ns_23_4_1.v": "dab02de6c3568dedaaea9d75daf29fb099366fb166a8879c59f549eb6da9b39e",
+        "compute.v": "232b2b2dc8aa0da5f21fa6e525d6b72820184ae79798dd5aa56d03da2bd62b5f",
+        "CTRL_s_axi.v": "6f3ed19421a8f03658b0f3e1b06bcbced4bce247dbb255cc0f1f43bba7333b48",
+        "fc.v": "2b6e1fdbcb7029bb8dc09ac2cf4565ffec30966096567f13057b141a3f49b411",
+        "fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2.v": "5b50ef23f40c1869d85ab68359d6c1472daf7521f9545b0be84442783c41f43b",
+        "fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_22.v": "974b1d0bb2b9ba96674a8ec7e648e0681ed776746a9f5beb243cbe25748ab86c",
+        "fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_23.v": "27ed69e3659d097dc6b385c5b5c627b7d49c50c437ed9cd9e272e27f8077c012",
+        "fc_Pipeline_VITIS_LOOP_72_1.v": "35b594aed8cc33870b376a8cadfca2ae18f2f06d82df078379641b0c1ccf57c2",
+        "flow_control_loop_pipe_sequential_init.v": "658507cf534200af1c1d50e4bd04029b3bf5e9f0ec0ac6428967640ea9b13bb0",
+        "IN_r_m_axi.v": "3d9e6b2e5cc9b1719645fea8121b2941deb6404000bfcff68ba2d9537f609631",
+        "load_feature.v": "dc4d51e5473a9e0e27f4af49a8a621d81b8c4064bb2ce9e5370906db1b0179a3",
+        "load_feature_buff_RAM_AUTO_1R1W.v": "48ff86556db10af20e208c2c377ad33e8005d54d075ae93e78e48b05b24b6a1e",
+        "load_feature_Pipeline_VITIS_LOOP_15_1_VITIS_LOOP_16_2.v": "0b1bf88ea47cc9181a103388e2970bffc7fadac23023d30aa9231d4af6d21b86",
+        "mac_muladd_11ns_7ns_32s_32_4_1.v": "da333d29b96b4c68f8c0524ded25174854e4c494c2d2584fdc8a404b61719682",
+        "mul_16s_16s_32_2_1.v": "b1351f706ec30004cdcadabf324e1fda6c74d79cdc6fb57303343f256fd8029c",
+        "O_m_axi.v": "48684fdde893287682f5f35319ce99cab11a5ce6d147b58179a0a8a8dd2ac57c",
+        "sparsemux_13_3_16_1_1.v": "9ed36784fccab5c47aafa4439494ed499a2dd0030b40b7b7a00fb74311d81077",
+        "W_m_axi.v": "cf95b380ec8e4af71374ab1c82b3ee19ddfd6a7a84c439217b7def7aa35e947b",
+        "wt_buff1_RAM_AUTO_1R1W.v": "faa28714941b70f38ce2de78420951ed14d7f5145a72794ad13484a55b021423"
+      },
+      "scope": "top RTL AXI-Lite CTRL + all DMA buses with independent integer Q10 reference",
+      "limitations": [
+        "one outstanding burst per memory port",
+        "no randomized stalls",
+        "bounded deterministic vectors, not whole-model equivalence",
+        "no implementation timing or hardware board validation"
+      ],
+      "status": "pass",
+      "started_at": "2026-10-30T21:27:34+0800",
+      "exit_code": 0,
+      "markers": [
+        "CASE_PASS six_outputs_q10 values=6 cycles=191302",
+        "RTL_FUNCTIONAL_PASS kernel=fc checks=6 read_beats=35203 write_beats=3 cycles=191302"
+      ],
+      "finished_at": "2026-10-30T21:27:56+0800"
+    },
+    "conv": {
+      "kernel": "conv",
+      "component_xml": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\abi_2025_2_v1\\projects\\conv_cache_compat\\solution1\\impl\\ip\\component.xml",
+      "cases": [
+        {
+          "name": "rgb_padding_relu6_q10",
+          "expected_values": 401408,
+          "expected_sha256": "37879cad8bfff6f6d7f2adb6cb17b5756bc810d704c31a2ad2b3de10e0b98327",
+          "register_writes": {
+            "16": 4096,
+            "24": 4096,
+            "32": 4096,
+            "40": 393216,
+            "48": 397312,
+            "56": 524288
+          },
+          "memory_input_sha256": "7c7274d4aee6ff6490433c9253547f123e1ccadc199a75cee718ddfa0dfaf4ee"
+        }
+      ],
+      "rtl_sources": {
+        "compute3.v": "225d62c8988318711ee3ce49ca617d522b8cc36e8666cbc8972e4b443e492274",
+        "compute_output.v": "a3efe390469dcb810335ea1ba7db3cbcef634755d0f6c61a03219d9d89dde3f1",
+        "compute_output_fm_out_buff_RAM_AUTO_1R1W.v": "16737bea551c54ab6a20ad847e7543bb7509d85f7c55023968b3acda6c8c7cf3",
+        "compute_output_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2_VITIS_LOOP_45_3.v": "8fb5d42d5bfccf1bef28aeb0b45117394457133499a35b09564e06326479c568",
+        "compute_output_wt_buff_RAM_AUTO_1R1W.v": "e0933a6f5091f88d2cd8cc65a4074a6e0bd65583c615f60b8590192ba4c7e0f8",
+        "conv.v": "d3bc68d633b2ffafc486d8bd40922e3d16781c98e67d0f75e584dd5a6410a3d8",
+        "conv_Outline_1.v": "d67d07f626597cd518b57abeb56407ba20f3cfc0e7607dd5a986500f8e8d593d",
+        "CTRL_s_axi.v": "9eb7d1063375bc1aabac99bfd39b77362385def2ae14bb855e8e7cc1dbf0c2b7",
+        "flow_control_loop_pipe_sequential_init.v": "658507cf534200af1c1d50e4bd04029b3bf5e9f0ec0ac6428967640ea9b13bb0",
+        "fm_in_buff1_RAM_AUTO_1R1W.v": "28ecca63115416683fa48a958669c5871026b78138dce48c308fb6e869b97f2c",
+        "IN1_m_axi.v": "563295dd1bcd20525896ef1835dc713f04a99cb0fc0d047b63d36af4c86655fb",
+        "IN2_m_axi.v": "078a6f5a897310ea2c41e9ec6246e684349106b6dc2102eb90d7bd4baca9f7b0",
+        "IN3_m_axi.v": "ee5be947a547ebd6fd72d27b98d0539ec6414514ec7af85fc46f1698eea1b755",
+        "load_input.v": "7798a60f80790087f431c469e227c55121517d0061db4d73ea25cb2ef95e5f2d",
+        "mac_muladd_14ns_2ns_17s_17_4_1.v": "2724b3c0e4c29c0e4bbdb0e013b19d8357a9d2e354385b53415177d9d0841797",
+        "mac_muladd_6ns_6ns_6ns_12_4_1.v": "a7f3ed61311590d1240a8e24f7b78058ea05c14c185b7786f7399f0bf70a1b3f",
+        "mac_muladd_9ns_2ns_32s_32_4_1.v": "db8d7b7d9b3cbb1a03e6b5803624516d0e3bbeeaaecaa59a91cf778393750d1a",
+        "mul_16s_16s_32_2_1.v": "b1351f706ec30004cdcadabf324e1fda6c74d79cdc6fb57303343f256fd8029c",
+        "mul_5ns_7ns_11_1_1.v": "c074f59429f728513ae2da76fe91e42a6cf508e5b9756875157e655513e65475",
+        "OUT_r_m_axi.v": "31d8ee134d2dbce6329de31c28501b85eb101b8d2b754309d0a57be7b6fe61a0",
+        "sparsemux_51_5_16_1_1.v": "30e0bf6c322644c75c00f790bcc6eaec744be71b80da78ae0b1b213c943a5526",
+        "urem_5ns_5ns_5_9_seq_1.v": "96a03d0e336663b1c8684aa3cd5ba62a0b28a05e858c392e303849aded8902fb",
+        "W_m_axi.v": "cf95b380ec8e4af71374ab1c82b3ee19ddfd6a7a84c439217b7def7aa35e947b"
+      },
+      "scope": "top RTL AXI-Lite CTRL + all DMA buses with independent integer Q10 reference",
+      "limitations": [
+        "one outstanding burst per memory port",
+        "no randomized stalls",
+        "bounded deterministic vectors, not whole-model equivalence",
+        "no implementation timing or hardware board validation"
+      ],
+      "status": "pass",
+      "started_at": "2026-10-30T21:18:58+0800",
+      "exit_code": 0,
+      "markers": [
+        "CASE_PASS rgb_padding_relu6_q10 values=401408 cycles=768423",
+        "RTL_FUNCTIONAL_PASS kernel=conv checks=401408 read_beats=85243 write_beats=100352 cycles=768423"
+      ],
+      "finished_at": "2026-10-30T21:19:50+0800"
+    },
+    "pwdwconv": {
+      "kernel": "pwdwconv",
+      "component_xml": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\abi_2025_2_v1\\projects\\pwdw_scalarcopy3\\solution1\\impl\\ip\\component.xml",
+      "cases": [
+        {
+          "name": "pointwise_act0_q10",
+          "expected_values": 1176,
+          "expected_sha256": "c4c72104ec182e23e9a8c3ac5026f23285a452738965b77a9ceb54284c20b257",
+          "register_writes": {
+            "16": 4096,
+            "24": 131072,
+            "32": 131072,
+            "40": 262144,
+            "48": 196608,
+            "56": 196608,
+            "64": 16,
+            "72": 24,
+            "80": 1,
+            "88": 7,
+            "96": 0,
+            "104": 1
+          },
+          "memory_input_sha256": "7df26b9e6c3bca05c0deace6a0d1a6bbed178fc94fd2c9c06de25a86f4852c02"
+        },
+        {
+          "name": "pointwise_act1_q10",
+          "expected_values": 1176,
+          "expected_sha256": "e920f9ae5b18ef9dc077f227b6572e4bff6cf0ddfc1e37af0c2f97a3277766e8",
+          "register_writes": {
+            "16": 4096,
+            "24": 131072,
+            "32": 131072,
+            "40": 262144,
+            "48": 196608,
+            "56": 196608,
+            "64": 16,
+            "72": 24,
+            "80": 1,
+            "88": 7,
+            "96": 1,
+            "104": 1
+          },
+          "memory_input_sha256": "7df26b9e6c3bca05c0deace6a0d1a6bbed178fc94fd2c9c06de25a86f4852c02"
+        },
+        {
+          "name": "depthwise_stride1_q10",
+          "expected_values": 784,
+          "expected_sha256": "07154bc1122e1d34adc2d06e66f8f663682f6d0cee2a5eb9dc87074afe762584",
+          "register_writes": {
+            "16": 4096,
+            "24": 4096,
+            "32": 262144,
+            "40": 262144,
+            "48": 131072,
+            "56": 196608,
+            "64": 16,
+            "72": 16,
+            "80": 1,
+            "88": 7,
+            "96": 1,
+            "104": 0
+          },
+          "memory_input_sha256": "626f3f570de1ce61a456af95118d31b6f7e49f623855ba50994a3a94904c9848"
+        },
+        {
+          "name": "depthwise_stride2_q10",
+          "expected_values": 784,
+          "expected_sha256": "5774c535b4e41515fd9995634b46a836ec2b6176a72f766c3bd38770294f878f",
+          "register_writes": {
+            "16": 4096,
+            "24": 4096,
+            "32": 262144,
+            "40": 262144,
+            "48": 131072,
+            "56": 196608,
+            "64": 16,
+            "72": 16,
+            "80": 2,
+            "88": 14,
+            "96": 1,
+            "104": 0
+          },
+          "memory_input_sha256": "7cd0ebe6beb6a9b93f5099a53b985517f6074b96017f588a90a60028e95d5099"
+        },
+        {
+          "name": "pointwise_16_to_96_multirow_q10",
+          "expected_values": 4704,
+          "expected_sha256": "fe0637947846f789291e658dbdceb8bf870bea4eaf1cb332818cd54a5d022ab5",
+          "register_writes": {
+            "16": 4096,
+            "24": 131072,
+            "32": 131072,
+            "40": 262144,
+            "48": 196608,
+            "56": 196608,
+            "64": 16,
+            "72": 96,
+            "80": 1,
+            "88": 7,
+            "96": 0,
+            "104": 1
+          },
+          "memory_input_sha256": "8c97bdde4c39635a93ffdabf78bead4d9026f2a7f9174f87f8318d3fa3d5c27e"
+        },
+        {
+          "name": "pointwise_4_to_1280_multirow_q10",
+          "expected_values": 62720,
+          "expected_sha256": "8833a3985731fd07941a81438b741e9c8df6610b06d0999415dd9e9d32417d0c",
+          "register_writes": {
+            "16": 4096,
+            "24": 131072,
+            "32": 131072,
+            "40": 1179648,
+            "48": 1048576,
+            "56": 1048576,
+            "64": 4,
+            "72": 1280,
+            "80": 1,
+            "88": 7,
+            "96": 0,
+            "104": 1
+          },
+          "memory_input_sha256": "f8bf4f42c1170700a72aa7326e8b6c5fca34d1127986cece2ec6e449caab87e9"
+        },
+        {
+          "name": "depthwise_32_multirow_q10",
+          "expected_values": 1568,
+          "expected_sha256": "ac175679066d3683714712ac0694901c25fd3c2cc073d788ca8d063ca0a97cc3",
+          "register_writes": {
+            "16": 4096,
+            "24": 4096,
+            "32": 262144,
+            "40": 262144,
+            "48": 131072,
+            "56": 196608,
+            "64": 32,
+            "72": 32,
+            "80": 1,
+            "88": 7,
+            "96": 1,
+            "104": 0
+          },
+          "memory_input_sha256": "80800f0df84f963134b01ff597005ff5ac5b3287593cfa475cae80128552eac1"
+        },
+        {
+          "name": "depthwise_960_multirow_q10",
+          "expected_values": 47040,
+          "expected_sha256": "924d584dbec4f767801added3bd500d9b1114fdefe70ec2831c462833595d6c3",
+          "register_writes": {
+            "16": 4096,
+            "24": 4096,
+            "32": 262144,
+            "40": 262144,
+            "48": 131072,
+            "56": 196608,
+            "64": 960,
+            "72": 960,
+            "80": 1,
+            "88": 7,
+            "96": 1,
+            "104": 0
+          },
+          "memory_input_sha256": "aaffdd966f8fc82d43587d2778025776714358c5efb0f77139d70e25671df1f1"
+        }
+      ],
+      "rtl_sources": {
+        "am_addmul_4ns_16ns_16ns_31_4_1.v": "0624936981fdd01a91d7edbf0b7463d1bcc38bab9b10ca432f298a405ca07b73",
+        "bias_buff_RAM_AUTO_1R1W.v": "bebba384bad66d57def624196c2edd1484431967b4ec18e2295bc339c474410b",
+        "compute.v": "3add57d32ef756c7683263a3e7dee6bd9bf22652cf53641325e86399aa466970",
+        "compute_1.v": "add8b2987102680e2fb0b926c7c7fc55350dc9fe43aa58b8ba4a7906326b1a6b",
+        "compute_output.v": "f22483df0c5721477bd5f6befec694dfab276dd74b68c220ea876141fa476f66",
+        "compute_output_fm_in_buff1_RAM_AUTO_1R1W.v": "273789e01a90d382eecb46f8d9c12432b616ae8d695a2a7f0b36a45e607bbffa",
+        "compute_output_Pipeline_VITIS_LOOP_31_1.v": "86b051467fcc99ef36ecc4f1919cfcb6f42937e750d8378025f8f8b77dbf4b33",
+        "compute_output_Pipeline_VITIS_LOOP_31_15.v": "495934a5b9be82cda1da9167f368d5c9e365d214caf3a3b5631cd466c09c1dc6",
+        "compute_output_Pipeline_VITIS_LOOP_31_16.v": "2e2188cf87697c536c008a45435b52b92a41388e384bf55c62efca9536b56af7",
+        "CTRL_s_axi.v": "3d2964231db0bc454a94edfd397839c38426a322cfb4a889a1576e95c775b33d",
+        "dwconv.v": "66b9070671d69248f03109e5a694437fd317c0c238b8e51bcc981e22b30e9a65",
+        "dwconv_bias_buff_RAM_AUTO_1R1W.v": "62563bb25661efc4460e305d6ac919c2d7e71acfd8daf3ac14fb8c518530e37f",
+        "dwconv_fm_in_buff1_7_RAM_AUTO_1R1W.v": "049f8ab6b3fac53f858981f0af6f6b0d5e2f05400c5c7d79359e2bb73ec5e402",
+        "dwconv_fm_in_buff1_RAM_AUTO_1R1W.v": "a5b3dc799547b72488a10a337f74f11cf73f74bb76876bd2aa2173fd00021ce1",
+        "dwconv_fm_out_buff1_RAM_AUTO_1R1W.v": "f6d11566f07efc3389f58414bf36f710a98c20cc8ddf4f45f5052f2725344bb2",
+        "dwconv_Outline_VITIS_LOOP_179_1.v": "acd875e706ac82997712ec62b9987e2591131247e63bc39ab71385e28c055fc3",
+        "dwconv_wt_buff1_RAM_AUTO_1R1W.v": "5ab6506b3853cdf90851ee20e06a4103aba352f127c85d902e29433067801671",
+        "flow_control_loop_pipe_sequential_init.v": "658507cf534200af1c1d50e4bd04029b3bf5e9f0ec0ac6428967640ea9b13bb0",
+        "fm_out1_RAM_AUTO_1R1W.v": "bb0c8ed5cece9cae90f7a86cc7edca9b81788daf2c4681d57681f0c2801e809a",
+        "load_bias.v": "481dde59b09001976ccbb0fbeaa728872e57287047094e63002a46074f6c7cbd",
+        "load_bias_Pipeline_VITIS_LOOP_91_1.v": "010ca2e7abe9ec0c33798100947c14622ca667bda288a4bce2bfc7176a456842",
+        "load_input.v": "ca990a829bf40f10748277ab221a89dd34c5b25e45aea077866fc1d5544049f6",
+        "load_input_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2.v": "30eb7c9e027ff72f4f5201715201f62d4d8cb89904ae64c6cbf44f32365a9653",
+        "load_input_Pipeline_VITIS_LOOP_42_5_VITIS_LOOP_43_6.v": "e939d42bf107b24f17c0d31f2eab5110958c226f6053ca3acd9b95f494db8f66",
+        "load_weight.v": "dbbb54c9f31a164b8bcf1a0d0bbc3fb8009830f1b2e6bcd2cc62a4b7f2431827",
+        "load_wrapper.v": "1c92b26d8512f4eadec02c54db485d794871d95f92243093e593b309d126cbbc",
+        "load_wrapper_Outline_1.v": "8dc7d7404753cc0b5c22bb8fae9a451199478f530d119d93b87235fdf3ebf8cf",
+        "mac_muladd_8s_3ns_2ns_8_4_1.v": "df700e57bc6f9f6363f8e33e379bd94450ec04ee761ab312865272fb12352b6a",
+        "mul_16ns_16ns_29_2_1.v": "78948e35cc65d96878285d011c50c634eeed1c4af2198ecd4d49966040466c52",
+        "mul_16ns_16ns_32_2_1.v": "ffff246c7b2ae8723868c5eee60dc80652358fe7dd05d6ed5e3c46f3265a28a7",
+        "mul_16s_16s_32_2_1.v": "b1351f706ec30004cdcadabf324e1fda6c74d79cdc6fb57303343f256fd8029c",
+        "mul_29s_15ns_29_5_1.v": "78f6ec9fbc3259829bac422b33df1c98797b152cce326490ba9473edc76cf5e5",
+        "mul_29s_16ns_29_5_1.v": "082214128e587db03699dded926979cbf6dbe5e9802319deb1e5be5ea1d4b58e",
+        "mul_29s_29s_29_5_1.v": "a6f7efb45d295c3bbfc158f7715a9fa6d218c1bfc851c4b0a56472aab7da9c65",
+        "mul_3ns_29s_29_5_1.v": "698494ee5ee461ed01669883ac96c1b2772b5c540f13ab4d38d698ff9bd152de",
+        "mul_3ns_4s_4_1_1.v": "8862538319c3f7d3a9efa378b0f291403aa2938214eb7c2e83cc68f1a54ce7dc",
+        "mul_3ns_9s_10_1_1.v": "b808590120c157b5ca05528a6251a72e447a641bfc9895c0f1299a3314d7dabf",
+        "mul_4ns_16ns_20_2_1.v": "a36ce0fc06a985188078451b7a0d8f3e0ff8a9a8dee00d8f0e671d78267081fb",
+        "PBUS1_m_axi.v": "b8ee2235346379e84d09913862c600d0300d30532acadba37fc5762243d3a13e",
+        "PBUS2_m_axi.v": "24ec17556b41fe24085d628821415ee1b24b0099399ef3193c69827b6827651d",
+        "PBUS3_m_axi.v": "c9a2078d5ed3aa4520f4dd502571b37793427cbcd3c473b4a81ee14f7db0af0d",
+        "PBUS4_m_axi.v": "0b2871ca633cd407d869bc81ee1e2a5fbe04f2cdec511b15be0688896ffad5fd",
+        "pwdwconv.v": "d67440f8edcc769f4b2cf1d77d16662d372c16e439ca4d3a8c2378807f59ac91",
+        "SBUS1_m_axi.v": "c0a50f465970a4389baa81064e866695014a18b3256aa5ecb86704a7b08c4d18",
+        "SBUS2_m_axi.v": "5a388ff056273210818e5311632701e94d665f6246aba2c254019d03062e8205",
+        "sparsemux_7_2_16_1_1.v": "47dcad130747e0498017cc443704bbd947dda7a5bb8d3471318093ab33edb76f",
+        "sparsemux_9_4_16_1_1.v": "f5206ad58d5a4dce46f94972fe72f042837458a8cb2bd6625d5023bc53a9d17d",
+        "store_output.v": "5e7e24f325a7142502006f7585c2dd4ceb1c168c1857e8e0886a3d4328ee77ab",
+        "store_output_2.v": "07fb3e5a65ddfd7745a62244aaf6f76ebc4eee844467e453ccc17d92c88ea412",
+        "store_output_2_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2.v": "78d39f6011907243250924e8b4f2f2ef2c20781f9b3b4086b0479ad015eebe3b",
+        "store_output_Pipeline_VITIS_LOOP_111_1_VITIS_LOOP_112_2.v": "acdffa43357fde6c7ca31d68010aee7924a9e9626023e48fd0214e57a9a2ba57",
+        "update_three_block.v": "c2a88709d82ba0f67785c4b073a0e970c20bb57145a9f8e5ed3063fef78a2477"
+      },
+      "scope": "top RTL AXI-Lite CTRL + all DMA buses with independent integer Q10 reference",
+      "limitations": [
+        "one outstanding burst per memory port",
+        "no randomized stalls",
+        "bounded deterministic vectors, not whole-model equivalence",
+        "no implementation timing or hardware board validation"
+      ],
+      "status": "pass",
+      "started_at": "2026-10-30T21:40:02+0800",
+      "exit_code": 0,
+      "markers": [
+        "CASE_PASS pointwise_act0_q10 values=1176 cycles=1167",
+        "CASE_PASS pointwise_act1_q10 values=1176 cycles=2334",
+        "CASE_PASS depthwise_stride1_q10 values=784 cycles=3711",
+        "CASE_PASS depthwise_stride2_q10 values=784 cycles=5166",
+        "CASE_PASS pointwise_16_to_96_multirow_q10 values=4704 cycles=8496",
+        "CASE_PASS pointwise_4_to_1280_multirow_q10 values=62720 cycles=47475",
+        "CASE_PASS depthwise_32_multirow_q10 values=1568 cycles=49767",
+        "CASE_PASS depthwise_960_multirow_q10 values=47040 cycles=107841",
+        "RTL_FUNCTIONAL_PASS kernel=pwdwconv checks=119952 read_beats=34944 write_beats=29988 cycles=107841"
+      ],
+      "finished_at": "2026-10-30T21:41:02+0800"
+    }
+  },
+  "scope": "Bounded deterministic raw-int16 Q10 checks through actual top RTL AXI-Lite and DMA; no board validation"
+}

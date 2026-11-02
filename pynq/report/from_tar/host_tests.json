@@ -1,0 +1,12 @@
+{
+  "platform": "Linux-5.4.0-xilinx-v2020.2-armv7l-with-glibc2.29",
+  "python": "3.8.2",
+  "tests_run": 42,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 2,
+  "passed": true,
+  "scope": "host tests only; includes mock MMIO/DMA, C expression references, asset integrity",
+  "hardware_execution": false,
+  "hls_numeric_equivalence": "not_verified"
+}

@@ -1,0 +1,22 @@
+{
+  "state": "failed",
+  "source_xsa_sha256": "2b111cec0c83827a454aad4f890a42f251c392a8ac87c3f58691216f94408892",
+  "hardware_version": "2025.2",
+  "hardware_tested": false,
+  "stages": [
+    {
+      "name": "platform",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 86.553
+    },
+    {
+      "name": "app",
+      "exit_code": 1,
+      "passed": false,
+      "elapsed_seconds": 3.104
+    }
+  ],
+  "current_stage": "app",
+  "error": "Stage app failed; inspect E:\\fpga_work\\qian_20261030_1\\vitis_migration_final_retry1\\build_app.log"
+}

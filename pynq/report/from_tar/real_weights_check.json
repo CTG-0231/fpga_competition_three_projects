@@ -1,0 +1,8 @@
+{
+  "files_loaded": 106,
+  "q10_bytes": 4429004,
+  "q10_min": -22611,
+  "q10_max": 24309,
+  "source_files_unchanged": true,
+  "allocator": "host fake allocator; no PL executed"
+}

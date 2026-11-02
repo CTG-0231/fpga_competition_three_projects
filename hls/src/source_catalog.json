@@ -1,0 +1,15 @@
+{
+  "native_2019_2": {
+    "files": 2168,
+    "objects": 1389,
+    "sha256": "192ed7e1a566e294df2352e47f10cd02c90f2c9cf2afd04beee339df7eaf6c84",
+    "bytes": 143116997,
+    "archive": "src/native_2019_2.zip"
+  },
+  "native_2025_2": {
+    "archive": "src/native_2025_2.zip",
+    "files": 355,
+    "sha256": "8e05e74e179a54f21786aec06ebbfd6fba526b8fc97ccf2321f6ee02963da7ef",
+    "bytes": 1668298
+  }
+}

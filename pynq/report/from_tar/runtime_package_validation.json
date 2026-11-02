@@ -1,0 +1,14 @@
+{
+  "file": "/home/xilinx/pynq_port_runtime_20261024.zip",
+  "bytes": 18680322,
+  "files": 235,
+  "python_files": 30,
+  "sha256": "4b18a96c8ddc220e2e31cca9ca12483dd57d50983dab47e321a1e95adfe5ee09",
+  "crc_and_file_sha256": "passed",
+  "exclusions": [
+    "generated Vivado work",
+    "user captures",
+    "backups",
+    "notebook output/widget state"
+  ]
+}

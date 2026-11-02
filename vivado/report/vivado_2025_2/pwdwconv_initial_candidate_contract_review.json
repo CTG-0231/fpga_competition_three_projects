@@ -1,0 +1,4541 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "original": {
+    "component": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\prepared_legacy_hls\\ip_repo\\pwdwconv\\component.xml",
+    "sha256": "ed2f1ef7db519dc3c69cc6a266b0db9459186c6c7064ff08bd0c6b54e9655d91",
+    "vlnv": "xilinx.com:hls:pwdwconv:0.0",
+    "memory_maps": [
+      {
+        "name": "s_axi_CTRL",
+        "blocks": [
+          {
+            "name": "Reg",
+            "base": 0,
+            "range": 65536,
+            "width": 32,
+            "registers": [
+              {
+                "name": "CTRL",
+                "offset": 0,
+                "size": 32,
+                "access": "read-write",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "AP_START",
+                    "offset": 0,
+                    "width": 1,
+                    "access": "read-write",
+                    "read_action": null,
+                    "modified_write_value": "modify"
+                  },
+                  {
+                    "name": "AP_DONE",
+                    "offset": 1,
+                    "width": 1,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  },
+                  {
+                    "name": "AP_IDLE",
+                    "offset": 2,
+                    "width": 1,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  },
+                  {
+                    "name": "AP_READY",
+                    "offset": 3,
+                    "width": 1,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  },
+                  {
+                    "name": "RESERVED_1",
+                    "offset": 4,
+                    "width": 3,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  },
+                  {
+                    "name": "AUTO_RESTART",
+                    "offset": 7,
+                    "width": 1,
+                    "access": "read-write",
+                    "read_action": null,
+                    "modified_write_value": "modify"
+                  },
+                  {
+                    "name": "RESERVED_2",
+                    "offset": 8,
+                    "width": 24,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "GIER",
+                "offset": 4,
+                "size": 32,
+                "access": "read-write",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "Enable",
+                    "offset": 0,
+                    "width": 1,
+                    "access": "read-write",
+                    "read_action": null,
+                    "modified_write_value": "modify"
+                  },
+                  {
+                    "name": "RESERVED",
+                    "offset": 1,
+                    "width": 31,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "IP_IER",
+                "offset": 8,
+                "size": 32,
+                "access": "read-write",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "CHAN0_INT_EN",
+                    "offset": 0,
+                    "width": 1,
+                    "access": "read-write",
+                    "read_action": null,
+                    "modified_write_value": "modify"
+                  },
+                  {
+                    "name": "CHAN1_INT_EN",
+                    "offset": 1,
+                    "width": 1,
+                    "access": "read-write",
+                    "read_action": null,
+                    "modified_write_value": "modify"
+                  },
+                  {
+                    "name": "RESERVED",
+                    "offset": 2,
+                    "width": 30,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "IP_ISR",
+                "offset": 12,
+                "size": 32,
+                "access": "read-write",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "CHAN0_INT_ST",
+                    "offset": 0,
+                    "width": 1,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": "oneToToggle"
+                  },
+                  {
+                    "name": "CHAN1_INT_ST",
+                    "offset": 1,
+                    "width": 1,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": "oneToToggle"
+                  },
+                  {
+                    "name": "RESERVED",
+                    "offset": 2,
+                    "width": 30,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "PBUS1_V",
+                "offset": 16,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "PBUS1_V",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "PBUS2_V",
+                "offset": 24,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "PBUS2_V",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "PBUS3_V",
+                "offset": 32,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "PBUS3_V",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "PBUS4_V",
+                "offset": 40,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "PBUS4_V",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "SBUS1_V",
+                "offset": 48,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "SBUS1_V",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "SBUS2_V",
+                "offset": 56,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "SBUS2_V",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "ch_in",
+                "offset": 64,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "ch_in",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "ch_out",
+                "offset": 72,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "ch_out",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "stride",
+                "offset": 80,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "stride",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "fsize",
+                "offset": 88,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "fsize",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "act",
+                "offset": 96,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "act",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "mode",
+                "offset": 104,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "mode",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "interfaces": [
+      {
+        "name": "s_axi_CTRL",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "AWADDR": "s_axi_CTRL_AWADDR",
+          "AWVALID": "s_axi_CTRL_AWVALID",
+          "AWREADY": "s_axi_CTRL_AWREADY",
+          "WDATA": "s_axi_CTRL_WDATA",
+          "WSTRB": "s_axi_CTRL_WSTRB",
+          "WVALID": "s_axi_CTRL_WVALID",
+          "WREADY": "s_axi_CTRL_WREADY",
+          "BRESP": "s_axi_CTRL_BRESP",
+          "BVALID": "s_axi_CTRL_BVALID",
+          "BREADY": "s_axi_CTRL_BREADY",
+          "ARADDR": "s_axi_CTRL_ARADDR",
+          "ARVALID": "s_axi_CTRL_ARVALID",
+          "ARREADY": "s_axi_CTRL_ARREADY",
+          "RDATA": "s_axi_CTRL_RDATA",
+          "RRESP": "s_axi_CTRL_RRESP",
+          "RVALID": "s_axi_CTRL_RVALID",
+          "RREADY": "s_axi_CTRL_RREADY"
+        }
+      },
+      {
+        "name": "ap_clk",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "signal",
+          "name": "clock",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "CLK": "ap_clk"
+        }
+      },
+      {
+        "name": "ap_rst_n",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "signal",
+          "name": "reset",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "RST": "ap_rst_n"
+        }
+      },
+      {
+        "name": "interrupt",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "signal",
+          "name": "interrupt",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "INTERRUPT": "interrupt"
+        }
+      },
+      {
+        "name": "m_axi_PBUS1",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "AWID": "m_axi_PBUS1_AWID",
+          "AWADDR": "m_axi_PBUS1_AWADDR",
+          "AWLEN": "m_axi_PBUS1_AWLEN",
+          "AWSIZE": "m_axi_PBUS1_AWSIZE",
+          "AWBURST": "m_axi_PBUS1_AWBURST",
+          "AWLOCK": "m_axi_PBUS1_AWLOCK",
+          "AWREGION": "m_axi_PBUS1_AWREGION",
+          "AWCACHE": "m_axi_PBUS1_AWCACHE",
+          "AWPROT": "m_axi_PBUS1_AWPROT",
+          "AWQOS": "m_axi_PBUS1_AWQOS",
+          "AWUSER": "m_axi_PBUS1_AWUSER",
+          "AWVALID": "m_axi_PBUS1_AWVALID",
+          "AWREADY": "m_axi_PBUS1_AWREADY",
+          "WID": "m_axi_PBUS1_WID",
+          "WDATA": "m_axi_PBUS1_WDATA",
+          "WSTRB": "m_axi_PBUS1_WSTRB",
+          "WLAST": "m_axi_PBUS1_WLAST",
+          "WUSER": "m_axi_PBUS1_WUSER",
+          "WVALID": "m_axi_PBUS1_WVALID",
+          "WREADY": "m_axi_PBUS1_WREADY",
+          "BID": "m_axi_PBUS1_BID",
+          "BRESP": "m_axi_PBUS1_BRESP",
+          "BUSER": "m_axi_PBUS1_BUSER",
+          "BVALID": "m_axi_PBUS1_BVALID",
+          "BREADY": "m_axi_PBUS1_BREADY",
+          "ARID": "m_axi_PBUS1_ARID",
+          "ARADDR": "m_axi_PBUS1_ARADDR",
+          "ARLEN": "m_axi_PBUS1_ARLEN",
+          "ARSIZE": "m_axi_PBUS1_ARSIZE",
+          "ARBURST": "m_axi_PBUS1_ARBURST",
+          "ARLOCK": "m_axi_PBUS1_ARLOCK",
+          "ARREGION": "m_axi_PBUS1_ARREGION",
+          "ARCACHE": "m_axi_PBUS1_ARCACHE",
+          "ARPROT": "m_axi_PBUS1_ARPROT",
+          "ARQOS": "m_axi_PBUS1_ARQOS",
+          "ARUSER": "m_axi_PBUS1_ARUSER",
+          "ARVALID": "m_axi_PBUS1_ARVALID",
+          "ARREADY": "m_axi_PBUS1_ARREADY",
+          "RID": "m_axi_PBUS1_RID",
+          "RDATA": "m_axi_PBUS1_RDATA",
+          "RRESP": "m_axi_PBUS1_RRESP",
+          "RLAST": "m_axi_PBUS1_RLAST",
+          "RUSER": "m_axi_PBUS1_RUSER",
+          "RVALID": "m_axi_PBUS1_RVALID",
+          "RREADY": "m_axi_PBUS1_RREADY"
+        }
+      },
+      {
+        "name": "m_axi_PBUS2",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "AWID": "m_axi_PBUS2_AWID",
+          "AWADDR": "m_axi_PBUS2_AWADDR",
+          "AWLEN": "m_axi_PBUS2_AWLEN",
+          "AWSIZE": "m_axi_PBUS2_AWSIZE",
+          "AWBURST": "m_axi_PBUS2_AWBURST",
+          "AWLOCK": "m_axi_PBUS2_AWLOCK",
+          "AWREGION": "m_axi_PBUS2_AWREGION",
+          "AWCACHE": "m_axi_PBUS2_AWCACHE",
+          "AWPROT": "m_axi_PBUS2_AWPROT",
+          "AWQOS": "m_axi_PBUS2_AWQOS",
+          "AWUSER": "m_axi_PBUS2_AWUSER",
+          "AWVALID": "m_axi_PBUS2_AWVALID",
+          "AWREADY": "m_axi_PBUS2_AWREADY",
+          "WID": "m_axi_PBUS2_WID",
+          "WDATA": "m_axi_PBUS2_WDATA",
+          "WSTRB": "m_axi_PBUS2_WSTRB",
+          "WLAST": "m_axi_PBUS2_WLAST",
+          "WUSER": "m_axi_PBUS2_WUSER",
+          "WVALID": "m_axi_PBUS2_WVALID",
+          "WREADY": "m_axi_PBUS2_WREADY",
+          "BID": "m_axi_PBUS2_BID",
+          "BRESP": "m_axi_PBUS2_BRESP",
+          "BUSER": "m_axi_PBUS2_BUSER",
+          "BVALID": "m_axi_PBUS2_BVALID",
+          "BREADY": "m_axi_PBUS2_BREADY",
+          "ARID": "m_axi_PBUS2_ARID",
+          "ARADDR": "m_axi_PBUS2_ARADDR",
+          "ARLEN": "m_axi_PBUS2_ARLEN",
+          "ARSIZE": "m_axi_PBUS2_ARSIZE",
+          "ARBURST": "m_axi_PBUS2_ARBURST",
+          "ARLOCK": "m_axi_PBUS2_ARLOCK",
+          "ARREGION": "m_axi_PBUS2_ARREGION",
+          "ARCACHE": "m_axi_PBUS2_ARCACHE",
+          "ARPROT": "m_axi_PBUS2_ARPROT",
+          "ARQOS": "m_axi_PBUS2_ARQOS",
+          "ARUSER": "m_axi_PBUS2_ARUSER",
+          "ARVALID": "m_axi_PBUS2_ARVALID",
+          "ARREADY": "m_axi_PBUS2_ARREADY",
+          "RID": "m_axi_PBUS2_RID",
+          "RDATA": "m_axi_PBUS2_RDATA",
+          "RRESP": "m_axi_PBUS2_RRESP",
+          "RLAST": "m_axi_PBUS2_RLAST",
+          "RUSER": "m_axi_PBUS2_RUSER",
+          "RVALID": "m_axi_PBUS2_RVALID",
+          "RREADY": "m_axi_PBUS2_RREADY"
+        }
+      },
+      {
+        "name": "m_axi_PBUS3",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "AWID": "m_axi_PBUS3_AWID",
+          "AWADDR": "m_axi_PBUS3_AWADDR",
+          "AWLEN": "m_axi_PBUS3_AWLEN",
+          "AWSIZE": "m_axi_PBUS3_AWSIZE",
+          "AWBURST": "m_axi_PBUS3_AWBURST",
+          "AWLOCK": "m_axi_PBUS3_AWLOCK",
+          "AWREGION": "m_axi_PBUS3_AWREGION",
+          "AWCACHE": "m_axi_PBUS3_AWCACHE",
+          "AWPROT": "m_axi_PBUS3_AWPROT",
+          "AWQOS": "m_axi_PBUS3_AWQOS",
+          "AWUSER": "m_axi_PBUS3_AWUSER",
+          "AWVALID": "m_axi_PBUS3_AWVALID",
+          "AWREADY": "m_axi_PBUS3_AWREADY",
+          "WID": "m_axi_PBUS3_WID",
+          "WDATA": "m_axi_PBUS3_WDATA",
+          "WSTRB": "m_axi_PBUS3_WSTRB",
+          "WLAST": "m_axi_PBUS3_WLAST",
+          "WUSER": "m_axi_PBUS3_WUSER",
+          "WVALID": "m_axi_PBUS3_WVALID",
+          "WREADY": "m_axi_PBUS3_WREADY",
+          "BID": "m_axi_PBUS3_BID",
+          "BRESP": "m_axi_PBUS3_BRESP",
+          "BUSER": "m_axi_PBUS3_BUSER",
+          "BVALID": "m_axi_PBUS3_BVALID",
+          "BREADY": "m_axi_PBUS3_BREADY",
+          "ARID": "m_axi_PBUS3_ARID",
+          "ARADDR": "m_axi_PBUS3_ARADDR",
+          "ARLEN": "m_axi_PBUS3_ARLEN",
+          "ARSIZE": "m_axi_PBUS3_ARSIZE",
+          "ARBURST": "m_axi_PBUS3_ARBURST",
+          "ARLOCK": "m_axi_PBUS3_ARLOCK",
+          "ARREGION": "m_axi_PBUS3_ARREGION",
+          "ARCACHE": "m_axi_PBUS3_ARCACHE",
+          "ARPROT": "m_axi_PBUS3_ARPROT",
+          "ARQOS": "m_axi_PBUS3_ARQOS",
+          "ARUSER": "m_axi_PBUS3_ARUSER",
+          "ARVALID": "m_axi_PBUS3_ARVALID",
+          "ARREADY": "m_axi_PBUS3_ARREADY",
+          "RID": "m_axi_PBUS3_RID",
+          "RDATA": "m_axi_PBUS3_RDATA",
+          "RRESP": "m_axi_PBUS3_RRESP",
+          "RLAST": "m_axi_PBUS3_RLAST",
+          "RUSER": "m_axi_PBUS3_RUSER",
+          "RVALID": "m_axi_PBUS3_RVALID",
+          "RREADY": "m_axi_PBUS3_RREADY"
+        }
+      },
+      {
+        "name": "m_axi_PBUS4",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "AWID": "m_axi_PBUS4_AWID",
+          "AWADDR": "m_axi_PBUS4_AWADDR",
+          "AWLEN": "m_axi_PBUS4_AWLEN",
+          "AWSIZE": "m_axi_PBUS4_AWSIZE",
+          "AWBURST": "m_axi_PBUS4_AWBURST",
+          "AWLOCK": "m_axi_PBUS4_AWLOCK",
+          "AWREGION": "m_axi_PBUS4_AWREGION",
+          "AWCACHE": "m_axi_PBUS4_AWCACHE",
+          "AWPROT": "m_axi_PBUS4_AWPROT",
+          "AWQOS": "m_axi_PBUS4_AWQOS",
+          "AWUSER": "m_axi_PBUS4_AWUSER",
+          "AWVALID": "m_axi_PBUS4_AWVALID",
+          "AWREADY": "m_axi_PBUS4_AWREADY",
+          "WID": "m_axi_PBUS4_WID",
+          "WDATA": "m_axi_PBUS4_WDATA",
+          "WSTRB": "m_axi_PBUS4_WSTRB",
+          "WLAST": "m_axi_PBUS4_WLAST",
+          "WUSER": "m_axi_PBUS4_WUSER",
+          "WVALID": "m_axi_PBUS4_WVALID",
+          "WREADY": "m_axi_PBUS4_WREADY",
+          "BID": "m_axi_PBUS4_BID",
+          "BRESP": "m_axi_PBUS4_BRESP",
+          "BUSER": "m_axi_PBUS4_BUSER",
+          "BVALID": "m_axi_PBUS4_BVALID",
+          "BREADY": "m_axi_PBUS4_BREADY",
+          "ARID": "m_axi_PBUS4_ARID",
+          "ARADDR": "m_axi_PBUS4_ARADDR",
+          "ARLEN": "m_axi_PBUS4_ARLEN",
+          "ARSIZE": "m_axi_PBUS4_ARSIZE",
+          "ARBURST": "m_axi_PBUS4_ARBURST",
+          "ARLOCK": "m_axi_PBUS4_ARLOCK",
+          "ARREGION": "m_axi_PBUS4_ARREGION",
+          "ARCACHE": "m_axi_PBUS4_ARCACHE",
+          "ARPROT": "m_axi_PBUS4_ARPROT",
+          "ARQOS": "m_axi_PBUS4_ARQOS",
+          "ARUSER": "m_axi_PBUS4_ARUSER",
+          "ARVALID": "m_axi_PBUS4_ARVALID",
+          "ARREADY": "m_axi_PBUS4_ARREADY",
+          "RID": "m_axi_PBUS4_RID",
+          "RDATA": "m_axi_PBUS4_RDATA",
+          "RRESP": "m_axi_PBUS4_RRESP",
+          "RLAST": "m_axi_PBUS4_RLAST",
+          "RUSER": "m_axi_PBUS4_RUSER",
+          "RVALID": "m_axi_PBUS4_RVALID",
+          "RREADY": "m_axi_PBUS4_RREADY"
+        }
+      },
+      {
+        "name": "m_axi_SBUS1",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "AWID": "m_axi_SBUS1_AWID",
+          "AWADDR": "m_axi_SBUS1_AWADDR",
+          "AWLEN": "m_axi_SBUS1_AWLEN",
+          "AWSIZE": "m_axi_SBUS1_AWSIZE",
+          "AWBURST": "m_axi_SBUS1_AWBURST",
+          "AWLOCK": "m_axi_SBUS1_AWLOCK",
+          "AWREGION": "m_axi_SBUS1_AWREGION",
+          "AWCACHE": "m_axi_SBUS1_AWCACHE",
+          "AWPROT": "m_axi_SBUS1_AWPROT",
+          "AWQOS": "m_axi_SBUS1_AWQOS",
+          "AWUSER": "m_axi_SBUS1_AWUSER",
+          "AWVALID": "m_axi_SBUS1_AWVALID",
+          "AWREADY": "m_axi_SBUS1_AWREADY",
+          "WID": "m_axi_SBUS1_WID",
+          "WDATA": "m_axi_SBUS1_WDATA",
+          "WSTRB": "m_axi_SBUS1_WSTRB",
+          "WLAST": "m_axi_SBUS1_WLAST",
+          "WUSER": "m_axi_SBUS1_WUSER",
+          "WVALID": "m_axi_SBUS1_WVALID",
+          "WREADY": "m_axi_SBUS1_WREADY",
+          "BID": "m_axi_SBUS1_BID",
+          "BRESP": "m_axi_SBUS1_BRESP",
+          "BUSER": "m_axi_SBUS1_BUSER",
+          "BVALID": "m_axi_SBUS1_BVALID",
+          "BREADY": "m_axi_SBUS1_BREADY",
+          "ARID": "m_axi_SBUS1_ARID",
+          "ARADDR": "m_axi_SBUS1_ARADDR",
+          "ARLEN": "m_axi_SBUS1_ARLEN",
+          "ARSIZE": "m_axi_SBUS1_ARSIZE",
+          "ARBURST": "m_axi_SBUS1_ARBURST",
+          "ARLOCK": "m_axi_SBUS1_ARLOCK",
+          "ARREGION": "m_axi_SBUS1_ARREGION",
+          "ARCACHE": "m_axi_SBUS1_ARCACHE",
+          "ARPROT": "m_axi_SBUS1_ARPROT",
+          "ARQOS": "m_axi_SBUS1_ARQOS",
+          "ARUSER": "m_axi_SBUS1_ARUSER",
+          "ARVALID": "m_axi_SBUS1_ARVALID",
+          "ARREADY": "m_axi_SBUS1_ARREADY",
+          "RID": "m_axi_SBUS1_RID",
+          "RDATA": "m_axi_SBUS1_RDATA",
+          "RRESP": "m_axi_SBUS1_RRESP",
+          "RLAST": "m_axi_SBUS1_RLAST",
+          "RUSER": "m_axi_SBUS1_RUSER",
+          "RVALID": "m_axi_SBUS1_RVALID",
+          "RREADY": "m_axi_SBUS1_RREADY"
+        }
+      },
+      {
+        "name": "m_axi_SBUS2",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "AWID": "m_axi_SBUS2_AWID",
+          "AWADDR": "m_axi_SBUS2_AWADDR",
+          "AWLEN": "m_axi_SBUS2_AWLEN",
+          "AWSIZE": "m_axi_SBUS2_AWSIZE",
+          "AWBURST": "m_axi_SBUS2_AWBURST",
+          "AWLOCK": "m_axi_SBUS2_AWLOCK",
+          "AWREGION": "m_axi_SBUS2_AWREGION",
+          "AWCACHE": "m_axi_SBUS2_AWCACHE",
+          "AWPROT": "m_axi_SBUS2_AWPROT",
+          "AWQOS": "m_axi_SBUS2_AWQOS",
+          "AWUSER": "m_axi_SBUS2_AWUSER",
+          "AWVALID": "m_axi_SBUS2_AWVALID",
+          "AWREADY": "m_axi_SBUS2_AWREADY",
+          "WID": "m_axi_SBUS2_WID",
+          "WDATA": "m_axi_SBUS2_WDATA",
+          "WSTRB": "m_axi_SBUS2_WSTRB",
+          "WLAST": "m_axi_SBUS2_WLAST",
+          "WUSER": "m_axi_SBUS2_WUSER",
+          "WVALID": "m_axi_SBUS2_WVALID",
+          "WREADY": "m_axi_SBUS2_WREADY",
+          "BID": "m_axi_SBUS2_BID",
+          "BRESP": "m_axi_SBUS2_BRESP",
+          "BUSER": "m_axi_SBUS2_BUSER",
+          "BVALID": "m_axi_SBUS2_BVALID",
+          "BREADY": "m_axi_SBUS2_BREADY",
+          "ARID": "m_axi_SBUS2_ARID",
+          "ARADDR": "m_axi_SBUS2_ARADDR",
+          "ARLEN": "m_axi_SBUS2_ARLEN",
+          "ARSIZE": "m_axi_SBUS2_ARSIZE",
+          "ARBURST": "m_axi_SBUS2_ARBURST",
+          "ARLOCK": "m_axi_SBUS2_ARLOCK",
+          "ARREGION": "m_axi_SBUS2_ARREGION",
+          "ARCACHE": "m_axi_SBUS2_ARCACHE",
+          "ARPROT": "m_axi_SBUS2_ARPROT",
+          "ARQOS": "m_axi_SBUS2_ARQOS",
+          "ARUSER": "m_axi_SBUS2_ARUSER",
+          "ARVALID": "m_axi_SBUS2_ARVALID",
+          "ARREADY": "m_axi_SBUS2_ARREADY",
+          "RID": "m_axi_SBUS2_RID",
+          "RDATA": "m_axi_SBUS2_RDATA",
+          "RRESP": "m_axi_SBUS2_RRESP",
+          "RLAST": "m_axi_SBUS2_RLAST",
+          "RUSER": "m_axi_SBUS2_RUSER",
+          "RVALID": "m_axi_SBUS2_RVALID",
+          "RREADY": "m_axi_SBUS2_RREADY"
+        }
+      }
+    ],
+    "ports": {
+      "s_axi_CTRL_AWADDR": {
+        "direction": "in",
+        "left": "6",
+        "right": "0"
+      },
+      "s_axi_CTRL_AWVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_AWREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_WDATA": {
+        "direction": "in",
+        "left": "31",
+        "right": "0"
+      },
+      "s_axi_CTRL_WSTRB": {
+        "direction": "in",
+        "left": "3",
+        "right": "0"
+      },
+      "s_axi_CTRL_WVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_WREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_BRESP": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "s_axi_CTRL_BVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_BREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_ARADDR": {
+        "direction": "in",
+        "left": "6",
+        "right": "0"
+      },
+      "s_axi_CTRL_ARVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_ARREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_RDATA": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "s_axi_CTRL_RRESP": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "s_axi_CTRL_RVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_RREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "ap_clk": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "ap_rst_n": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "interrupt": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_AWID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_AWREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_WID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_WDATA": {
+        "direction": "out",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS1_WSTRB": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS1_WLAST": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_WUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_WVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_WREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_BID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_BRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS1_BUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_BVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_BREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_ARID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_ARREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_RID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_RDATA": {
+        "direction": "in",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS1_RRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS1_RLAST": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_RUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_RVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_RREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_AWID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_AWREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_WID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_WDATA": {
+        "direction": "out",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS2_WSTRB": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS2_WLAST": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_WUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_WVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_WREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_BID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_BRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS2_BUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_BVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_BREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_ARID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_ARREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_RID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_RDATA": {
+        "direction": "in",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS2_RRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS2_RLAST": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_RUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_RVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_RREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_AWID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_AWREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_WID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_WDATA": {
+        "direction": "out",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS3_WSTRB": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS3_WLAST": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_WUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_WVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_WREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_BID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_BRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS3_BUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_BVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_BREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_ARID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_ARREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_RID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_RDATA": {
+        "direction": "in",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS3_RRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS3_RLAST": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_RUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_RVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_RREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_AWID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_AWREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_WID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_WDATA": {
+        "direction": "out",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS4_WSTRB": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS4_WLAST": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_WUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_WVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_WREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_BID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_BRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS4_BUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_BVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_BREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_ARID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_ARREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_RID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_RDATA": {
+        "direction": "in",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS4_RRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS4_RLAST": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_RUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_RVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_RREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_AWID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_AWREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_WID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_WDATA": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS1_WSTRB": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_WLAST": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_WUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_WVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_WREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_BID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_BRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS1_BUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_BVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_BREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_ARID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_ARREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_RID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_RDATA": {
+        "direction": "in",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS1_RRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS1_RLAST": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_RUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_RVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_RREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_AWID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_AWREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_WID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_WDATA": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS2_WSTRB": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_WLAST": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_WUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_WVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_WREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_BID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_BRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS2_BUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_BVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_BREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_ARID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_ARREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_RID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_RDATA": {
+        "direction": "in",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS2_RRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS2_RLAST": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_RUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_RVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_RREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      }
+    }
+  },
+  "new": {
+    "component": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\abi_2025_2_v1\\projects\\pwdwconv\\solution1\\impl\\ip\\component.xml",
+    "sha256": "ca2b08abcf0cbb0895453f6843bbb14f1e55aa8baa585d54229c309c8e77866c",
+    "vlnv": "xilinx.com:hls:pwdwconv:0.0",
+    "memory_maps": [
+      {
+        "name": "s_axi_CTRL",
+        "blocks": [
+          {
+            "name": "Reg",
+            "base": 0,
+            "range": 65536,
+            "width": 32,
+            "registers": [
+              {
+                "name": "CTRL",
+                "offset": 0,
+                "size": 32,
+                "access": "read-write",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "AP_START",
+                    "offset": 0,
+                    "width": 1,
+                    "access": "read-write",
+                    "read_action": null,
+                    "modified_write_value": "modify"
+                  },
+                  {
+                    "name": "AP_DONE",
+                    "offset": 1,
+                    "width": 1,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  },
+                  {
+                    "name": "AP_IDLE",
+                    "offset": 2,
+                    "width": 1,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  },
+                  {
+                    "name": "AP_READY",
+                    "offset": 3,
+                    "width": 1,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  },
+                  {
+                    "name": "RESERVED_1",
+                    "offset": 4,
+                    "width": 3,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  },
+                  {
+                    "name": "AUTO_RESTART",
+                    "offset": 7,
+                    "width": 1,
+                    "access": "read-write",
+                    "read_action": null,
+                    "modified_write_value": "modify"
+                  },
+                  {
+                    "name": "RESERVED_2",
+                    "offset": 8,
+                    "width": 1,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  },
+                  {
+                    "name": "INTERRUPT",
+                    "offset": 9,
+                    "width": 1,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  },
+                  {
+                    "name": "RESERVED_3",
+                    "offset": 10,
+                    "width": 22,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "GIER",
+                "offset": 4,
+                "size": 32,
+                "access": "read-write",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "Enable",
+                    "offset": 0,
+                    "width": 1,
+                    "access": "read-write",
+                    "read_action": null,
+                    "modified_write_value": "modify"
+                  },
+                  {
+                    "name": "RESERVED",
+                    "offset": 1,
+                    "width": 31,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "IP_IER",
+                "offset": 8,
+                "size": 32,
+                "access": "read-write",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "CHAN0_INT_EN",
+                    "offset": 0,
+                    "width": 1,
+                    "access": "read-write",
+                    "read_action": null,
+                    "modified_write_value": "modify"
+                  },
+                  {
+                    "name": "CHAN1_INT_EN",
+                    "offset": 1,
+                    "width": 1,
+                    "access": "read-write",
+                    "read_action": null,
+                    "modified_write_value": "modify"
+                  },
+                  {
+                    "name": "RESERVED_0",
+                    "offset": 2,
+                    "width": 30,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "IP_ISR",
+                "offset": 12,
+                "size": 32,
+                "access": "read-write",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "CHAN0_INT_ST",
+                    "offset": 0,
+                    "width": 1,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": "oneToToggle"
+                  },
+                  {
+                    "name": "CHAN1_INT_ST",
+                    "offset": 1,
+                    "width": 1,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": "oneToToggle"
+                  },
+                  {
+                    "name": "RESERVED_0",
+                    "offset": 2,
+                    "width": 30,
+                    "access": "read-only",
+                    "read_action": "modify",
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "PBUS1_V",
+                "offset": 16,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "PBUS1_V",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "PBUS2_V",
+                "offset": 24,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "PBUS2_V",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "PBUS3_V",
+                "offset": 32,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "PBUS3_V",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "PBUS4_V",
+                "offset": 40,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "PBUS4_V",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "SBUS1_r",
+                "offset": 48,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "SBUS1_r",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "SBUS2_V",
+                "offset": 56,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "SBUS2_V",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "ch_in",
+                "offset": 64,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "ch_in",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "ch_out",
+                "offset": 72,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "ch_out",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "stride",
+                "offset": 80,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "stride",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "fsize",
+                "offset": 88,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "fsize",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "act",
+                "offset": 96,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "act",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              },
+              {
+                "name": "mode",
+                "offset": 104,
+                "size": 32,
+                "access": "write-only",
+                "reset": "0",
+                "fields": [
+                  {
+                    "name": "mode",
+                    "offset": 0,
+                    "width": 32,
+                    "access": "write-only",
+                    "read_action": null,
+                    "modified_write_value": null
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "interfaces": [
+      {
+        "name": "s_axi_CTRL",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "ARADDR": "s_axi_CTRL_ARADDR",
+          "ARREADY": "s_axi_CTRL_ARREADY",
+          "ARVALID": "s_axi_CTRL_ARVALID",
+          "AWADDR": "s_axi_CTRL_AWADDR",
+          "AWREADY": "s_axi_CTRL_AWREADY",
+          "AWVALID": "s_axi_CTRL_AWVALID",
+          "BREADY": "s_axi_CTRL_BREADY",
+          "BRESP": "s_axi_CTRL_BRESP",
+          "BVALID": "s_axi_CTRL_BVALID",
+          "RDATA": "s_axi_CTRL_RDATA",
+          "RREADY": "s_axi_CTRL_RREADY",
+          "RRESP": "s_axi_CTRL_RRESP",
+          "RVALID": "s_axi_CTRL_RVALID",
+          "WDATA": "s_axi_CTRL_WDATA",
+          "WREADY": "s_axi_CTRL_WREADY",
+          "WSTRB": "s_axi_CTRL_WSTRB",
+          "WVALID": "s_axi_CTRL_WVALID"
+        }
+      },
+      {
+        "name": "ap_clk",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "signal",
+          "name": "clock",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "CLK": "ap_clk"
+        }
+      },
+      {
+        "name": "ap_rst_n",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "signal",
+          "name": "reset",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "RST": "ap_rst_n"
+        }
+      },
+      {
+        "name": "interrupt",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "signal",
+          "name": "interrupt",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "INTERRUPT": "interrupt"
+        }
+      },
+      {
+        "name": "m_axi_PBUS1",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "ARADDR": "m_axi_PBUS1_ARADDR",
+          "ARBURST": "m_axi_PBUS1_ARBURST",
+          "ARCACHE": "m_axi_PBUS1_ARCACHE",
+          "ARID": "m_axi_PBUS1_ARID",
+          "ARLEN": "m_axi_PBUS1_ARLEN",
+          "ARLOCK": "m_axi_PBUS1_ARLOCK",
+          "ARPROT": "m_axi_PBUS1_ARPROT",
+          "ARQOS": "m_axi_PBUS1_ARQOS",
+          "ARREADY": "m_axi_PBUS1_ARREADY",
+          "ARREGION": "m_axi_PBUS1_ARREGION",
+          "ARSIZE": "m_axi_PBUS1_ARSIZE",
+          "ARUSER": "m_axi_PBUS1_ARUSER",
+          "ARVALID": "m_axi_PBUS1_ARVALID",
+          "AWADDR": "m_axi_PBUS1_AWADDR",
+          "AWBURST": "m_axi_PBUS1_AWBURST",
+          "AWCACHE": "m_axi_PBUS1_AWCACHE",
+          "AWID": "m_axi_PBUS1_AWID",
+          "AWLEN": "m_axi_PBUS1_AWLEN",
+          "AWLOCK": "m_axi_PBUS1_AWLOCK",
+          "AWPROT": "m_axi_PBUS1_AWPROT",
+          "AWQOS": "m_axi_PBUS1_AWQOS",
+          "AWREADY": "m_axi_PBUS1_AWREADY",
+          "AWREGION": "m_axi_PBUS1_AWREGION",
+          "AWSIZE": "m_axi_PBUS1_AWSIZE",
+          "AWUSER": "m_axi_PBUS1_AWUSER",
+          "AWVALID": "m_axi_PBUS1_AWVALID",
+          "BID": "m_axi_PBUS1_BID",
+          "BREADY": "m_axi_PBUS1_BREADY",
+          "BRESP": "m_axi_PBUS1_BRESP",
+          "BUSER": "m_axi_PBUS1_BUSER",
+          "BVALID": "m_axi_PBUS1_BVALID",
+          "RDATA": "m_axi_PBUS1_RDATA",
+          "RID": "m_axi_PBUS1_RID",
+          "RLAST": "m_axi_PBUS1_RLAST",
+          "RREADY": "m_axi_PBUS1_RREADY",
+          "RRESP": "m_axi_PBUS1_RRESP",
+          "RUSER": "m_axi_PBUS1_RUSER",
+          "RVALID": "m_axi_PBUS1_RVALID",
+          "WDATA": "m_axi_PBUS1_WDATA",
+          "WID": "m_axi_PBUS1_WID",
+          "WLAST": "m_axi_PBUS1_WLAST",
+          "WREADY": "m_axi_PBUS1_WREADY",
+          "WSTRB": "m_axi_PBUS1_WSTRB",
+          "WUSER": "m_axi_PBUS1_WUSER",
+          "WVALID": "m_axi_PBUS1_WVALID"
+        }
+      },
+      {
+        "name": "m_axi_PBUS2",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "ARADDR": "m_axi_PBUS2_ARADDR",
+          "ARBURST": "m_axi_PBUS2_ARBURST",
+          "ARCACHE": "m_axi_PBUS2_ARCACHE",
+          "ARID": "m_axi_PBUS2_ARID",
+          "ARLEN": "m_axi_PBUS2_ARLEN",
+          "ARLOCK": "m_axi_PBUS2_ARLOCK",
+          "ARPROT": "m_axi_PBUS2_ARPROT",
+          "ARQOS": "m_axi_PBUS2_ARQOS",
+          "ARREADY": "m_axi_PBUS2_ARREADY",
+          "ARREGION": "m_axi_PBUS2_ARREGION",
+          "ARSIZE": "m_axi_PBUS2_ARSIZE",
+          "ARUSER": "m_axi_PBUS2_ARUSER",
+          "ARVALID": "m_axi_PBUS2_ARVALID",
+          "AWADDR": "m_axi_PBUS2_AWADDR",
+          "AWBURST": "m_axi_PBUS2_AWBURST",
+          "AWCACHE": "m_axi_PBUS2_AWCACHE",
+          "AWID": "m_axi_PBUS2_AWID",
+          "AWLEN": "m_axi_PBUS2_AWLEN",
+          "AWLOCK": "m_axi_PBUS2_AWLOCK",
+          "AWPROT": "m_axi_PBUS2_AWPROT",
+          "AWQOS": "m_axi_PBUS2_AWQOS",
+          "AWREADY": "m_axi_PBUS2_AWREADY",
+          "AWREGION": "m_axi_PBUS2_AWREGION",
+          "AWSIZE": "m_axi_PBUS2_AWSIZE",
+          "AWUSER": "m_axi_PBUS2_AWUSER",
+          "AWVALID": "m_axi_PBUS2_AWVALID",
+          "BID": "m_axi_PBUS2_BID",
+          "BREADY": "m_axi_PBUS2_BREADY",
+          "BRESP": "m_axi_PBUS2_BRESP",
+          "BUSER": "m_axi_PBUS2_BUSER",
+          "BVALID": "m_axi_PBUS2_BVALID",
+          "RDATA": "m_axi_PBUS2_RDATA",
+          "RID": "m_axi_PBUS2_RID",
+          "RLAST": "m_axi_PBUS2_RLAST",
+          "RREADY": "m_axi_PBUS2_RREADY",
+          "RRESP": "m_axi_PBUS2_RRESP",
+          "RUSER": "m_axi_PBUS2_RUSER",
+          "RVALID": "m_axi_PBUS2_RVALID",
+          "WDATA": "m_axi_PBUS2_WDATA",
+          "WID": "m_axi_PBUS2_WID",
+          "WLAST": "m_axi_PBUS2_WLAST",
+          "WREADY": "m_axi_PBUS2_WREADY",
+          "WSTRB": "m_axi_PBUS2_WSTRB",
+          "WUSER": "m_axi_PBUS2_WUSER",
+          "WVALID": "m_axi_PBUS2_WVALID"
+        }
+      },
+      {
+        "name": "m_axi_PBUS3",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "ARADDR": "m_axi_PBUS3_ARADDR",
+          "ARBURST": "m_axi_PBUS3_ARBURST",
+          "ARCACHE": "m_axi_PBUS3_ARCACHE",
+          "ARID": "m_axi_PBUS3_ARID",
+          "ARLEN": "m_axi_PBUS3_ARLEN",
+          "ARLOCK": "m_axi_PBUS3_ARLOCK",
+          "ARPROT": "m_axi_PBUS3_ARPROT",
+          "ARQOS": "m_axi_PBUS3_ARQOS",
+          "ARREADY": "m_axi_PBUS3_ARREADY",
+          "ARREGION": "m_axi_PBUS3_ARREGION",
+          "ARSIZE": "m_axi_PBUS3_ARSIZE",
+          "ARUSER": "m_axi_PBUS3_ARUSER",
+          "ARVALID": "m_axi_PBUS3_ARVALID",
+          "AWADDR": "m_axi_PBUS3_AWADDR",
+          "AWBURST": "m_axi_PBUS3_AWBURST",
+          "AWCACHE": "m_axi_PBUS3_AWCACHE",
+          "AWID": "m_axi_PBUS3_AWID",
+          "AWLEN": "m_axi_PBUS3_AWLEN",
+          "AWLOCK": "m_axi_PBUS3_AWLOCK",
+          "AWPROT": "m_axi_PBUS3_AWPROT",
+          "AWQOS": "m_axi_PBUS3_AWQOS",
+          "AWREADY": "m_axi_PBUS3_AWREADY",
+          "AWREGION": "m_axi_PBUS3_AWREGION",
+          "AWSIZE": "m_axi_PBUS3_AWSIZE",
+          "AWUSER": "m_axi_PBUS3_AWUSER",
+          "AWVALID": "m_axi_PBUS3_AWVALID",
+          "BID": "m_axi_PBUS3_BID",
+          "BREADY": "m_axi_PBUS3_BREADY",
+          "BRESP": "m_axi_PBUS3_BRESP",
+          "BUSER": "m_axi_PBUS3_BUSER",
+          "BVALID": "m_axi_PBUS3_BVALID",
+          "RDATA": "m_axi_PBUS3_RDATA",
+          "RID": "m_axi_PBUS3_RID",
+          "RLAST": "m_axi_PBUS3_RLAST",
+          "RREADY": "m_axi_PBUS3_RREADY",
+          "RRESP": "m_axi_PBUS3_RRESP",
+          "RUSER": "m_axi_PBUS3_RUSER",
+          "RVALID": "m_axi_PBUS3_RVALID",
+          "WDATA": "m_axi_PBUS3_WDATA",
+          "WID": "m_axi_PBUS3_WID",
+          "WLAST": "m_axi_PBUS3_WLAST",
+          "WREADY": "m_axi_PBUS3_WREADY",
+          "WSTRB": "m_axi_PBUS3_WSTRB",
+          "WUSER": "m_axi_PBUS3_WUSER",
+          "WVALID": "m_axi_PBUS3_WVALID"
+        }
+      },
+      {
+        "name": "m_axi_PBUS4",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "ARADDR": "m_axi_PBUS4_ARADDR",
+          "ARBURST": "m_axi_PBUS4_ARBURST",
+          "ARCACHE": "m_axi_PBUS4_ARCACHE",
+          "ARID": "m_axi_PBUS4_ARID",
+          "ARLEN": "m_axi_PBUS4_ARLEN",
+          "ARLOCK": "m_axi_PBUS4_ARLOCK",
+          "ARPROT": "m_axi_PBUS4_ARPROT",
+          "ARQOS": "m_axi_PBUS4_ARQOS",
+          "ARREADY": "m_axi_PBUS4_ARREADY",
+          "ARREGION": "m_axi_PBUS4_ARREGION",
+          "ARSIZE": "m_axi_PBUS4_ARSIZE",
+          "ARUSER": "m_axi_PBUS4_ARUSER",
+          "ARVALID": "m_axi_PBUS4_ARVALID",
+          "AWADDR": "m_axi_PBUS4_AWADDR",
+          "AWBURST": "m_axi_PBUS4_AWBURST",
+          "AWCACHE": "m_axi_PBUS4_AWCACHE",
+          "AWID": "m_axi_PBUS4_AWID",
+          "AWLEN": "m_axi_PBUS4_AWLEN",
+          "AWLOCK": "m_axi_PBUS4_AWLOCK",
+          "AWPROT": "m_axi_PBUS4_AWPROT",
+          "AWQOS": "m_axi_PBUS4_AWQOS",
+          "AWREADY": "m_axi_PBUS4_AWREADY",
+          "AWREGION": "m_axi_PBUS4_AWREGION",
+          "AWSIZE": "m_axi_PBUS4_AWSIZE",
+          "AWUSER": "m_axi_PBUS4_AWUSER",
+          "AWVALID": "m_axi_PBUS4_AWVALID",
+          "BID": "m_axi_PBUS4_BID",
+          "BREADY": "m_axi_PBUS4_BREADY",
+          "BRESP": "m_axi_PBUS4_BRESP",
+          "BUSER": "m_axi_PBUS4_BUSER",
+          "BVALID": "m_axi_PBUS4_BVALID",
+          "RDATA": "m_axi_PBUS4_RDATA",
+          "RID": "m_axi_PBUS4_RID",
+          "RLAST": "m_axi_PBUS4_RLAST",
+          "RREADY": "m_axi_PBUS4_RREADY",
+          "RRESP": "m_axi_PBUS4_RRESP",
+          "RUSER": "m_axi_PBUS4_RUSER",
+          "RVALID": "m_axi_PBUS4_RVALID",
+          "WDATA": "m_axi_PBUS4_WDATA",
+          "WID": "m_axi_PBUS4_WID",
+          "WLAST": "m_axi_PBUS4_WLAST",
+          "WREADY": "m_axi_PBUS4_WREADY",
+          "WSTRB": "m_axi_PBUS4_WSTRB",
+          "WUSER": "m_axi_PBUS4_WUSER",
+          "WVALID": "m_axi_PBUS4_WVALID"
+        }
+      },
+      {
+        "name": "m_axi_SBUS1",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "ARADDR": "m_axi_SBUS1_ARADDR",
+          "ARBURST": "m_axi_SBUS1_ARBURST",
+          "ARCACHE": "m_axi_SBUS1_ARCACHE",
+          "ARID": "m_axi_SBUS1_ARID",
+          "ARLEN": "m_axi_SBUS1_ARLEN",
+          "ARLOCK": "m_axi_SBUS1_ARLOCK",
+          "ARPROT": "m_axi_SBUS1_ARPROT",
+          "ARQOS": "m_axi_SBUS1_ARQOS",
+          "ARREADY": "m_axi_SBUS1_ARREADY",
+          "ARREGION": "m_axi_SBUS1_ARREGION",
+          "ARSIZE": "m_axi_SBUS1_ARSIZE",
+          "ARUSER": "m_axi_SBUS1_ARUSER",
+          "ARVALID": "m_axi_SBUS1_ARVALID",
+          "AWADDR": "m_axi_SBUS1_AWADDR",
+          "AWBURST": "m_axi_SBUS1_AWBURST",
+          "AWCACHE": "m_axi_SBUS1_AWCACHE",
+          "AWID": "m_axi_SBUS1_AWID",
+          "AWLEN": "m_axi_SBUS1_AWLEN",
+          "AWLOCK": "m_axi_SBUS1_AWLOCK",
+          "AWPROT": "m_axi_SBUS1_AWPROT",
+          "AWQOS": "m_axi_SBUS1_AWQOS",
+          "AWREADY": "m_axi_SBUS1_AWREADY",
+          "AWREGION": "m_axi_SBUS1_AWREGION",
+          "AWSIZE": "m_axi_SBUS1_AWSIZE",
+          "AWUSER": "m_axi_SBUS1_AWUSER",
+          "AWVALID": "m_axi_SBUS1_AWVALID",
+          "BID": "m_axi_SBUS1_BID",
+          "BREADY": "m_axi_SBUS1_BREADY",
+          "BRESP": "m_axi_SBUS1_BRESP",
+          "BUSER": "m_axi_SBUS1_BUSER",
+          "BVALID": "m_axi_SBUS1_BVALID",
+          "RDATA": "m_axi_SBUS1_RDATA",
+          "RID": "m_axi_SBUS1_RID",
+          "RLAST": "m_axi_SBUS1_RLAST",
+          "RREADY": "m_axi_SBUS1_RREADY",
+          "RRESP": "m_axi_SBUS1_RRESP",
+          "RUSER": "m_axi_SBUS1_RUSER",
+          "RVALID": "m_axi_SBUS1_RVALID",
+          "WDATA": "m_axi_SBUS1_WDATA",
+          "WID": "m_axi_SBUS1_WID",
+          "WLAST": "m_axi_SBUS1_WLAST",
+          "WREADY": "m_axi_SBUS1_WREADY",
+          "WSTRB": "m_axi_SBUS1_WSTRB",
+          "WUSER": "m_axi_SBUS1_WUSER",
+          "WVALID": "m_axi_SBUS1_WVALID"
+        }
+      },
+      {
+        "name": "m_axi_SBUS2",
+        "bus_type": {
+          "vendor": "xilinx.com",
+          "library": "interface",
+          "name": "aximm",
+          "version": "1.0"
+        },
+        "port_maps": {
+          "ARADDR": "m_axi_SBUS2_ARADDR",
+          "ARBURST": "m_axi_SBUS2_ARBURST",
+          "ARCACHE": "m_axi_SBUS2_ARCACHE",
+          "ARID": "m_axi_SBUS2_ARID",
+          "ARLEN": "m_axi_SBUS2_ARLEN",
+          "ARLOCK": "m_axi_SBUS2_ARLOCK",
+          "ARPROT": "m_axi_SBUS2_ARPROT",
+          "ARQOS": "m_axi_SBUS2_ARQOS",
+          "ARREADY": "m_axi_SBUS2_ARREADY",
+          "ARREGION": "m_axi_SBUS2_ARREGION",
+          "ARSIZE": "m_axi_SBUS2_ARSIZE",
+          "ARUSER": "m_axi_SBUS2_ARUSER",
+          "ARVALID": "m_axi_SBUS2_ARVALID",
+          "AWADDR": "m_axi_SBUS2_AWADDR",
+          "AWBURST": "m_axi_SBUS2_AWBURST",
+          "AWCACHE": "m_axi_SBUS2_AWCACHE",
+          "AWID": "m_axi_SBUS2_AWID",
+          "AWLEN": "m_axi_SBUS2_AWLEN",
+          "AWLOCK": "m_axi_SBUS2_AWLOCK",
+          "AWPROT": "m_axi_SBUS2_AWPROT",
+          "AWQOS": "m_axi_SBUS2_AWQOS",
+          "AWREADY": "m_axi_SBUS2_AWREADY",
+          "AWREGION": "m_axi_SBUS2_AWREGION",
+          "AWSIZE": "m_axi_SBUS2_AWSIZE",
+          "AWUSER": "m_axi_SBUS2_AWUSER",
+          "AWVALID": "m_axi_SBUS2_AWVALID",
+          "BID": "m_axi_SBUS2_BID",
+          "BREADY": "m_axi_SBUS2_BREADY",
+          "BRESP": "m_axi_SBUS2_BRESP",
+          "BUSER": "m_axi_SBUS2_BUSER",
+          "BVALID": "m_axi_SBUS2_BVALID",
+          "RDATA": "m_axi_SBUS2_RDATA",
+          "RID": "m_axi_SBUS2_RID",
+          "RLAST": "m_axi_SBUS2_RLAST",
+          "RREADY": "m_axi_SBUS2_RREADY",
+          "RRESP": "m_axi_SBUS2_RRESP",
+          "RUSER": "m_axi_SBUS2_RUSER",
+          "RVALID": "m_axi_SBUS2_RVALID",
+          "WDATA": "m_axi_SBUS2_WDATA",
+          "WID": "m_axi_SBUS2_WID",
+          "WLAST": "m_axi_SBUS2_WLAST",
+          "WREADY": "m_axi_SBUS2_WREADY",
+          "WSTRB": "m_axi_SBUS2_WSTRB",
+          "WUSER": "m_axi_SBUS2_WUSER",
+          "WVALID": "m_axi_SBUS2_WVALID"
+        }
+      }
+    ],
+    "ports": {
+      "s_axi_CTRL_ARADDR": {
+        "direction": "in",
+        "left": "6",
+        "right": "0"
+      },
+      "s_axi_CTRL_ARREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_ARVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_AWADDR": {
+        "direction": "in",
+        "left": "6",
+        "right": "0"
+      },
+      "s_axi_CTRL_AWREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_AWVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_BREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_BRESP": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "s_axi_CTRL_BVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_RDATA": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "s_axi_CTRL_RREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_RRESP": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "s_axi_CTRL_RVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_WDATA": {
+        "direction": "in",
+        "left": "31",
+        "right": "0"
+      },
+      "s_axi_CTRL_WREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "s_axi_CTRL_WSTRB": {
+        "direction": "in",
+        "left": "3",
+        "right": "0"
+      },
+      "s_axi_CTRL_WVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "ap_clk": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "ap_rst_n": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "interrupt": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_ARADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_ARREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_ARVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_AWADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_AWREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_AWVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_BID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_BREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_BRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS1_BUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_BVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_RDATA": {
+        "direction": "in",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS1_RID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_RLAST": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_RREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_RRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS1_RUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_RVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_WDATA": {
+        "direction": "out",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS1_WID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_WLAST": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_WREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS1_WSTRB": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS1_WUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS1_WVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_ARADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_ARREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_ARVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_AWADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_AWREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_AWVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_BID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_BREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_BRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS2_BUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_BVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_RDATA": {
+        "direction": "in",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS2_RID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_RLAST": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_RREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_RRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS2_RUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_RVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_WDATA": {
+        "direction": "out",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS2_WID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_WLAST": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_WREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS2_WSTRB": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS2_WUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS2_WVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_ARADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_ARREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_ARVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_AWADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_AWREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_AWVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_BID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_BREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_BRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS3_BUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_BVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_RDATA": {
+        "direction": "in",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS3_RID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_RLAST": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_RREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_RRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS3_RUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_RVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_WDATA": {
+        "direction": "out",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS3_WID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_WLAST": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_WREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS3_WSTRB": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS3_WUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS3_WVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_ARADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_ARREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_ARVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_AWADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_AWREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_AWVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_BID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_BREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_BRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS4_BUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_BVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_RDATA": {
+        "direction": "in",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS4_RID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_RLAST": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_RREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_RRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_PBUS4_RUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_RVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_WDATA": {
+        "direction": "out",
+        "left": "63",
+        "right": "0"
+      },
+      "m_axi_PBUS4_WID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_WLAST": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_WREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_PBUS4_WSTRB": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_PBUS4_WUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_PBUS4_WVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_ARADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_ARREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_ARVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_AWADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_AWREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_AWVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_BID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_BREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_BRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS1_BUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_BVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_RDATA": {
+        "direction": "in",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS1_RID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_RLAST": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_RREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_RRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS1_RUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_RVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_WDATA": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS1_WID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_WLAST": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_WREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS1_WSTRB": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS1_WUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS1_WVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_ARADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_ARREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_ARVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_AWADDR": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWBURST": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWCACHE": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWLEN": {
+        "direction": "out",
+        "left": "7",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWLOCK": {
+        "direction": "out",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWPROT": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWQOS": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_AWREGION": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWSIZE": {
+        "direction": "out",
+        "left": "2",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_AWVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_BID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_BREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_BRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS2_BUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_BVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_RDATA": {
+        "direction": "in",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS2_RID": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_RLAST": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_RREADY": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_RRESP": {
+        "direction": "in",
+        "left": "1",
+        "right": "0"
+      },
+      "m_axi_SBUS2_RUSER": {
+        "direction": "in",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_RVALID": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_WDATA": {
+        "direction": "out",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axi_SBUS2_WID": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_WLAST": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_WREADY": {
+        "direction": "in",
+        "left": null,
+        "right": null
+      },
+      "m_axi_SBUS2_WSTRB": {
+        "direction": "out",
+        "left": "3",
+        "right": "0"
+      },
+      "m_axi_SBUS2_WUSER": {
+        "direction": "out",
+        "left": "0",
+        "right": "0"
+      },
+      "m_axi_SBUS2_WVALID": {
+        "direction": "out",
+        "left": null,
+        "right": null
+      }
+    }
+  },
+  "register_differences": [
+    {
+      "path": "/memory_maps/0/blocks/0/registers/0/fields/6/width",
+      "before": 24,
+      "after": 1
+    },
+    {
+      "path": "/memory_maps/0/blocks/0/registers/0/fields/7",
+      "before": null,
+      "after": {
+        "name": "INTERRUPT",
+        "offset": 9,
+        "width": 1,
+        "access": "read-only",
+        "read_action": "modify",
+        "modified_write_value": null
+      }
+    },
+    {
+      "path": "/memory_maps/0/blocks/0/registers/0/fields/8",
+      "before": null,
+      "after": {
+        "name": "RESERVED_3",
+        "offset": 10,
+        "width": 22,
+        "access": "read-only",
+        "read_action": "modify",
+        "modified_write_value": null
+      }
+    },
+    {
+      "path": "/memory_maps/0/blocks/0/registers/2/fields/2/name",
+      "before": "RESERVED",
+      "after": "RESERVED_0"
+    },
+    {
+      "path": "/memory_maps/0/blocks/0/registers/3/fields/2/name",
+      "before": "RESERVED",
+      "after": "RESERVED_0"
+    },
+    {
+      "path": "/memory_maps/0/blocks/0/registers/8/fields/0/name",
+      "before": "SBUS1_V",
+      "after": "SBUS1_r"
+    },
+    {
+      "path": "/memory_maps/0/blocks/0/registers/8/name",
+      "before": "SBUS1_V",
+      "after": "SBUS1_r"
+    }
+  ],
+  "interface_differences": [],
+  "port_differences": [],
+  "scope": "XML register names, offsets, sizes, access/reset/field semantics and interface pin maps; not arithmetic equivalence, RTL timing, physical signals or board testing"
+}

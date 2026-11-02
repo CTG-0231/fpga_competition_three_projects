@@ -1,0 +1,11 @@
+{
+  "archive": "src/vivado/source_2025_2.zip",
+  "files": 919,
+  "objects": 713,
+  "sha256": "a7107e8dcd210e0b423280351e3c78867247b1eadc37e964e75e3a41efb02761",
+  "bytes": 34419733,
+  "group": "vivado_2025_2",
+  "restored_files": 919,
+  "all_file_hashes_verified": true,
+  "board_execution": false
+}

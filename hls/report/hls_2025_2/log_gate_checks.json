@@ -1,0 +1,27 @@
+[
+  {
+    "log": "E:\\fpga_work\\qian_20261030_1\\fpga_competition\\report\\hls_2025_2\\logs\\shortcut_rtl.log",
+    "actual_exit_code": 0,
+    "expected_exit_code": 0
+  },
+  {
+    "log": "E:\\fpga_work\\qian_20261030_1\\fpga_competition\\report\\hls_2025_2\\logs\\fc_rtl.log",
+    "actual_exit_code": 0,
+    "expected_exit_code": 0
+  },
+  {
+    "log": "E:\\fpga_work\\qian_20261030_1\\fpga_competition\\report\\hls_2025_2\\logs\\conv_rtl.log",
+    "actual_exit_code": 0,
+    "expected_exit_code": 0
+  },
+  {
+    "log": "E:\\fpga_work\\qian_20261030_1\\fpga_competition\\report\\hls_2025_2\\logs\\pwdwconv_rtl.log",
+    "actual_exit_code": 0,
+    "expected_exit_code": 0
+  },
+  {
+    "log": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\rtl_negative_shortcut\\negative.log",
+    "actual_exit_code": 1,
+    "expected_exit_code": 1
+  }
+]

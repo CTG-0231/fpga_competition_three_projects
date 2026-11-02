@@ -1,0 +1,43 @@
+{
+  "created_at": "2026-10-30T23:00:44.597099+08:00",
+  "native_root": "E:\\fpga_work\\qian_20261030_1\\vitis_migration_final_native",
+  "native_workspace_files_kept": 2267,
+  "workspace_cache_files_omitted": 485,
+  "source_workspace": "E:\\fpga_work\\qian_20261030_1\\vitis_migration_final_retry2",
+  "final_xsa_sha256": "2b111cec0c83827a454aad4f890a42f251c392a8ac87c3f58691216f94408892",
+  "final_boot_sha256": "f448da712206f5673616a2f415bc591b7a21f685a03fec014db1516259cd113a",
+  "board_release": "E:\\fpga_work\\qian_20261030_1\\fpga_competition\\board\\standalone_2025_2",
+  "build_stages": [
+    {
+      "name": "platform",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 85.835
+    },
+    {
+      "name": "app",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 17.721
+    },
+    {
+      "name": "verify",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.218
+    },
+    {
+      "name": "package",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.854
+    }
+  ],
+  "hardware_tested": false,
+  "native_files_including_manifest": 2369,
+  "native_bytes": 69137574,
+  "native_manifest_sha256": "15c9097c551d3889eb37469e6b19e3bf920fa438fa5f95fe0b77185e919a156c",
+  "public_authored_links_pass": true,
+  "stable_for_snapshot": true,
+  "board_artifact_file_count": 11
+}

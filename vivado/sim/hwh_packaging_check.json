@@ -1,0 +1,508 @@
+{
+  "passed": true,
+  "hwh": "E:\\work\\FPGA\\Qian\\fpga_competition_three_projects\\vivado\\board\\overlays\\3v3_2025_2\\leaf.hwh",
+  "hardware_execution": false,
+  "overlay_download": false,
+  "device_allocation": false,
+  "scope": "official PYNQ 2.7.0 offline HWH metadata parsing and AC820 interface checks only",
+  "parser": {
+    "version": "2.7.0",
+    "source": "https://raw.githubusercontent.com/Xilinx/PYNQ/v2.7.0/pynq/pl_server/hwh_parser.py",
+    "source_sha256": "9038f5b618da3ed5f88504d150f9481487a6f0a0f73ec0a79f530415a87c37f0",
+    "local_file": "sim/vendor/pynq27_hwh_parser.py",
+    "architecture_constants_only": {
+      "CPU_ARCH_IS_SUPPORTED": true,
+      "CPU_ARCH": "armv7l",
+      "ZYNQ_ARCH": "armv7l",
+      "ZU_ARCH": "aarch64"
+    },
+    "unchanged_source_verified": true,
+    "selected_class": "_HWHZynq"
+  },
+  "checks": {
+    "full_design": true,
+    "ps_gpio_parameters": true,
+    "ps_clocks": true
+  },
+  "errors": [],
+  "hwh_sha256": "c93a96ce131be3f1b873c8df19ec7c9c8a05a36826dce9ff799724cb7dcc454a",
+  "vivado_version": "2025.2",
+  "parsed_ip_names": [
+    "axi_cdma_0",
+    "axi_vdma_0",
+    "conv_0",
+    "fc_0",
+    "processing_system7_0",
+    "pwdwconv_0",
+    "shortcut_0",
+    "v_tc_0"
+  ],
+  "required_ips": {
+    "conv_0": {
+      "phys_addr": 1136656384,
+      "addr_range": 65536,
+      "type": "xilinx.com:hls:conv:0.0",
+      "registers": {
+        "CTRL": {
+          "address_offset": 0,
+          "size": 32
+        },
+        "GIER": {
+          "address_offset": 4,
+          "size": 32
+        },
+        "IP_IER": {
+          "address_offset": 8,
+          "size": 32
+        },
+        "IP_ISR": {
+          "address_offset": 12,
+          "size": 32
+        },
+        "in1_V": {
+          "address_offset": 16,
+          "size": 32
+        },
+        "in2_V": {
+          "address_offset": 24,
+          "size": 32
+        },
+        "in3_V": {
+          "address_offset": 32,
+          "size": 32
+        },
+        "weight_V": {
+          "address_offset": 40,
+          "size": 32
+        },
+        "bias": {
+          "address_offset": 48,
+          "size": 32
+        },
+        "out_V": {
+          "address_offset": 56,
+          "size": 32
+        }
+      },
+      "canonical_registers": {
+        "IN1_V": 16,
+        "IN2_V": 24,
+        "IN3_V": 32,
+        "WEIGHT_V": 40,
+        "BIAS_V": 48,
+        "OUT_V": 56
+      }
+    },
+    "fc_0": {
+      "phys_addr": 1136721920,
+      "addr_range": 65536,
+      "type": "xilinx.com:hls:fc:0.0",
+      "registers": {
+        "CTRL": {
+          "address_offset": 0,
+          "size": 32
+        },
+        "GIER": {
+          "address_offset": 4,
+          "size": 32
+        },
+        "IP_IER": {
+          "address_offset": 8,
+          "size": 32
+        },
+        "IP_ISR": {
+          "address_offset": 12,
+          "size": 32
+        },
+        "in_V": {
+          "address_offset": 16,
+          "size": 32
+        },
+        "weight_V": {
+          "address_offset": 24,
+          "size": 32
+        },
+        "bias": {
+          "address_offset": 32,
+          "size": 32
+        },
+        "out_V": {
+          "address_offset": 40,
+          "size": 32
+        }
+      },
+      "canonical_registers": {
+        "IN_V": 16,
+        "WEIGHT_V": 24,
+        "BIAS_V": 32,
+        "OUT_V": 40
+      }
+    },
+    "pwdwconv_0": {
+      "phys_addr": 1136787456,
+      "addr_range": 65536,
+      "type": "xilinx.com:hls:pwdwconv:0.0",
+      "registers": {
+        "CTRL": {
+          "address_offset": 0,
+          "size": 32
+        },
+        "GIER": {
+          "address_offset": 4,
+          "size": 32
+        },
+        "IP_IER": {
+          "address_offset": 8,
+          "size": 32
+        },
+        "IP_ISR": {
+          "address_offset": 12,
+          "size": 32
+        },
+        "PBUS1_V": {
+          "address_offset": 16,
+          "size": 32
+        },
+        "PBUS2_V": {
+          "address_offset": 24,
+          "size": 32
+        },
+        "PBUS3_V": {
+          "address_offset": 32,
+          "size": 32
+        },
+        "PBUS4_V": {
+          "address_offset": 40,
+          "size": 32
+        },
+        "SBUS1_r": {
+          "address_offset": 48,
+          "size": 32
+        },
+        "SBUS2_V": {
+          "address_offset": 56,
+          "size": 32
+        },
+        "ch_in": {
+          "address_offset": 64,
+          "size": 32
+        },
+        "ch_out": {
+          "address_offset": 72,
+          "size": 32
+        },
+        "stride": {
+          "address_offset": 80,
+          "size": 32
+        },
+        "fsize": {
+          "address_offset": 88,
+          "size": 32
+        },
+        "act": {
+          "address_offset": 96,
+          "size": 32
+        },
+        "mode": {
+          "address_offset": 104,
+          "size": 32
+        }
+      },
+      "canonical_registers": {
+        "PBUS1_V": 16,
+        "PBUS2_V": 24,
+        "PBUS3_V": 32,
+        "PBUS4_V": 40,
+        "SBUS1_V": 48,
+        "SBUS2_V": 56,
+        "CH_IN": 64,
+        "CH_OUT": 72,
+        "STRIDE": 80,
+        "FSIZE": 88,
+        "ACT": 96,
+        "MODE": 104
+      }
+    },
+    "shortcut_0": {
+      "phys_addr": 1136852992,
+      "addr_range": 65536,
+      "type": "xilinx.com:hls:shortcut:0.0",
+      "registers": {
+        "CTRL": {
+          "address_offset": 0,
+          "size": 32
+        },
+        "GIER": {
+          "address_offset": 4,
+          "size": 32
+        },
+        "IP_IER": {
+          "address_offset": 8,
+          "size": 32
+        },
+        "IP_ISR": {
+          "address_offset": 12,
+          "size": 32
+        },
+        "src1": {
+          "address_offset": 16,
+          "size": 32
+        },
+        "src2": {
+          "address_offset": 24,
+          "size": 32
+        },
+        "dest": {
+          "address_offset": 32,
+          "size": 32
+        },
+        "length_r": {
+          "address_offset": 40,
+          "size": 32
+        }
+      },
+      "canonical_registers": {
+        "SRC1_V": 16,
+        "SRC2_V": 24,
+        "DEST_V": 32,
+        "LENGTH_R": 40
+      }
+    },
+    "axi_vdma_0": {
+      "phys_addr": 1124073472,
+      "addr_range": 65536,
+      "type": "xilinx.com:ip:axi_vdma:6.3",
+      "registers": {
+        "MM2S_VDMACR": {
+          "address_offset": 0,
+          "size": 32
+        },
+        "MM2S_VDMASR": {
+          "address_offset": 4,
+          "size": 32
+        },
+        "MM2S_REG_INDEX": {
+          "address_offset": 20,
+          "size": 32
+        },
+        "PARK_PTR_REG": {
+          "address_offset": 40,
+          "size": 32
+        },
+        "VDMA_VERSION": {
+          "address_offset": 44,
+          "size": 32
+        },
+        "S2MM_VDMACR": {
+          "address_offset": 48,
+          "size": 32
+        },
+        "S2MM_VDMASR": {
+          "address_offset": 52,
+          "size": 32
+        },
+        "S2MM_VDMA_IRQ_MASK": {
+          "address_offset": 60,
+          "size": 32
+        },
+        "S2MM_REG_INDEX": {
+          "address_offset": 68,
+          "size": 32
+        },
+        "MM2S_VSIZE": {
+          "address_offset": 80,
+          "size": 32
+        },
+        "MM2S_HSIZE": {
+          "address_offset": 84,
+          "size": 32
+        },
+        "MM2S_FRMDLY_STRIDE": {
+          "address_offset": 88,
+          "size": 32
+        },
+        "MM2S_SA1": {
+          "address_offset": 92,
+          "size": 32
+        },
+        "MM2S_SA2": {
+          "address_offset": 96,
+          "size": 32
+        },
+        "MM2S_SA3": {
+          "address_offset": 100,
+          "size": 32
+        },
+        "MM2S_SA4": {
+          "address_offset": 104,
+          "size": 32
+        },
+        "MM2S_SA5": {
+          "address_offset": 108,
+          "size": 32
+        },
+        "MM2S_SA6": {
+          "address_offset": 112,
+          "size": 32
+        },
+        "MM2S_SA7": {
+          "address_offset": 116,
+          "size": 32
+        },
+        "MM2S_SA8": {
+          "address_offset": 120,
+          "size": 32
+        },
+        "MM2S_SA9": {
+          "address_offset": 124,
+          "size": 32
+        },
+        "MM2S_SA10": {
+          "address_offset": 128,
+          "size": 32
+        },
+        "MM2S_SA11": {
+          "address_offset": 132,
+          "size": 32
+        },
+        "MM2S_SA12": {
+          "address_offset": 136,
+          "size": 32
+        },
+        "MM2S_SA13": {
+          "address_offset": 140,
+          "size": 32
+        },
+        "MM2S_SA14": {
+          "address_offset": 144,
+          "size": 32
+        },
+        "MM2S_SA15": {
+          "address_offset": 148,
+          "size": 32
+        },
+        "MM2S_SA16": {
+          "address_offset": 152,
+          "size": 32
+        },
+        "S2MM_VSIZE": {
+          "address_offset": 160,
+          "size": 32
+        },
+        "S2MM_HSIZE": {
+          "address_offset": 164,
+          "size": 32
+        },
+        "S2MM_FRMDLY_STRIDE": {
+          "address_offset": 168,
+          "size": 32
+        },
+        "S2MM_SA1": {
+          "address_offset": 172,
+          "size": 32
+        },
+        "S2MM_SA2": {
+          "address_offset": 176,
+          "size": 32
+        },
+        "S2MM_SA3": {
+          "address_offset": 180,
+          "size": 32
+        },
+        "S2MM_SA4": {
+          "address_offset": 184,
+          "size": 32
+        },
+        "S2MM_SA5": {
+          "address_offset": 188,
+          "size": 32
+        },
+        "S2MM_SA6": {
+          "address_offset": 192,
+          "size": 32
+        },
+        "S2MM_SA7": {
+          "address_offset": 196,
+          "size": 32
+        },
+        "S2MM_SA8": {
+          "address_offset": 200,
+          "size": 32
+        },
+        "S2MM_SA9": {
+          "address_offset": 204,
+          "size": 32
+        },
+        "S2MM_SA10": {
+          "address_offset": 208,
+          "size": 32
+        },
+        "S2MM_SA11": {
+          "address_offset": 212,
+          "size": 32
+        },
+        "S2MM_SA12": {
+          "address_offset": 216,
+          "size": 32
+        },
+        "S2MM_SA13": {
+          "address_offset": 220,
+          "size": 32
+        },
+        "S2MM_SA14": {
+          "address_offset": 224,
+          "size": 32
+        },
+        "S2MM_SA15": {
+          "address_offset": 228,
+          "size": 32
+        },
+        "S2MM_SA16": {
+          "address_offset": 232,
+          "size": 32
+        }
+      },
+      "register_note": "Native IP metadata is recorded as parsed; baseline v_tc_0 has no REGISTER descriptions. The runtime uses direct MMIO, not v_tc_0.register_map."
+    },
+    "v_tc_0": {
+      "phys_addr": 1136918528,
+      "addr_range": 65536,
+      "type": "xilinx.com:ip:v_tc:6.2",
+      "registers": {},
+      "register_note": "Native IP metadata is recorded as parsed; baseline v_tc_0 has no REGISTER descriptions. The runtime uses direct MMIO, not v_tc_0.register_map."
+    }
+  },
+  "gpio_parameters": {
+    "PCW_GPIO_MIO_GPIO_ENABLE": "1",
+    "PCW_GPIO_EMIO_GPIO_ENABLE": "1",
+    "PCW_GPIO_EMIO_GPIO_IO": "1",
+    "PCW_GPIO_EMIO_GPIO_WIDTH": "1",
+    "PCW_MIO_0_DIRECTION": "inout"
+  },
+  "gpio_dict": {},
+  "gpio_note": "The baseline official parser gpio_dict is empty; runtime maps PS MIO0/EMIO0 from checked PS parameters using Linux GPIO, not an invented parser GPIO entry.",
+  "clock_dict": {
+    "0": {
+      "enable": 1,
+      "divisor0": 6,
+      "divisor1": 3
+    },
+    "1": {
+      "enable": 1,
+      "divisor0": 55,
+      "divisor1": 1
+    },
+    "2": {
+      "enable": 0,
+      "divisor0": 1,
+      "divisor1": 1
+    },
+    "3": {
+      "enable": 0,
+      "divisor0": 1,
+      "divisor1": 1
+    }
+  },
+  "fclk0_hz_parameter": "100000000",
+  "memory_names": []
+}

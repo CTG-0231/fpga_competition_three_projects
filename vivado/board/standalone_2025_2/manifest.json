@@ -1,0 +1,46 @@
+{
+  "software_tool_version": "Vitis 2025.2",
+  "hardware_origin": "Selected XSA, checked against software register definitions; see verification.json",
+  "source_xsa_sha256": "2b111cec0c83827a454aad4f890a42f251c392a8ac87c3f58691216f94408892",
+  "hardware_tested": false,
+  "files": {
+    "boot.bif": {
+      "bytes": 74,
+      "sha256": "6f2bc472f21610fdabcd1a62adf6ed0593e2c844995a0475f3d4316ead046e37"
+    },
+    "boot.bin": {
+      "bytes": 4503764,
+      "sha256": "f448da712206f5673616a2f415bc591b7a21f685a03fec014db1516259cd113a"
+    },
+    "bootgen.log": {
+      "bytes": 261,
+      "sha256": "479d3c2ac2718b64db5e6606738ab3f58b0662d3ca6715f8568e7dba66476f51"
+    },
+    "fsbl.elf": {
+      "bytes": 302988,
+      "sha256": "5eee928614d568b40a6e89200b0df5b3da7e0bf0034365d6af5c255b19ffce2f"
+    },
+    "hardware.xsa": {
+      "bytes": 1683842,
+      "sha256": "2b111cec0c83827a454aad4f890a42f251c392a8ac87c3f58691216f94408892"
+    },
+    "pl.bit": {
+      "bytes": 4045692,
+      "sha256": "b0a00f0051148a356884ab19ae8281fb6308dae3108e2e538f40f3f321bd0557"
+    },
+    "trash_app.elf": {
+      "bytes": 1165028,
+      "sha256": "3b30f5642c4a7acc0613609394528df424675068e6bc8ee46cfee89e6091bd5d"
+    },
+    "trash_app.map": {
+      "bytes": 591171,
+      "sha256": "1870cb12f7f9a4d03e0e5e32b6c33f99a00351370a8aa3a28e1fbab1721b5778"
+    },
+    "verification.json": {
+      "bytes": 754,
+      "sha256": "8670495dd1bd5d6918d04eeaf52bfc1fe6a276f25e993a19fa9580560ddaef82"
+    }
+  },
+  "boot_route": "standalone_fsbl_pl_application_not_pynq_linux",
+  "source_build_workspace": "E:\\fpga_work\\qian_20261030_1\\vitis_migration_final_retry2"
+}

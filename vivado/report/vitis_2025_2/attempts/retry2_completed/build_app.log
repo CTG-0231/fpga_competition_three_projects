@@ -1,0 +1,69 @@
+
+****** Xilinx Vitis Development Environment
+****** Vitis v2025.2 (64-bit)
+****** SW Build 6295257 on 2025-11-13-08:29:30
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Vitis Server started on port '58037'.
+Vitis Server for Embedded Edition. Only embedded component related functions are supported.
+APPLICATION_BUILD_STARTED
+Initiating build for the trash_app component.
+Command: cmd.exe /C set CC= && set CXX= && empyro.bat build_app -s E:\fpga_work\qian_20261030_1\vitis_migration_final_retry2\workspace\trash_app\src -b E:\fpga_work\qian_20261030_1\vitis_migration_final_retry2\workspace\trash_app\build
+[INFO]: Starting Application build process
+[INFO]: Building Application
+[0/2] Re-checking globbed directories...
+[1/25] ==========Application Build Information ==========
+Compiler Flags:  -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=E:/fpga_work/qi
+an_20261030_1/vitis_migration_final_retry2/workspace/trash_platform/export/trash_platform/sw/standal
+one_domain/Xilinx.spec -IE:/fpga_work/qian_20261030_1/vitis_migration_final_retry2/workspace/trash_p
+latform/export/trash_platform/sw/standalone_domain/include -Wall -Wextra      -O0  -g3     -U__clang
+__  
+Linker Flags:       -Wl,-T -Wl,"../src/src/lscript.ld" -L"E:/fpga_work/qian_20261030_1/vitis_migrati
+on_final_retry2/workspace/trash_app/src/" -L"E:/fpga_work/qian_20261030_1/vitis_migration_final_retr
+y2/workspace/trash_platform/export/trash_platform/sw/standalone_domain/lib/" -L"/" -Wl,--start-group
+,-lxilstandalone,-lxiltimer,-lxilffs,-lxil,-lgcc,-lc,-lm -Wl,--end-group
+===========================================
+[2/25] Building C object CMakeFiles/trash_app.elf.dir/drivers/conv/xconv.c.obj
+[3/25] Building C object CMakeFiles/trash_app.elf.dir/drivers/pwdwconv/xpwdwconv.c.obj
+[4/25] Building C object CMakeFiles/trash_app.elf.dir/drivers/fc/xfc_sinit.c.obj
+[5/25] Building C object CMakeFiles/trash_app.elf.dir/drivers/conv/xconv_sinit.c.obj
+[6/25] Building C object CMakeFiles/trash_app.elf.dir/lib/net/platform.c.obj
+[7/25] Building C object CMakeFiles/trash_app.elf.dir/drivers/fc/xfc.c.obj
+[8/25] Building C object CMakeFiles/trash_app.elf.dir/drivers/shortcut/xshortcut_sinit.c.obj
+[9/25] Building C object CMakeFiles/trash_app.elf.dir/drivers/pwdwconv/xpwdwconv_sinit.c.obj
+[10/25] Building C object CMakeFiles/trash_app.elf.dir/lib/lcd/vdma_api.c.obj
+E:/fpga_work/qian_20261030_1/vitis_migration_final_retry2/workspace/trash_app/src/lib/lcd/vdma_api.c:340:12: warning: 'WriteSetup' defined but not used [-Wunused-function]
+  340 | static int WriteSetup(vdma_handle *vdma_context)
+      |            ^~~~~~~~~~
+[11/25] Building C object CMakeFiles/trash_app.elf.dir/drivers/shortcut/xshortcut.c.obj
+[12/25] Building C object CMakeFiles/trash_app.elf.dir/lib/net/pl_conv.c.obj
+[13/25] Building C object CMakeFiles/trash_app.elf.dir/lib/ov5640/vdma_api_ov5640.c.obj
+[14/25] Building C object CMakeFiles/trash_app.elf.dir/lib/net/inference.c.obj
+[15/25] Building C object CMakeFiles/trash_app.elf.dir/lib/net/sd_io.c.obj
+[16/25] Building C object CMakeFiles/trash_app.elf.dir/lib/net/layer.c.obj
+[17/25] Building C object CMakeFiles/trash_app.elf.dir/lib/scu/suc.c.obj
+[18/25] Building C object CMakeFiles/trash_app.elf.dir/lib/iic/iic.c.obj
+[19/25] Building C object CMakeFiles/trash_app.elf.dir/lib/uart/uart.c.obj
+E:/fpga_work/qian_20261030_1/vitis_migration_final_retry2/workspace/trash_app/src/lib/uart/uart.c: In function 'UART_Intr_Handler':
+E:/fpga_work/qian_20261030_1/vitis_migration_final_retry2/workspace/trash_app/src/lib/uart/uart.c:110:58: warning: unused parameter 'EventData' [-Wunused-parameter]
+  110 | void UART_Intr_Handler(void *CallBackRef, u32 Event, u32 EventData)
+      |                                                      ~~~~^~~~~~~~~
+[20/25] Building C object CMakeFiles/trash_app.elf.dir/src/camera_detection.c.obj
+[21/25] Building C object CMakeFiles/trash_app.elf.dir/lib/ov5640/ov5640.c.obj
+[22/25] Building C object CMakeFiles/trash_app.elf.dir/lib/lcd/lcd.c.obj
+E:/fpga_work/qian_20261030_1/vitis_migration_final_retry2/workspace/trash_app/src/lib/lcd/lcd.c: In function 'IntrHandler':
+E:/fpga_work/qian_20261030_1/vitis_migration_final_retry2/workspace/trash_app/src/lib/lcd/lcd.c:224:48: warning: unused parameter 'Bank' [-Wunused-parameter]
+  224 | static void IntrHandler(void *CallBackRef, u32 Bank, u32 Status)
+      |                                            ~~~~^~~~
+E:/fpga_work/qian_20261030_1/vitis_migration_final_retry2/workspace/trash_app/src/lib/lcd/lcd.c:224:58: warning: unused parameter 'Status' [-Wunused-parameter]
+  224 | static void IntrHandler(void *CallBackRef, u32 Bank, u32 Status)
+      |                                                      ~~~~^~~~~~
+[23/25] Building C object CMakeFiles/trash_app.elf.dir/src/main.c.obj
+[24/25] Building C object CMakeFiles/trash_app.elf.dir/src/mess.c.obj
+[25/25] Linking C executable trash_app.elf
+   text	   data	    bss	    dec	    hex	filename
+ 286959	   4972	287278384	287570315	1123f98b	trash_app.elf
+Build Finished successfully
+APPLICATION_BUILD_COMPLETED
+Shutting down Vitis server running on port '58037'

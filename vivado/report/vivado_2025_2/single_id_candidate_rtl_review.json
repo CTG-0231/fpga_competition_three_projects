@@ -1,0 +1,682 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "masters": 17,
+  "records": [
+    {
+      "core": "conv",
+      "master": "IN1",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\conv\\hdl\\verilog\\IN1_m_axi.v",
+      "sha256": "a0132b09675aae33b074e4f973bb762dc166e7f8c8176711171e12c8d0e0987e",
+      "logical_ports": [
+        "1",
+        "0"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "WID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "conv",
+      "master": "IN2",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\conv\\hdl\\verilog\\IN2_m_axi.v",
+      "sha256": "f64b1c3b95661c1da90b9f5820576e52b9a12ceaeb208322dcdd30834303abb7",
+      "logical_ports": [
+        "1",
+        "0"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "WID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "conv",
+      "master": "IN3",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\conv\\hdl\\verilog\\IN3_m_axi.v",
+      "sha256": "788acaa4240bf91ee9f9b0fce156dc8986bbb1ee4b46eb9fc0c89690c36ae308",
+      "logical_ports": [
+        "1",
+        "0"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "WID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "conv",
+      "master": "W",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\conv\\hdl\\verilog\\W_m_axi.v",
+      "sha256": "cf95b380ec8e4af71374ab1c82b3ee19ddfd6a7a84c439217b7def7aa35e947b",
+      "logical_ports": [
+        "1",
+        "0"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "WID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "conv",
+      "master": "OUT_r",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\conv\\hdl\\verilog\\OUT_r_m_axi.v",
+      "sha256": "31d8ee134d2dbce6329de31c28501b85eb101b8d2b754309d0a57be7b6fe61a0",
+      "logical_ports": [
+        "0",
+        "1"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "fc",
+      "master": "IN_r",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\fc\\hdl\\verilog\\IN_r_m_axi.v",
+      "sha256": "3d9e6b2e5cc9b1719645fea8121b2941deb6404000bfcff68ba2d9537f609631",
+      "logical_ports": [
+        "1",
+        "0"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "WID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "fc",
+      "master": "W",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\fc\\hdl\\verilog\\W_m_axi.v",
+      "sha256": "cf95b380ec8e4af71374ab1c82b3ee19ddfd6a7a84c439217b7def7aa35e947b",
+      "logical_ports": [
+        "1",
+        "0"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "WID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "fc",
+      "master": "O",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\fc\\hdl\\verilog\\O_m_axi.v",
+      "sha256": "48684fdde893287682f5f35319ce99cab11a5ce6d147b58179a0a8a8dd2ac57c",
+      "logical_ports": [
+        "0",
+        "1"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "pwdwconv",
+      "master": "PBUS1",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\pwdwconv\\hdl\\verilog\\PBUS1_m_axi.v",
+      "sha256": "b8ee2235346379e84d09913862c600d0300d30532acadba37fc5762243d3a13e",
+      "logical_ports": [
+        "1",
+        "0"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "WID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "pwdwconv",
+      "master": "PBUS2",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\pwdwconv\\hdl\\verilog\\PBUS2_m_axi.v",
+      "sha256": "24ec17556b41fe24085d628821415ee1b24b0099399ef3193c69827b6827651d",
+      "logical_ports": [
+        "1",
+        "0"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "WID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "pwdwconv",
+      "master": "PBUS3",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\pwdwconv\\hdl\\verilog\\PBUS3_m_axi.v",
+      "sha256": "c9a2078d5ed3aa4520f4dd502571b37793427cbcd3c473b4a81ee14f7db0af0d",
+      "logical_ports": [
+        "1",
+        "1"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "local_AXI_ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "pwdwconv",
+      "master": "PBUS4",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\pwdwconv\\hdl\\verilog\\PBUS4_m_axi.v",
+      "sha256": "0b2871ca633cd407d869bc81ee1e2a5fbe04f2cdec511b15be0688896ffad5fd",
+      "logical_ports": [
+        "0",
+        "1"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "pwdwconv",
+      "master": "SBUS1",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\pwdwconv\\hdl\\verilog\\SBUS1_m_axi.v",
+      "sha256": "c0a50f465970a4389baa81064e866695014a18b3256aa5ecb86704a7b08c4d18",
+      "logical_ports": [
+        "1",
+        "0"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "WID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "pwdwconv",
+      "master": "SBUS2",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\pwdwconv\\hdl\\verilog\\SBUS2_m_axi.v",
+      "sha256": "5a388ff056273210818e5311632701e94d665f6246aba2c254019d03062e8205",
+      "logical_ports": [
+        "1",
+        "0"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "WID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "shortcut",
+      "master": "IN1",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\shortcut\\hdl\\verilog\\IN1_m_axi.v",
+      "sha256": "a0132b09675aae33b074e4f973bb762dc166e7f8c8176711171e12c8d0e0987e",
+      "logical_ports": [
+        "1",
+        "0"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "WID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "shortcut",
+      "master": "IN2",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\shortcut\\hdl\\verilog\\IN2_m_axi.v",
+      "sha256": "f64b1c3b95661c1da90b9f5820576e52b9a12ceaeb208322dcdd30834303abb7",
+      "logical_ports": [
+        "1",
+        "0"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "WID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    },
+    {
+      "core": "shortcut",
+      "master": "OUT_r",
+      "file": "E:\\fpga_work\\qian_20261030_1\\vivado_migration\\new_hls_exports_snapshot\\shortcut\\hdl\\verilog\\OUT_r_m_axi.v",
+      "sha256": "31d8ee134d2dbce6329de31c28501b85eb101b8d2b754309d0a57be7b6fe61a0",
+      "logical_ports": [
+        "0",
+        "1"
+      ],
+      "maps": [
+        {
+          "name": "compress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        },
+        {
+          "name": "decompress_axi_id",
+          "values": [
+            "'d0",
+            "'d0"
+          ]
+        }
+      ],
+      "direct_assignments": [
+        [
+          "ARID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ],
+        [
+          "local_AXI_AWID",
+          "{C_M_AXI_ID_WIDTH{1'b0}}"
+        ]
+      ]
+    }
+  ],
+  "scope": "Reviewed 2025.2 generated adapter source patterns only. Not formal equivalence, arithmetic verification, physical timing or board validation."
+}

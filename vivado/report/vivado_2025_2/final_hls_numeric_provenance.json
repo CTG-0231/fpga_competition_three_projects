@@ -1,0 +1,2037 @@
+{
+  "time": "2026-10-30T21:58:14.062413+08:00",
+  "status": "PASS",
+  "failures": [],
+  "final_export_files_checked": 278,
+  "numerically_tested_rtl_files_checked": 101,
+  "export_files": [
+    {
+      "path": "conv/component.xml",
+      "same": true
+    },
+    {
+      "path": "conv/constraints/conv_ooc.xdc",
+      "same": true
+    },
+    {
+      "path": "conv/dfx_runtime.txt",
+      "same": true
+    },
+    {
+      "path": "conv/doc/ReleaseNotes.txt",
+      "same": true
+    },
+    {
+      "path": "conv/drivers/conv_v0_0/data/conv.mdd",
+      "same": true
+    },
+    {
+      "path": "conv/drivers/conv_v0_0/data/conv.tcl",
+      "same": true
+    },
+    {
+      "path": "conv/drivers/conv_v0_0/data/conv.yaml",
+      "same": true
+    },
+    {
+      "path": "conv/drivers/conv_v0_0/src/CMakeLists.txt",
+      "same": true
+    },
+    {
+      "path": "conv/drivers/conv_v0_0/src/Makefile",
+      "same": true
+    },
+    {
+      "path": "conv/drivers/conv_v0_0/src/xconv.c",
+      "same": true
+    },
+    {
+      "path": "conv/drivers/conv_v0_0/src/xconv.h",
+      "same": true
+    },
+    {
+      "path": "conv/drivers/conv_v0_0/src/xconv_hw.h",
+      "same": true
+    },
+    {
+      "path": "conv/drivers/conv_v0_0/src/xconv_linux.c",
+      "same": true
+    },
+    {
+      "path": "conv/drivers/conv_v0_0/src/xconv_sinit.c",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/compute3.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/compute_output.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/compute_output_fm_out_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/compute_output_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2_VITIS_LOOP_45_3.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/compute_output_wt_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/conv.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/conv_Outline_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/CTRL_s_axi.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/flow_control_loop_pipe_sequential_init.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/fm_in_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/IN1_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/IN2_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/IN3_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/load_input.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/mac_muladd_14ns_2ns_17s_17_4_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/mac_muladd_6ns_6ns_6ns_12_4_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/mac_muladd_9ns_2ns_32s_32_4_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/mul_16s_16s_32_2_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/mul_5ns_7ns_11_1_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/OUT_r_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/sparsemux_51_5_16_1_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/urem_5ns_5ns_5_9_seq_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/verilog/W_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/compute3.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/compute_output.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/compute_output_fm_out_buff_RAM_AUTO_1R1W.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/compute_output_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2_VITIS_LOOP_45_3.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/compute_output_wt_buff_RAM_AUTO_1R1W.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/conv.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/conv_Outline_1.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/CTRL_s_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/flow_control_loop_pipe_sequential_init.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/fm_in_buff1_RAM_AUTO_1R1W.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/IN1_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/IN2_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/IN3_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/load_input.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/mac_muladd_14ns_2ns_17s_17_4_1.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/mac_muladd_6ns_6ns_6ns_12_4_1.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/mac_muladd_9ns_2ns_32s_32_4_1.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/mul_16s_16s_32_2_1.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/mul_5ns_7ns_11_1_1.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/OUT_r_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/sparsemux_51_5_16_1_1.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/urem_5ns_5ns_5_9_seq_1.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/hdl/vhdl/W_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "conv/misc/logo.png",
+      "same": true
+    },
+    {
+      "path": "conv/pack.bat",
+      "same": true
+    },
+    {
+      "path": "conv/run_ippack.tcl",
+      "same": true
+    },
+    {
+      "path": "conv/sysgen_info.xml",
+      "same": true
+    },
+    {
+      "path": "conv/xgui/conv_v0_0.tcl",
+      "same": true
+    },
+    {
+      "path": "fc/component.xml",
+      "same": true
+    },
+    {
+      "path": "fc/constraints/fc_ooc.xdc",
+      "same": true
+    },
+    {
+      "path": "fc/dfx_runtime.txt",
+      "same": true
+    },
+    {
+      "path": "fc/doc/ReleaseNotes.txt",
+      "same": true
+    },
+    {
+      "path": "fc/drivers/fc_v0_0/data/fc.mdd",
+      "same": true
+    },
+    {
+      "path": "fc/drivers/fc_v0_0/data/fc.tcl",
+      "same": true
+    },
+    {
+      "path": "fc/drivers/fc_v0_0/data/fc.yaml",
+      "same": true
+    },
+    {
+      "path": "fc/drivers/fc_v0_0/src/CMakeLists.txt",
+      "same": true
+    },
+    {
+      "path": "fc/drivers/fc_v0_0/src/Makefile",
+      "same": true
+    },
+    {
+      "path": "fc/drivers/fc_v0_0/src/xfc.c",
+      "same": true
+    },
+    {
+      "path": "fc/drivers/fc_v0_0/src/xfc.h",
+      "same": true
+    },
+    {
+      "path": "fc/drivers/fc_v0_0/src/xfc_hw.h",
+      "same": true
+    },
+    {
+      "path": "fc/drivers/fc_v0_0/src/xfc_linux.c",
+      "same": true
+    },
+    {
+      "path": "fc/drivers/fc_v0_0/src/xfc_sinit.c",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/am_addmul_16s_16s_5ns_23_4_1.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/compute.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/CTRL_s_axi.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/fc.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_22.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_23.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/fc_Pipeline_VITIS_LOOP_72_1.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/flow_control_loop_pipe_sequential_init.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/IN_r_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/load_feature.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/load_feature_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/load_feature_Pipeline_VITIS_LOOP_15_1_VITIS_LOOP_16_2.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/mac_muladd_11ns_7ns_32s_32_4_1.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/mul_16s_16s_32_2_1.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/O_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/sparsemux_13_3_16_1_1.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/W_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/verilog/wt_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/am_addmul_16s_16s_5ns_23_4_1.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/compute.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/CTRL_s_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/fc.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_22.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_23.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/fc_Pipeline_VITIS_LOOP_72_1.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/flow_control_loop_pipe_sequential_init.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/IN_r_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/load_feature.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/load_feature_buff_RAM_AUTO_1R1W.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/load_feature_Pipeline_VITIS_LOOP_15_1_VITIS_LOOP_16_2.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/mac_muladd_11ns_7ns_32s_32_4_1.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/mul_16s_16s_32_2_1.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/O_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/sparsemux_13_3_16_1_1.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/W_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/hdl/vhdl/wt_buff1_RAM_AUTO_1R1W.vhd",
+      "same": true
+    },
+    {
+      "path": "fc/misc/logo.png",
+      "same": true
+    },
+    {
+      "path": "fc/pack.bat",
+      "same": true
+    },
+    {
+      "path": "fc/run_ippack.tcl",
+      "same": true
+    },
+    {
+      "path": "fc/sysgen_info.xml",
+      "same": true
+    },
+    {
+      "path": "fc/xgui/fc_v0_0.tcl",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/component.xml",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/constraints/pwdwconv_ooc.xdc",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/dfx_runtime.txt",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/doc/ReleaseNotes.txt",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/drivers/pwdwconv_v0_0/data/pwdwconv.mdd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/drivers/pwdwconv_v0_0/data/pwdwconv.tcl",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/drivers/pwdwconv_v0_0/data/pwdwconv.yaml",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/drivers/pwdwconv_v0_0/src/CMakeLists.txt",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/drivers/pwdwconv_v0_0/src/Makefile",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv.c",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv.h",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv_hw.h",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv_linux.c",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/drivers/pwdwconv_v0_0/src/xpwdwconv_sinit.c",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/am_addmul_4ns_16ns_16ns_31_4_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/bias_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/compute.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/compute_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/compute_output.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/compute_output_fm_in_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/compute_output_Pipeline_VITIS_LOOP_31_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/compute_output_Pipeline_VITIS_LOOP_31_15.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/compute_output_Pipeline_VITIS_LOOP_31_16.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/CTRL_s_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/dwconv.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/dwconv_bias_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/dwconv_fm_in_buff1_7_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/dwconv_fm_in_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/dwconv_fm_out_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/dwconv_Outline_VITIS_LOOP_179_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/dwconv_wt_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/flow_control_loop_pipe_sequential_init.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/fm_out1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/load_bias.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/load_bias_Pipeline_VITIS_LOOP_91_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/load_input.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/load_input_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/load_input_Pipeline_VITIS_LOOP_42_5_VITIS_LOOP_43_6.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/load_weight.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/load_wrapper.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/load_wrapper_Outline_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/mac_muladd_8s_3ns_2ns_8_4_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/mul_16ns_16ns_29_2_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/mul_16ns_16ns_32_2_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/mul_16s_16s_32_2_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/mul_29s_15ns_29_5_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/mul_29s_16ns_29_5_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/mul_29s_29s_29_5_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/mul_3ns_29s_29_5_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/mul_3ns_4s_4_1_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/mul_3ns_9s_10_1_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/mul_4ns_16ns_20_2_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/PBUS1_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/PBUS2_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/PBUS3_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/PBUS4_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/pwdwconv.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/SBUS1_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/SBUS2_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/sparsemux_7_2_16_1_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/sparsemux_9_4_16_1_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/store_output.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/store_output_2.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/store_output_2_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/store_output_Pipeline_VITIS_LOOP_111_1_VITIS_LOOP_112_2.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/verilog/update_three_block.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/am_addmul_4ns_16ns_16ns_31_4_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/bias_buff_RAM_AUTO_1R1W.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/compute.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/compute_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/compute_output.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/compute_output_fm_in_buff1_RAM_AUTO_1R1W.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/compute_output_Pipeline_VITIS_LOOP_31_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/compute_output_Pipeline_VITIS_LOOP_31_15.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/compute_output_Pipeline_VITIS_LOOP_31_16.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/CTRL_s_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/dwconv.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/dwconv_bias_buff_RAM_AUTO_1R1W.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/dwconv_fm_in_buff1_7_RAM_AUTO_1R1W.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/dwconv_fm_in_buff1_RAM_AUTO_1R1W.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/dwconv_fm_out_buff1_RAM_AUTO_1R1W.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/dwconv_Outline_VITIS_LOOP_179_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/dwconv_wt_buff1_RAM_AUTO_1R1W.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/flow_control_loop_pipe_sequential_init.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/fm_out1_RAM_AUTO_1R1W.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/load_bias.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/load_bias_Pipeline_VITIS_LOOP_91_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/load_input.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/load_input_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/load_input_Pipeline_VITIS_LOOP_42_5_VITIS_LOOP_43_6.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/load_weight.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/load_wrapper.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/load_wrapper_Outline_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/mac_muladd_8s_3ns_2ns_8_4_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/mul_16ns_16ns_29_2_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/mul_16ns_16ns_32_2_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/mul_16s_16s_32_2_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/mul_29s_15ns_29_5_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/mul_29s_16ns_29_5_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/mul_29s_29s_29_5_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/mul_3ns_29s_29_5_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/mul_3ns_4s_4_1_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/mul_3ns_9s_10_1_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/mul_4ns_16ns_20_2_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/PBUS1_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/PBUS2_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/PBUS3_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/PBUS4_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/pwdwconv.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/SBUS1_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/SBUS2_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/sparsemux_7_2_16_1_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/sparsemux_9_4_16_1_1.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/store_output.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/store_output_2.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/store_output_2_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/store_output_Pipeline_VITIS_LOOP_111_1_VITIS_LOOP_112_2.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/hdl/vhdl/update_three_block.vhd",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/misc/logo.png",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/pack.bat",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/run_ippack.tcl",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/sysgen_info.xml",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/xgui/pwdwconv_v0_0.tcl",
+      "same": true
+    },
+    {
+      "path": "shortcut/component.xml",
+      "same": true
+    },
+    {
+      "path": "shortcut/constraints/shortcut_ooc.xdc",
+      "same": true
+    },
+    {
+      "path": "shortcut/dfx_runtime.txt",
+      "same": true
+    },
+    {
+      "path": "shortcut/doc/ReleaseNotes.txt",
+      "same": true
+    },
+    {
+      "path": "shortcut/drivers/shortcut_v0_0/data/shortcut.mdd",
+      "same": true
+    },
+    {
+      "path": "shortcut/drivers/shortcut_v0_0/data/shortcut.tcl",
+      "same": true
+    },
+    {
+      "path": "shortcut/drivers/shortcut_v0_0/data/shortcut.yaml",
+      "same": true
+    },
+    {
+      "path": "shortcut/drivers/shortcut_v0_0/src/CMakeLists.txt",
+      "same": true
+    },
+    {
+      "path": "shortcut/drivers/shortcut_v0_0/src/Makefile",
+      "same": true
+    },
+    {
+      "path": "shortcut/drivers/shortcut_v0_0/src/xshortcut.c",
+      "same": true
+    },
+    {
+      "path": "shortcut/drivers/shortcut_v0_0/src/xshortcut.h",
+      "same": true
+    },
+    {
+      "path": "shortcut/drivers/shortcut_v0_0/src/xshortcut_hw.h",
+      "same": true
+    },
+    {
+      "path": "shortcut/drivers/shortcut_v0_0/src/xshortcut_linux.c",
+      "same": true
+    },
+    {
+      "path": "shortcut/drivers/shortcut_v0_0/src/xshortcut_sinit.c",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/verilog/CTRL_s_axi.v",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/verilog/flow_control_loop_pipe_sequential_init.v",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/verilog/IN1_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/verilog/IN2_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/verilog/OUT_r_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/verilog/shortcut.v",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/verilog/shortcut_Pipeline_VITIS_LOOP_16_1.v",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/vhdl/CTRL_s_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/vhdl/flow_control_loop_pipe_sequential_init.vhd",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/vhdl/IN1_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/vhdl/IN2_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/vhdl/OUT_r_m_axi.vhd",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/vhdl/shortcut.vhd",
+      "same": true
+    },
+    {
+      "path": "shortcut/hdl/vhdl/shortcut_Pipeline_VITIS_LOOP_16_1.vhd",
+      "same": true
+    },
+    {
+      "path": "shortcut/misc/logo.png",
+      "same": true
+    },
+    {
+      "path": "shortcut/pack.bat",
+      "same": true
+    },
+    {
+      "path": "shortcut/run_ippack.tcl",
+      "same": true
+    },
+    {
+      "path": "shortcut/sysgen_info.xml",
+      "same": true
+    },
+    {
+      "path": "shortcut/xgui/shortcut_v0_0.tcl",
+      "same": true
+    }
+  ],
+  "numeric_rtl_files": [
+    {
+      "path": "shortcut/CTRL_s_axi.v",
+      "same": true
+    },
+    {
+      "path": "shortcut/flow_control_loop_pipe_sequential_init.v",
+      "same": true
+    },
+    {
+      "path": "shortcut/IN1_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "shortcut/IN2_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "shortcut/OUT_r_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "shortcut/shortcut.v",
+      "same": true
+    },
+    {
+      "path": "shortcut/shortcut_Pipeline_VITIS_LOOP_16_1.v",
+      "same": true
+    },
+    {
+      "path": "fc/am_addmul_16s_16s_5ns_23_4_1.v",
+      "same": true
+    },
+    {
+      "path": "fc/compute.v",
+      "same": true
+    },
+    {
+      "path": "fc/CTRL_s_axi.v",
+      "same": true
+    },
+    {
+      "path": "fc/fc.v",
+      "same": true
+    },
+    {
+      "path": "fc/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2.v",
+      "same": true
+    },
+    {
+      "path": "fc/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_22.v",
+      "same": true
+    },
+    {
+      "path": "fc/fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_23.v",
+      "same": true
+    },
+    {
+      "path": "fc/fc_Pipeline_VITIS_LOOP_72_1.v",
+      "same": true
+    },
+    {
+      "path": "fc/flow_control_loop_pipe_sequential_init.v",
+      "same": true
+    },
+    {
+      "path": "fc/IN_r_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "fc/load_feature.v",
+      "same": true
+    },
+    {
+      "path": "fc/load_feature_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "fc/load_feature_Pipeline_VITIS_LOOP_15_1_VITIS_LOOP_16_2.v",
+      "same": true
+    },
+    {
+      "path": "fc/mac_muladd_11ns_7ns_32s_32_4_1.v",
+      "same": true
+    },
+    {
+      "path": "fc/mul_16s_16s_32_2_1.v",
+      "same": true
+    },
+    {
+      "path": "fc/O_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "fc/sparsemux_13_3_16_1_1.v",
+      "same": true
+    },
+    {
+      "path": "fc/W_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "fc/wt_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "conv/compute3.v",
+      "same": true
+    },
+    {
+      "path": "conv/compute_output.v",
+      "same": true
+    },
+    {
+      "path": "conv/compute_output_fm_out_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "conv/compute_output_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2_VITIS_LOOP_45_3.v",
+      "same": true
+    },
+    {
+      "path": "conv/compute_output_wt_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "conv/conv.v",
+      "same": true
+    },
+    {
+      "path": "conv/conv_Outline_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/CTRL_s_axi.v",
+      "same": true
+    },
+    {
+      "path": "conv/flow_control_loop_pipe_sequential_init.v",
+      "same": true
+    },
+    {
+      "path": "conv/fm_in_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "conv/IN1_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "conv/IN2_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "conv/IN3_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "conv/load_input.v",
+      "same": true
+    },
+    {
+      "path": "conv/mac_muladd_14ns_2ns_17s_17_4_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/mac_muladd_6ns_6ns_6ns_12_4_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/mac_muladd_9ns_2ns_32s_32_4_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/mul_16s_16s_32_2_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/mul_5ns_7ns_11_1_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/OUT_r_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "conv/sparsemux_51_5_16_1_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/urem_5ns_5ns_5_9_seq_1.v",
+      "same": true
+    },
+    {
+      "path": "conv/W_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/am_addmul_4ns_16ns_16ns_31_4_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/bias_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/compute.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/compute_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/compute_output.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/compute_output_fm_in_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/compute_output_Pipeline_VITIS_LOOP_31_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/compute_output_Pipeline_VITIS_LOOP_31_15.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/compute_output_Pipeline_VITIS_LOOP_31_16.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/CTRL_s_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/dwconv.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/dwconv_bias_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/dwconv_fm_in_buff1_7_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/dwconv_fm_in_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/dwconv_fm_out_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/dwconv_Outline_VITIS_LOOP_179_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/dwconv_wt_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/flow_control_loop_pipe_sequential_init.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/fm_out1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/load_bias.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/load_bias_Pipeline_VITIS_LOOP_91_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/load_input.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/load_input_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/load_input_Pipeline_VITIS_LOOP_42_5_VITIS_LOOP_43_6.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/load_weight.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/load_wrapper.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/load_wrapper_Outline_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/mac_muladd_8s_3ns_2ns_8_4_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/mul_16ns_16ns_29_2_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/mul_16ns_16ns_32_2_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/mul_16s_16s_32_2_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/mul_29s_15ns_29_5_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/mul_29s_16ns_29_5_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/mul_29s_29s_29_5_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/mul_3ns_29s_29_5_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/mul_3ns_4s_4_1_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/mul_3ns_9s_10_1_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/mul_4ns_16ns_20_2_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/PBUS1_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/PBUS2_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/PBUS3_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/PBUS4_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/pwdwconv.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/SBUS1_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/SBUS2_m_axi.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/sparsemux_7_2_16_1_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/sparsemux_9_4_16_1_1.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/store_output.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/store_output_2.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/store_output_2_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/store_output_Pipeline_VITIS_LOOP_111_1_VITIS_LOOP_112_2.v",
+      "same": true
+    },
+    {
+      "path": "pwdwconv/update_three_block.v",
+      "same": true
+    }
+  ],
+  "all_four_numeric_report_pass": true,
+  "scope": "Exact frozen raw export/RTL byte provenance against independently produced HLS export and top-level numerical-test manifests. Not whole-network or board verification.",
+  "actual_generated_rtl_checked_against_numeric_tests": [
+    {
+      "core": "conv",
+      "file": "compute3.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "compute_output.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "compute_output_fm_out_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "compute_output_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2_VITIS_LOOP_45_3.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "compute_output_wt_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "conv.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "conv_Outline_1.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "CTRL_s_axi.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "flow_control_loop_pipe_sequential_init.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "fm_in_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "IN1_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "IN2_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "IN3_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "load_input.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "mac_muladd_14ns_2ns_17s_17_4_1.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "mac_muladd_6ns_6ns_6ns_12_4_1.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "mac_muladd_9ns_2ns_32s_32_4_1.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "mul_16s_16s_32_2_1.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "mul_5ns_7ns_11_1_1.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "OUT_r_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "sparsemux_51_5_16_1_1.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "urem_5ns_5ns_5_9_seq_1.v",
+      "same": true
+    },
+    {
+      "core": "conv",
+      "file": "W_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "am_addmul_16s_16s_5ns_23_4_1.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "compute.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "CTRL_s_axi.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "fc.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_22.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "fc_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_23.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "fc_Pipeline_VITIS_LOOP_72_1.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "flow_control_loop_pipe_sequential_init.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "IN_r_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "load_feature.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "load_feature_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "load_feature_Pipeline_VITIS_LOOP_15_1_VITIS_LOOP_16_2.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "mac_muladd_11ns_7ns_32s_32_4_1.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "mul_16s_16s_32_2_1.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "O_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "sparsemux_13_3_16_1_1.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "wt_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "core": "fc",
+      "file": "W_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "am_addmul_4ns_16ns_16ns_31_4_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "bias_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "compute.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "compute_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "compute_output.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "compute_output_fm_in_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "compute_output_Pipeline_VITIS_LOOP_31_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "compute_output_Pipeline_VITIS_LOOP_31_15.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "compute_output_Pipeline_VITIS_LOOP_31_16.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "CTRL_s_axi.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "dwconv.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "dwconv_bias_buff_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "dwconv_fm_in_buff1_7_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "dwconv_fm_in_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "dwconv_fm_out_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "dwconv_Outline_VITIS_LOOP_179_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "dwconv_wt_buff1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "flow_control_loop_pipe_sequential_init.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "fm_out1_RAM_AUTO_1R1W.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "load_bias.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "load_bias_Pipeline_VITIS_LOOP_91_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "load_input.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "load_input_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "load_input_Pipeline_VITIS_LOOP_42_5_VITIS_LOOP_43_6.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "load_weight.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "load_wrapper.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "load_wrapper_Outline_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "mac_muladd_8s_3ns_2ns_8_4_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "mul_16ns_16ns_29_2_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "mul_16ns_16ns_32_2_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "mul_16s_16s_32_2_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "mul_29s_15ns_29_5_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "mul_29s_16ns_29_5_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "mul_29s_29s_29_5_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "mul_3ns_29s_29_5_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "mul_3ns_4s_4_1_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "mul_3ns_9s_10_1_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "mul_4ns_16ns_20_2_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "PBUS1_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "PBUS2_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "PBUS3_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "PBUS4_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "pwdwconv.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "SBUS1_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "SBUS2_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "sparsemux_7_2_16_1_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "sparsemux_9_4_16_1_1.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "store_output.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "store_output_2.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "store_output_2_Pipeline_VITIS_LOOP_102_1_VITIS_LOOP_103_2.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "store_output_Pipeline_VITIS_LOOP_111_1_VITIS_LOOP_112_2.v",
+      "same": true
+    },
+    {
+      "core": "pwdwconv",
+      "file": "update_three_block.v",
+      "same": true
+    },
+    {
+      "core": "shortcut",
+      "file": "CTRL_s_axi.v",
+      "same": true
+    },
+    {
+      "core": "shortcut",
+      "file": "flow_control_loop_pipe_sequential_init.v",
+      "same": true
+    },
+    {
+      "core": "shortcut",
+      "file": "IN1_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "shortcut",
+      "file": "IN2_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "shortcut",
+      "file": "OUT_r_m_axi.v",
+      "same": true
+    },
+    {
+      "core": "shortcut",
+      "file": "shortcut.v",
+      "same": true
+    },
+    {
+      "core": "shortcut",
+      "file": "shortcut_Pipeline_VITIS_LOOP_16_1.v",
+      "same": true
+    }
+  ],
+  "actual_generated_rtl_count": 101
+}

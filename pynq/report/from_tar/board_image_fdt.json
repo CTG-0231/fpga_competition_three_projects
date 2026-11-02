@@ -1,0 +1,592 @@
+{
+  "source": "E:\\work\\FPGA\\Qian\\pynq_port\\build\\work\\board_image\\boot_files\\image.ub",
+  "source_bytes": 5890380,
+  "source_sha256": "b063e9f858a72875259832842d178b895ddfaae4100d0c2dec12bcf94a36b2d4",
+  "description": "U-Boot fitImage for PYNQ arm kernel",
+  "fit_images": {
+    "/images/kernel@0": {
+      "description": "Linux Kernel",
+      "type": "kernel",
+      "arch": "arm",
+      "os": "linux",
+      "compression": "none",
+      "load": [
+        "0x80000"
+      ],
+      "entry": [
+        "0x80000"
+      ],
+      "payload_bytes": 5869440,
+      "payload_sha256": "cbd2d2ade6b3f187a1114f8eb60b7ae92fd0c1feca814856df184fa1c07573d9",
+      "hashes": [
+        {
+          "node": "/images/kernel@0/hash@1",
+          "algorithm": "sha1",
+          "expected": "6f188c9aba48c90f30693e1b87c397ec41a0cfa0",
+          "calculated": "6f188c9aba48c90f30693e1b87c397ec41a0cfa0",
+          "match": true
+        }
+      ],
+      "kernel": {
+        "fit_compression": "none",
+        "payload_bytes": 5869440,
+        "linux_version": "Linux version 5.4.0-xilinx-v2020.2 (oe-user@oe-host) (gcc version 9.2.0 (GCC)) #1 SMP PREEMPT Wed Sep 25 01:43:53 UTC 2024",
+        "config_found": true,
+        "config_absence_is_not_evidence_of_disabled_features": true,
+        "linux_version_source": "gzip at FIT payload +0x3e6c",
+        "config_source": "gzip at FIT payload +0x3e6c",
+        "config_bytes": 159701,
+        "config_sha256": "8894881d2063f60d81a1932af960d21480bccaba7d95364d745e2faf7457f4c6",
+        "config": {
+          "CONFIG_OF": "CONFIG_OF=y",
+          "CONFIG_OF_OVERLAY": "CONFIG_OF_OVERLAY=y",
+          "CONFIG_OF_CONFIGFS": "CONFIG_OF_CONFIGFS=y",
+          "CONFIG_CONFIGFS_FS": "CONFIG_CONFIGFS_FS=y",
+          "CONFIG_FPGA": "CONFIG_FPGA=y",
+          "CONFIG_FPGA_MGR_ZYNQ_FPGA": "CONFIG_FPGA_MGR_ZYNQ_FPGA=y",
+          "CONFIG_FPGA_REGION": "CONFIG_FPGA_REGION=y",
+          "CONFIG_I2C_CADENCE": "CONFIG_I2C_CADENCE=y",
+          "CONFIG_I2C_CHARDEV": "CONFIG_I2C_CHARDEV=y",
+          "CONFIG_GPIO_SYSFS": "CONFIG_GPIO_SYSFS=y",
+          "CONFIG_GPIO_ZYNQ": "CONFIG_GPIO_ZYNQ=y",
+          "CONFIG_PINCTRL_ZYNQ": "CONFIG_PINCTRL_ZYNQ=y",
+          "CONFIG_CMA": "CONFIG_CMA=y",
+          "CONFIG_DMA_CMA": "CONFIG_DMA_CMA=y",
+          "CONFIG_CMA_SIZE_MBYTES": "CONFIG_CMA_SIZE_MBYTES=128",
+          "CONFIG_CMA_SIZE_SEL_MBYTES": "CONFIG_CMA_SIZE_SEL_MBYTES=y",
+          "CONFIG_IKCONFIG": "CONFIG_IKCONFIG=y",
+          "CONFIG_IKCONFIG_PROC": "CONFIG_IKCONFIG_PROC=y",
+          "CONFIG_INPUT_TOUCHSCREEN": "# CONFIG_INPUT_TOUCHSCREEN is not set",
+          "CONFIG_TOUCHSCREEN_GOODIX": "not_present_in_embedded_config",
+          "CONFIG_VIDEO_OV5640": "# CONFIG_VIDEO_OV5640 is not set",
+          "CONFIG_ARCH_ZYNQ": "CONFIG_ARCH_ZYNQ=y",
+          "CONFIG_XILINX_APF": "CONFIG_XILINX_APF=y"
+        }
+      }
+    },
+    "/images/fdt@0": {
+      "description": "Flattened Device Tree blob",
+      "type": "flat_dt",
+      "arch": "arm",
+      "compression": "none",
+      "payload_bytes": 19123,
+      "payload_sha256": "28d656e6da69a652484d29210fe99ef990a105125d9d834666ca69736a427f2f",
+      "hashes": [
+        {
+          "node": "/images/fdt@0/hash@1",
+          "algorithm": "sha1",
+          "expected": "9a0cbc2d04c7a85f894616764850b823123feaaa",
+          "calculated": "9a0cbc2d04c7a85f894616764850b823123feaaa",
+          "match": true
+        }
+      ],
+      "dtb_node_count": 92
+    }
+  },
+  "configurations": {
+    "/configurations/conf@1": {
+      "description": "Boot Linux kernel with FDT blob",
+      "kernel": "kernel@0",
+      "fdt": "fdt@0"
+    },
+    "/configurations/conf@1/hash@1": {
+      "algo": "sha1"
+    }
+  },
+  "default_configuration": "conf@1",
+  "selected_fdt_image": "/images/fdt@0",
+  "system_dtb": {
+    "node_count": 92,
+    "total_bytes": 19123,
+    "memory_reservations": [],
+    "phandles": {
+      "0x1": "/amba/slcr@f8000000/clkc@100",
+      "0x2": "/fixedregulator",
+      "0x3": "/amba/devcfg@f8007000",
+      "0x4": "/amba/interrupt-controller@f8f01000",
+      "0x5": "/amba/tpiu@f8803000/in-ports/port/endpoint",
+      "0x6": "/amba/etb@f8801000/in-ports/port/endpoint",
+      "0x7": "/amba/funnel@f8804000/out-ports/port/endpoint",
+      "0x8": "/amba/slcr@f8000000",
+      "0x9": "/replicator/out-ports/port@1/endpoint",
+      "0xa": "/replicator/out-ports/port@0/endpoint",
+      "0xb": "/replicator/in-ports/port/endpoint",
+      "0xc": "/amba/ptm@f889c000/out-ports/port/endpoint",
+      "0xd": "/amba/ptm@f889d000/out-ports/port/endpoint",
+      "0xe": "/cpus/cpu@0",
+      "0xf": "/amba/funnel@f8804000/in-ports/port@0/endpoint",
+      "0x10": "/cpus/cpu@1",
+      "0x11": "/amba/funnel@f8804000/in-ports/port@1/endpoint",
+      "0x12": "/fpga-full",
+      "0x13": "/amba",
+      "0x14": "/amba/adc@f8007100",
+      "0x15": "/amba/can@e0008000",
+      "0x16": "/amba/can@e0009000",
+      "0x17": "/amba/gpio@e000a000",
+      "0x18": "/amba/i2c@e0004000",
+      "0x19": "/amba/i2c@e0005000",
+      "0x1a": "/amba/cache-controller@f8f02000",
+      "0x1b": "/amba/memory-controller@f8006000",
+      "0x1c": "/amba/ocmc@f800c000",
+      "0x1d": "/amba/serial@e0000000",
+      "0x1e": "/amba/serial@e0001000",
+      "0x1f": "/amba/spi@e0006000",
+      "0x20": "/amba/spi@e0007000",
+      "0x21": "/amba/spi@e000d000",
+      "0x22": "/amba/spi@e000d000/flash@0",
+      "0x23": "/amba/memory-controller@e000e000",
+      "0x24": "/amba/memory-controller@e000e000/flash@e1000000",
+      "0x25": "/amba/memory-controller@e000e000/flash@e2000000",
+      "0x26": "/amba/ethernet@e000b000",
+      "0x27": "/amba/ethernet@e000c000",
+      "0x28": "/amba/mmc@e0100000",
+      "0x29": "/amba/mmc@e0101000",
+      "0x2a": "/amba/slcr@f8000000/rstc@200",
+      "0x2b": "/amba/slcr@f8000000/pinctrl@700",
+      "0x2c": "/amba/dmac@f8003000",
+      "0x2d": "/amba/efuse@f800d000",
+      "0x2e": "/amba/timer@f8f00200",
+      "0x2f": "/amba/timer@f8001000",
+      "0x30": "/amba/timer@f8002000",
+      "0x31": "/amba/timer@f8f00600",
+      "0x32": "/amba/usb@e0002000",
+      "0x33": "/amba/usb@e0003000",
+      "0x34": "/amba/watchdog@f8005000",
+      "0x35": "/amba/funnel@f8804000/in-ports/port@2/endpoint"
+    },
+    "nodes": {
+      "/": {
+        "#address-cells": [
+          "0x1"
+        ],
+        "#size-cells": [
+          "0x1"
+        ],
+        "compatible": "xlnx,zynq-7000"
+      },
+      "/fpga-full": {
+        "compatible": "fpga-region",
+        "fpga-mgr": [
+          "0x3"
+        ],
+        "#address-cells": [
+          "0x1"
+        ],
+        "#size-cells": [
+          "0x1"
+        ],
+        "ranges": true,
+        "phandle": [
+          "0x12"
+        ]
+      },
+      "/amba/gpio@e000a000": {
+        "compatible": "xlnx,zynq-gpio-1.0",
+        "#gpio-cells": [
+          "0x2"
+        ],
+        "clocks": [
+          "0x1",
+          "0x2a"
+        ],
+        "gpio-controller": true,
+        "interrupt-controller": true,
+        "#interrupt-cells": [
+          "0x2"
+        ],
+        "interrupt-parent": [
+          "0x4"
+        ],
+        "interrupts": [
+          "0x0",
+          "0x14",
+          "0x4"
+        ],
+        "reg": [
+          "0xe000a000",
+          "0x1000"
+        ],
+        "phandle": [
+          "0x17"
+        ],
+        "resolved_clocks": [
+          {
+            "provider": "/amba/slcr@f8000000/clkc@100",
+            "args": [
+              42
+            ],
+            "output_name": "gpio_aper"
+          }
+        ]
+      },
+      "/amba/i2c@e0004000": {
+        "compatible": "cdns,i2c-r1p10",
+        "status": "disabled",
+        "clocks": [
+          "0x1",
+          "0x26"
+        ],
+        "interrupt-parent": [
+          "0x4"
+        ],
+        "interrupts": [
+          "0x0",
+          "0x19",
+          "0x4"
+        ],
+        "reg": [
+          "0xe0004000",
+          "0x1000"
+        ],
+        "#address-cells": [
+          "0x1"
+        ],
+        "#size-cells": [
+          "0x0"
+        ],
+        "phandle": [
+          "0x18"
+        ],
+        "resolved_clocks": [
+          {
+            "provider": "/amba/slcr@f8000000/clkc@100",
+            "args": [
+              38
+            ],
+            "output_name": "i2c0_aper"
+          }
+        ]
+      },
+      "/amba/i2c@e0005000": {
+        "compatible": "cdns,i2c-r1p10",
+        "status": "disabled",
+        "clocks": [
+          "0x1",
+          "0x27"
+        ],
+        "interrupt-parent": [
+          "0x4"
+        ],
+        "interrupts": [
+          "0x0",
+          "0x30",
+          "0x4"
+        ],
+        "reg": [
+          "0xe0005000",
+          "0x1000"
+        ],
+        "#address-cells": [
+          "0x1"
+        ],
+        "#size-cells": [
+          "0x0"
+        ],
+        "phandle": [
+          "0x19"
+        ],
+        "resolved_clocks": [
+          {
+            "provider": "/amba/slcr@f8000000/clkc@100",
+            "args": [
+              39
+            ],
+            "output_name": "i2c1_aper"
+          }
+        ]
+      },
+      "/amba/memory-controller@f8006000": {
+        "compatible": "xlnx,zynq-ddrc-a05",
+        "reg": [
+          "0xf8006000",
+          "0x1000"
+        ],
+        "phandle": [
+          "0x1b"
+        ]
+      },
+      "/amba/memory-controller@e000e000": {
+        "#address-cells": [
+          "0x1"
+        ],
+        "#size-cells": [
+          "0x1"
+        ],
+        "status": "disabled",
+        "clock-names": [
+          "memclk",
+          "apb_pclk"
+        ],
+        "clocks": [
+          "0x1",
+          "0xb",
+          "0x1",
+          "0x2c"
+        ],
+        "compatible": [
+          "arm,pl353-smc-r2p1",
+          "arm,primecell"
+        ],
+        "interrupt-parent": [
+          "0x4"
+        ],
+        "interrupts": [
+          "0x0",
+          "0x12",
+          "0x4"
+        ],
+        "ranges": true,
+        "reg": [
+          "0xe000e000",
+          "0x1000"
+        ],
+        "phandle": [
+          "0x23"
+        ],
+        "resolved_clocks": [
+          {
+            "provider": "/amba/slcr@f8000000/clkc@100",
+            "args": [
+              11
+            ],
+            "output_name": "smc"
+          },
+          {
+            "provider": "/amba/slcr@f8000000/clkc@100",
+            "args": [
+              44
+            ],
+            "output_name": "smc_aper"
+          }
+        ]
+      },
+      "/amba/memory-controller@e000e000/flash@e1000000": {
+        "status": "disabled",
+        "compatible": "arm,pl353-nand-r2p1",
+        "reg": [
+          "0xe1000000",
+          "0x1000000"
+        ],
+        "#address-cells": [
+          "0x1"
+        ],
+        "#size-cells": [
+          "0x1"
+        ],
+        "phandle": [
+          "0x24"
+        ]
+      },
+      "/amba/memory-controller@e000e000/flash@e2000000": {
+        "status": "disabled",
+        "compatible": "cfi-flash",
+        "reg": [
+          "0xe2000000",
+          "0x2000000"
+        ],
+        "#address-cells": [
+          "0x1"
+        ],
+        "#size-cells": [
+          "0x1"
+        ],
+        "phandle": [
+          "0x25"
+        ]
+      },
+      "/amba/slcr@f8000000": {
+        "u-boot,dm-pre-reloc": true,
+        "#address-cells": [
+          "0x1"
+        ],
+        "#size-cells": [
+          "0x1"
+        ],
+        "compatible": [
+          "xlnx,zynq-slcr",
+          "syscon",
+          "simple-mfd"
+        ],
+        "reg": [
+          "0xf8000000",
+          "0x1000"
+        ],
+        "ranges": true,
+        "phandle": [
+          "0x8"
+        ]
+      },
+      "/amba/slcr@f8000000/clkc@100": {
+        "u-boot,dm-pre-reloc": true,
+        "#clock-cells": [
+          "0x1"
+        ],
+        "compatible": "xlnx,ps7-clkc",
+        "fclk-enable": [
+          "0x0"
+        ],
+        "clock-output-names": [
+          "armpll",
+          "ddrpll",
+          "iopll",
+          "cpu_6or4x",
+          "cpu_3or2x",
+          "cpu_2x",
+          "cpu_1x",
+          "ddr2x",
+          "ddr3x",
+          "dci",
+          "lqspi",
+          "smc",
+          "pcap",
+          "gem0",
+          "gem1",
+          "fclk0",
+          "fclk1",
+          "fclk2",
+          "fclk3",
+          "can0",
+          "can1",
+          "sdio0",
+          "sdio1",
+          "uart0",
+          "uart1",
+          "spi0",
+          "spi1",
+          "dma",
+          "usb0_aper",
+          "usb1_aper",
+          "gem0_aper",
+          "gem1_aper",
+          "sdio0_aper",
+          "sdio1_aper",
+          "spi0_aper",
+          "spi1_aper",
+          "can0_aper",
+          "can1_aper",
+          "i2c0_aper",
+          "i2c1_aper",
+          "uart0_aper",
+          "uart1_aper",
+          "gpio_aper",
+          "lqspi_aper",
+          "smc_aper",
+          "swdt",
+          "dbg_trc",
+          "dbg_apb"
+        ],
+        "reg": [
+          "0x100",
+          "0x100"
+        ],
+        "ps-clk-frequency": [
+          "0x1fca055"
+        ],
+        "phandle": [
+          "0x1"
+        ]
+      },
+      "/amba/slcr@f8000000/rstc@200": {
+        "compatible": "xlnx,zynq-reset",
+        "reg": [
+          "0x200",
+          "0x48"
+        ],
+        "#reset-cells": [
+          "0x1"
+        ],
+        "syscon": [
+          "0x8"
+        ],
+        "phandle": [
+          "0x2a"
+        ]
+      },
+      "/amba/slcr@f8000000/pinctrl@700": {
+        "compatible": "xlnx,pinctrl-zynq",
+        "reg": [
+          "0x700",
+          "0x200"
+        ],
+        "syscon": [
+          "0x8"
+        ],
+        "phandle": [
+          "0x2b"
+        ]
+      },
+      "/chosen": {
+        "bootargs": "root=/dev/mmcblk0p2 rw earlyprintk rootfstype=ext4 rootwait devtmpfs.mount=1 uio_pdrv_genirq.of_id=\"generic-uio\" clk_ignore_unused",
+        "stdout-path": "serial0:115200n8",
+        "pynq_board": "None"
+      },
+      "/aliases": {
+        "ethernet0": "/amba/ethernet@e000b000",
+        "serial0": "/amba/serial@e0001000",
+        "spi0": "/amba/spi@e000d000"
+      },
+      "/memory": {
+        "device_type": "memory",
+        "reg": [
+          "0x0",
+          "0x40000000"
+        ]
+      },
+      "/__symbols__": {
+        "cpu0": "/cpus/cpu@0",
+        "cpu1": "/cpus/cpu@1",
+        "fpga_full": "/fpga-full",
+        "regulator_vccpint": "/fixedregulator",
+        "replicator_out_port0": "/replicator/out-ports/port@0/endpoint",
+        "replicator_out_port1": "/replicator/out-ports/port@1/endpoint",
+        "replicator_in_port0": "/replicator/in-ports/port/endpoint",
+        "amba": "/amba",
+        "adc": "/amba/adc@f8007100",
+        "can0": "/amba/can@e0008000",
+        "can1": "/amba/can@e0009000",
+        "gpio0": "/amba/gpio@e000a000",
+        "i2c0": "/amba/i2c@e0004000",
+        "i2c1": "/amba/i2c@e0005000",
+        "intc": "/amba/interrupt-controller@f8f01000",
+        "L2": "/amba/cache-controller@f8f02000",
+        "mc": "/amba/memory-controller@f8006000",
+        "ocmc": "/amba/ocmc@f800c000",
+        "uart0": "/amba/serial@e0000000",
+        "uart1": "/amba/serial@e0001000",
+        "spi0": "/amba/spi@e0006000",
+        "spi1": "/amba/spi@e0007000",
+        "qspi": "/amba/spi@e000d000",
+        "flash0": "/amba/spi@e000d000/flash@0",
+        "smcc": "/amba/memory-controller@e000e000",
+        "nand0": "/amba/memory-controller@e000e000/flash@e1000000",
+        "nor0": "/amba/memory-controller@e000e000/flash@e2000000",
+        "gem0": "/amba/ethernet@e000b000",
+        "gem1": "/amba/ethernet@e000c000",
+        "sdhci0": "/amba/mmc@e0100000",
+        "sdhci1": "/amba/mmc@e0101000",
+        "slcr": "/amba/slcr@f8000000",
+        "clkc": "/amba/slcr@f8000000/clkc@100",
+        "rstc": "/amba/slcr@f8000000/rstc@200",
+        "pinctrl0": "/amba/slcr@f8000000/pinctrl@700",
+        "dmac_s": "/amba/dmac@f8003000",
+        "devcfg": "/amba/devcfg@f8007000",
+        "efuse": "/amba/efuse@f800d000",
+        "global_timer": "/amba/timer@f8f00200",
+        "ttc0": "/amba/timer@f8001000",
+        "ttc1": "/amba/timer@f8002000",
+        "scutimer": "/amba/timer@f8f00600",
+        "usb0": "/amba/usb@e0002000",
+        "usb1": "/amba/usb@e0003000",
+        "watchdog0": "/amba/watchdog@f8005000",
+        "etb_in_port": "/amba/etb@f8801000/in-ports/port/endpoint",
+        "tpiu_in_port": "/amba/tpiu@f8803000/in-ports/port/endpoint",
+        "funnel_out_port": "/amba/funnel@f8804000/out-ports/port/endpoint",
+        "funnel0_in_port0": "/amba/funnel@f8804000/in-ports/port@0/endpoint",
+        "funnel0_in_port1": "/amba/funnel@f8804000/in-ports/port@1/endpoint",
+        "funnel0_in_port2": "/amba/funnel@f8804000/in-ports/port@2/endpoint",
+        "ptm0_out_port": "/amba/ptm@f889c000/out-ports/port/endpoint",
+        "ptm1_out_port": "/amba/ptm@f889d000/out-ports/port/endpoint"
+      }
+    }
+  }
+}

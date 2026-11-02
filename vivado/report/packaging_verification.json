@@ -1,0 +1,73 @@
+{
+  "path_names_pass": true,
+  "readme_exception": "README.md",
+  "required_directories": [
+    "src",
+    "sim",
+    "build",
+    "board",
+    "data",
+    "skill",
+    "report"
+  ],
+  "python_syntax_files": 54,
+  "skills": {
+    "pynq": "Skill is valid!",
+    "hls": "Skill is valid!",
+    "vivado": "Skill is valid!"
+  },
+  "entry_help": {
+    "pynq/board/lanuch.py": "passed",
+    "pynq/build/doctor.py": "passed",
+    "pynq/build/restore_sources.py": "passed",
+    "pynq/sim/run_host_tests.py": "passed",
+    "hls/build/hls_2025_2.py": "passed",
+    "hls/build/validate_hls_rtl.py": "passed",
+    "hls/build/restore_sources.py": "passed",
+    "vivado/build/vivado_2025_2/build.py": "passed",
+    "vivado/build/vivado_2025_2/prepare_inputs.py": "passed",
+    "vivado/build/build_vitis_2025_2.py": "passed",
+    "vivado/build/export_overlay.py": "passed",
+    "vivado/build/validate_pynq27_hwh.py": "passed",
+    "vivado/build/restore_sources.py": "passed"
+  },
+  "new_document_links_checked": 14,
+  "input_archives_unchanged": true,
+  "product_code_changes_restricted_to_case_and_paths": true,
+  "board_accessed": false,
+  "new_synthesis_or_implementation": false,
+  "project": "vivado",
+  "snapshots": {
+    "native_2019_2": {
+      "files": 407,
+      "sha256": "77ae4a0c2bfcfcc0be6854bc666b0d33b577c83a02d3d9d6e4a7a1229a5dc1be",
+      "restoration_passed": true,
+      "exact_input_tree_compared": true,
+      "seconds": 1.625
+    },
+    "vitis_from_rar": {
+      "files": 3028,
+      "sha256": "7b194a7e66df836217111631147a3e34251e0c1c9add0b552202d312ca1666f4",
+      "restoration_passed": true,
+      "exact_input_tree_compared": true,
+      "seconds": 6.937
+    },
+    "native_2025_2": {
+      "files": 919,
+      "sha256": "a7107e8dcd210e0b423280351e3c78867247b1eadc37e964e75e3a41efb02761",
+      "restoration_passed": true,
+      "exact_input_tree_compared": false,
+      "seconds": 11.0
+    },
+    "vitis_2025_2": {
+      "files": 2369,
+      "sha256": "9d6e56be11e2a43e718e6f2939d92cac0ec42e2e00e9d721bb37f98f0e713f7c",
+      "restoration_passed": true,
+      "exact_input_tree_compared": false,
+      "seconds": 14.219
+    }
+  },
+  "ps_source_files_checked": 50,
+  "ps_case_only_files": 15,
+  "prepare_only_status": "PREPARED_NOT_COMPILED"
+}

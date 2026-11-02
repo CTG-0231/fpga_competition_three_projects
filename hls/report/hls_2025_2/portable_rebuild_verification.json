@@ -1,0 +1,130 @@
+{
+  "conv": {
+    "raw_verilog_byte_identical": true,
+    "file_count": 23,
+    "differences": {},
+    "wrapper_output": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\portable_conv_cache_smoke",
+    "wrapper_summary": {
+      "runs": [
+        {
+          "kernel": "conv",
+          "action": "build",
+          "status": "complete",
+          "started_at": "2026-10-30T21:22:04.262897+08:00",
+          "project": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\portable_conv_cache_smoke\\work\\projects\\conv",
+          "compile_source_difference": {
+            "file": "conv/conv.cpp",
+            "line": 85,
+            "old": "\t#pragma HLS DATAFLOW",
+            "new": "\t// HLS2025.2 migration: legacy DATAFLOW at compute_output loop disabled.",
+            "canonical_sha256": "6395e26b33fb95731e1e854859ec1440e558d08468548742d30fc252d3bd8a3d",
+            "compiled_sha256": "aa661751b7936e38de4b86e1313cba171745d3b77cdde230f331b1fe0aa7be9c",
+            "reason": "Scheduling-only workaround for HLS200-994; original canonical source retained"
+          },
+          "exit_code": 0,
+          "finished_at": "2026-10-30T21:22:54.595607+08:00",
+          "elapsed_seconds": 50.328
+        }
+      ],
+      "original_12_algorithm_sha256_pass": true,
+      "all_requested_actions_pass": true
+    }
+  },
+  "pwdwconv": {
+    "raw_verilog_byte_identical": true,
+    "file_count": 52,
+    "differences": {},
+    "wrapper_output": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\portable_pw_smoke",
+    "wrapper_summary": {
+      "runs": [
+        {
+          "kernel": "pwdwconv",
+          "action": "build",
+          "status": "complete",
+          "started_at": "2026-10-30T21:40:38.582037+08:00",
+          "project": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\portable_pw_smoke\\work\\projects\\pwdwconv",
+          "compile_source_differences": [
+            {
+              "file": "pwdwconv/pwconv.cpp",
+              "line": 202,
+              "old": "memcpy((data_t*)bias_buff,(const data_t*)bias,sizeof(data_t)*M);",
+              "new": "for (int bias_index = 0; bias_index < M; ++bias_index) { bias_buff[bias_index / Tm][bias_index % Tm] = bias[bias_index]; }",
+              "canonical_sha256": "fef26f3f656aca908a14f3fce055b86e18ab6f578637742d7419e3e3bc429b8e",
+              "compiled_sha256": "f5472ecd55cc435f0b5a1f3ef9aa3ee16c3ef835689435a1a92a4d886a64079e",
+              "reason": "Equivalent per-element copy; avoid 2025.2 dynamic memcpy losing non-first partitioned bias rows"
+            },
+            {
+              "file": "pwdwconv/dwconv.cpp",
+              "line": 179,
+              "old": "memcpy((data_t*)bias_buff,(const data_t*)bias,sizeof(data_t)*channel);",
+              "new": "for (int bias_index = 0; bias_index < channel; ++bias_index) { bias_buff[bias_index / Tm][bias_index % Tm] = bias[bias_index]; }",
+              "canonical_sha256": "babe916030f747799bdfd1ed9453fe57f2847e4213e33e44dcfac8d6c80a96cf",
+              "compiled_sha256": "866108afb8681a761bec0cacc36705fe5a41b94c6d88b7e06b285bf740e95243",
+              "reason": "Equivalent per-element copy; DW uses its own Tm=8 from dwconv.h"
+            },
+            {
+              "file": "pwdwconv/pwconv.h",
+              "line": 7,
+              "old": "#define MAX_LEN 1024",
+              "new": "#define MAX_LEN 1280",
+              "canonical_sha256": "4ca69d5ace43d6a29ad30486801e7b37e7b909bfdeb29528b072a12b3502b522",
+              "compiled_sha256": "340f526c557d66d3ce61f6036f635953976c34f2048d653b99fff92a264f94fd",
+              "reason": "PW storage capacity covers the model final ch_out1280; arithmetic and quantization unchanged"
+            }
+          ],
+          "exit_code": 0,
+          "finished_at": "2026-10-30T21:42:07.557434+08:00",
+          "elapsed_seconds": 88.984
+        }
+      ],
+      "original_12_algorithm_sha256_pass": true,
+      "all_requested_actions_pass": true
+    }
+  },
+  "shortcut": {
+    "raw_verilog_byte_identical": true,
+    "file_count": 7,
+    "differences": {},
+    "wrapper_output": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\portable_smoke",
+    "wrapper_summary": {
+      "runs": [
+        {
+          "kernel": "shortcut",
+          "action": "build",
+          "status": "complete",
+          "started_at": "2026-10-30T20:48:04.619057+08:00",
+          "project": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\portable_smoke\\work\\projects\\shortcut",
+          "compile_source_difference": null,
+          "exit_code": 0,
+          "finished_at": "2026-10-30T20:48:48.402695+08:00",
+          "elapsed_seconds": 43.781
+        }
+      ],
+      "original_12_algorithm_sha256_pass": true,
+      "all_requested_actions_pass": true
+    }
+  },
+  "fc": {
+    "raw_verilog_byte_identical": true,
+    "file_count": 19,
+    "differences": {},
+    "wrapper_output": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\portable_fc_smoke",
+    "wrapper_summary": {
+      "runs": [
+        {
+          "kernel": "fc",
+          "action": "build",
+          "status": "complete",
+          "started_at": "2026-10-30T21:46:55.891592+08:00",
+          "project": "E:\\fpga_work\\qian_20261030_1\\hls_migration\\portable_fc_smoke\\work\\projects\\fc",
+          "compile_source_differences": [],
+          "exit_code": 0,
+          "finished_at": "2026-10-30T21:47:48.318512+08:00",
+          "elapsed_seconds": 52.437
+        }
+      ],
+      "original_12_algorithm_sha256_pass": true,
+      "all_requested_actions_pass": true
+    }
+  }
+}
