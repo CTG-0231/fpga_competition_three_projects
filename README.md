@@ -5,6 +5,7 @@
 ```text
 fpga_competition/
 ├── README.md
+├── baogao.pdf
 ├── pynq/
 │   ├── README.md
 │   ├── src/
