@@ -48,3 +48,9 @@ PYNQ主机回归53项：51项通过、2项缺外部旧源而跳过、0失败。�
 按照 [HLS README](hls/README.md) 将 `.bin` 内容对象恢复为原生源码，再显式用恢复目录构建四核；按照 [Vivado README](vivado/README.md) 恢复原生工程，再重新综合、实现并生成含本轮 bit 的 XSA。所有输入来自本提交包，所有新输出在提交树外，不依赖 `FUXIAN` 或原机器已有的工作目录。
 
 Vivado 2025.2 快照自带四个对应 HLS IP，单独重建它不要求先重建 HLS。需要接入本轮新生成的 HLS IP 时，采用 [新 IP 集成入口](vivado/build/vivado_2025_2/readme.md)。2026-10-31 本次说明修订只更新 Markdown 和相应校验清单，未修改算法、RTL、对象快照或 PYNQ。历史报告保持原范围，不把本次文档检查算作新的完整构建或板测。
+
+## License
+
+This project is licensed under the **MIT License** — see the [license](license) file for details.
+
+Copyright (c) 2026 CTG-0231
